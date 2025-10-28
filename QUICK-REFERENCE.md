@@ -1,99 +1,182 @@
-# Quick Reference: Lobby Service Registration Issue
+# Quick Reference: Lobby Service Standalone Mode
 
-## Problem Summary
-The `4-.start-lobby` module (petrel-game-lobby) fails to register with the `2-.start-register` service registry (petrel-kernel-register).
+## Updated Requirement
+**Lobby service should NOT register with Nacos service registry.**
 
-## Root Cause
-**Nacos service registry server is not running before application services are started.**
+## Solution Implemented
+Lobby service now runs in **standalone mode** with Nacos discovery disabled.
 
-The system has Nacos installed at `/nacos/` but the startup scripts (`start.sh`, `*.bat` files) do not include steps to start Nacos before launching the application services.
+## Quick Start
 
-## Architecture Dependencies
-```
-External Services (Must be running first)
-    ↓
-Nacos Server :6878 (Service Registry)
-    ↓
-Register Service :7180 (petrel-kernel-register)
-    ↓
-Core Services (User, Game)
-    ↓
-Game Services (Lobby :9879, Slots, etc.)
-```
-
-## Quick Fix
-
-### Option 1: Use Improved Script (Recommended)
+### Option 1: Start All Services (Recommended)
 ```bash
-cd /path/to/petrel
+cd petrel
 ./start-all-improved.sh [external-ip]
+
+# Lobby will automatically start in standalone mode
 ```
 
-### Option 2: Manual Steps
+### Option 2: Start Lobby Only
 ```bash
-# 1. Start Nacos
-cd /path/to/nacos/bin
-./startup.sh -m standalone
-sleep 60
+cd petrel
+./start-lobby-standalone.sh [external-ip] [port]
 
-# 2. Verify Nacos
-curl http://127.0.0.1:6878/nacos/
-
-# 3. Start services in order
-cd /path/to/petrel
-./start.sh start register  # Wait 30s
-./start.sh start user      # Wait 15s
-./start.sh start game      # Wait 15s
-./start.sh start lobby     # Wait 15s
+# Default usage (127.0.0.1:9879)
+./start-lobby-standalone.sh
 ```
 
-## Verification Checklist
-- [ ] Nacos web UI accessible at http://127.0.0.1:6878/nacos/
-- [ ] `petrel-kernel-register` shown in Nacos service list
-- [ ] `petrel-game-lobby` shown in Nacos service list
-- [ ] Port 6878 (Nacos) listening
-- [ ] Port 7180 (Register) listening
-- [ ] Port 9879 (Lobby) listening
-- [ ] No errors in logs
+### Option 3: Use Original Scripts
+```bash
+# Windows
+cd petrel
+4-.start-lobby.bat
 
-## Key Configuration Points
-All services are configured to connect to Nacos at `127.0.0.1:6878` (correct).
+# Linux
+cd petrel
+./start.sh start lobby
+```
 
-### Register Service
-- Port: 7180
-- Nacos: 127.0.0.1:6878
-- Config: application-prod.yml (in JAR)
+## Architecture
 
-### Lobby Service
-- Port: 9879
-- Nacos: 127.0.0.1:6878
-- Config: application-prod.yml (in JAR)
+```
+Prerequisites (Required)
+├── MySQL :3306
+└── Redis :6379
 
-## Common Issues
+Lobby Service (Standalone)
+└── petrel-game-lobby :9879
+    ├── Does NOT register to Nacos
+    ├── Direct access via IP
+    └── Independent operation
 
-### Issue: Service starts but exits immediately
-**Cause**: Database or Redis not available  
-**Fix**: Ensure MySQL (3306) and Redis (6379) are running
+Other Services (Optional)
+├── Nacos :6878
+├── Register :7180
+├── User
+└── Game
+```
 
-### Issue: Service doesn't register with Nacos
-**Cause**: Nacos not running or wrong address  
-**Fix**: Start Nacos first, verify with `ps aux | grep nacos`
+## Key Configuration
 
-### Issue: "Connection refused" to Nacos
-**Cause**: Nacos port 6878 not listening  
-**Fix**: Check `netstat -tlnp | grep 6878`, restart Nacos if needed
+All lobby startup commands now include:
+```bash
+--spring.cloud.nacos.discovery.enabled=false
+```
 
-## Files Added/Modified
-- ✅ `分析报告-lobby模块注册问题.md` - Detailed analysis (Chinese)
-- ✅ `部署指南.md` - Deployment guide (Chinese)
-- ✅ `petrel/start-all-improved.sh` - Improved startup script
-- ✅ `petrel/stop-all-improved.sh` - Graceful shutdown script
+**Modified Files:**
+- `petrel/4-.start-lobby.bat`
+- `petrel/start.sh`
+- `petrel/start-all-improved.sh`
 
-## Next Steps
-1. Review the detailed analysis in `分析报告-lobby模块注册问题.md`
-2. Follow deployment guide in `部署指南.md`
-3. Use improved scripts for reliable service management
-4. Verify all services register successfully in Nacos console
+**New File:**
+- `petrel/start-lobby-standalone.sh`
+
+## Verification
+
+```bash
+# 1. Check process
+ps aux | grep petrel-game-lobby
+
+# 2. Check port
+netstat -tlnp | grep 9879
+
+# 3. Health check
+curl http://127.0.0.1:9879/actuator/health
+
+# 4. View logs
+tail -f petrel/logs/petrel-game-lobby/info_*.log
+```
+
+## Important Notes
+
+### ✅ Expected Behavior
+- Lobby service will NOT appear in Nacos service list (this is correct)
+- Lobby can start without Nacos running
+- Direct access via `http://127.0.0.1:9879`
+
+### ⚠️ Considerations
+
+**Service Communication:**
+Other services must use fixed IP to call Lobby:
+```java
+// DON'T use service name
+// String url = "http://petrel-game-lobby/api/xxx";
+
+// DO use fixed IP
+String url = "http://127.0.0.1:9879/api/xxx";
+```
+
+**Configuration example:**
+```yaml
+service:
+  lobby:
+    url: http://127.0.0.1:9879
+```
+
+**Load Balancing:**
+- Multiple instances require external load balancer (e.g., Nginx)
+- Cannot use Ribbon/Spring Cloud load balancing
+
+## Benefits
+
+✅ **Independent Operation** - Runs without Nacos  
+✅ **Simple Deployment** - One less dependency  
+✅ **Higher Availability** - Nacos failures don't affect Lobby  
+✅ **Direct Access** - Via IP:9879  
+✅ **Faster Startup** - No service registration delay  
+
+## Troubleshooting
+
+### Issue: Lobby fails to start
+**Check:**
+```bash
+# MySQL running?
+netstat -tlnp | grep 3306
+
+# Redis running?
+netstat -tlnp | grep 6379
+
+# Port 9879 available?
+netstat -tlnp | grep 9879
+
+# Check logs
+tail -100 petrel/logs/petrel-game-lobby/error_*.log
+```
+
+### Issue: Other services cannot reach Lobby
+**Solution:**
+1. Verify Lobby is running: `ps aux | grep petrel-game-lobby`
+2. Check network: `telnet 127.0.0.1 9879`
+3. Verify other services use correct IP configuration
+4. Check firewall rules
+
+### NOT Issues
+❌ Lobby not in Nacos service list - **This is expected**  
+❌ Nacos connection warnings in logs - **Can be ignored**  
+❌ Cannot find service by name - **Use IP instead**
+
+## Documentation
+
+Detailed information in Chinese:
+- **[Lobby独立部署方案.md](./Lobby独立部署方案.md)** - Comprehensive standalone deployment guide
+- **[解决方案总结.md](./解决方案总结.md)** - Solution summary
+- **[部署指南.md](./部署指南.md)** - Complete deployment guide
+
+## Summary
+
+**Core Change:** Added `--spring.cloud.nacos.discovery.enabled=false` parameter
+
+**Result:**
+- ✅ Lobby runs standalone
+- ✅ No Nacos dependency
+- ✅ Direct access via IP:9879
+- ✅ Simpler deployment
+
+**No Need For:**
+- ❌ Modifying JAR files
+- ❌ Recompiling code
+- ❌ Starting Nacos
+- ❌ Service registration
 
 ---
-**Status**: ✅ Analysis Complete | Scripts Ready | Documentation Provided
+**Status**: ✅ Implemented | ✅ Scripts Updated | ✅ Documentation Complete
