@@ -140,7 +140,7 @@ start_game(){
 
 start_lobby(){
         echo "-----------start-lobby-------------------"
-        nohup java  -jar -Xmn512m -Xms1024m -Xmx1024m $lobby --spring.profiles.active=prod   --zebra.ip.out=122.114.55.213 --zebra.port=8989  >/dev/null 2>&1&
+        nohup java  -jar -Xmn512m -Xms1024m -Xmx1024m $lobby --spring.profiles.active=prod --spring.cloud.nacos.discovery.enabled=false --zebra.ip.out=122.114.55.213 --zebra.port=8989  >/dev/null 2>&1&
         sleep 10s
       tail -n  300 $lobby_log`ls $lobby_log -t1|awk '{if (NR ==1) print}'`  
         echo "-----------end-lobby----------------------"
