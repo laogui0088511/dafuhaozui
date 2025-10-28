@@ -2,21 +2,21 @@
 
 Petrel 游戏系统 / Petrel Gaming Platform
 
-## 重要说明 / Important Notice
+## 重要架构说明 / Architecture Notice
 
-⚠️ **Lobby 服务以独立模式运行，不注册到 Nacos 服务注册中心**
+**Lobby 服务使用双重注册机制：**
+1. ✅ 使用 Nacos 作为**配置中心**和**服务发现客户端**（调用其他服务）
+2. ✅ 通过 **Zebra RPC** 注册到 **Register 服务** (7180)，不在 Nacos 中注册
+3. ✅ 游戏客户端通过 Zebra 协议连接 Lobby
 
-⚠️ **Lobby service runs in standalone mode, NOT registered to Nacos registry**
+详细说明请查看：[架构澄清-Lobby服务注册机制.md](./架构澄清-Lobby服务注册机制.md)
 
 ## 快速开始 / Quick Start
 
 ### 中文文档
+- **[架构澄清-Lobby服务注册机制.md](./架构澄清-Lobby服务注册机制.md)** - 正确的架构理解（必读）
 - **[部署指南](./部署指南.md)** - 完整的部署流程和配置说明
-- **[Lobby 独立部署方案](./Lobby独立部署方案.md)** - Lobby 服务独立运行方案（推荐）
-- **[问题分析报告](./分析报告-lobby模块注册问题.md)** - 原始问题分析（已解决）
-
-### English Documentation
-- **[Quick Reference](./QUICK-REFERENCE.md)** - Quick reference guide
+- **[分析报告-lobby模块注册问题.md](./分析报告-lobby模块注册问题.md)** - 原始问题分析
 
 ## 部署 / Deployment
 
@@ -24,28 +24,38 @@ Petrel 游戏系统 / Petrel Gaming Platform
 - Java 8+
 - MySQL 5.7+
 - Redis 5.0+
-- **注意**: Lobby 服务不需要 Nacos
+- **Nacos** - Lobby 需要 Nacos 作为配置中心和服务发现
 
 ### 快速启动 / Quick Start
 
-#### 方式 1: 启动所有服务（推荐）
+#### 方式 1: 使用改进的启动脚本（推荐）
 ```bash
 cd petrel
 ./start-all-improved.sh
 
-# Lobby 服务将以独立模式启动，不注册到 Nacos
+# 这将按正确顺序启动所有服务
 ```
 
-#### 方式 2: 仅启动 Lobby 服务（独立模式）
+#### 方式 2: 手动启动
 ```bash
+# 1. 启动 Nacos
+cd nacos/bin
+./startup.sh -m standalone
+sleep 60
+
+# 2. 启动 Register 服务（Zebra 注册中心）
 cd petrel
-./start-lobby-standalone.sh [外部IP] [端口]
+./start.sh start register
+sleep 30
 
-# 示例：使用默认配置
-./start-lobby-standalone.sh
+# 3. 启动其他核心服务
+./start.sh start user
+./start.sh start game
+sleep 15
 
-# 示例：指定外部 IP 和端口
-./start-lobby-standalone.sh 192.168.1.100 9879
+# 4. 启动 Lobby（会通过 Zebra 注册到 Register）
+./start.sh start lobby
+sleep 15
 ```
 
 #### 关闭所有服务
@@ -56,112 +66,79 @@ cd petrel
 
 ### 服务架构 / Service Architecture
 ```
-MySQL (3306) + Redis (6379)
+MySQL + Redis + Nacos (配置 + 服务发现)
     ↓
-┌──────────────────────────────────────┐
-│ Lobby Service (独立服务)             │
-│ - 不注册到 Nacos                     │
-│ - 端口: 9879                         │
-│ - 直接通过 IP 访问                   │
-└──────────────────────────────────────┘
-
-Nacos (6878) (可选，用于其他服务)
-    ↓
-Register Service (7180)
-    ↓
-User Service + Game Service
-    ↓
-其他需要服务发现的服务
+核心服务层（在 Nacos 中注册）
+├── Register Service (7180) - Zebra RPC 注册中心
+├── User Service (8719)
+└── Game Service
+    ↓ (Nacos 服务发现)    ↑ (Zebra RPC 注册)
+游戏服务层（通过 Zebra 注册到 Register）
+├── Lobby Service (9879) - 使用 Nacos + Zebra
+├── Slots Service (9527)
+└── Chess Service (9637)
 ```
 
 ## 重要提示 / Important Notes
 
-### Lobby 服务特点
-✅ **独立运行** - 不依赖 Nacos，可以单独启动  
-✅ **直接访问** - 通过 IP:9879 直接访问  
-✅ **配置简单** - 启动参数已配置 `--spring.cloud.nacos.discovery.enabled=false`  
-✅ **高可用性** - Nacos 故障不影响 Lobby 服务  
+### Lobby 服务的特殊性
+✅ **需要 Nacos** - 作为配置中心和服务发现客户端  
+✅ **不在 Nacos 注册** - 正常现象，通过 Zebra 注册到 Register  
+✅ **双重机制** - Nacos (服务消费者) + Zebra (服务提供者)  
 
-### 如何访问 Lobby 服务
+### 验证 Lobby 部署
 ```bash
-# 健康检查
+# 1. Lobby 不应该在 Nacos 中（这是正常的）
+curl 'http://127.0.0.1:6878/nacos/v1/ns/instance/list?serviceName=petrel-game-lobby'
+# 应该返回空
+
+# 2. 检查 Lobby 服务状态
 curl http://127.0.0.1:9879/actuator/health
 
-# 直接 API 调用（其他服务）
-# 使用固定 IP 和端口，而不是服务名
-String lobbyUrl = "http://127.0.0.1:9879/api/xxx";
-```
-
-### 其他服务如何调用 Lobby
-在其他服务的配置中，使用固定 IP 和端口：
-```yaml
-service:
-  lobby:
-    url: http://127.0.0.1:9879
+# 3. 查看 Lobby 日志确认注册成功
+tail -f petrel/logs/petrel-game-lobby/info_9879.txt
+# 应该看到 "Server serverOnline server process server online lobby:..."
 ```
 
 ## 文档 / Documentation
 
-- [Lobby 独立部署方案](./Lobby独立部署方案.md) - **推荐阅读** - 详细的独立部署方案
+- [架构澄清-Lobby服务注册机制.md](./架构澄清-Lobby服务注册机制.md) - **必读** - 正确的架构理解
 - [部署指南 (Deployment Guide)](./部署指南.md) - 完整部署流程
-- [问题分析 (Issue Analysis)](./分析报告-lobby模块注册问题.md) - 原始问题根本原因分析
-- [快速参考 (Quick Reference)](./QUICK-REFERENCE.md) - English quick reference
+- [问题分析 (Issue Analysis)](./分析报告-lobby模块注册问题.md) - 原始问题分析
 
 ## 问题排查 / Troubleshooting
 
 ### Lobby 服务问题排查
 
-1. **Lobby 服务启动失败**
+1. **Lobby 启动失败**
    ```bash
-   # 检查 MySQL 和 Redis
+   # 确认 Nacos 正在运行（Lobby 需要它）
+   curl http://127.0.0.1:6878/nacos/
+   
+   # 确认 MySQL 和 Redis 可访问
    netstat -tlnp | grep -E "3306|6379"
    
    # 查看日志
-   tail -f petrel/logs/petrel-game-lobby/info_*.log
+   tail -f petrel/logs/petrel-game-lobby/info_9879.txt
    ```
 
-2. **Lobby 服务端口被占用**
+2. **Lobby 无法注册到 Register**
    ```bash
-   # 检查端口 9879
-   netstat -tlnp | grep 9879
+   # 确认 Register 服务正在运行
+   netstat -tlnp | grep 7180
    
-   # 停止占用端口的进程
-   kill $(lsof -t -i:9879)
+   # 查看 Register 日志
+   tail -f petrel/logs/petrel-kernel-register/info_7180.log
+   # 应该看到 "Register receive registry msg ServerRegistryRequest(serverId=lobby:..."
    ```
 
-3. **其他服务无法访问 Lobby**
-   - 确认 Lobby 服务正在运行：`ps aux | grep petrel-game-lobby`
-   - 确认端口可访问：`telnet 127.0.0.1 9879`
-   - 确认其他服务配置了正确的 Lobby IP 和端口
+3. **Lobby 无法调用其他服务**
+   - 确认 Nacos 正在运行
+   - 确认其他服务（User、Game）在 Nacos 中注册
+   - 检查 Lobby 日志中的 Ribbon/Feign 错误
 
-### 不需要检查的问题
-❌ Lobby 服务不在 Nacos 中 - **这是正常的，Lobby 以独立模式运行**  
-❌ Nacos 连接错误 - **Lobby 不使用 Nacos，可以忽略相关错误**
+### 正常现象（不是问题）
+❌ Lobby 不在 Nacos 服务列表中 - **这是正常的设计**  
+❌ Lobby 日志显示 Nacos 警告 - **可以忽略，只要能连接 Nacos 即可**  
 
 详细的问题排查步骤请参考部署指南。/ See deployment guide for detailed troubleshooting.
-
-## 验证部署 / Verify Deployment
-
-```bash
-# 1. 检查 Lobby 服务进程
-ps aux | grep petrel-game-lobby
-
-# 2. 检查 Lobby 服务端口
-netstat -tlnp | grep 9879
-
-# 3. 健康检查
-curl http://127.0.0.1:9879/actuator/health
-
-# 4. 查看日志
-tail -f petrel/logs/petrel-game-lobby/info_*.log
-```
-
-## 脚本说明 / Scripts
-
-| 脚本 | 用途 | 说明 |
-|------|------|------|
-| `start-all-improved.sh` | 启动所有服务 | Lobby 以独立模式启动 |
-| `start-lobby-standalone.sh` | 仅启动 Lobby | Lobby 独立启动脚本 |
-| `stop-all-improved.sh` | 停止所有服务 | 优雅关闭 |
-| `4-.start-lobby.bat` | Windows 启动 Lobby | 已配置独立模式 |
-| `start.sh` | Linux 启动脚本 | 已配置独立模式 |

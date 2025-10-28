@@ -206,8 +206,8 @@ else
 fi
 echo ""
 
-# 步骤 5: 启动大厅服务 (独立服务，不注册到 Nacos)
-log_info "[5/7] 启动大厅服务 (petrel-game-lobby - 独立模式)..."
+# 步骤 5: 启动大厅服务
+log_info "[5/7] 启动大厅服务 (petrel-game-lobby)..."
 
 if check_service_running "petrel-game-lobby"; then
     log_warn "大厅服务已在运行，跳过启动"
@@ -216,27 +216,26 @@ else
     ZEBRA_IP_OUT=${1:-127.0.0.1}
     
     log_info "使用外部 IP: ${ZEBRA_IP_OUT}"
-    log_info "注意: Lobby 服务运行在独立模式，不注册到 Nacos"
+    log_info "注意: Lobby 通过 Zebra RPC 注册到 Register 服务 (7180)"
     
     nohup java -jar -Xmn512m -Xms1024m -Xmx1024m \
         petrel-game-lobby-1.0-SNAPSHOT-boot.jar \
         --spring.profiles.active=prod \
-        --spring.cloud.nacos.discovery.enabled=false \
         --zebra.ip.out=${ZEBRA_IP_OUT} \
         > /dev/null 2>&1 &
     
     if wait_for_port 9879 20; then
-        log_info "✓ 大厅服务启动成功 (端口 9879) - 独立模式"
-        sleep 5  # 等待服务完全启动
+        log_info "✓ 大厅服务启动成功 (端口 9879)"
+        sleep 10  # 等待服务注册到 Register
     else
         log_error "✗ 大厅服务启动失败"
         exit 1
     fi
 fi
 
-# 验证大厅服务（无需检查 Nacos 注册）
-log_info "验证大厅服务健康状态..."
-sleep 3
+# 验证大厅服务
+log_info "验证大厅服务状态..."
+sleep 5
 echo ""
 
 # 步骤 6: 启动老虎机服务
@@ -285,22 +284,22 @@ echo "=========================================="
 echo ""
 
 log_info "核心服务端口："
-echo "  Nacos 注册中心:    http://127.0.0.1:6878/nacos (用于其他服务)"
-echo "  Register 服务:     端口 7180"
-echo "  Lobby 大厅服务:    端口 9879 (独立模式，不注册到 Nacos)"
+echo "  Nacos 注册中心:    http://127.0.0.1:6878/nacos"
+echo "  Register 服务:     端口 7180 (Zebra RPC 注册中心)"
+echo "  Lobby 大厅服务:    端口 9879 (通过 Zebra 注册到 Register)"
 echo ""
 
 log_info "运行中的 Petrel 服务进程："
 ps aux | grep -E "petrel-kernel|petrel-game|petrel-cms" | grep -v grep | awk '{print "  PID:", $2, " ", $11, $12, $13}'
 echo ""
 
-log_info "服务状态验证："
-echo "  Nacos 注册服务验证："
+log_info "服务验证："
+echo "  Nacos 服务列表（Register、User、Game 等）："
 echo "    curl 'http://127.0.0.1:6878/nacos/v1/ns/instance/list?serviceName=petrel-kernel-register'"
 echo ""
-echo "  Lobby 独立服务验证（直接访问，不在 Nacos 中）："
+echo "  Lobby 服务健康检查（通过 Zebra RPC 注册到 Register）："
 echo "    curl 'http://127.0.0.1:9879/actuator/health'"
-echo "    注意: Lobby 服务不会出现在 Nacos 服务列表中"
+echo "    注意: Lobby 不在 Nacos 服务列表中，它通过 Zebra 协议注册到 Register (7180)"
 echo ""
 
 log_info "日志位置："
