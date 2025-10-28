@@ -1,0 +1,22 @@
+ceiling:
+  last-diff-times: 0_30|10;30_50|30;50_-1|500
+  multiple: 3-5
+  fixed: 150
+  card-range: 50-200
+strategy:
+  cheat: 10000
+  lose-a: 0.53
+  lose-b: 0.00001515
+  play-times: 800-1000-1300
+jackport:
+  #推送时间 秒
+  push-time: 6
+  #真奖池配置
+  real:
+    #返奖率限制  低于填入值
+    award-restrict: 1000
+    #游戏记录限制  低于填入值
+    play-total-restrict: 200
+common:
+  roller:
+    url: http://192.168.10.102:8555/chfs/shared/java    

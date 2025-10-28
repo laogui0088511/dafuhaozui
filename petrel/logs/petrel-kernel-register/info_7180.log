@@ -1,0 +1,12 @@
+12-20 14:48:13.601 INFO  [nioEventLoopGroup-10-1] [com.zebra.net.client.RegistryHeartHandler] : Handler CLEAR_USER ClearUserZebraMessage(super=ZebraBaseMessage(), userId=473369959468, msgType=3, checkId=19564906)
+12-20 14:48:13.601 INFO  [nioEventLoopGroup-10-1] [com.zebra.net.codec.ZebraEncoder] : Response c:444 u:0 r:0 s:200 l:18 [L:/127.0.0.1:53208 - R:/127.0.0.1:9879]
+12-20 14:48:13.601 INFO  [nioEventLoopGroup-12-1] [com.zebra.net.codec.ZebraEncoder] : Response c:444 u:0 r:0 s:200 l:18 [L:/127.0.0.1:53308 - R:/127.0.0.1:9527]
+12-20 14:48:13.601 INFO  [nioEventLoopGroup-11-1] [com.zebra.net.codec.ZebraEncoder] : Response c:444 u:0 r:0 s:200 l:18 [L:/127.0.0.1:53258 - R:/127.0.0.1:9637]
+12-20 14:56:36.590 INFO  [nioEventLoopGroup-10-1] [com.zebra.net.client.RegistryHeartHandler] : Handler CLEAR_USER ClearUserZebraMessage(super=ZebraBaseMessage(), userId=473369959468, msgType=3, checkId=11656365)
+12-20 14:56:36.590 INFO  [nioEventLoopGroup-10-1] [com.zebra.net.codec.ZebraEncoder] : Response c:444 u:0 r:0 s:200 l:18 [L:/127.0.0.1:53208 - R:/127.0.0.1:9879]
+12-20 14:56:36.590 INFO  [nioEventLoopGroup-12-1] [com.zebra.net.codec.ZebraEncoder] : Response c:444 u:0 r:0 s:200 l:18 [L:/127.0.0.1:53308 - R:/127.0.0.1:9527]
+12-20 14:56:36.590 INFO  [nioEventLoopGroup-11-1] [com.zebra.net.codec.ZebraEncoder] : Response c:444 u:0 r:0 s:200 l:18 [L:/127.0.0.1:53258 - R:/127.0.0.1:9637]
+12-20 15:06:57.223 INFO  [nioEventLoopGroup-10-1] [com.zebra.net.client.RegistryHeartHandler] : Handler CLEAR_USER ClearUserZebraMessage(super=ZebraBaseMessage(), userId=473369959468, msgType=3, checkId=11393361)
+12-20 15:06:57.223 INFO  [nioEventLoopGroup-10-1] [com.zebra.net.codec.ZebraEncoder] : Response c:444 u:0 r:0 s:200 l:18 [L:/127.0.0.1:53208 - R:/127.0.0.1:9879]
+12-20 15:06:57.223 INFO  [nioEventLoopGroup-12-1] [com.zebra.net.codec.ZebraEncoder] : Response c:444 u:0 r:0 s:200 l:18 [L:/127.0.0.1:53308 - R:/127.0.0.1:9527]
+12-20 15:06:57.223 INFO  [nioEventLoopGroup-11-1] [com.zebra.net.codec.ZebraEncoder] : Response c:444 u:0 r:0 s:200 l:18 [L:/127.0.0.1:53258 - R:/127.0.0.1:9637]

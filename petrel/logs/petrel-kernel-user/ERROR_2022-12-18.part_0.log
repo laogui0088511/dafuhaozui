@@ -1,0 +1,3 @@
+12-18 16:32:46.437 ERROR [http-nio-8719-exec-5] [com.petrel.user.service.LoginService] : USER logout not exit uid 485963265035 disconnection 1 exitType Switch 
+12-18 16:33:19.440 ERROR [http-nio-8719-exec-6] [com.petrel.user.service.LoginService] : USER logout not exit uid 485963265035 disconnection 1 exitType Switch 
+12-18 22:05:42.592 ERROR [http-nio-8719-exec-9] [com.petrel.user.service.LoginService] : USER logout not exit uid 423944527471 disconnection 1 exitType Switch 

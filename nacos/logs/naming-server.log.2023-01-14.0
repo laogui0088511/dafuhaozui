@@ -1,0 +1,80 @@
+2023-01-14 01:02:52,255 INFO open empty service auto clean job, initialDelay : 50000 ms, period : 30000 ms
+
+2023-01-14 01:02:52,256 INFO listen for service meta change
+
+2023-01-14 01:03:03,432 INFO creating empty service public:DEFAULT_GROUP@@petrel-kernel-user
+
+2023-01-14 01:03:03,465 INFO [NEW-SERVICE] {"name":"DEFAULT_GROUP@@petrel-kernel-user","protectThreshold":0.0,"groupName":"DEFAULT_GROUP","metadata":{},"finalizeCount":0,"owners":[],"resetWeight":false,"enabled":true,"selector":{"type":"none"},"namespaceId":"public","ipDeleteTimeout":30000,"lastModifiedMillis":1673629383436,"checksum":"3be6191432f9f68c76ca6fa2169ebfed","clusterMap":{},"empty":true}
+
+2023-01-14 01:03:03,474 WARN cluster: DEFAULT not found, ip: {"instanceId":"172.23.126.252#8719#DEFAULT#DEFAULT_GROUP@@petrel-kernel-user","ip":"172.23.126.252","port":8719,"weight":1.0,"healthy":true,"enabled":true,"ephemeral":true,"clusterName":"DEFAULT","serviceName":"DEFAULT_GROUP@@petrel-kernel-user","metadata":{"preserved.register.source":"SPRING_CLOUD"},"lastBeat":1673629383427,"marked":false,"app":"unknown","instanceHeartBeatInterval":5000,"instanceHeartBeatTimeOut":15000,"ipDeleteTimeout":30000}, will create new cluster with default configuration.
+
+2023-01-14 01:03:03,487 INFO [NACOS-RAFT] datum is changed, key: com.alibaba.nacos.naming.iplist.ephemeral.public##DEFAULT_GROUP@@petrel-kernel-user, value: {"instanceList":[{"instanceId":"172.23.126.252#8719#DEFAULT#DEFAULT_GROUP@@petrel-kernel-user","ip":"172.23.126.252","port":8719,"weight":1.0,"healthy":true,"enabled":true,"ephemeral":true,"clusterName":"DEFAULT","serviceName":"DEFAULT_GROUP@@petrel-kernel-user","metadata":{"preserved.register.source":"SPRING_CLOUD"},"lastBeat":1673629383427,"marked":false,"app":"unknown","instanceHeartBeatInterval":5000,"instanceHeartBeatTimeOut":15000,"ipDeleteTimeout":30000}]}
+
+2023-01-14 01:03:41,012 INFO creating empty service public:DEFAULT_GROUP@@petrel-kernel-register
+
+2023-01-14 01:03:41,013 INFO [NEW-SERVICE] {"name":"DEFAULT_GROUP@@petrel-kernel-register","protectThreshold":0.0,"groupName":"DEFAULT_GROUP","metadata":{},"finalizeCount":0,"owners":[],"resetWeight":false,"enabled":true,"selector":{"type":"none"},"namespaceId":"public","ipDeleteTimeout":30000,"lastModifiedMillis":1673629421012,"checksum":"42f8eb87c3e4bddb5434f1acdd4d3880","clusterMap":{},"empty":true}
+
+2023-01-14 01:03:41,013 WARN cluster: DEFAULT not found, ip: {"instanceId":"172.23.126.252#7180#DEFAULT#DEFAULT_GROUP@@petrel-kernel-register","ip":"172.23.126.252","port":7180,"weight":1.0,"healthy":true,"enabled":true,"ephemeral":true,"clusterName":"DEFAULT","serviceName":"DEFAULT_GROUP@@petrel-kernel-register","metadata":{"preserved.register.source":"SPRING_CLOUD"},"lastBeat":1673629421012,"marked":false,"app":"unknown","instanceHeartBeatInterval":5000,"instanceHeartBeatTimeOut":15000,"ipDeleteTimeout":30000}, will create new cluster with default configuration.
+
+2023-01-14 01:03:41,016 INFO [NACOS-RAFT] datum is changed, key: com.alibaba.nacos.naming.iplist.ephemeral.public##DEFAULT_GROUP@@petrel-kernel-register, value: {"instanceList":[{"instanceId":"172.23.126.252#7180#DEFAULT#DEFAULT_GROUP@@petrel-kernel-register","ip":"172.23.126.252","port":7180,"weight":1.0,"healthy":true,"enabled":true,"ephemeral":true,"clusterName":"DEFAULT","serviceName":"DEFAULT_GROUP@@petrel-kernel-register","metadata":{"preserved.register.source":"SPRING_CLOUD"},"lastBeat":1673629421012,"marked":false,"app":"unknown","instanceHeartBeatInterval":5000,"instanceHeartBeatTimeOut":15000,"ipDeleteTimeout":30000}]}
+
+2023-01-14 01:03:48,811 INFO [NACOS-RAFT] datum is changed, key: com.alibaba.nacos.naming.iplist.ephemeral.public##DEFAULT_GROUP@@petrel-kernel-register, value: {"instanceList":[]}
+
+2023-01-14 01:04:14,363 INFO creating empty service public:DEFAULT_GROUP@@petrel-kernel-game
+
+2023-01-14 01:04:14,364 INFO [NEW-SERVICE] {"name":"DEFAULT_GROUP@@petrel-kernel-game","protectThreshold":0.0,"groupName":"DEFAULT_GROUP","metadata":{},"finalizeCount":0,"owners":[],"resetWeight":false,"enabled":true,"selector":{"type":"none"},"namespaceId":"public","ipDeleteTimeout":30000,"lastModifiedMillis":1673629454363,"checksum":"e614cfed6304bcf660fcd4460136ad88","clusterMap":{},"empty":true}
+
+2023-01-14 01:04:14,364 WARN cluster: DEFAULT not found, ip: {"instanceId":"172.23.126.252#8752#DEFAULT#DEFAULT_GROUP@@petrel-kernel-game","ip":"172.23.126.252","port":8752,"weight":1.0,"healthy":true,"enabled":true,"ephemeral":true,"clusterName":"DEFAULT","serviceName":"DEFAULT_GROUP@@petrel-kernel-game","metadata":{"preserved.register.source":"SPRING_CLOUD"},"lastBeat":1673629454363,"marked":false,"app":"unknown","instanceHeartBeatInterval":5000,"instanceHeartBeatTimeOut":15000,"ipDeleteTimeout":30000}, will create new cluster with default configuration.
+
+2023-01-14 01:04:14,367 INFO [NACOS-RAFT] datum is changed, key: com.alibaba.nacos.naming.iplist.ephemeral.public##DEFAULT_GROUP@@petrel-kernel-game, value: {"instanceList":[{"instanceId":"172.23.126.252#8752#DEFAULT#DEFAULT_GROUP@@petrel-kernel-game","ip":"172.23.126.252","port":8752,"weight":1.0,"healthy":true,"enabled":true,"ephemeral":true,"clusterName":"DEFAULT","serviceName":"DEFAULT_GROUP@@petrel-kernel-game","metadata":{"preserved.register.source":"SPRING_CLOUD"},"lastBeat":1673629454363,"marked":false,"app":"unknown","instanceHeartBeatInterval":5000,"instanceHeartBeatTimeOut":15000,"ipDeleteTimeout":30000}]}
+
+2023-01-14 01:04:59,605 INFO [NACOS-RAFT] datum is changed, key: com.alibaba.nacos.naming.iplist.ephemeral.public##DEFAULT_GROUP@@petrel-kernel-game, value: {"instanceList":[{"instanceId":"172.23.126.252#8752#DEFAULT#DEFAULT_GROUP@@petrel-kernel-game","ip":"172.23.126.252","port":8752,"weight":1.0,"healthy":true,"enabled":true,"ephemeral":true,"clusterName":"DEFAULT","serviceName":"DEFAULT_GROUP@@petrel-kernel-game","metadata":{"preserved.register.source":"SPRING_CLOUD"},"lastBeat":1673629499605,"marked":false,"app":"unknown","instanceHeartBeatInterval":5000,"instanceHeartBeatTimeOut":15000,"ipDeleteTimeout":30000}]}
+
+2023-01-14 01:05:39,027 INFO creating empty service public:DEFAULT_GROUP@@petrel-cms-web
+
+2023-01-14 01:05:39,028 INFO [NEW-SERVICE] {"name":"DEFAULT_GROUP@@petrel-cms-web","protectThreshold":0.0,"groupName":"DEFAULT_GROUP","metadata":{},"finalizeCount":0,"owners":[],"resetWeight":false,"enabled":true,"selector":{"type":"none"},"namespaceId":"public","ipDeleteTimeout":30000,"lastModifiedMillis":1673629539027,"checksum":"133af27b94ad2104c3bb23695e048d20","clusterMap":{},"empty":true}
+
+2023-01-14 01:05:39,028 WARN cluster: DEFAULT not found, ip: {"instanceId":"172.23.126.252#7071#DEFAULT#DEFAULT_GROUP@@petrel-cms-web","ip":"172.23.126.252","port":7071,"weight":1.0,"healthy":true,"enabled":true,"ephemeral":true,"clusterName":"DEFAULT","serviceName":"DEFAULT_GROUP@@petrel-cms-web","metadata":{"preserved.register.source":"SPRING_CLOUD"},"lastBeat":1673629539026,"marked":false,"app":"unknown","instanceHeartBeatInterval":5000,"instanceHeartBeatTimeOut":15000,"ipDeleteTimeout":30000}, will create new cluster with default configuration.
+
+2023-01-14 01:05:39,029 INFO [NACOS-RAFT] datum is changed, key: com.alibaba.nacos.naming.iplist.ephemeral.public##DEFAULT_GROUP@@petrel-cms-web, value: {"instanceList":[{"instanceId":"172.23.126.252#7071#DEFAULT#DEFAULT_GROUP@@petrel-cms-web","ip":"172.23.126.252","port":7071,"weight":1.0,"healthy":true,"enabled":true,"ephemeral":true,"clusterName":"DEFAULT","serviceName":"DEFAULT_GROUP@@petrel-cms-web","metadata":{"preserved.register.source":"SPRING_CLOUD"},"lastBeat":1673629539026,"marked":false,"app":"unknown","instanceHeartBeatInterval":5000,"instanceHeartBeatTimeOut":15000,"ipDeleteTimeout":30000}]}
+
+2023-01-14 01:06:12,263 WARN namespace : public, [DEFAULT_GROUP@@petrel-kernel-register] services are automatically cleaned
+
+2023-01-14 01:06:12,275 INFO [DEAD-SERVICE] {"name":"DEFAULT_GROUP@@petrel-kernel-register","protectThreshold":0.0,"groupName":"DEFAULT_GROUP","metadata":{},"finalizeCount":5,"owners":[],"resetWeight":false,"enabled":true,"selector":{"type":"none"},"namespaceId":"public","ipDeleteTimeout":30000,"lastModifiedMillis":1673629428811,"checksum":"d1c55fd56c0cf43068c4ec7916d2a208","clusterMap":{"DEFAULT":{"serviceName":"DEFAULT_GROUP@@petrel-kernel-register","name":"DEFAULT","healthChecker":{"type":"TCP"},"defaultPort":80,"defaultCheckPort":80,"useIPPort4Check":true,"metadata":{},"sitegroup":"","defCkport":80,"defIPPort":80,"empty":true}},"empty":true}
+
+2023-01-14 01:11:27,635 INFO open empty service auto clean job, initialDelay : 50000 ms, period : 30000 ms
+
+2023-01-14 01:11:27,636 INFO listen for service meta change
+
+2023-01-14 01:13:30,132 INFO creating empty service public:DEFAULT_GROUP@@petrel-kernel-register
+
+2023-01-14 01:13:30,278 INFO [NEW-SERVICE] {"name":"DEFAULT_GROUP@@petrel-kernel-register","protectThreshold":0.0,"groupName":"DEFAULT_GROUP","metadata":{},"finalizeCount":0,"owners":[],"resetWeight":false,"enabled":true,"selector":{"type":"none"},"namespaceId":"public","ipDeleteTimeout":30000,"lastModifiedMillis":1673630010166,"checksum":"42f8eb87c3e4bddb5434f1acdd4d3880","clusterMap":{},"empty":true}
+
+2023-01-14 01:13:30,290 WARN cluster: DEFAULT not found, ip: {"instanceId":"172.23.126.252#7180#DEFAULT#DEFAULT_GROUP@@petrel-kernel-register","ip":"172.23.126.252","port":7180,"weight":1.0,"healthy":true,"enabled":true,"ephemeral":true,"clusterName":"DEFAULT","serviceName":"DEFAULT_GROUP@@petrel-kernel-register","metadata":{"preserved.register.source":"SPRING_CLOUD"},"lastBeat":1673630010119,"marked":false,"app":"unknown","ipDeleteTimeout":30000,"instanceHeartBeatTimeOut":15000,"instanceHeartBeatInterval":5000}, will create new cluster with default configuration.
+
+2023-01-14 01:13:31,198 INFO [NACOS-RAFT] datum is changed, key: com.alibaba.nacos.naming.iplist.ephemeral.public##DEFAULT_GROUP@@petrel-kernel-register, value: {"instanceList":[{"instanceId":"172.23.126.252#7180#DEFAULT#DEFAULT_GROUP@@petrel-kernel-register","ip":"172.23.126.252","port":7180,"weight":1.0,"healthy":true,"enabled":true,"ephemeral":true,"clusterName":"DEFAULT","serviceName":"DEFAULT_GROUP@@petrel-kernel-register","metadata":{"preserved.register.source":"SPRING_CLOUD"},"lastBeat":1673630010119,"marked":false,"app":"unknown","ipDeleteTimeout":30000,"instanceHeartBeatTimeOut":15000,"instanceHeartBeatInterval":5000}]}
+
+2023-01-14 01:13:43,048 INFO creating empty service public:DEFAULT_GROUP@@petrel-kernel-user
+
+2023-01-14 01:13:43,049 INFO [NEW-SERVICE] {"name":"DEFAULT_GROUP@@petrel-kernel-user","protectThreshold":0.0,"groupName":"DEFAULT_GROUP","metadata":{},"finalizeCount":0,"owners":[],"resetWeight":false,"enabled":true,"selector":{"type":"none"},"namespaceId":"public","ipDeleteTimeout":30000,"lastModifiedMillis":1673630023048,"checksum":"3be6191432f9f68c76ca6fa2169ebfed","clusterMap":{},"empty":true}
+
+2023-01-14 01:13:43,049 WARN cluster: DEFAULT not found, ip: {"instanceId":"172.23.126.252#8719#DEFAULT#DEFAULT_GROUP@@petrel-kernel-user","ip":"172.23.126.252","port":8719,"weight":1.0,"healthy":true,"enabled":true,"ephemeral":true,"clusterName":"DEFAULT","serviceName":"DEFAULT_GROUP@@petrel-kernel-user","metadata":{"preserved.register.source":"SPRING_CLOUD"},"lastBeat":1673630023046,"marked":false,"app":"unknown","ipDeleteTimeout":30000,"instanceHeartBeatTimeOut":15000,"instanceHeartBeatInterval":5000}, will create new cluster with default configuration.
+
+2023-01-14 01:13:43,064 INFO [NACOS-RAFT] datum is changed, key: com.alibaba.nacos.naming.iplist.ephemeral.public##DEFAULT_GROUP@@petrel-kernel-user, value: {"instanceList":[{"instanceId":"172.23.126.252#8719#DEFAULT#DEFAULT_GROUP@@petrel-kernel-user","ip":"172.23.126.252","port":8719,"weight":1.0,"healthy":true,"enabled":true,"ephemeral":true,"clusterName":"DEFAULT","serviceName":"DEFAULT_GROUP@@petrel-kernel-user","metadata":{"preserved.register.source":"SPRING_CLOUD"},"lastBeat":1673630023046,"marked":false,"app":"unknown","ipDeleteTimeout":30000,"instanceHeartBeatTimeOut":15000,"instanceHeartBeatInterval":5000}]}
+
+2023-01-14 01:13:43,231 INFO creating empty service public:DEFAULT_GROUP@@petrel-kernel-game
+
+2023-01-14 01:13:43,232 INFO [NEW-SERVICE] {"name":"DEFAULT_GROUP@@petrel-kernel-game","protectThreshold":0.0,"groupName":"DEFAULT_GROUP","metadata":{},"finalizeCount":0,"owners":[],"resetWeight":false,"enabled":true,"selector":{"type":"none"},"namespaceId":"public","ipDeleteTimeout":30000,"lastModifiedMillis":1673630023231,"checksum":"e614cfed6304bcf660fcd4460136ad88","clusterMap":{},"empty":true}
+
+2023-01-14 01:13:43,233 WARN cluster: DEFAULT not found, ip: {"instanceId":"172.23.126.252#8752#DEFAULT#DEFAULT_GROUP@@petrel-kernel-game","ip":"172.23.126.252","port":8752,"weight":1.0,"healthy":true,"enabled":true,"ephemeral":true,"clusterName":"DEFAULT","serviceName":"DEFAULT_GROUP@@petrel-kernel-game","metadata":{"preserved.register.source":"SPRING_CLOUD"},"lastBeat":1673630023231,"marked":false,"app":"unknown","ipDeleteTimeout":30000,"instanceHeartBeatTimeOut":15000,"instanceHeartBeatInterval":5000}, will create new cluster with default configuration.
+
+2023-01-14 01:13:43,233 INFO [NACOS-RAFT] datum is changed, key: com.alibaba.nacos.naming.iplist.ephemeral.public##DEFAULT_GROUP@@petrel-kernel-game, value: {"instanceList":[{"instanceId":"172.23.126.252#8752#DEFAULT#DEFAULT_GROUP@@petrel-kernel-game","ip":"172.23.126.252","port":8752,"weight":1.0,"healthy":true,"enabled":true,"ephemeral":true,"clusterName":"DEFAULT","serviceName":"DEFAULT_GROUP@@petrel-kernel-game","metadata":{"preserved.register.source":"SPRING_CLOUD"},"lastBeat":1673630023231,"marked":false,"app":"unknown","ipDeleteTimeout":30000,"instanceHeartBeatTimeOut":15000,"instanceHeartBeatInterval":5000}]}
+
+2023-01-14 01:13:51,468 INFO creating empty service public:DEFAULT_GROUP@@petrel-cms-web
+
+2023-01-14 01:13:51,468 INFO [NEW-SERVICE] {"name":"DEFAULT_GROUP@@petrel-cms-web","protectThreshold":0.0,"groupName":"DEFAULT_GROUP","metadata":{},"finalizeCount":0,"owners":[],"resetWeight":false,"enabled":true,"selector":{"type":"none"},"namespaceId":"public","ipDeleteTimeout":30000,"lastModifiedMillis":1673630031468,"checksum":"133af27b94ad2104c3bb23695e048d20","clusterMap":{},"empty":true}
+
+2023-01-14 01:13:51,468 WARN cluster: DEFAULT not found, ip: {"instanceId":"172.23.126.252#7071#DEFAULT#DEFAULT_GROUP@@petrel-cms-web","ip":"172.23.126.252","port":7071,"weight":1.0,"healthy":true,"enabled":true,"ephemeral":true,"clusterName":"DEFAULT","serviceName":"DEFAULT_GROUP@@petrel-cms-web","metadata":{"preserved.register.source":"SPRING_CLOUD"},"lastBeat":1673630031467,"marked":false,"app":"unknown","ipDeleteTimeout":30000,"instanceHeartBeatTimeOut":15000,"instanceHeartBeatInterval":5000}, will create new cluster with default configuration.
+
+2023-01-14 01:13:51,474 INFO [NACOS-RAFT] datum is changed, key: com.alibaba.nacos.naming.iplist.ephemeral.public##DEFAULT_GROUP@@petrel-cms-web, value: {"instanceList":[{"instanceId":"172.23.126.252#7071#DEFAULT#DEFAULT_GROUP@@petrel-cms-web","ip":"172.23.126.252","port":7071,"weight":1.0,"healthy":true,"enabled":true,"ephemeral":true,"clusterName":"DEFAULT","serviceName":"DEFAULT_GROUP@@petrel-cms-web","metadata":{"preserved.register.source":"SPRING_CLOUD"},"lastBeat":1673630031467,"marked":false,"app":"unknown","ipDeleteTimeout":30000,"instanceHeartBeatTimeOut":15000,"instanceHeartBeatInterval":5000}]}
+

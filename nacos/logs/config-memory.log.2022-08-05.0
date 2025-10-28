@@ -1,0 +1,66 @@
+2021-07-20 00:00:04,560 INFO [long-pulling] client count 7
+
+2021-07-20 00:00:04,560 INFO groupCount = 7, subscriberClientCount = 0, subscriberCount = 0
+
+2021-07-20 00:00:04,560 INFO toNotifyTaskSize = 0
+
+2021-07-20 00:00:14,560 INFO [long-pulling] client count 7
+
+2021-07-20 00:00:14,561 INFO groupCount = 7, subscriberClientCount = 0, subscriberCount = 0
+
+2021-07-20 00:00:14,561 INFO toNotifyTaskSize = 0
+
+2021-07-20 00:00:24,561 INFO [long-pulling] client count 7
+
+2021-07-20 00:00:24,561 INFO groupCount = 7, subscriberClientCount = 0, subscriberCount = 0
+
+2021-07-20 00:00:24,561 INFO toNotifyTaskSize = 0
+
+2021-07-20 00:00:34,561 INFO [long-pulling] client count 7
+
+2021-07-20 00:00:34,561 INFO toNotifyTaskSize = 0
+
+2021-07-20 00:00:34,561 INFO groupCount = 7, subscriberClientCount = 0, subscriberCount = 0
+
+2021-07-20 00:00:44,561 INFO [long-pulling] client count 7
+
+2021-07-20 00:00:44,561 INFO toNotifyTaskSize = 0
+
+2021-07-20 00:00:44,561 INFO groupCount = 7, subscriberClientCount = 0, subscriberCount = 0
+
+2021-07-20 00:00:54,561 INFO [long-pulling] client count 7
+
+2021-07-20 00:00:54,561 INFO groupCount = 7, subscriberClientCount = 0, subscriberCount = 0
+
+2021-07-20 00:00:54,561 INFO toNotifyTaskSize = 0
+
+2021-07-20 00:01:04,561 INFO [long-pulling] client count 7
+
+2021-07-20 00:01:04,561 INFO groupCount = 7, subscriberClientCount = 0, subscriberCount = 0
+
+2021-07-20 00:01:04,561 INFO toNotifyTaskSize = 0
+
+2021-07-20 00:01:14,561 INFO [long-pulling] client count 7
+
+2021-07-20 00:01:14,561 INFO groupCount = 7, subscriberClientCount = 0, subscriberCount = 0
+
+2021-07-20 00:01:14,561 INFO toNotifyTaskSize = 0
+
+2021-07-20 00:01:24,561 INFO [long-pulling] client count 7
+
+2021-07-20 00:01:24,562 INFO groupCount = 7, subscriberClientCount = 0, subscriberCount = 0
+
+2021-07-20 00:01:24,562 INFO toNotifyTaskSize = 0
+
+2021-07-20 00:01:34,561 INFO [long-pulling] client count 7
+
+2021-07-20 00:01:34,562 INFO groupCount = 7, subscriberClientCount = 0, subscriberCount = 0
+
+2021-07-20 00:01:34,562 INFO toNotifyTaskSize = 0
+
+2021-07-20 00:01:44,561 INFO [long-pulling] client count 7
+
+2021-07-20 00:01:44,562 INFO groupCount = 7, subscriberClientCount = 0, subscriberCount = 0
+
+2021-07-20 00:01:44,562 INFO toNotifyTaskSize = 0
+

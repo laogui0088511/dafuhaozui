@@ -1,0 +1,8 @@
+host:
+   url: http://192.168.10.102:8089/dtc_update/
+wx:
+   id: wxid_value
+   secret: wxSecret_value
+lobby:
+   version: 3
+   vfx: YCD

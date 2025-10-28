@@ -1,0 +1,312 @@
+﻿<?xml version='1.0' encoding='utf-8' ?>
+<Root>
+	<CtrlConfig>
+		<Item ID="1"  Name="赢值" min = "0" max = "1200" bounsId = "2">
+			<iProb Name = "0-0" Scaled = "712911"/>
+			<iProb Name = "0-0.5" Scaled = "111392"/>
+			<iProb Name = "0.5-1" Scaled = "55696"/>
+			<iProb Name = "1-3" Scaled = "45649"/>
+			<iProb Name = "3-5" Scaled = "27389"/>
+			<iProb Name = "5-7" Scaled = "22824"/>
+			<iProb Name = "7-9" Scaled = "18259"/>
+			<iProb Name = "9-11" Scaled = "5421"/>
+			<iProb Name = "11-13" Scaled = "763"/>
+			<iProb Name = "13-15" Scaled = "174"/>
+			<iProb Name = "15-17" Scaled = "1663"/>
+			<iProb Name = "17-19" Scaled = "142"/>
+			<iProb Name = "19-21" Scaled = "89"/>
+			<iProb Name = "21-23" Scaled = "19"/>
+			<iProb Name = "23-25" Scaled = "122"/>
+			<iProb Name = "25-30" Scaled = "26"/>
+			<iProb Name = "30-35" Scaled = "162"/>
+			<iProb Name = "35-40" Scaled = "5"/>
+			<iProb Name = "40-45" Scaled = "2"/>
+			<iProb Name = "45-50" Scaled = "0"/>
+			<iProb Name = "50-55" Scaled = "0"/>
+			<iProb Name = "55-60" Scaled = "0"/>
+			<iProb Name = "60-65" Scaled = "0"/>
+			<iProb Name = "65-70" Scaled = "0"/>
+			<iProb Name = "70-75" Scaled = "0"/>
+			<iProb Name = "75-80" Scaled = "0"/>
+			<iProb Name = "80-85" Scaled = "0"/>
+			<iProb Name = "85-90" Scaled = "0"/>
+			<iProb Name = "90-95" Scaled = "0"/>
+			<iProb Name = "95-100" Scaled = "0"/>
+			<iProb Name = "100-110" Scaled = "0"/>
+			<iProb Name = "110-120" Scaled = "0"/>
+			<iProb Name = "120-130" Scaled = "0"/>
+			<iProb Name = "130-140" Scaled = "0"/>
+			<iProb Name = "140-150" Scaled = "0"/>
+			<iProb Name = "150-160" Scaled = "0"/>
+			<iProb Name = "160-170" Scaled = "0"/>
+			<iProb Name = "170-180" Scaled = "0"/>
+			<iProb Name = "180-190" Scaled = "0"/>
+			<iProb Name = "190-200" Scaled = "0"/>
+			<iProb Name = "200-230" Scaled = "0"/>
+			<iProb Name = "230-260" Scaled = "0"/>
+			<iProb Name = "260-300" Scaled = "0"/>
+			<iProb Name = "300-400" Scaled = "0"/>
+			<iProb Name = "free" Scaled = "0"/>
+			<iProb Name = "marry" Scaled = "0"/>	
+			<iProb Name = "jp" Scaled = "0"/>
+		</Item>	
+		<Item ID="2"  Name="赢值" min = "0" max = "1200" bounsId = "2">
+			<iProb Name = "0-0" Scaled = "688608"/>
+			<iProb Name = "0-0.5" Scaled = "107595"/>
+			<iProb Name = "0.5-1" Scaled = "53797"/>
+			<iProb Name = "1-3" Scaled = "57061"/>
+			<iProb Name = "3-5" Scaled = "34236"/>
+			<iProb Name = "5-7" Scaled = "28530"/>
+			<iProb Name = "7-9" Scaled = "22824"/>
+			<iProb Name = "9-11" Scaled = "2741"/>
+			<iProb Name = "11-13" Scaled = "954"/>
+			<iProb Name = "13-15" Scaled = "218"/>
+			<iProb Name = "15-17" Scaled = "2079"/>
+			<iProb Name = "17-19" Scaled = "177"/>
+			<iProb Name = "19-21" Scaled = "112"/>
+			<iProb Name = "21-23" Scaled = "24"/>
+			<iProb Name = "23-25" Scaled = "153"/>
+			<iProb Name = "25-30" Scaled = "32"/>
+			<iProb Name = "30-35" Scaled = "202"/>
+			<iProb Name = "35-40" Scaled = "7"/>
+			<iProb Name = "40-45" Scaled = "2"/>
+			<iProb Name = "45-50" Scaled = "10"/>
+			<iProb Name = "50-55" Scaled = "1"/>
+			<iProb Name = "55-60" Scaled = "1"/>
+			<iProb Name = "60-65" Scaled = "0"/>
+			<iProb Name = "65-70" Scaled = "0"/>
+			<iProb Name = "70-75" Scaled = "0"/>
+			<iProb Name = "75-80" Scaled = "0"/>
+			<iProb Name = "80-85" Scaled = "0"/>
+			<iProb Name = "85-90" Scaled = "0"/>
+			<iProb Name = "90-95" Scaled = "0"/>
+			<iProb Name = "95-100" Scaled = "0"/>
+			<iProb Name = "100-110" Scaled = "0"/>
+			<iProb Name = "110-120" Scaled = "0"/>
+			<iProb Name = "120-130" Scaled = "0"/>
+			<iProb Name = "130-140" Scaled = "0"/>
+			<iProb Name = "140-150" Scaled = "0"/>
+			<iProb Name = "150-160" Scaled = "0"/>
+			<iProb Name = "160-170" Scaled = "0"/>
+			<iProb Name = "170-180" Scaled = "0"/>
+			<iProb Name = "180-190" Scaled = "0"/>
+			<iProb Name = "190-200" Scaled = "0"/>
+			<iProb Name = "200-230" Scaled = "0"/>
+			<iProb Name = "230-260" Scaled = "0"/>
+			<iProb Name = "260-300" Scaled = "0"/>
+			<iProb Name = "300-400" Scaled = "0"/>
+			<iProb Name = "free" Scaled = "0"/>
+			<iProb Name = "marry" Scaled = "0"/>	
+			<iProb Name = "jp" Scaled = "0"/>
+		</Item>	
+		<Item ID="3"  Name="赢值" min = "0" max = "1200" bounsId = "2">
+			<iProb Name = "0-0" Scaled = "656203"/>
+			<iProb Name = "0-0.5" Scaled = "102532"/>
+			<iProb Name = "0.5-1" Scaled = "51266"/>
+			<iProb Name = "1-3" Scaled = "72277"/>
+			<iProb Name = "3-5" Scaled = "43366"/>
+			<iProb Name = "5-7" Scaled = "36138"/>
+			<iProb Name = "7-9" Scaled = "28911"/>
+			<iProb Name = "9-11" Scaled = "2538"/>
+			<iProb Name = "11-13" Scaled = "1208"/>
+			<iProb Name = "13-15" Scaled = "276"/>
+			<iProb Name = "15-17" Scaled = "2634"/>
+			<iProb Name = "17-19" Scaled = "224"/>
+			<iProb Name = "19-21" Scaled = "142"/>
+			<iProb Name = "21-23" Scaled = "30"/>
+			<iProb Name = "23-25" Scaled = "194"/>
+			<iProb Name = "25-30" Scaled = "40"/>
+			<iProb Name = "30-35" Scaled = "256"/>
+			<iProb Name = "35-40" Scaled = "9"/>
+			<iProb Name = "40-45" Scaled = "3"/>
+			<iProb Name = "45-50" Scaled = "13"/>
+			<iProb Name = "50-55" Scaled = "1"/>
+			<iProb Name = "55-60" Scaled = "1"/>
+			<iProb Name = "60-65" Scaled = "1"/>
+			<iProb Name = "65-70" Scaled = "1"/>
+			<iProb Name = "70-75" Scaled = "0"/>
+			<iProb Name = "75-80" Scaled = "0"/>
+			<iProb Name = "80-85" Scaled = "0"/>
+			<iProb Name = "85-90" Scaled = "0"/>
+			<iProb Name = "90-95" Scaled = "0"/>
+			<iProb Name = "95-100" Scaled = "0"/>
+			<iProb Name = "100-110" Scaled = "0"/>
+			<iProb Name = "110-120" Scaled = "0"/>
+			<iProb Name = "120-130" Scaled = "0"/>
+			<iProb Name = "130-140" Scaled = "0"/>
+			<iProb Name = "140-150" Scaled = "0"/>
+			<iProb Name = "150-160" Scaled = "0"/>
+			<iProb Name = "160-170" Scaled = "0"/>
+			<iProb Name = "170-180" Scaled = "0"/>
+			<iProb Name = "180-190" Scaled = "0"/>
+			<iProb Name = "190-200" Scaled = "0"/>
+			<iProb Name = "200-230" Scaled = "0"/>
+			<iProb Name = "230-260" Scaled = "0"/>
+			<iProb Name = "260-300" Scaled = "0"/>
+			<iProb Name = "300-400" Scaled = "0"/>
+			<iProb Name = "free" Scaled = "0"/>
+			<iProb Name = "marry" Scaled = "0"/>	
+			<iProb Name = "jp" Scaled = "0"/>
+		</Item>	
+		<Item ID="4"  Name="赢值" min = "0" max = "1200" bounsId = "2">
+			<iProb Name = "0-0" Scaled = "623797"/>
+			<iProb Name = "0-0.5" Scaled = "97468"/>
+			<iProb Name = "0.5-1" Scaled = "48734"/>
+			<iProb Name = "1-3" Scaled = "87493"/>
+			<iProb Name = "3-5" Scaled = "52496"/>
+			<iProb Name = "5-7" Scaled = "43747"/>
+			<iProb Name = "7-9" Scaled = "34997"/>
+			<iProb Name = "9-11" Scaled = "3073"/>
+			<iProb Name = "11-13" Scaled = "1463"/>
+			<iProb Name = "13-15" Scaled = "334"/>
+			<iProb Name = "15-17" Scaled = "3188"/>
+			<iProb Name = "17-19" Scaled = "271"/>
+			<iProb Name = "19-21" Scaled = "171"/>
+			<iProb Name = "21-23" Scaled = "37"/>
+			<iProb Name = "23-25" Scaled = "234"/>
+			<iProb Name = "25-30" Scaled = "49"/>
+			<iProb Name = "30-35" Scaled = "310"/>
+			<iProb Name = "35-40" Scaled = "10"/>
+			<iProb Name = "40-45" Scaled = "3"/>
+			<iProb Name = "45-50" Scaled = "16"/>
+			<iProb Name = "50-55" Scaled = "2"/>
+			<iProb Name = "55-60" Scaled = "2"/>
+			<iProb Name = "60-65" Scaled = "2"/>
+			<iProb Name = "65-70" Scaled = "2"/>
+			<iProb Name = "70-75" Scaled = "0"/>
+			<iProb Name = "75-80" Scaled = "0"/>
+			<iProb Name = "80-85" Scaled = "0"/>
+			<iProb Name = "85-90" Scaled = "0"/>
+			<iProb Name = "90-95" Scaled = "0"/>
+			<iProb Name = "95-100" Scaled = "0"/>
+			<iProb Name = "100-110" Scaled = "0"/>
+			<iProb Name = "110-120" Scaled = "0"/>
+			<iProb Name = "120-130" Scaled = "0"/>
+			<iProb Name = "130-140" Scaled = "0"/>
+			<iProb Name = "140-150" Scaled = "0"/>
+			<iProb Name = "150-160" Scaled = "0"/>
+			<iProb Name = "160-170" Scaled = "0"/>
+			<iProb Name = "170-180" Scaled = "0"/>
+			<iProb Name = "180-190" Scaled = "0"/>
+			<iProb Name = "190-200" Scaled = "0"/>
+			<iProb Name = "200-230" Scaled = "0"/>
+			<iProb Name = "230-260" Scaled = "0"/>
+			<iProb Name = "260-300" Scaled = "0"/>
+			<iProb Name = "300-400" Scaled = "0"/>
+			<iProb Name = "free" Scaled = "0"/>
+			<iProb Name = "marry" Scaled = "0"/>	
+			<iProb Name = "jp" Scaled = "0"/>
+		</Item>	
+		<Item ID="5"  Name="赢值" min = "0" max = "1200" bounsId = "2">
+			<iProb Name = "0-0" Scaled = "599494"/>
+			<iProb Name = "0-0.5" Scaled = "93671"/>
+			<iProb Name = "0.5-1" Scaled = "46835"/>
+			<iProb Name = "1-3" Scaled = "98905"/>
+			<iProb Name = "3-5" Scaled = "59343"/>
+			<iProb Name = "5-7" Scaled = "49453"/>
+			<iProb Name = "7-9" Scaled = "39562"/>
+			<iProb Name = "9-11" Scaled = "3474"/>
+			<iProb Name = "11-13" Scaled = "1654"/>
+			<iProb Name = "13-15" Scaled = "378"/>
+			<iProb Name = "15-17" Scaled = "3604"/>
+			<iProb Name = "17-19" Scaled = "307"/>
+			<iProb Name = "19-21" Scaled = "194"/>
+			<iProb Name = "21-23" Scaled = "42"/>
+			<iProb Name = "23-25" Scaled = "265"/>
+			<iProb Name = "25-30" Scaled = "55"/>
+			<iProb Name = "30-35" Scaled = "350"/>
+			<iProb Name = "35-40" Scaled = "12"/>
+			<iProb Name = "40-45" Scaled = "4"/>
+			<iProb Name = "45-50" Scaled = "18"/>
+			<iProb Name = "50-55" Scaled = "2"/>
+			<iProb Name = "55-60" Scaled = "2"/>
+			<iProb Name = "60-65" Scaled = "2"/>
+			<iProb Name = "65-70" Scaled = "2"/>
+			<iProb Name = "70-75" Scaled = "0"/>
+			<iProb Name = "75-80" Scaled = "0"/>
+			<iProb Name = "80-85" Scaled = "0"/>
+			<iProb Name = "85-90" Scaled = "0"/>
+			<iProb Name = "90-95" Scaled = "0"/>
+			<iProb Name = "95-100" Scaled = "0"/>
+			<iProb Name = "100-110" Scaled = "0"/>
+			<iProb Name = "110-120" Scaled = "0"/>
+			<iProb Name = "120-130" Scaled = "0"/>
+			<iProb Name = "130-140" Scaled = "0"/>
+			<iProb Name = "140-150" Scaled = "0"/>
+			<iProb Name = "150-160" Scaled = "0"/>
+			<iProb Name = "160-170" Scaled = "0"/>
+			<iProb Name = "170-180" Scaled = "0"/>
+			<iProb Name = "180-190" Scaled = "0"/>
+			<iProb Name = "190-200" Scaled = "0"/>
+			<iProb Name = "200-230" Scaled = "0"/>
+			<iProb Name = "230-260" Scaled = "0"/>
+			<iProb Name = "260-300" Scaled = "0"/>
+			<iProb Name = "300-400" Scaled = "0"/>
+			<iProb Name = "free" Scaled = "0"/>
+			<iProb Name = "marry" Scaled = "0"/>	
+			<iProb Name = "jp" Scaled = "0"/>
+		</Item>	
+	</CtrlConfig>
+	<Special>
+		<Jackpot Revenue = "0.01" MinMulti = "50" MaxMulti = "500"/>
+		<Bouns ID = "0" Name="杀" min = "0" max = "30">
+			<AwardIcon>
+				<Icon name = "4" scaled = "100"/>
+				<Icon name = "8"     scaled = "0"/>
+				<Icon name = "0"    scaled = "0"/>
+			</AwardIcon>
+			<!-- 以下不中奖概率=1-Ok-No按100-->
+			<AwardProb>
+				<Prob Ok = "50" No = "0"/>
+				<Prob Ok = "0" No = "50"/>
+				<Prob Ok = "0" No = "0"/>
+
+			
+			</AwardProb>
+			<!-- 不在这个范围内是1连，P1：2连，P2：3不连，P3-：3连，P4：4连用不到写0-->
+			<Align p1 = "10" p2 = "0" p3 = "0" p4 = "0"/>
+		</Bouns>
+		
+		<Bouns ID = "1" Name="稳" min = "0" max = "1200">
+			<AwardIcon>
+				<Icon name = "4" scaled = "22"/>
+				<Icon name = "8"     scaled = "22"/>
+				<Icon name = "0"    scaled = "56"/>
+			</AwardIcon>
+			<!-- 以下不中奖概率=1-Ok-No按100-->
+			<AwardProb>
+				<Prob Ok = "20" No = "30"/>
+				<Prob Ok = "20" No = "30"/>
+				<Prob Ok = "20" No = "30"/>
+				<Prob Ok = "20" No = "30"/>
+				<Prob Ok = "20" No = "30"/>
+				<Prob Ok = "20" No = "30"/>
+				<Prob Ok = "20" No = "30"/>
+			</AwardProb>
+			<!-- 不在这个范围内是1连，P1：2连，P2：3不连，P3-：3连，P4：4连用不到写0-->
+			<Align p1 = "25" p2 = "0" p3 = "0" p4 = "0"/>
+		</Bouns>
+		
+		<Bouns ID = "2" Name="放" min = "0" max = "1200">
+			<AwardIcon>
+				<Icon name = "4" scaled = "30"/>
+				<Icon name = "8"     scaled = "30"/>
+				<Icon name = "0"    scaled = "40"/>
+			</AwardIcon>
+			<!-- 以下不中奖概率=1-Ok-No按100-->
+			<AwardProb>
+				<Prob Ok = "50" No = "30"/>
+				<Prob Ok = "50" No = "30"/>
+				<Prob Ok = "50" No = "30"/>
+				<Prob Ok = "40" No = "30"/>
+				<Prob Ok = "30" No = "30"/>
+				<Prob Ok = "0" No = "30"/>
+				<Prob Ok = "0" No = "30"/>
+			
+			</AwardProb>
+			<!-- 不在这个范围内是1连，P1：2连，P2：3不连，P3-：3连，P4：4连用不到写0-->
+			<Align p1 = "0" p2 = "0" p3 = "0" p4 = "0"/>
+		</Bouns>
+		
+	</Special>
+</Root>

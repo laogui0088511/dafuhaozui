@@ -1,0 +1,4 @@
+mysql:
+ url: mysql.url-06
+redis:
+  ip: redis.ip-02

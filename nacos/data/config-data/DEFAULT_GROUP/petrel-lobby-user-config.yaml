@@ -1,0 +1,16 @@
+gid:
+   len: 8
+   start: 0
+user:
+   # 注册送金币
+   register-number: 0
+sms: 
+    url: http://api01.monyun.cn:7901/sms/v2/std/single_send
+    apikey: f7ca493ef866a1e2d4017a8865b1c7e3
+sign:
+    plays: 200
+    days-half: 14
+    days: 28
+    gold: 15
+    half: 30
+    all: 60

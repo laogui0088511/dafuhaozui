@@ -1,0 +1,4 @@
+12-19 17:08:15.247 INFO  [Zebra-boss-68-thread-1] [io.netty.handler.logging.LoggingHandler] : [id: 0xbedf6a5f, L:/0:0:0:0:0:0:0:0:9637] READ: [id: 0x8b93db5b, L:/172.19.48.88:9637 - R:/143.110.249.133:33570]
+12-19 17:08:15.247 INFO  [Zebra-boss-68-thread-1] [io.netty.handler.logging.LoggingHandler] : [id: 0xbedf6a5f, L:/0:0:0:0:0:0:0:0:9637] READ COMPLETE
+12-19 17:08:15.247 INFO  [Zebra-worker-67-thread-2] [com.zebra.net.servers.ZebraConnectionHandler] : Connection channel active: 143.110.249.133:33570
+12-19 17:08:17.889 INFO  [Zebra-worker-67-thread-2] [com.zebra.net.servers.ZebraConnectionHandler] : Connection channel inactive: 143.110.249.133:33570

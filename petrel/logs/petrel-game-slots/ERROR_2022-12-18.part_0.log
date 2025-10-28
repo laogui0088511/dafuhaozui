@@ -1,0 +1,2 @@
+12-18 16:38:15.638 ERROR [Zebra-worker-1-thread-2] [com.zebra.net.servers.HeartbeatServerHandler] : Channel close By: Heartbeat Broken links: [id: 0x3a175344, L:/172.19.48.88:9527 - R:/92.63.196.155:64676]
+12-18 19:52:19.448 ERROR [Zebra-worker-1-thread-3] [com.zebra.net.servers.HeartbeatServerHandler] : Channel close By: Heartbeat Broken links: [id: 0x0bce471f, L:/172.19.48.88:9527 - R:/92.63.196.97:44161]

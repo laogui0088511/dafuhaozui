@@ -1,0 +1,4 @@
+12-20 02:26:41.478 ERROR [Zebra-worker-1-thread-6] [com.zebra.net.servers.HeartbeatServerHandler] : Channel close By: Heartbeat Broken links: [id: 0x65b05a02, L:/172.19.48.88:9527 - R:/92.63.196.155:64850]
+12-20 18:01:46.203 ERROR [Zebra-worker-1-thread-2] [com.zebra.net.servers.HeartbeatServerHandler] : Channel close By: Heartbeat Broken links: [id: 0x2236bc87, L:/172.19.48.88:9527 - R:/92.63.196.155:65534]
+12-20 20:10:23.106 ERROR [Zebra-worker-1-thread-4] [com.zebra.net.servers.HeartbeatServerHandler] : Channel close By: Heartbeat Broken links: [id: 0xe9d8649f, L:/172.19.48.88:9527 - R:/45.93.201.57:64555]
+12-20 23:14:18.578 ERROR [Zebra-worker-1-thread-5] [com.zebra.net.servers.HeartbeatServerHandler] : Channel close By: Heartbeat Broken links: [id: 0x50c74aac, L:/172.19.48.88:9527 - R:/92.63.196.155:65508]

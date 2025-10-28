@@ -1,0 +1,42 @@
+2023-01-14 01:03:03,491 INFO DEFAULT_GROUP@@petrel-kernel-user {SYNC} {IP-NEW} cluster: DEFAULT, new ips size: 1, content: [172.23.126.252:8719:unknown:DEFAULT_1.0_true_false_DEFAULT]
+
+2023-01-14 01:03:03,495 INFO [IP-UPDATED] namespace: public, service: DEFAULT_GROUP@@petrel-kernel-user, ips: 172.23.126.252:8719_true,
+
+2023-01-14 01:03:41,018 INFO DEFAULT_GROUP@@petrel-kernel-register {SYNC} {IP-NEW} cluster: DEFAULT, new ips size: 1, content: [172.23.126.252:7180:unknown:DEFAULT_1.0_true_false_DEFAULT]
+
+2023-01-14 01:03:41,018 INFO [IP-UPDATED] namespace: public, service: DEFAULT_GROUP@@petrel-kernel-register, ips: 172.23.126.252:7180_true,
+
+2023-01-14 01:03:48,811 INFO DEFAULT_GROUP@@petrel-kernel-register {SYNC} {IP-DEAD} cluster: DEFAULT, dead ips size: 1, content: [172.23.126.252:7180:unknown:DEFAULT_1.0_true_false_DEFAULT]
+
+2023-01-14 01:03:48,812 INFO [IP-UPDATED] namespace: public, service: DEFAULT_GROUP@@petrel-kernel-register, ips: 
+
+2023-01-14 01:04:14,368 INFO DEFAULT_GROUP@@petrel-kernel-game {SYNC} {IP-NEW} cluster: DEFAULT, new ips size: 1, content: [172.23.126.252:8752:unknown:DEFAULT_1.0_true_false_DEFAULT]
+
+2023-01-14 01:04:14,368 INFO [IP-UPDATED] namespace: public, service: DEFAULT_GROUP@@petrel-kernel-game, ips: 172.23.126.252:8752_true,
+
+2023-01-14 01:04:59,598 INFO {POS} {IP-DISABLED} valid: 172.23.126.252:8752@DEFAULT@DEFAULT_GROUP@@petrel-kernel-game, region: unknown, msg: client timeout after 15000, last beat: 1673629484384
+
+2023-01-14 01:04:59,606 INFO [IP-UPDATED] namespace: public, service: DEFAULT_GROUP@@petrel-kernel-game, ips: 172.23.126.252:8752_false,
+
+2023-01-14 01:05:04,861 INFO service: DEFAULT_GROUP@@petrel-kernel-game {POS} {IP-ENABLED} valid: 172.23.126.252:8752@DEFAULT, region: unknown, msg: client beat ok
+
+2023-01-14 01:05:39,029 INFO DEFAULT_GROUP@@petrel-cms-web {SYNC} {IP-NEW} cluster: DEFAULT, new ips size: 1, content: [172.23.126.252:7071:unknown:DEFAULT_1.0_true_false_DEFAULT]
+
+2023-01-14 01:05:39,029 INFO [IP-UPDATED] namespace: public, service: DEFAULT_GROUP@@petrel-cms-web, ips: 172.23.126.252:7071_true,
+
+2023-01-14 01:13:31,200 INFO DEFAULT_GROUP@@petrel-kernel-register {SYNC} {IP-NEW} cluster: DEFAULT, new ips size: 1, content: [172.23.126.252:7180:unknown:DEFAULT_1.0_true_false_DEFAULT]
+
+2023-01-14 01:13:31,207 INFO [IP-UPDATED] namespace: public, service: DEFAULT_GROUP@@petrel-kernel-register, ips: 172.23.126.252:7180_true,
+
+2023-01-14 01:13:43,066 INFO DEFAULT_GROUP@@petrel-kernel-user {SYNC} {IP-NEW} cluster: DEFAULT, new ips size: 1, content: [172.23.126.252:8719:unknown:DEFAULT_1.0_true_false_DEFAULT]
+
+2023-01-14 01:13:43,067 INFO [IP-UPDATED] namespace: public, service: DEFAULT_GROUP@@petrel-kernel-user, ips: 172.23.126.252:8719_true,
+
+2023-01-14 01:13:43,233 INFO DEFAULT_GROUP@@petrel-kernel-game {SYNC} {IP-NEW} cluster: DEFAULT, new ips size: 1, content: [172.23.126.252:8752:unknown:DEFAULT_1.0_true_false_DEFAULT]
+
+2023-01-14 01:13:43,233 INFO [IP-UPDATED] namespace: public, service: DEFAULT_GROUP@@petrel-kernel-game, ips: 172.23.126.252:8752_true,
+
+2023-01-14 01:13:51,474 INFO DEFAULT_GROUP@@petrel-cms-web {SYNC} {IP-NEW} cluster: DEFAULT, new ips size: 1, content: [172.23.126.252:7071:unknown:DEFAULT_1.0_true_false_DEFAULT]
+
+2023-01-14 01:13:51,474 INFO [IP-UPDATED] namespace: public, service: DEFAULT_GROUP@@petrel-cms-web, ips: 172.23.126.252:7071_true,
+

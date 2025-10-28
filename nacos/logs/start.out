@@ -1,0 +1,57 @@
+/usr/lib/jvm/java-1.8.0-openjdk-1.8.0.292.b10-1.el7_9.x86_64/bin/java  -Xms512m -Xmx512m -Xmn256m -Dnacos.standalone=true -Dnacos.member.list= -Djava.ext.dirs=/usr/lib/jvm/java-1.8.0-openjdk-1.8.0.292.b10-1.el7_9.x86_64/jre/lib/ext:/usr/lib/jvm/java-1.8.0-openjdk-1.8.0.292.b10-1.el7_9.x86_64/lib/ext -Xloggc:/data/nacos/logs/nacos_gc.log -verbose:gc -XX:+PrintGCDetails -XX:+PrintGCDateStamps -XX:+PrintGCTimeStamps -XX:+UseGCLogFileRotation -XX:NumberOfGCLogFiles=10 -XX:GCLogFileSize=100M -Dloader.path=/data/nacos/plugins/health,/data/nacos/plugins/cmdb -Dnacos.home=/data/nacos -jar /data/nacos/target/nacos-server.jar  --spring.config.location=classpath:/,classpath:/config/,file:./,file:./config/,file:/data/nacos/conf/ --logging.config=/data/nacos/conf/nacos-logback.xml --server.max-http-header-size=524288
+
+         ,--.
+       ,--.'|
+   ,--,:  : |                                           Nacos 1.3.1
+,`--.'`|  ' :                       ,---.               Running in stand alone mode, All function modules
+|   :  :  | |                      '   ,'\   .--.--.    Port: 6878
+:   |   \ | :  ,--.--.     ,---.  /   /   | /  /    '   Pid: 23133
+|   : '  '; | /       \   /     \.   ; ,. :|  :  /`./   Console: http://172.22.248.164:6878/nacos/index.html
+'   ' ;.    ;.--.  .-. | /    / ''   | |: :|  :  ;_
+|   | | \   | \__\/: . ..    ' / '   | .; : \  \    `.      https://nacos.io
+'   : |  ; .' ," .--.; |'   ; :__|   :    |  `----.   \
+|   | '`--'  /  /  ,.  |'   | '.'|\   \  /  /  /`--'  /
+'   : |     ;  :   .'   \   :    : `----'  '--'.     /
+;   |.'     |  ,     .-./\   \  /            `--'---'
+'---'        `--`---'     `----'
+
+2021-07-14 14:25:27,322 INFO Bean 'org.springframework.security.config.annotation.configuration.ObjectPostProcessorConfiguration' of type [org.springframework.security.config.annotation.configuration.ObjectPostProcessorConfiguration$$EnhancerBySpringCGLIB$$4f639974] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+
+2021-07-14 14:25:27,453 INFO Bean 'objectPostProcessor' of type [org.springframework.security.config.annotation.configuration.AutowireBeanFactoryObjectPostProcessor] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+
+2021-07-14 14:25:27,455 INFO Bean 'org.springframework.security.access.expression.method.DefaultMethodSecurityExpressionHandler@13d4992d' of type [org.springframework.security.access.expression.method.DefaultMethodSecurityExpressionHandler] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+
+2021-07-14 14:25:27,456 INFO Bean 'org.springframework.security.config.annotation.method.configuration.GlobalMethodSecurityConfiguration' of type [org.springframework.security.config.annotation.method.configuration.GlobalMethodSecurityConfiguration$$EnhancerBySpringCGLIB$$74383c26] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+
+2021-07-14 14:25:27,460 INFO Bean 'methodSecurityMetadataSource' of type [org.springframework.security.access.method.DelegatingMethodSecurityMetadataSource] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+
+2021-07-14 14:25:27,783 INFO Tomcat initialized with port(s): 6878 (http)
+
+2021-07-14 14:25:27,900 INFO Root WebApplicationContext: initialization completed in 2423 ms
+
+2021-07-14 14:25:29,495 INFO Initializing ExecutorService 'applicationTaskExecutor'
+
+2021-07-14 14:25:29,668 INFO Adding welcome page: class path resource [static/index.html]
+
+2021-07-14 14:25:29,958 INFO Creating filter chain: Ant [pattern='/**'], []
+
+2021-07-14 14:25:29,988 INFO Creating filter chain: any request, [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@7e70bd39, org.springframework.security.web.context.SecurityContextPersistenceFilter@459f7aa3, org.springframework.security.web.header.HeaderWriterFilter@307765b4, org.springframework.security.web.csrf.CsrfFilter@16423501, org.springframework.security.web.authentication.logout.LogoutFilter@2f4854d6, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@7db534f2, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@2a76b80a, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@e6516e, org.springframework.security.web.session.SessionManagementFilter@2c95ac9e, org.springframework.security.web.access.ExceptionTranslationFilter@7a138fc5]
+
+2021-07-14 14:25:30,279 INFO Exposing 2 endpoint(s) beneath base path '/actuator'
+
+2021-07-14 14:25:30,303 INFO Initializing ExecutorService 'taskScheduler'
+
+2021-07-14 14:25:30,379 INFO Tomcat started on port(s): 6878 (http) with context path '/nacos'
+
+2021-07-14 14:25:30,382 INFO Nacos Log files: /data/nacos/logs
+
+2021-07-14 14:25:30,384 INFO Nacos Log files: /data/nacos/conf
+
+2021-07-14 14:25:30,384 INFO Nacos Log files: /data/nacos/data
+
+2021-07-14 14:25:30,384 INFO Nacos started successfully in stand alone mode. use external storage
+
+2021-07-14 14:25:39,308 INFO Initializing Servlet 'dispatcherServlet'
+
+2021-07-14 14:25:39,319 INFO Completed initialization in 11 ms
+

@@ -1,0 +1,24 @@
+12-19 09:18:41.313 INFO  [nioEventLoopGroup-10-1] [com.zebra.net.client.RegistryHeartHandler] : Handler CLEAR_USER ClearUserZebraMessage(super=ZebraBaseMessage(), userId=104855711423, msgType=3, checkId=46931806)
+12-19 09:18:41.329 INFO  [nioEventLoopGroup-10-1] [com.zebra.net.codec.ZebraEncoder] : Response c:444 u:0 r:0 s:200 l:18 [L:/127.0.0.1:53208 - R:/127.0.0.1:9879]
+12-19 09:18:41.329 INFO  [nioEventLoopGroup-12-1] [com.zebra.net.codec.ZebraEncoder] : Response c:444 u:0 r:0 s:200 l:18 [L:/127.0.0.1:53308 - R:/127.0.0.1:9527]
+12-19 09:18:41.329 INFO  [nioEventLoopGroup-11-1] [com.zebra.net.codec.ZebraEncoder] : Response c:444 u:0 r:0 s:200 l:18 [L:/127.0.0.1:53258 - R:/127.0.0.1:9637]
+12-19 09:29:40.339 INFO  [nioEventLoopGroup-10-1] [com.zebra.net.client.RegistryHeartHandler] : Handler CLEAR_USER ClearUserZebraMessage(super=ZebraBaseMessage(), userId=104855711423, msgType=3, checkId=78877353)
+12-19 09:29:40.339 INFO  [nioEventLoopGroup-10-1] [com.zebra.net.codec.ZebraEncoder] : Response c:444 u:0 r:0 s:200 l:18 [L:/127.0.0.1:53208 - R:/127.0.0.1:9879]
+12-19 09:29:40.339 INFO  [nioEventLoopGroup-12-1] [com.zebra.net.codec.ZebraEncoder] : Response c:444 u:0 r:0 s:200 l:18 [L:/127.0.0.1:53308 - R:/127.0.0.1:9527]
+12-19 09:29:40.339 INFO  [nioEventLoopGroup-11-1] [com.zebra.net.codec.ZebraEncoder] : Response c:444 u:0 r:0 s:200 l:18 [L:/127.0.0.1:53258 - R:/127.0.0.1:9637]
+12-19 09:56:52.248 INFO  [nioEventLoopGroup-10-1] [com.zebra.net.client.RegistryHeartHandler] : Handler CLEAR_USER ClearUserZebraMessage(super=ZebraBaseMessage(), userId=104855711423, msgType=3, checkId=15245949)
+12-19 09:56:52.248 INFO  [nioEventLoopGroup-10-1] [com.zebra.net.codec.ZebraEncoder] : Response c:444 u:0 r:0 s:200 l:18 [L:/127.0.0.1:53208 - R:/127.0.0.1:9879]
+12-19 09:56:52.249 INFO  [nioEventLoopGroup-12-1] [com.zebra.net.codec.ZebraEncoder] : Response c:444 u:0 r:0 s:200 l:18 [L:/127.0.0.1:53308 - R:/127.0.0.1:9527]
+12-19 09:56:52.249 INFO  [nioEventLoopGroup-11-1] [com.zebra.net.codec.ZebraEncoder] : Response c:444 u:0 r:0 s:200 l:18 [L:/127.0.0.1:53258 - R:/127.0.0.1:9637]
+12-19 09:57:14.734 INFO  [nioEventLoopGroup-10-1] [com.zebra.net.client.RegistryHeartHandler] : Handler CLEAR_USER ClearUserZebraMessage(super=ZebraBaseMessage(), userId=104855711423, msgType=3, checkId=41784538)
+12-19 09:57:14.734 INFO  [nioEventLoopGroup-10-1] [com.zebra.net.codec.ZebraEncoder] : Response c:444 u:0 r:0 s:200 l:18 [L:/127.0.0.1:53208 - R:/127.0.0.1:9879]
+12-19 09:57:14.734 INFO  [nioEventLoopGroup-12-1] [com.zebra.net.codec.ZebraEncoder] : Response c:444 u:0 r:0 s:200 l:18 [L:/127.0.0.1:53308 - R:/127.0.0.1:9527]
+12-19 09:57:14.734 INFO  [nioEventLoopGroup-11-1] [com.zebra.net.codec.ZebraEncoder] : Response c:444 u:0 r:0 s:200 l:18 [L:/127.0.0.1:53258 - R:/127.0.0.1:9637]
+12-19 10:14:48.562 INFO  [nioEventLoopGroup-10-1] [com.zebra.net.client.RegistryHeartHandler] : Handler CLEAR_USER ClearUserZebraMessage(super=ZebraBaseMessage(), userId=423944527471, msgType=3, checkId=66305211)
+12-19 10:14:48.562 INFO  [nioEventLoopGroup-10-1] [com.zebra.net.codec.ZebraEncoder] : Response c:444 u:0 r:0 s:200 l:18 [L:/127.0.0.1:53208 - R:/127.0.0.1:9879]
+12-19 10:14:48.562 INFO  [nioEventLoopGroup-12-1] [com.zebra.net.codec.ZebraEncoder] : Response c:444 u:0 r:0 s:200 l:18 [L:/127.0.0.1:53308 - R:/127.0.0.1:9527]
+12-19 10:14:48.562 INFO  [nioEventLoopGroup-11-1] [com.zebra.net.codec.ZebraEncoder] : Response c:444 u:0 r:0 s:200 l:18 [L:/127.0.0.1:53258 - R:/127.0.0.1:9637]
+12-19 21:09:49.942 INFO  [nioEventLoopGroup-10-1] [com.zebra.net.client.RegistryHeartHandler] : Handler CLEAR_USER ClearUserZebraMessage(super=ZebraBaseMessage(), userId=735333028658, msgType=3, checkId=35051067)
+12-19 21:09:49.942 INFO  [nioEventLoopGroup-10-1] [com.zebra.net.codec.ZebraEncoder] : Response c:444 u:0 r:0 s:200 l:18 [L:/127.0.0.1:53208 - R:/127.0.0.1:9879]
+12-19 21:09:49.944 INFO  [nioEventLoopGroup-12-1] [com.zebra.net.codec.ZebraEncoder] : Response c:444 u:0 r:0 s:200 l:18 [L:/127.0.0.1:53308 - R:/127.0.0.1:9527]
+12-19 21:09:49.944 INFO  [nioEventLoopGroup-11-1] [com.zebra.net.codec.ZebraEncoder] : Response c:444 u:0 r:0 s:200 l:18 [L:/127.0.0.1:53258 - R:/127.0.0.1:9637]

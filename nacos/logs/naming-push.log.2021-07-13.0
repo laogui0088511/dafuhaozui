@@ -1,0 +1,40 @@
+2021-07-13 22:34:28,814 INFO DEFAULT_GROUP@@petrel-kernel-register is changed, add it to push queue.
+
+2021-07-13 22:34:46,377 INFO DEFAULT_GROUP@@petrel-kernel-user is changed, add it to push queue.
+
+2021-07-13 22:34:54,009 INFO DEFAULT_GROUP@@petrel-kernel-game is changed, add it to push queue.
+
+2021-07-13 22:35:16,089 INFO DEFAULT_GROUP@@petrel-kernel-register is changed, add it to push queue.
+
+2021-07-13 22:35:16,095 INFO serviceName: DEFAULT_GROUP@@petrel-kernel-register changed, schedule push for: 172.22.248.164:60810, agent: Nacos-Java-Client:v1.2.1, key: 172.22.248.164,60810,85691369686556
+
+2021-07-13 22:35:16,095 INFO send udp packet: 172.22.248.164,60810,85691369686556
+
+2021-07-13 22:35:16,100 INFO received ack: {"type": "push-ack", "lastRefTime":"85691369686556", "data":""} from: 172.22.248.164:60810, cost: 5 ms, unacked: 0, total push: 1
+
+2021-07-13 22:35:34,322 INFO DEFAULT_GROUP@@petrel-kernel-user is changed, add it to push queue.
+
+2021-07-13 22:35:42,531 INFO DEFAULT_GROUP@@petrel-kernel-game is changed, add it to push queue.
+
+2021-07-13 22:36:20,346 INFO DEFAULT_GROUP@@petrel-cms-web is changed, add it to push queue.
+
+2021-07-13 22:44:31,387 INFO DEFAULT_GROUP@@petrel-kernel-user is changed, add it to push queue.
+
+2021-07-13 22:44:31,960 INFO DEFAULT_GROUP@@petrel-kernel-register is changed, add it to push queue.
+
+2021-07-13 22:44:34,027 INFO DEFAULT_GROUP@@petrel-kernel-game is changed, add it to push queue.
+
+2021-07-13 22:44:35,356 INFO DEFAULT_GROUP@@petrel-cms-web is changed, add it to push queue.
+
+2021-07-13 22:44:46,457 INFO DEFAULT_GROUP@@petrel-kernel-user is changed, add it to push queue.
+
+2021-07-13 22:44:49,031 INFO DEFAULT_GROUP@@petrel-kernel-game is changed, add it to push queue.
+
+2021-07-13 22:44:50,359 INFO DEFAULT_GROUP@@petrel-cms-web is changed, add it to push queue.
+
+2021-07-13 22:44:50,376 INFO DEFAULT_GROUP@@petrel-kernel-user is changed, add it to push queue.
+
+2021-07-13 22:44:57,963 INFO DEFAULT_GROUP@@petrel-kernel-game is changed, add it to push queue.
+
+2021-07-13 22:45:31,124 INFO DEFAULT_GROUP@@petrel-cms-web is changed, add it to push queue.
+

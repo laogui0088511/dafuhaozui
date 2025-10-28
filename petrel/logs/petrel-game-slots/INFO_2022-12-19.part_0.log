@@ -1,0 +1,75 @@
+12-19 00:05:26.924 INFO  [Zebra-boss-2-thread-1] [io.netty.handler.logging.LoggingHandler] : [id: 0xa6a167f9, L:/0:0:0:0:0:0:0:0:9527] READ: [id: 0x46c3b3bc, L:/172.19.48.88:9527 - R:/207.90.244.3:48952]
+12-19 00:05:26.924 INFO  [Zebra-boss-2-thread-1] [io.netty.handler.logging.LoggingHandler] : [id: 0xa6a167f9, L:/0:0:0:0:0:0:0:0:9527] READ COMPLETE
+12-19 00:05:26.924 INFO  [Zebra-worker-1-thread-5] [com.zebra.net.servers.ZebraConnectionHandler] : Connection channel active: 207.90.244.3:48952
+12-19 00:05:28.134 INFO  [Zebra-boss-2-thread-1] [io.netty.handler.logging.LoggingHandler] : [id: 0xa6a167f9, L:/0:0:0:0:0:0:0:0:9527] READ: [id: 0xffe8b4f3, L:/172.19.48.88:9527 - R:/207.90.244.3:48954]
+12-19 00:05:28.134 INFO  [Zebra-boss-2-thread-1] [io.netty.handler.logging.LoggingHandler] : [id: 0xa6a167f9, L:/0:0:0:0:0:0:0:0:9527] READ COMPLETE
+12-19 00:05:28.134 INFO  [Zebra-worker-1-thread-6] [com.zebra.net.servers.ZebraConnectionHandler] : Connection channel active: 207.90.244.3:48954
+12-19 00:05:33.322 INFO  [Zebra-worker-1-thread-6] [com.zebra.net.servers.ZebraConnectionHandler] : Connection channel inactive: 207.90.244.3:48954
+12-19 00:05:33.338 INFO  [Zebra-worker-1-thread-5] [com.zebra.net.servers.ZebraConnectionHandler] : Connection channel inactive: 207.90.244.3:48952
+12-19 05:05:44.847 INFO  [Zebra-boss-2-thread-1] [io.netty.handler.logging.LoggingHandler] : [id: 0xa6a167f9, L:/0:0:0:0:0:0:0:0:9527] READ: [id: 0x2b4d738e, L:/172.19.48.88:9527 - R:/92.63.196.155:64565]
+12-19 05:05:44.847 INFO  [Zebra-boss-2-thread-1] [io.netty.handler.logging.LoggingHandler] : [id: 0xa6a167f9, L:/0:0:0:0:0:0:0:0:9527] READ COMPLETE
+12-19 05:05:44.847 INFO  [Zebra-worker-1-thread-7] [com.zebra.net.servers.ZebraConnectionHandler] : Connection channel active: 92.63.196.155:64565
+12-19 05:07:36.230 ERROR [Zebra-worker-1-thread-7] [com.zebra.net.servers.ZebraConnectionHandler] : ExceptionCaught in connection: [id: 0x2b4d738e, L:/172.19.48.88:9527 - R:/92.63.196.155:64565], close the connection! Cause[IOException:远程主机强迫关闭了一个现有的连接。]
+12-19 05:07:36.230 INFO  [Zebra-worker-1-thread-7] [com.zebra.net.servers.ZebraConnectionHandler] : Connection channel inactive: 92.63.196.155:64565
+12-19 08:43:50.172 INFO  [Zebra-boss-2-thread-1] [io.netty.handler.logging.LoggingHandler] : [id: 0xa6a167f9, L:/0:0:0:0:0:0:0:0:9527] READ: [id: 0x63732e3d, L:/172.19.48.88:9527 - R:/106.75.165.38:41124]
+12-19 08:43:50.172 INFO  [Zebra-boss-2-thread-1] [io.netty.handler.logging.LoggingHandler] : [id: 0xa6a167f9, L:/0:0:0:0:0:0:0:0:9527] READ COMPLETE
+12-19 08:43:50.172 INFO  [Zebra-worker-1-thread-8] [com.zebra.net.servers.ZebraConnectionHandler] : Connection channel active: 106.75.165.38:41124
+12-19 08:43:54.163 INFO  [Zebra-worker-1-thread-8] [com.zebra.net.servers.ZebraConnectionHandler] : Connection channel inactive: 106.75.165.38:41124
+12-19 08:43:54.195 INFO  [Zebra-boss-2-thread-1] [io.netty.handler.logging.LoggingHandler] : [id: 0xa6a167f9, L:/0:0:0:0:0:0:0:0:9527] READ: [id: 0x9d3a14ee, L:/172.19.48.88:9527 - R:/106.75.165.38:44300]
+12-19 08:43:54.195 INFO  [Zebra-boss-2-thread-1] [io.netty.handler.logging.LoggingHandler] : [id: 0xa6a167f9, L:/0:0:0:0:0:0:0:0:9527] READ COMPLETE
+12-19 08:43:54.195 INFO  [Zebra-worker-1-thread-1] [com.zebra.net.servers.ZebraConnectionHandler] : Connection channel active: 106.75.165.38:44300
+12-19 08:43:58.191 INFO  [Zebra-worker-1-thread-1] [com.zebra.net.servers.ZebraConnectionHandler] : Connection channel inactive: 106.75.165.38:44300
+12-19 08:43:59.229 INFO  [Zebra-boss-2-thread-1] [io.netty.handler.logging.LoggingHandler] : [id: 0xa6a167f9, L:/0:0:0:0:0:0:0:0:9527] READ: [id: 0x20eaf048, L:/172.19.48.88:9527 - R:/106.75.165.38:48386]
+12-19 08:43:59.229 INFO  [Zebra-boss-2-thread-1] [io.netty.handler.logging.LoggingHandler] : [id: 0xa6a167f9, L:/0:0:0:0:0:0:0:0:9527] READ COMPLETE
+12-19 08:43:59.229 INFO  [Zebra-worker-1-thread-2] [com.zebra.net.servers.ZebraConnectionHandler] : Connection channel active: 106.75.165.38:48386
+12-19 08:44:03.222 INFO  [Zebra-worker-1-thread-2] [com.zebra.net.servers.ZebraConnectionHandler] : Connection channel inactive: 106.75.165.38:48386
+12-19 08:44:03.254 INFO  [Zebra-boss-2-thread-1] [io.netty.handler.logging.LoggingHandler] : [id: 0xa6a167f9, L:/0:0:0:0:0:0:0:0:9527] READ: [id: 0x9c95f7aa, L:/172.19.48.88:9527 - R:/106.75.165.38:51932]
+12-19 08:44:03.254 INFO  [Zebra-boss-2-thread-1] [io.netty.handler.logging.LoggingHandler] : [id: 0xa6a167f9, L:/0:0:0:0:0:0:0:0:9527] READ COMPLETE
+12-19 08:44:03.254 INFO  [Zebra-worker-1-thread-3] [com.zebra.net.servers.ZebraConnectionHandler] : Connection channel active: 106.75.165.38:51932
+12-19 08:44:33.254 INFO  [Zebra-worker-1-thread-3] [com.zebra.net.servers.ZebraConnectionHandler] : Connection channel inactive: 106.75.165.38:51932
+12-19 08:44:33.285 INFO  [Zebra-boss-2-thread-1] [io.netty.handler.logging.LoggingHandler] : [id: 0xa6a167f9, L:/0:0:0:0:0:0:0:0:9527] READ: [id: 0xcbe0b0a5, L:/172.19.48.88:9527 - R:/106.75.165.38:22810]
+12-19 08:44:33.285 INFO  [Zebra-boss-2-thread-1] [io.netty.handler.logging.LoggingHandler] : [id: 0xa6a167f9, L:/0:0:0:0:0:0:0:0:9527] READ COMPLETE
+12-19 08:44:33.285 INFO  [Zebra-worker-1-thread-4] [com.zebra.net.servers.ZebraConnectionHandler] : Connection channel active: 106.75.165.38:22810
+12-19 08:44:37.278 INFO  [Zebra-worker-1-thread-4] [com.zebra.net.servers.ZebraConnectionHandler] : Connection channel inactive: 106.75.165.38:22810
+12-19 08:44:38.315 INFO  [Zebra-boss-2-thread-1] [io.netty.handler.logging.LoggingHandler] : [id: 0xa6a167f9, L:/0:0:0:0:0:0:0:0:9527] READ: [id: 0x3afd8909, L:/172.19.48.88:9527 - R:/106.75.165.38:27694]
+12-19 08:44:38.315 INFO  [Zebra-boss-2-thread-1] [io.netty.handler.logging.LoggingHandler] : [id: 0xa6a167f9, L:/0:0:0:0:0:0:0:0:9527] READ COMPLETE
+12-19 08:44:38.315 INFO  [Zebra-worker-1-thread-5] [com.zebra.net.servers.ZebraConnectionHandler] : Connection channel active: 106.75.165.38:27694
+12-19 08:44:38.315 ERROR [Zebra-worker-1-thread-5] [com.zebra.net.codec.ZebraDecoder] : Decoder ByteBuf parse flag: Channel[id: 0x3afd8909, L:/172.19.48.88:9527 - R:/106.75.165.38:27694], cmd:-220; length：2075
+12-19 08:44:38.315 INFO  [Zebra-worker-1-thread-5] [com.zebra.net.servers.ZebraConnectionHandler] : Connection channel inactive: 106.75.165.38:27694
+12-19 08:44:38.362 INFO  [Zebra-boss-2-thread-1] [io.netty.handler.logging.LoggingHandler] : [id: 0xa6a167f9, L:/0:0:0:0:0:0:0:0:9527] READ: [id: 0xfdaf9178, L:/172.19.48.88:9527 - R:/106.75.165.38:27724]
+12-19 08:44:38.362 INFO  [Zebra-boss-2-thread-1] [io.netty.handler.logging.LoggingHandler] : [id: 0xa6a167f9, L:/0:0:0:0:0:0:0:0:9527] READ COMPLETE
+12-19 08:44:38.362 INFO  [Zebra-worker-1-thread-6] [com.zebra.net.servers.ZebraConnectionHandler] : Connection channel active: 106.75.165.38:27724
+12-19 08:44:42.374 INFO  [Zebra-worker-1-thread-6] [com.zebra.net.servers.ZebraConnectionHandler] : Connection channel inactive: 106.75.165.38:27724
+12-19 12:42:09.750 INFO  [Zebra-boss-2-thread-1] [io.netty.handler.logging.LoggingHandler] : [id: 0xa6a167f9, L:/0:0:0:0:0:0:0:0:9527] READ: [id: 0x869381f7, L:/172.19.48.88:9527 - R:/92.63.196.35:44913]
+12-19 12:42:09.766 INFO  [Zebra-boss-2-thread-1] [io.netty.handler.logging.LoggingHandler] : [id: 0xa6a167f9, L:/0:0:0:0:0:0:0:0:9527] READ COMPLETE
+12-19 12:42:09.766 INFO  [Zebra-worker-1-thread-7] [com.zebra.net.servers.ZebraConnectionHandler] : Connection channel active: 92.63.196.35:44913
+12-19 12:42:40.740 ERROR [Zebra-worker-1-thread-7] [com.zebra.net.servers.ZebraConnectionHandler] : ExceptionCaught in connection: [id: 0x869381f7, L:/172.19.48.88:9527 - R:/92.63.196.35:44913], close the connection! Cause[IOException:远程主机强迫关闭了一个现有的连接。]
+12-19 12:42:40.740 INFO  [Zebra-worker-1-thread-7] [com.zebra.net.servers.ZebraConnectionHandler] : Connection channel inactive: 92.63.196.35:44913
+12-19 12:44:09.830 INFO  [Zebra-boss-2-thread-1] [io.netty.handler.logging.LoggingHandler] : [id: 0xa6a167f9, L:/0:0:0:0:0:0:0:0:9527] READ: [id: 0x97999e00, L:/172.19.48.88:9527 - R:/89.248.165.78:36528]
+12-19 12:44:09.830 INFO  [Zebra-boss-2-thread-1] [io.netty.handler.logging.LoggingHandler] : [id: 0xa6a167f9, L:/0:0:0:0:0:0:0:0:9527] READ COMPLETE
+12-19 12:44:09.830 INFO  [Zebra-worker-1-thread-8] [com.zebra.net.servers.ZebraConnectionHandler] : Connection channel active: 89.248.165.78:36528
+12-19 12:44:11.827 INFO  [Zebra-worker-1-thread-8] [com.zebra.net.servers.ZebraConnectionHandler] : Connection channel inactive: 89.248.165.78:36528
+12-19 12:52:13.213 INFO  [Zebra-boss-2-thread-1] [io.netty.handler.logging.LoggingHandler] : [id: 0xa6a167f9, L:/0:0:0:0:0:0:0:0:9527] READ: [id: 0x94cd6468, L:/172.19.48.88:9527 - R:/185.86.76.65:64361]
+12-19 12:52:13.213 INFO  [Zebra-boss-2-thread-1] [io.netty.handler.logging.LoggingHandler] : [id: 0xa6a167f9, L:/0:0:0:0:0:0:0:0:9527] READ COMPLETE
+12-19 12:52:13.213 INFO  [Zebra-worker-1-thread-1] [com.zebra.net.servers.ZebraConnectionHandler] : Connection channel active: 185.86.76.65:64361
+12-19 12:54:13.244 ERROR [Zebra-worker-1-thread-1] [com.zebra.net.servers.HeartbeatServerHandler] : Channel close By: Heartbeat Broken links: [id: 0x94cd6468, L:/172.19.48.88:9527 - R:/185.86.76.65:64361]
+12-19 12:54:13.244 INFO  [Zebra-worker-1-thread-1] [com.zebra.net.servers.ZebraConnectionHandler] : Connection channel inactive: 185.86.76.65:64361
+12-19 17:03:56.772 INFO  [Zebra-boss-2-thread-1] [io.netty.handler.logging.LoggingHandler] : [id: 0xa6a167f9, L:/0:0:0:0:0:0:0:0:9527] READ: [id: 0x08de849c, L:/172.19.48.88:9527 - R:/92.63.196.155:62482]
+12-19 17:03:56.772 INFO  [Zebra-boss-2-thread-1] [io.netty.handler.logging.LoggingHandler] : [id: 0xa6a167f9, L:/0:0:0:0:0:0:0:0:9527] READ COMPLETE
+12-19 17:03:56.772 INFO  [Zebra-worker-1-thread-2] [com.zebra.net.servers.ZebraConnectionHandler] : Connection channel active: 92.63.196.155:62482
+12-19 17:05:56.789 ERROR [Zebra-worker-1-thread-2] [com.zebra.net.servers.HeartbeatServerHandler] : Channel close By: Heartbeat Broken links: [id: 0x08de849c, L:/172.19.48.88:9527 - R:/92.63.196.155:62482]
+12-19 17:05:56.789 INFO  [Zebra-worker-1-thread-2] [com.zebra.net.servers.ZebraConnectionHandler] : Connection channel inactive: 92.63.196.155:62482
+12-19 22:25:09.817 INFO  [Zebra-boss-2-thread-1] [io.netty.handler.logging.LoggingHandler] : [id: 0xa6a167f9, L:/0:0:0:0:0:0:0:0:9527] READ: [id: 0xd51345d5, L:/172.19.48.88:9527 - R:/92.63.196.97:59860]
+12-19 22:25:09.819 INFO  [Zebra-boss-2-thread-1] [io.netty.handler.logging.LoggingHandler] : [id: 0xa6a167f9, L:/0:0:0:0:0:0:0:0:9527] READ COMPLETE
+12-19 22:25:09.819 INFO  [Zebra-worker-1-thread-3] [com.zebra.net.servers.ZebraConnectionHandler] : Connection channel active: 92.63.196.97:59860
+12-19 22:25:40.807 ERROR [Zebra-worker-1-thread-3] [com.zebra.net.servers.ZebraConnectionHandler] : ExceptionCaught in connection: [id: 0xd51345d5, L:/172.19.48.88:9527 - R:/92.63.196.97:59860], close the connection! Cause[IOException:远程主机强迫关闭了一个现有的连接。]
+12-19 22:25:40.807 INFO  [Zebra-worker-1-thread-3] [com.zebra.net.servers.ZebraConnectionHandler] : Connection channel inactive: 92.63.196.97:59860
+12-19 22:26:55.362 INFO  [Zebra-boss-2-thread-1] [io.netty.handler.logging.LoggingHandler] : [id: 0xa6a167f9, L:/0:0:0:0:0:0:0:0:9527] READ: [id: 0x6d0b5709, L:/172.19.48.88:9527 - R:/89.248.165.228:47980]
+12-19 22:26:55.362 INFO  [Zebra-boss-2-thread-1] [io.netty.handler.logging.LoggingHandler] : [id: 0xa6a167f9, L:/0:0:0:0:0:0:0:0:9527] READ COMPLETE
+12-19 22:26:55.364 INFO  [Zebra-worker-1-thread-4] [com.zebra.net.servers.ZebraConnectionHandler] : Connection channel active: 89.248.165.228:47980
+12-19 22:26:57.362 INFO  [Zebra-worker-1-thread-4] [com.zebra.net.servers.ZebraConnectionHandler] : Connection channel inactive: 89.248.165.228:47980
+12-19 22:34:47.866 INFO  [Zebra-boss-2-thread-1] [io.netty.handler.logging.LoggingHandler] : [id: 0xa6a167f9, L:/0:0:0:0:0:0:0:0:9527] READ: [id: 0xf839451f, L:/172.19.48.88:9527 - R:/92.63.196.155:63076]
+12-19 22:34:47.868 INFO  [Zebra-boss-2-thread-1] [io.netty.handler.logging.LoggingHandler] : [id: 0xa6a167f9, L:/0:0:0:0:0:0:0:0:9527] READ COMPLETE
+12-19 22:34:47.868 INFO  [Zebra-worker-1-thread-5] [com.zebra.net.servers.ZebraConnectionHandler] : Connection channel active: 92.63.196.155:63076
+12-19 22:36:47.872 ERROR [Zebra-worker-1-thread-5] [com.zebra.net.servers.HeartbeatServerHandler] : Channel close By: Heartbeat Broken links: [id: 0xf839451f, L:/172.19.48.88:9527 - R:/92.63.196.155:63076]
+12-19 22:36:47.872 INFO  [Zebra-worker-1-thread-5] [com.zebra.net.servers.ZebraConnectionHandler] : Connection channel inactive: 92.63.196.155:63076

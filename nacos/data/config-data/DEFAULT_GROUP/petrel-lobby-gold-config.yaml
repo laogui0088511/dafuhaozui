@@ -1,0 +1,40 @@
+# 转账相关
+gold:
+    #转账功能开关 0关闭  1打开
+    transfer: 1
+    #手续费比例
+    tra-pre: 2
+    #手续费领取比例
+    tra-receive-pre: 100
+    #普通用户转账  0关闭  1打开
+    nor-tra: 0
+    #普通用户转账最小值
+    nor-min: 1650000
+    #VIP转账转账最小值
+    vip-min: 10000
+    #防倒分金额
+    max-hold-gold: 100000
+    ##vip禁止互相转账  例:9  (vip9之间不能相互转) 例:8,9  (9和9,8和8,8和9之间不能相互转)
+    vip2vip: 9
+    #允许修改上家，定向转账  0 不允许修改 1 允许修改
+    change-vip: 1
+    #0 gid头相同 ，1 能出 ，2 能进 ，3 能互转（默认不能互转）  例：0,1,3
+    vip7: 0,1
+# 送卡相关
+card:
+    #金币限制
+    gold-restrict: 100000
+    #限制送普通玩家单次送卡数量
+    once-present: 1
+    #限制模拟器不能送卡 mac为00开头
+    simulator-restrict: 1
+    #未绑定手机不能送卡
+    not-tel: 0
+    #没有转入记录不能送卡
+    not-in-transfer: 0
+    #游戏场数限制 填数量
+    play-restrict: 0
+    #vip每天送卡限制 针对vip送普通 填数量
+    vip-present: 100
+    #禁止vip送vip
+    vip-not-vip: 1

@@ -1,0 +1,227 @@
+<?xml version="1.0"?>
+<Config>
+	<!--RollerID为卷轴的ID-->
+	<Roller RollerID = "1">
+		<Line ID = "1" Size = "72">
+			<Array>
+				"0,1,1,W,1,5,1,2,5,W,2,2,3,3,3,4,W,4,5,6,7,W,5"
+			</Array>
+		</Line>
+
+		<Line ID = "2" Size = "72">
+			<Array>
+				"0,1,1,W,1,5,1,2,5,W,2,2,3,3,3,4,W,4,5,6,7,W,5"
+			</Array>
+		</Line>
+
+		<Line ID = "3" Size = "72">
+			<Array>
+				"0,1,1,W,1,5,1,2,5,W,2,2,3,3,3,4,W,4,5,6,7,W,5"
+			</Array>
+		</Line>
+
+		<Line ID = "4" Size = "72">
+			<Array>
+				"0,1,1,W,1,5,1,2,5,W,2,2,3,3,3,4,W,4,5,6,7,W,5"
+			</Array>
+		</Line>
+
+		<Line ID = "5" Size = "72">
+			<Array>
+				"0,1,1,W,1,5,1,2,5,W,2,2,3,3,3,4,W,4,5,6,7,W,5"
+			</Array>
+		</Line>
+	</Roller>
+	<!--RollerID为卷轴的ID-->
+	<Roller RollerID = "2">
+		<Line ID = "1" Size = "72">
+			<Array>
+				"0,1,1,W,1,5,1,2,5,W,2,2,3,3,3,4,W,4,5,6,7,W,5"
+			</Array>
+		</Line>
+
+		<Line ID = "2" Size = "72">
+			<Array>
+				"0,1,1,W,1,5,1,2,5,W,2,2,3,3,3,4,W,4,5,6,7,W,5"
+			</Array>
+		</Line>
+
+		<Line ID = "3" Size = "72">
+			<Array>
+				"0,1,1,W,1,5,1,2,5,W,2,2,3,3,3,4,W,4,5,6,7,W,5"
+			</Array>
+		</Line>
+
+		<Line ID = "4" Size = "72">
+			<Array>
+				"0,1,1,W,1,5,1,2,5,W,2,2,3,3,3,4,W,4,5,6,7,W,5"
+			</Array>
+		</Line>
+
+		<Line ID = "5" Size = "72">
+			<Array>
+				"0,1,1,W,1,5,1,2,5,W,2,2,3,3,3,4,W,4,5,6,7,W,5"
+			</Array>
+		</Line>
+	</Roller>
+	<!--RollerID为卷轴的ID-->
+	<Roller RollerID = "3">
+		<Line ID = "1" Size = "72">
+			<Array>
+				"0,1,1,W,1,5,1,2,5,W,2,2,3,3,3,4,W,4,5,6,7,W,5"
+			</Array>
+		</Line>
+
+		<Line ID = "2" Size = "72">
+			<Array>
+				"0,1,1,W,1,5,1,2,5,W,2,2,3,3,3,4,W,4,5,6,7,W,5"
+			</Array>
+		</Line>
+
+		<Line ID = "3" Size = "72">
+			<Array>
+				"0,1,1,W,1,5,1,2,5,W,2,2,3,3,3,4,W,4,5,6,7,W,5"
+			</Array>
+		</Line>
+
+		<Line ID = "4" Size = "72">
+			<Array>
+				"0,1,1,W,1,5,1,2,5,W,2,2,3,3,3,4,W,4,5,6,7,W,5"
+			</Array>
+		</Line>
+
+		<Line ID = "5" Size = "72">
+			<Array>
+				"0,1,1,W,1,5,1,2,5,W,2,2,3,3,3,4,W,4,5,6,7,W,5"
+			</Array>
+		</Line>
+	</Roller>
+	<!--RollerID为卷轴的ID-->
+	<Roller RollerID = "4">
+		<Line ID = "1" Size = "72">
+			<Array>
+				"0,1,1,W,1,5,1,2,5,W,2,2,3,3,3,4,W,4,5,6,7,W,5"
+			</Array>
+		</Line>
+
+		<Line ID = "2" Size = "72">
+			<Array>
+				"0,1,1,W,1,5,1,2,5,W,2,2,3,3,3,4,W,4,5,6,7,W,5"
+			</Array>
+		</Line>
+
+		<Line ID = "3" Size = "72">
+			<Array>
+				"0,1,1,W,1,5,1,2,5,W,2,2,3,3,3,4,W,4,5,6,7,W,5"
+			</Array>
+		</Line>
+
+		<Line ID = "4" Size = "72">
+			<Array>
+				"0,1,1,W,1,5,1,2,5,W,2,2,3,3,3,4,W,4,5,6,7,W,5"
+			</Array>
+		</Line>
+
+		<Line ID = "5" Size = "72">
+			<Array>
+				"0,1,1,W,1,5,1,2,5,W,2,2,3,3,3,4,W,4,5,6,7,W,5"
+			</Array>
+		</Line>
+	</Roller>
+	<Roller RollerID = "5">
+		<!--ID为卷轴的列,size为下面数据的长度，如果size对不上则加载不成功-->
+		<Line ID = "1" Size = "72">
+			<Array>
+				"0,1,1,W,1,5,1,2,5,W,2,2,3,3,3,4,W,4,5,6,7,W,5"
+			</Array>
+		</Line>
+
+		<Line ID = "2" Size = "72">
+			<Array>
+				"0,1,1,W,1,5,1,2,5,W,2,2,3,3,3,4,W,4,5,6,7,W,5"
+			</Array>
+		</Line>
+
+		<Line ID = "3" Size = "72">
+			<Array>
+				"0,1,1,W,1,5,1,2,5,W,2,2,3,3,3,4,W,4,5,6,7,W,5"
+			</Array>
+		</Line>
+
+		<Line ID = "4" Size = "72">
+			<Array>
+				"0,1,1,W,1,5,1,2,5,W,2,2,3,3,3,4,W,4,5,6,7,W,5"
+			</Array>
+		</Line>
+
+		<Line ID = "5" Size = "72">
+			<Array>
+				"0,1,1,W,1,5,1,2,5,W,2,2,3,3,3,4,W,4,5,6,7,W,5"
+			</Array>
+		</Line>
+	</Roller>
+	<Roller RollerID = "6">
+		<!--ID为卷轴的列,size为下面数据的长度，如果size对不上则加载不成功-->
+		<Line ID = "1" Size = "72">
+			<Array>
+				"0,1,1,W,1,5,1,2,5,W,2,2,3,3,3,4,W,4,5,6,7,W,5"
+			</Array>
+		</Line>
+
+		<Line ID = "2" Size = "72">
+			<Array>
+				"0,1,1,W,1,5,1,2,5,W,2,2,3,3,3,4,W,4,5,6,7,W,5"
+			</Array>
+		</Line>
+
+		<Line ID = "3" Size = "72">
+			<Array>
+				"0,1,1,W,1,5,1,2,5,W,2,2,3,3,3,4,W,4,5,6,7,W,5"
+			</Array>
+		</Line>
+
+		<Line ID = "4" Size = "72">
+			<Array>
+				"0,1,1,W,1,5,1,2,5,W,2,2,3,3,3,4,W,4,5,6,7,W,5"
+			</Array>
+		</Line>
+
+		<Line ID = "5" Size = "72">
+			<Array>
+				"0,1,1,W,1,5,1,2,5,W,2,2,3,3,3,4,W,4,5,6,7,W,5"
+			</Array>
+		</Line>
+	</Roller>
+	<Roller RollerID = "7">
+		<!--ID为卷轴的列,size为下面数据的长度，如果size对不上则加载不成功-->
+		<Line ID = "1" Size = "72">
+			<Array>
+				"0,1,1,W,1,5,1,2,5,W,2,2,3,3,3,4,W,4,5,6,7,W,5"
+			</Array>
+		</Line>
+
+		<Line ID = "2" Size = "72">
+			<Array>
+				"0,1,1,W,1,5,1,2,5,W,2,2,3,3,3,4,W,4,5,6,7,W,5"
+			</Array>
+		</Line>
+
+		<Line ID = "3" Size = "72">
+			<Array>
+				"0,1,1,W,1,5,1,2,5,W,2,2,3,3,3,4,W,4,5,6,7,W,5"
+			</Array>
+		</Line>
+
+		<Line ID = "4" Size = "72">
+			<Array>
+				"0,1,1,W,1,5,1,2,5,W,2,2,3,3,3,4,W,4,5,6,7,W,5"
+			</Array>
+		</Line>
+
+		<Line ID = "5" Size = "72">
+			<Array>
+				"0,1,1,W,1,5,1,2,5,W,2,2,3,3,3,4,W,4,5,6,7,W,5"
+			</Array>
+		</Line>
+	</Roller>
+</Config>

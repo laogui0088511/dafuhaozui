@@ -1,0 +1,24 @@
+2023-01-07 22:09:59,985 INFO DEFAULT_GROUP@@petrel-kernel-user is changed, add it to push queue.
+
+2023-01-07 22:10:00,095 INFO serviceName: DEFAULT_GROUP@@petrel-kernel-user changed, schedule push for: 172.23.126.252:58541, agent: Nacos-Java-Client:v1.2.1, key: 172.23.126.252,58541,1479033586720300
+
+2023-01-07 22:10:00,095 INFO send udp packet: 172.23.126.252,58541,1479033586720300
+
+2023-01-07 22:10:00,124 INFO received ack: {"type": "push-ack", "lastRefTime":"1479033586720300", "data":""} from: 172.23.126.252:58541, cost: 29 ms, unacked: 0, total push: 1
+
+2023-01-07 22:10:03,530 INFO DEFAULT_GROUP@@petrel-kernel-user is changed, add it to push queue.
+
+2023-01-07 22:10:03,530 INFO serviceName: DEFAULT_GROUP@@petrel-kernel-user changed, schedule push for: 172.23.126.252:58541, agent: Nacos-Java-Client:v1.2.1, key: 172.23.126.252,58541,1479037130136400
+
+2023-01-07 22:10:03,530 INFO send udp packet: 172.23.126.252,58541,1479037130136400
+
+2023-01-07 22:10:03,531 INFO received ack: {"type": "push-ack", "lastRefTime":"1479037130136400", "data":""} from: 172.23.126.252:58541, cost: 1 ms, unacked: 0, total push: 2
+
+2023-01-07 22:10:08,515 INFO DEFAULT_GROUP@@petrel-kernel-user is changed, add it to push queue.
+
+2023-01-07 22:10:08,515 INFO serviceName: DEFAULT_GROUP@@petrel-kernel-user changed, schedule push for: 172.23.126.252:58541, agent: Nacos-Java-Client:v1.2.1, key: 172.23.126.252,58541,1479042114823600
+
+2023-01-07 22:10:08,515 INFO send udp packet: 172.23.126.252,58541,1479042114823600
+
+2023-01-07 22:10:08,516 INFO received ack: {"type": "push-ack", "lastRefTime":"1479042114823600", "data":""} from: 172.23.126.252:58541, cost: 1 ms, unacked: 0, total push: 3
+

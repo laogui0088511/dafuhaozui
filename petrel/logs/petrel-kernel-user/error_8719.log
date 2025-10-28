@@ -1,0 +1,7 @@
+12-20 12:28:30.613 ERROR [http-nio-8719-exec-7] [com.petrel.user.service.LoginService] : USER logout not exit uid 726650345387 disconnection 1 exitType Switch 
+12-20 14:48:10.442 ERROR [http-nio-8719-exec-6] [com.petrel.user.service.LoginService] : USER logout not exit uid 473369959468 disconnection 1 exitType Switch 
+12-20 14:56:33.981 ERROR [http-nio-8719-exec-1] [com.petrel.user.service.LoginService] : USER logout not exit uid 473369959468 disconnection 1 exitType Switch 
+12-20 15:04:42.306 ERROR [http-nio-8719-exec-8] [com.petrel.user.service.LoginService] : USER logout not exit uid 473369959468 disconnection 1 exitType Switch 
+12-20 15:06:53.427 ERROR [http-nio-8719-exec-1] [com.petrel.user.service.LoginService] : USER logout not exit uid 473369959468 disconnection 1 exitType Switch 
+12-20 15:09:20.448 ERROR [http-nio-8719-exec-6] [com.petrel.user.service.LoginService] : USER logout not exit uid 473369959468 disconnection 1 exitType Switch 
+12-20 15:20:20.056 ERROR [http-nio-8719-exec-10] [com.petrel.user.service.LoginService] : USER logout not exit uid 735333028658 disconnection 1 exitType Switch 

@@ -1,0 +1,321 @@
+12-19 09:07:51.734 INFO  [Zebra-boss-2-thread-1] [io.netty.handler.logging.LoggingHandler] : [id: 0xa787efcc, L:/0:0:0:0:0:0:0:0:9879] READ: [id: 0x2efd3873, L:/172.19.48.88:9879 - R:/106.91.198.42:27709]
+12-19 09:07:51.734 INFO  [Zebra-boss-2-thread-1] [io.netty.handler.logging.LoggingHandler] : [id: 0xa787efcc, L:/0:0:0:0:0:0:0:0:9879] READ COMPLETE
+12-19 09:07:51.734 INFO  [Zebra-worker-1-thread-5] [com.zebra.net.servers.ZebraConnectionHandler] : Connection channel active: 106.91.198.42:27709
+12-19 09:07:52.239 INFO  [Zebra-worker-1-thread-5] [com.zebra.net.servers.ZebraConnectionHandler] : Request c:1001 u:0  LoginGuestRequestMessage(uid=293149128708, mac=c8e5e575-fe90-4752-9698-efeca72fb1c5e2ac16a3a7134d55d3d73e9e77d276a7a653eafe, devicesType=0, ip=null) [L:/172.19.48.88:9879 - R:/106.91.198.42:27709]
+12-19 09:07:52.254 INFO  [Zebra-worker-1-thread-5] [com.zebra.net.codec.ZebraEncoder] : Response c:1001 u:0 r:0 s:200 l:6 [L:/172.19.48.88:9879 - R:/106.91.198.42:27709]
+12-19 09:07:59.234 INFO  [Zebra-worker-1-thread-5] [com.zebra.net.servers.ZebraConnectionHandler] : Request c:1001 u:0  LoginGuestRequestMessage(uid=293149128708, mac=c8e5e575-fe90-4752-9698-efeca72fb1c5e2ac16a3a7134d55d3d73e9e77d276a7a653eafe, devicesType=0, ip=127.0.0.1) [L:/172.19.48.88:9879 - R:/106.91.198.42:27709]
+12-19 09:07:59.265 INFO  [Zebra-worker-1-thread-5] [com.zebra.net.codec.ZebraEncoder] : Response c:1001 u:0 r:0 s:200 l:6 [L:/172.19.48.88:9879 - R:/106.91.198.42:27709]
+12-19 09:08:02.034 INFO  [Zebra-worker-1-thread-5] [com.zebra.net.servers.ZebraConnectionHandler] : Connection channel inactive: 106.91.198.42:27709
+12-19 09:08:57.300 INFO  [Zebra-boss-2-thread-1] [io.netty.handler.logging.LoggingHandler] : [id: 0xa787efcc, L:/0:0:0:0:0:0:0:0:9879] READ: [id: 0x1caf807e, L:/172.19.48.88:9879 - R:/106.91.198.42:27851]
+12-19 09:08:57.300 INFO  [Zebra-boss-2-thread-1] [io.netty.handler.logging.LoggingHandler] : [id: 0xa787efcc, L:/0:0:0:0:0:0:0:0:9879] READ COMPLETE
+12-19 09:08:57.300 INFO  [Zebra-worker-1-thread-6] [com.zebra.net.servers.ZebraConnectionHandler] : Connection channel active: 106.91.198.42:27851
+12-19 09:08:59.881 INFO  [Zebra-worker-1-thread-6] [com.zebra.net.servers.ZebraConnectionHandler] : Request c:1001 u:0  LoginGuestRequestMessage(uid=0, mac=c8e5e575-fe90-4752-9698-efeca72fb1c5e2ac16a3a7134d55d3d73e9e77d276a7a653eafe, devicesType=0, ip=127.0.0.1) [L:/172.19.48.88:9879 - R:/106.91.198.42:27851]
+12-19 09:09:00.210 INFO  [Zebra-worker-1-thread-6] [com.zebra.rpc.server.ZebraUserEEServer] : UserOnlineServer: uid 104855711423, cid 39902458,  roomId 0, vfx LOBBY, channel [L:/172.19.48.88:9879 - R:/106.91.198.42:27851]
+12-19 09:09:00.210 INFO  [Zebra-worker-1-thread-6] [c.petrel.lobby.handler.login.LoginRegistryService] : Login: uid: LoginResponseMessage= uid: 104855711423 gid: 98023204 goldNumber: 0 bankNumber: 0 [L:/172.19.48.88:9879 - R:/106.91.198.42:27851]
+12-19 09:09:00.210 INFO  [Zebra-worker-1-thread-6] [com.zebra.net.codec.ZebraEncoder] : Response c:1001 u:104855711423 r:0 s:200 l:76 [L:/172.19.48.88:9879 - R:/106.91.198.42:27851]
+12-19 09:09:00.886 INFO  [Zebra-worker-1-thread-6] [com.zebra.net.servers.ZebraConnectionHandler] : Request c:1100 u:104855711423  EmptyMessage(super=ZebraBaseMessage(), msg=0) [L:/172.19.48.88:9879 - R:/106.91.198.42:27851]
+12-19 09:09:00.886 INFO  [Zebra-worker-1-thread-6] [com.zebra.net.codec.ZebraEncoder] : Response c:1100 u:104855711423 r:0 s:200 l:610 [L:/172.19.48.88:9879 - R:/106.91.198.42:27851]
+12-19 09:09:00.933 INFO  [Zebra-worker-1-thread-6] [com.zebra.net.servers.ZebraConnectionHandler] : Request c:1008 u:104855711423  EmptyMessage(super=ZebraBaseMessage(), msg=0) [L:/172.19.48.88:9879 - R:/106.91.198.42:27851]
+12-19 09:09:00.949 INFO  [Zebra-worker-1-thread-6] [com.zebra.net.codec.ZebraEncoder] : Response c:1008 u:104855711423 r:0 s:200 l:10 [L:/172.19.48.88:9879 - R:/106.91.198.42:27851]
+12-19 09:09:00.949 INFO  [Zebra-worker-1-thread-6] [com.zebra.net.servers.ZebraConnectionHandler] : Request c:1003 u:104855711423  EmptyMessage(super=ZebraBaseMessage(), msg=0) [L:/172.19.48.88:9879 - R:/106.91.198.42:27851]
+12-19 09:09:00.949 INFO  [Zebra-worker-1-thread-6] [com.petrel.lobby.handler.gold.GoldHandler] : 1003:104855711423
+12-19 09:09:00.949 INFO  [Zebra-worker-1-thread-6] [com.petrel.lobby.handler.gold.GoldHandler] : 1003:104855711423  GoldMessage(goldNumber=0, bankNumber=0)
+12-19 09:09:00.964 INFO  [Zebra-worker-1-thread-6] [com.zebra.net.codec.ZebraEncoder] : Response c:1003 u:104855711423 r:0 s:200 l:22 [L:/172.19.48.88:9879 - R:/106.91.198.42:27851]
+12-19 09:09:36.357 INFO  [Zebra-worker-1-thread-6] [com.zebra.net.servers.ZebraConnectionHandler] : Request c:1012 u:104855711423  EmptyMessage(super=ZebraBaseMessage(), msg=0) [L:/172.19.48.88:9879 - R:/106.91.198.42:27851]
+12-19 09:09:36.357 INFO  [Zebra-worker-1-thread-6] [com.zebra.net.codec.ZebraEncoder] : Response c:1012 u:104855711423 r:0 s:200 l:6 [L:/172.19.48.88:9879 - R:/106.91.198.42:27851]
+12-19 09:11:04.010 INFO  [Zebra-worker-1-thread-6] [com.zebra.net.servers.ZebraConnectionHandler] : Connection channel inactive: 106.91.198.42:27851
+12-19 09:11:04.010 INFO  [Zebra-worker-1-thread-6] [com.zebra.rpc.server.ZebraServerRegisterService] : UserOfflineServer  u: 104855711423  serverId lobby:127.0.0.1:9879  vfx LOBBY 
+12-19 09:11:13.557 INFO  [Zebra-boss-2-thread-1] [io.netty.handler.logging.LoggingHandler] : [id: 0xa787efcc, L:/0:0:0:0:0:0:0:0:9879] READ: [id: 0xd19add3a, L:/172.19.48.88:9879 - R:/106.91.198.42:28438]
+12-19 09:11:13.557 INFO  [Zebra-boss-2-thread-1] [io.netty.handler.logging.LoggingHandler] : [id: 0xa787efcc, L:/0:0:0:0:0:0:0:0:9879] READ COMPLETE
+12-19 09:11:13.557 INFO  [Zebra-worker-1-thread-7] [com.zebra.net.servers.ZebraConnectionHandler] : Connection channel active: 106.91.198.42:28438
+12-19 09:11:14.061 INFO  [Zebra-worker-1-thread-7] [com.zebra.net.servers.ZebraConnectionHandler] : Request c:1001 u:0  LoginGuestRequestMessage(uid=104855711423, mac=c8e5e575-fe90-4752-9698-efeca72fb1c5e2ac16a3a7134d55d3d73e9e77d276a7a653eafe, devicesType=0, ip=null) [L:/172.19.48.88:9879 - R:/106.91.198.42:28438]
+12-19 09:11:14.092 INFO  [Zebra-worker-1-thread-7] [com.zebra.rpc.server.ZebraUserEEServer] : UserOnlineServer: uid 104855711423, cid 23294073,  roomId 0, vfx LOBBY, channel [L:/172.19.48.88:9879 - R:/106.91.198.42:28438]
+12-19 09:11:14.092 INFO  [Zebra-worker-1-thread-7] [c.petrel.lobby.handler.login.LoginRegistryService] : Login: uid: LoginResponseMessage= uid: 104855711423 gid: 98023204 goldNumber: 0 bankNumber: 0 [L:/172.19.48.88:9879 - R:/106.91.198.42:28438]
+12-19 09:11:14.092 INFO  [Zebra-worker-1-thread-7] [com.zebra.net.codec.ZebraEncoder] : Response c:1001 u:104855711423 r:0 s:200 l:76 [L:/172.19.48.88:9879 - R:/106.91.198.42:28438]
+12-19 09:11:14.767 INFO  [Zebra-worker-1-thread-7] [com.zebra.net.servers.ZebraConnectionHandler] : Request c:1100 u:104855711423  EmptyMessage(super=ZebraBaseMessage(), msg=0) [L:/172.19.48.88:9879 - R:/106.91.198.42:28438]
+12-19 09:11:14.767 INFO  [Zebra-worker-1-thread-7] [com.zebra.net.codec.ZebraEncoder] : Response c:1100 u:104855711423 r:0 s:200 l:610 [L:/172.19.48.88:9879 - R:/106.91.198.42:28438]
+12-19 09:11:14.798 INFO  [Zebra-worker-1-thread-7] [com.zebra.net.servers.ZebraConnectionHandler] : Request c:1008 u:104855711423  EmptyMessage(super=ZebraBaseMessage(), msg=0) [L:/172.19.48.88:9879 - R:/106.91.198.42:28438]
+12-19 09:11:14.837 INFO  [Zebra-worker-1-thread-7] [com.zebra.net.codec.ZebraEncoder] : Response c:1008 u:104855711423 r:0 s:200 l:10 [L:/172.19.48.88:9879 - R:/106.91.198.42:28438]
+12-19 09:11:14.838 INFO  [Zebra-worker-1-thread-7] [com.zebra.net.servers.ZebraConnectionHandler] : Request c:1003 u:104855711423  EmptyMessage(super=ZebraBaseMessage(), msg=0) [L:/172.19.48.88:9879 - R:/106.91.198.42:28438]
+12-19 09:11:14.840 INFO  [Zebra-worker-1-thread-7] [com.petrel.lobby.handler.gold.GoldHandler] : 1003:104855711423
+12-19 09:11:14.842 INFO  [Zebra-worker-1-thread-7] [com.petrel.lobby.handler.gold.GoldHandler] : 1003:104855711423  GoldMessage(goldNumber=0, bankNumber=0)
+12-19 09:11:14.843 INFO  [Zebra-worker-1-thread-7] [com.zebra.net.codec.ZebraEncoder] : Response c:1003 u:104855711423 r:0 s:200 l:22 [L:/172.19.48.88:9879 - R:/106.91.198.42:28438]
+12-19 09:11:28.841 INFO  [Zebra-worker-1-thread-7] [com.zebra.net.servers.ZebraConnectionHandler] : Request c:1012 u:104855711423  EmptyMessage(super=ZebraBaseMessage(), msg=0) [L:/172.19.48.88:9879 - R:/106.91.198.42:28438]
+12-19 09:11:28.841 INFO  [Zebra-worker-1-thread-7] [com.zebra.net.codec.ZebraEncoder] : Response c:1012 u:104855711423 r:0 s:200 l:6 [L:/172.19.48.88:9879 - R:/106.91.198.42:28438]
+12-19 09:11:39.897 INFO  [Zebra-worker-1-thread-7] [com.zebra.net.servers.ZebraConnectionHandler] : Connection channel inactive: 106.91.198.42:28438
+12-19 09:11:39.897 INFO  [Zebra-worker-1-thread-7] [com.zebra.rpc.server.ZebraServerRegisterService] : UserOfflineServer  u: 104855711423  serverId lobby:127.0.0.1:9879  vfx LOBBY 
+12-19 09:16:26.281 INFO  [Zebra-boss-2-thread-1] [io.netty.handler.logging.LoggingHandler] : [id: 0xa787efcc, L:/0:0:0:0:0:0:0:0:9879] READ: [id: 0x2915925e, L:/172.19.48.88:9879 - R:/106.91.198.42:27722]
+12-19 09:16:26.281 INFO  [Zebra-boss-2-thread-1] [io.netty.handler.logging.LoggingHandler] : [id: 0xa787efcc, L:/0:0:0:0:0:0:0:0:9879] READ COMPLETE
+12-19 09:16:26.297 INFO  [Zebra-worker-1-thread-8] [com.zebra.net.servers.ZebraConnectionHandler] : Connection channel active: 106.91.198.42:27722
+12-19 09:16:26.799 INFO  [Zebra-worker-1-thread-8] [com.zebra.net.servers.ZebraConnectionHandler] : Request c:1001 u:0  LoginGuestRequestMessage(uid=104855711423, mac=c8e5e575-fe90-4752-9698-efeca72fb1c5e2ac16a3a7134d55d3d73e9e77d276a7a653eafe, devicesType=0, ip=null) [L:/172.19.48.88:9879 - R:/106.91.198.42:27722]
+12-19 09:16:26.847 INFO  [Zebra-worker-1-thread-8] [com.zebra.rpc.server.ZebraUserEEServer] : UserOnlineServer: uid 104855711423, cid 51457102,  roomId 0, vfx LOBBY, channel [L:/172.19.48.88:9879 - R:/106.91.198.42:27722]
+12-19 09:16:26.847 INFO  [Zebra-worker-1-thread-8] [c.petrel.lobby.handler.login.LoginRegistryService] : Login: uid: LoginResponseMessage= uid: 104855711423 gid: 98023204 goldNumber: 0 bankNumber: 0 [L:/172.19.48.88:9879 - R:/106.91.198.42:27722]
+12-19 09:16:26.847 INFO  [Zebra-worker-1-thread-8] [com.zebra.net.codec.ZebraEncoder] : Response c:1001 u:104855711423 r:0 s:200 l:76 [L:/172.19.48.88:9879 - R:/106.91.198.42:27722]
+12-19 09:16:27.744 INFO  [Zebra-worker-1-thread-8] [com.zebra.net.servers.ZebraConnectionHandler] : Request c:1100 u:104855711423  EmptyMessage(super=ZebraBaseMessage(), msg=0) [L:/172.19.48.88:9879 - R:/106.91.198.42:27722]
+12-19 09:16:27.744 INFO  [Zebra-worker-1-thread-8] [com.zebra.net.codec.ZebraEncoder] : Response c:1100 u:104855711423 r:0 s:200 l:610 [L:/172.19.48.88:9879 - R:/106.91.198.42:27722]
+12-19 09:16:27.775 INFO  [Zebra-worker-1-thread-8] [com.zebra.net.servers.ZebraConnectionHandler] : Request c:1008 u:104855711423  EmptyMessage(super=ZebraBaseMessage(), msg=0) [L:/172.19.48.88:9879 - R:/106.91.198.42:27722]
+12-19 09:16:27.806 INFO  [Zebra-worker-1-thread-8] [com.zebra.net.codec.ZebraEncoder] : Response c:1008 u:104855711423 r:0 s:200 l:10 [L:/172.19.48.88:9879 - R:/106.91.198.42:27722]
+12-19 09:16:27.806 INFO  [Zebra-worker-1-thread-8] [com.zebra.net.servers.ZebraConnectionHandler] : Request c:1003 u:104855711423  EmptyMessage(super=ZebraBaseMessage(), msg=0) [L:/172.19.48.88:9879 - R:/106.91.198.42:27722]
+12-19 09:16:27.806 INFO  [Zebra-worker-1-thread-8] [com.petrel.lobby.handler.gold.GoldHandler] : 1003:104855711423
+12-19 09:16:27.806 INFO  [Zebra-worker-1-thread-8] [com.petrel.lobby.handler.gold.GoldHandler] : 1003:104855711423  GoldMessage(goldNumber=0, bankNumber=0)
+12-19 09:16:27.806 INFO  [Zebra-worker-1-thread-8] [com.zebra.net.codec.ZebraEncoder] : Response c:1003 u:104855711423 r:0 s:200 l:22 [L:/172.19.48.88:9879 - R:/106.91.198.42:27722]
+12-19 09:16:34.321 INFO  [Zebra-worker-1-thread-8] [com.zebra.net.servers.ZebraConnectionHandler] : Request c:1012 u:104855711423  EmptyMessage(super=ZebraBaseMessage(), msg=0) [L:/172.19.48.88:9879 - R:/106.91.198.42:27722]
+12-19 09:16:34.337 INFO  [Zebra-worker-1-thread-8] [com.zebra.net.codec.ZebraEncoder] : Response c:1012 u:104855711423 r:0 s:200 l:6 [L:/172.19.48.88:9879 - R:/106.91.198.42:27722]
+12-19 09:16:46.172 INFO  [Zebra-worker-1-thread-8] [com.zebra.net.servers.ZebraConnectionHandler] : Connection channel inactive: 106.91.198.42:27722
+12-19 09:16:46.172 INFO  [Zebra-worker-1-thread-8] [com.zebra.rpc.server.ZebraServerRegisterService] : UserOfflineServer  u: 104855711423  serverId lobby:127.0.0.1:9879  vfx LOBBY 
+12-19 09:18:22.712 INFO  [Zebra-boss-2-thread-1] [io.netty.handler.logging.LoggingHandler] : [id: 0xa787efcc, L:/0:0:0:0:0:0:0:0:9879] READ: [id: 0xf17f5263, L:/172.19.48.88:9879 - R:/106.91.198.42:27829]
+12-19 09:18:22.727 INFO  [Zebra-boss-2-thread-1] [io.netty.handler.logging.LoggingHandler] : [id: 0xa787efcc, L:/0:0:0:0:0:0:0:0:9879] READ COMPLETE
+12-19 09:18:22.727 INFO  [Zebra-worker-1-thread-1] [com.zebra.net.servers.ZebraConnectionHandler] : Connection channel active: 106.91.198.42:27829
+12-19 09:18:23.246 INFO  [Zebra-worker-1-thread-1] [com.zebra.net.servers.ZebraConnectionHandler] : Request c:1001 u:0  LoginGuestRequestMessage(uid=104855711423, mac=c8e5e575-fe90-4752-9698-efeca72fb1c5e2ac16a3a7134d55d3d73e9e77d276a7a653eafe, devicesType=0, ip=null) [L:/172.19.48.88:9879 - R:/106.91.198.42:27829]
+12-19 09:18:23.278 INFO  [Zebra-worker-1-thread-1] [com.zebra.rpc.server.ZebraUserEEServer] : UserOnlineServer: uid 104855711423, cid 29495584,  roomId 0, vfx LOBBY, channel [L:/172.19.48.88:9879 - R:/106.91.198.42:27829]
+12-19 09:18:23.278 INFO  [Zebra-worker-1-thread-1] [c.petrel.lobby.handler.login.LoginRegistryService] : Login: uid: LoginResponseMessage= uid: 104855711423 gid: 98023204 goldNumber: 0 bankNumber: 0 [L:/172.19.48.88:9879 - R:/106.91.198.42:27829]
+12-19 09:18:23.278 INFO  [Zebra-worker-1-thread-1] [com.zebra.net.codec.ZebraEncoder] : Response c:1001 u:104855711423 r:0 s:200 l:76 [L:/172.19.48.88:9879 - R:/106.91.198.42:27829]
+12-19 09:18:23.811 INFO  [Zebra-worker-1-thread-1] [com.zebra.net.servers.ZebraConnectionHandler] : Request c:1100 u:104855711423  EmptyMessage(super=ZebraBaseMessage(), msg=0) [L:/172.19.48.88:9879 - R:/106.91.198.42:27829]
+12-19 09:18:23.811 INFO  [Zebra-worker-1-thread-1] [com.zebra.net.codec.ZebraEncoder] : Response c:1100 u:104855711423 r:0 s:200 l:610 [L:/172.19.48.88:9879 - R:/106.91.198.42:27829]
+12-19 09:18:23.859 INFO  [Zebra-worker-1-thread-1] [com.zebra.net.servers.ZebraConnectionHandler] : Request c:1008 u:104855711423  EmptyMessage(super=ZebraBaseMessage(), msg=0) [L:/172.19.48.88:9879 - R:/106.91.198.42:27829]
+12-19 09:18:23.875 INFO  [Zebra-worker-1-thread-1] [com.zebra.net.codec.ZebraEncoder] : Response c:1008 u:104855711423 r:0 s:200 l:10 [L:/172.19.48.88:9879 - R:/106.91.198.42:27829]
+12-19 09:18:23.875 INFO  [Zebra-worker-1-thread-1] [com.zebra.net.servers.ZebraConnectionHandler] : Request c:1003 u:104855711423  EmptyMessage(super=ZebraBaseMessage(), msg=0) [L:/172.19.48.88:9879 - R:/106.91.198.42:27829]
+12-19 09:18:23.875 INFO  [Zebra-worker-1-thread-1] [com.petrel.lobby.handler.gold.GoldHandler] : 1003:104855711423
+12-19 09:18:23.875 INFO  [Zebra-worker-1-thread-1] [com.petrel.lobby.handler.gold.GoldHandler] : 1003:104855711423  GoldMessage(goldNumber=0, bankNumber=0)
+12-19 09:18:23.890 INFO  [Zebra-worker-1-thread-1] [com.zebra.net.codec.ZebraEncoder] : Response c:1003 u:104855711423 r:0 s:200 l:22 [L:/172.19.48.88:9879 - R:/106.91.198.42:27829]
+12-19 09:18:37.693 INFO  [Zebra-worker-1-thread-1] [com.zebra.net.servers.ZebraConnectionHandler] : Request c:1012 u:104855711423  EmptyMessage(super=ZebraBaseMessage(), msg=0) [L:/172.19.48.88:9879 - R:/106.91.198.42:27829]
+12-19 09:18:37.709 INFO  [Zebra-worker-1-thread-1] [com.zebra.net.codec.ZebraEncoder] : Response c:1012 u:104855711423 r:0 s:200 l:6 [L:/172.19.48.88:9879 - R:/106.91.198.42:27829]
+12-19 09:18:41.282 INFO  [Zebra-worker-1-thread-1] [com.zebra.net.servers.ZebraConnectionHandler] : Request c:1001 u:0  LoginGuestRequestMessage(uid=104855711423, mac=c8e5e575-fe90-4752-9698-efeca72fb1c5e2ac16a3a7134d55d3d73e9e77d276a7a653eafe, devicesType=0, ip=127.0.0.1) [L:/172.19.48.88:9879 - R:/106.91.198.42:27829]
+12-19 09:18:41.313 INFO  [Zebra-worker-1-thread-1] [com.zebra.net.codec.ZebraEncoder] : Response c:444 u:88480808 r:0 s:200 l:18 [L:/127.0.0.1:9879 - R:/127.0.0.1:53208]
+12-19 09:18:41.313 INFO  [Zebra-worker-1-thread-1] [com.zebra.rpc.server.ZebraUserEEServer] : UserOnlineServer: uid 104855711423, cid 46931806,  roomId 0, vfx LOBBY, channel [L:/172.19.48.88:9879 - R:/106.91.198.42:27829]
+12-19 09:18:41.329 INFO  [Zebra-worker-1-thread-1] [c.petrel.lobby.handler.login.LoginRegistryService] : Login: uid: LoginResponseMessage= uid: 104855711423 gid: 98023204 goldNumber: 0 bankNumber: 0 [L:/172.19.48.88:9879 - R:/106.91.198.42:27829]
+12-19 09:18:41.329 INFO  [Zebra-worker-1-thread-1] [com.zebra.net.codec.ZebraEncoder] : Response c:1001 u:104855711423 r:0 s:200 l:76 [L:/172.19.48.88:9879 - R:/106.91.198.42:27829]
+12-19 09:18:41.785 INFO  [Zebra-worker-1-thread-1] [com.zebra.net.servers.ZebraConnectionHandler] : Request c:1003 u:104855711423  EmptyMessage(super=ZebraBaseMessage(), msg=0) [L:/172.19.48.88:9879 - R:/106.91.198.42:27829]
+12-19 09:18:41.785 INFO  [Zebra-worker-1-thread-1] [com.petrel.lobby.handler.gold.GoldHandler] : 1003:104855711423
+12-19 09:18:41.785 INFO  [Zebra-worker-1-thread-1] [com.petrel.lobby.handler.gold.GoldHandler] : 1003:104855711423  GoldMessage(goldNumber=0, bankNumber=0)
+12-19 09:18:41.785 INFO  [Zebra-worker-1-thread-1] [com.zebra.net.codec.ZebraEncoder] : Response c:1003 u:104855711423 r:0 s:200 l:22 [L:/172.19.48.88:9879 - R:/106.91.198.42:27829]
+12-19 09:18:48.355 INFO  [Zebra-worker-1-thread-1] [com.zebra.net.servers.ZebraConnectionHandler] : Request c:1012 u:104855711423  EmptyMessage(super=ZebraBaseMessage(), msg=0) [L:/172.19.48.88:9879 - R:/106.91.198.42:27829]
+12-19 09:18:48.371 INFO  [Zebra-worker-1-thread-1] [com.zebra.net.codec.ZebraEncoder] : Response c:1012 u:104855711423 r:0 s:200 l:6 [L:/172.19.48.88:9879 - R:/106.91.198.42:27829]
+12-19 09:19:00.322 INFO  [Zebra-worker-1-thread-1] [com.zebra.net.servers.ZebraConnectionHandler] : Connection channel inactive: 106.91.198.42:27829
+12-19 09:19:00.322 INFO  [Zebra-worker-1-thread-1] [com.zebra.rpc.server.ZebraServerRegisterService] : UserOfflineServer  u: 104855711423  serverId lobby:127.0.0.1:9879  vfx LOBBY 
+12-19 09:29:33.895 INFO  [Zebra-boss-2-thread-1] [io.netty.handler.logging.LoggingHandler] : [id: 0xa787efcc, L:/0:0:0:0:0:0:0:0:9879] READ: [id: 0x3516a0c2, L:/172.19.48.88:9879 - R:/106.91.198.42:29347]
+12-19 09:29:33.895 INFO  [Zebra-boss-2-thread-1] [io.netty.handler.logging.LoggingHandler] : [id: 0xa787efcc, L:/0:0:0:0:0:0:0:0:9879] READ COMPLETE
+12-19 09:29:33.895 INFO  [Zebra-worker-1-thread-2] [com.zebra.net.servers.ZebraConnectionHandler] : Connection channel active: 106.91.198.42:29347
+12-19 09:29:34.005 INFO  [Zebra-worker-1-thread-2] [com.zebra.net.servers.ZebraConnectionHandler] : Request c:1001 u:0  LoginGuestRequestMessage(uid=104855711423, mac=c8e5e575-fe90-4752-9698-efeca72fb1c5e2ac16a3a7134d55d3d73e9e77d276a7a653eafe, devicesType=0, ip=null) [L:/172.19.48.88:9879 - R:/106.91.198.42:29347]
+12-19 09:29:34.037 INFO  [Zebra-worker-1-thread-2] [com.zebra.rpc.server.ZebraUserEEServer] : UserOnlineServer: uid 104855711423, cid 23603128,  roomId 0, vfx LOBBY, channel [L:/172.19.48.88:9879 - R:/106.91.198.42:29347]
+12-19 09:29:34.037 INFO  [Zebra-worker-1-thread-2] [c.petrel.lobby.handler.login.LoginRegistryService] : Login: uid: LoginResponseMessage= uid: 104855711423 gid: 98023204 goldNumber: 0 bankNumber: 0 [L:/172.19.48.88:9879 - R:/106.91.198.42:29347]
+12-19 09:29:34.037 INFO  [Zebra-worker-1-thread-2] [com.zebra.net.codec.ZebraEncoder] : Response c:1001 u:104855711423 r:0 s:200 l:76 [L:/172.19.48.88:9879 - R:/106.91.198.42:29347]
+12-19 09:29:34.539 INFO  [Zebra-worker-1-thread-2] [com.zebra.net.servers.ZebraConnectionHandler] : Request c:1100 u:104855711423  EmptyMessage(super=ZebraBaseMessage(), msg=0) [L:/172.19.48.88:9879 - R:/106.91.198.42:29347]
+12-19 09:29:34.539 INFO  [Zebra-worker-1-thread-2] [com.zebra.net.codec.ZebraEncoder] : Response c:1100 u:104855711423 r:0 s:200 l:610 [L:/172.19.48.88:9879 - R:/106.91.198.42:29347]
+12-19 09:29:34.571 INFO  [Zebra-worker-1-thread-2] [com.zebra.net.servers.ZebraConnectionHandler] : Request c:1008 u:104855711423  EmptyMessage(super=ZebraBaseMessage(), msg=0) [L:/172.19.48.88:9879 - R:/106.91.198.42:29347]
+12-19 09:29:34.602 INFO  [Zebra-worker-1-thread-2] [com.zebra.net.codec.ZebraEncoder] : Response c:1008 u:104855711423 r:0 s:200 l:10 [L:/172.19.48.88:9879 - R:/106.91.198.42:29347]
+12-19 09:29:34.602 INFO  [Zebra-worker-1-thread-2] [com.zebra.net.servers.ZebraConnectionHandler] : Request c:1003 u:104855711423  EmptyMessage(super=ZebraBaseMessage(), msg=0) [L:/172.19.48.88:9879 - R:/106.91.198.42:29347]
+12-19 09:29:34.602 INFO  [Zebra-worker-1-thread-2] [com.petrel.lobby.handler.gold.GoldHandler] : 1003:104855711423
+12-19 09:29:34.602 INFO  [Zebra-worker-1-thread-2] [com.petrel.lobby.handler.gold.GoldHandler] : 1003:104855711423  GoldMessage(goldNumber=0, bankNumber=0)
+12-19 09:29:34.602 INFO  [Zebra-worker-1-thread-2] [com.zebra.net.codec.ZebraEncoder] : Response c:1003 u:104855711423 r:0 s:200 l:22 [L:/172.19.48.88:9879 - R:/106.91.198.42:29347]
+12-19 09:29:38.626 INFO  [Zebra-worker-1-thread-2] [com.zebra.net.servers.ZebraConnectionHandler] : Request c:1012 u:104855711423  EmptyMessage(super=ZebraBaseMessage(), msg=0) [L:/172.19.48.88:9879 - R:/106.91.198.42:29347]
+12-19 09:29:38.641 INFO  [Zebra-worker-1-thread-2] [com.zebra.net.codec.ZebraEncoder] : Response c:1012 u:104855711423 r:0 s:200 l:6 [L:/172.19.48.88:9879 - R:/106.91.198.42:29347]
+12-19 09:29:40.292 INFO  [Zebra-worker-1-thread-2] [com.zebra.net.servers.ZebraConnectionHandler] : Request c:1001 u:0  LoginGuestRequestMessage(uid=104855711423, mac=c8e5e575-fe90-4752-9698-efeca72fb1c5e2ac16a3a7134d55d3d73e9e77d276a7a653eafe, devicesType=0, ip=127.0.0.1) [L:/172.19.48.88:9879 - R:/106.91.198.42:29347]
+12-19 09:29:40.339 INFO  [Zebra-worker-1-thread-1] [com.zebra.net.codec.ZebraEncoder] : Response c:444 u:88480808 r:0 s:200 l:18 [L:/127.0.0.1:9879 - R:/127.0.0.1:53208]
+12-19 09:29:40.339 INFO  [Zebra-worker-1-thread-2] [com.zebra.rpc.server.ZebraUserEEServer] : UserOnlineServer: uid 104855711423, cid 78877353,  roomId 0, vfx LOBBY, channel [L:/172.19.48.88:9879 - R:/106.91.198.42:29347]
+12-19 09:29:40.355 INFO  [Zebra-worker-1-thread-2] [c.petrel.lobby.handler.login.LoginRegistryService] : Login: uid: LoginResponseMessage= uid: 104855711423 gid: 98023204 goldNumber: 0 bankNumber: 0 [L:/172.19.48.88:9879 - R:/106.91.198.42:29347]
+12-19 09:29:40.355 INFO  [Zebra-worker-1-thread-2] [com.zebra.net.codec.ZebraEncoder] : Response c:1001 u:104855711423 r:0 s:200 l:76 [L:/172.19.48.88:9879 - R:/106.91.198.42:29347]
+12-19 09:29:40.826 INFO  [Zebra-worker-1-thread-2] [com.zebra.net.servers.ZebraConnectionHandler] : Request c:1003 u:104855711423  EmptyMessage(super=ZebraBaseMessage(), msg=0) [L:/172.19.48.88:9879 - R:/106.91.198.42:29347]
+12-19 09:29:40.826 INFO  [Zebra-worker-1-thread-2] [com.petrel.lobby.handler.gold.GoldHandler] : 1003:104855711423
+12-19 09:29:40.826 INFO  [Zebra-worker-1-thread-2] [com.petrel.lobby.handler.gold.GoldHandler] : 1003:104855711423  GoldMessage(goldNumber=0, bankNumber=0)
+12-19 09:29:40.826 INFO  [Zebra-worker-1-thread-2] [com.zebra.net.codec.ZebraEncoder] : Response c:1003 u:104855711423 r:0 s:200 l:22 [L:/172.19.48.88:9879 - R:/106.91.198.42:29347]
+12-19 09:31:20.624 INFO  [Zebra-worker-1-thread-2] [com.zebra.net.servers.ZebraConnectionHandler] : Connection channel inactive: 106.91.198.42:29347
+12-19 09:31:20.640 INFO  [Zebra-worker-1-thread-2] [com.zebra.rpc.server.ZebraServerRegisterService] : UserOfflineServer  u: 104855711423  serverId lobby:127.0.0.1:9879  vfx LOBBY 
+12-19 09:34:14.243 INFO  [Zebra-boss-2-thread-1] [io.netty.handler.logging.LoggingHandler] : [id: 0xa787efcc, L:/0:0:0:0:0:0:0:0:9879] READ: [id: 0x5fdd0d2b, L:/172.19.48.88:9879 - R:/106.91.198.42:28784]
+12-19 09:34:14.243 INFO  [Zebra-boss-2-thread-1] [io.netty.handler.logging.LoggingHandler] : [id: 0xa787efcc, L:/0:0:0:0:0:0:0:0:9879] READ COMPLETE
+12-19 09:34:14.243 INFO  [Zebra-worker-1-thread-3] [com.zebra.net.servers.ZebraConnectionHandler] : Connection channel active: 106.91.198.42:28784
+12-19 09:34:14.384 INFO  [Zebra-worker-1-thread-3] [com.zebra.net.servers.ZebraConnectionHandler] : Request c:1001 u:0  LoginGuestRequestMessage(uid=104855711423, mac=c8e5e575-fe90-4752-9698-efeca72fb1c5e2ac16a3a7134d55d3d73e9e77d276a7a653eafe, devicesType=0, ip=null) [L:/172.19.48.88:9879 - R:/106.91.198.42:28784]
+12-19 09:34:14.415 INFO  [Zebra-worker-1-thread-3] [com.zebra.rpc.server.ZebraUserEEServer] : UserOnlineServer: uid 104855711423, cid 82350509,  roomId 0, vfx LOBBY, channel [L:/172.19.48.88:9879 - R:/106.91.198.42:28784]
+12-19 09:34:14.415 INFO  [Zebra-worker-1-thread-3] [c.petrel.lobby.handler.login.LoginRegistryService] : Login: uid: LoginResponseMessage= uid: 104855711423 gid: 98023204 goldNumber: 0 bankNumber: 0 [L:/172.19.48.88:9879 - R:/106.91.198.42:28784]
+12-19 09:34:14.415 INFO  [Zebra-worker-1-thread-3] [com.zebra.net.codec.ZebraEncoder] : Response c:1001 u:104855711423 r:0 s:200 l:76 [L:/172.19.48.88:9879 - R:/106.91.198.42:28784]
+12-19 09:34:14.903 INFO  [Zebra-worker-1-thread-3] [com.zebra.net.servers.ZebraConnectionHandler] : Request c:1100 u:104855711423  EmptyMessage(super=ZebraBaseMessage(), msg=0) [L:/172.19.48.88:9879 - R:/106.91.198.42:28784]
+12-19 09:34:14.903 INFO  [Zebra-worker-1-thread-3] [com.zebra.net.codec.ZebraEncoder] : Response c:1100 u:104855711423 r:0 s:200 l:610 [L:/172.19.48.88:9879 - R:/106.91.198.42:28784]
+12-19 09:34:14.950 INFO  [Zebra-worker-1-thread-3] [com.zebra.net.servers.ZebraConnectionHandler] : Request c:1008 u:104855711423  EmptyMessage(super=ZebraBaseMessage(), msg=0) [L:/172.19.48.88:9879 - R:/106.91.198.42:28784]
+12-19 09:34:14.965 INFO  [Zebra-worker-1-thread-3] [com.zebra.net.codec.ZebraEncoder] : Response c:1008 u:104855711423 r:0 s:200 l:10 [L:/172.19.48.88:9879 - R:/106.91.198.42:28784]
+12-19 09:34:14.965 INFO  [Zebra-worker-1-thread-3] [com.zebra.net.servers.ZebraConnectionHandler] : Request c:1003 u:104855711423  EmptyMessage(super=ZebraBaseMessage(), msg=0) [L:/172.19.48.88:9879 - R:/106.91.198.42:28784]
+12-19 09:34:14.965 INFO  [Zebra-worker-1-thread-3] [com.petrel.lobby.handler.gold.GoldHandler] : 1003:104855711423
+12-19 09:34:14.965 INFO  [Zebra-worker-1-thread-3] [com.petrel.lobby.handler.gold.GoldHandler] : 1003:104855711423  GoldMessage(goldNumber=0, bankNumber=0)
+12-19 09:34:14.965 INFO  [Zebra-worker-1-thread-3] [com.zebra.net.codec.ZebraEncoder] : Response c:1003 u:104855711423 r:0 s:200 l:22 [L:/172.19.48.88:9879 - R:/106.91.198.42:28784]
+12-19 09:34:37.213 INFO  [Zebra-worker-1-thread-3] [com.zebra.net.servers.ZebraConnectionHandler] : Request c:1012 u:104855711423  EmptyMessage(super=ZebraBaseMessage(), msg=0) [L:/172.19.48.88:9879 - R:/106.91.198.42:28784]
+12-19 09:34:37.229 INFO  [Zebra-worker-1-thread-3] [com.zebra.net.codec.ZebraEncoder] : Response c:1012 u:104855711423 r:0 s:200 l:6 [L:/172.19.48.88:9879 - R:/106.91.198.42:28784]
+12-19 09:34:39.351 INFO  [Zebra-worker-1-thread-3] [com.zebra.net.servers.ZebraConnectionHandler] : Connection channel inactive: 106.91.198.42:28784
+12-19 09:34:39.351 INFO  [Zebra-worker-1-thread-3] [com.zebra.rpc.server.ZebraServerRegisterService] : UserOfflineServer  u: 104855711423  serverId lobby:127.0.0.1:9879  vfx LOBBY 
+12-19 09:53:27.799 INFO  [Zebra-boss-2-thread-1] [io.netty.handler.logging.LoggingHandler] : [id: 0xa787efcc, L:/0:0:0:0:0:0:0:0:9879] READ: [id: 0xc6a92e10, L:/172.19.48.88:9879 - R:/106.91.198.42:28405]
+12-19 09:53:27.814 INFO  [Zebra-boss-2-thread-1] [io.netty.handler.logging.LoggingHandler] : [id: 0xa787efcc, L:/0:0:0:0:0:0:0:0:9879] READ COMPLETE
+12-19 09:53:27.814 INFO  [Zebra-worker-1-thread-4] [com.zebra.net.servers.ZebraConnectionHandler] : Connection channel active: 106.91.198.42:28405
+12-19 09:53:27.925 INFO  [Zebra-worker-1-thread-4] [com.zebra.net.servers.ZebraConnectionHandler] : Request c:1001 u:0  LoginGuestRequestMessage(uid=104855711423, mac=c8e5e575-fe90-4752-9698-efeca72fb1c5e2ac16a3a7134d55d3d73e9e77d276a7a653eafe, devicesType=0, ip=null) [L:/172.19.48.88:9879 - R:/106.91.198.42:28405]
+12-19 09:53:27.956 INFO  [Zebra-worker-1-thread-4] [com.zebra.rpc.server.ZebraUserEEServer] : UserOnlineServer: uid 104855711423, cid 25430822,  roomId 0, vfx LOBBY, channel [L:/172.19.48.88:9879 - R:/106.91.198.42:28405]
+12-19 09:53:27.956 INFO  [Zebra-worker-1-thread-4] [c.petrel.lobby.handler.login.LoginRegistryService] : Login: uid: LoginResponseMessage= uid: 104855711423 gid: 98023204 goldNumber: 0 bankNumber: 0 [L:/172.19.48.88:9879 - R:/106.91.198.42:28405]
+12-19 09:53:27.956 INFO  [Zebra-worker-1-thread-4] [com.zebra.net.codec.ZebraEncoder] : Response c:1001 u:104855711423 r:0 s:200 l:76 [L:/172.19.48.88:9879 - R:/106.91.198.42:28405]
+12-19 09:53:28.427 INFO  [Zebra-worker-1-thread-4] [com.zebra.net.servers.ZebraConnectionHandler] : Request c:1100 u:104855711423  EmptyMessage(super=ZebraBaseMessage(), msg=0) [L:/172.19.48.88:9879 - R:/106.91.198.42:28405]
+12-19 09:53:28.444 INFO  [Zebra-worker-1-thread-4] [com.zebra.net.codec.ZebraEncoder] : Response c:1100 u:104855711423 r:0 s:200 l:610 [L:/172.19.48.88:9879 - R:/106.91.198.42:28405]
+12-19 09:53:28.475 INFO  [Zebra-worker-1-thread-4] [com.zebra.net.servers.ZebraConnectionHandler] : Request c:1008 u:104855711423  EmptyMessage(super=ZebraBaseMessage(), msg=0) [L:/172.19.48.88:9879 - R:/106.91.198.42:28405]
+12-19 09:53:28.491 INFO  [Zebra-worker-1-thread-4] [com.zebra.net.codec.ZebraEncoder] : Response c:1008 u:104855711423 r:0 s:200 l:10 [L:/172.19.48.88:9879 - R:/106.91.198.42:28405]
+12-19 09:53:28.491 INFO  [Zebra-worker-1-thread-4] [com.zebra.net.servers.ZebraConnectionHandler] : Request c:1003 u:104855711423  EmptyMessage(super=ZebraBaseMessage(), msg=0) [L:/172.19.48.88:9879 - R:/106.91.198.42:28405]
+12-19 09:53:28.491 INFO  [Zebra-worker-1-thread-4] [com.petrel.lobby.handler.gold.GoldHandler] : 1003:104855711423
+12-19 09:53:28.491 INFO  [Zebra-worker-1-thread-4] [com.petrel.lobby.handler.gold.GoldHandler] : 1003:104855711423  GoldMessage(goldNumber=0, bankNumber=0)
+12-19 09:53:28.491 INFO  [Zebra-worker-1-thread-4] [com.zebra.net.codec.ZebraEncoder] : Response c:1003 u:104855711423 r:0 s:200 l:22 [L:/172.19.48.88:9879 - R:/106.91.198.42:28405]
+12-19 09:56:23.444 INFO  [Zebra-worker-1-thread-4] [com.zebra.net.servers.ZebraConnectionHandler] : Connection channel inactive: 106.91.198.42:28405
+12-19 09:56:23.444 INFO  [Zebra-worker-1-thread-4] [com.zebra.rpc.server.ZebraServerRegisterService] : UserOfflineServer  u: 104855711423  serverId lobby:127.0.0.1:9879  vfx LOBBY 
+12-19 09:56:31.209 INFO  [Zebra-boss-2-thread-1] [io.netty.handler.logging.LoggingHandler] : [id: 0xa787efcc, L:/0:0:0:0:0:0:0:0:9879] READ: [id: 0xa0b73c40, L:/172.19.48.88:9879 - R:/106.91.198.42:28985]
+12-19 09:56:31.224 INFO  [Zebra-boss-2-thread-1] [io.netty.handler.logging.LoggingHandler] : [id: 0xa787efcc, L:/0:0:0:0:0:0:0:0:9879] READ COMPLETE
+12-19 09:56:31.224 INFO  [Zebra-worker-1-thread-5] [com.zebra.net.servers.ZebraConnectionHandler] : Connection channel active: 106.91.198.42:28985
+12-19 09:56:31.351 INFO  [Zebra-worker-1-thread-5] [com.zebra.net.servers.ZebraConnectionHandler] : Request c:1001 u:0  LoginGuestRequestMessage(uid=104855711423, mac=c8e5e575-fe90-4752-9698-efeca72fb1c5e2ac16a3a7134d55d3d73e9e77d276a7a653eafe, devicesType=0, ip=null) [L:/172.19.48.88:9879 - R:/106.91.198.42:28985]
+12-19 09:56:31.398 INFO  [Zebra-worker-1-thread-5] [com.zebra.rpc.server.ZebraUserEEServer] : UserOnlineServer: uid 104855711423, cid 75733354,  roomId 0, vfx LOBBY, channel [L:/172.19.48.88:9879 - R:/106.91.198.42:28985]
+12-19 09:56:31.398 INFO  [Zebra-worker-1-thread-5] [c.petrel.lobby.handler.login.LoginRegistryService] : Login: uid: LoginResponseMessage= uid: 104855711423 gid: 98023204 goldNumber: 0 bankNumber: 0 [L:/172.19.48.88:9879 - R:/106.91.198.42:28985]
+12-19 09:56:31.398 INFO  [Zebra-worker-1-thread-5] [com.zebra.net.codec.ZebraEncoder] : Response c:1001 u:104855711423 r:0 s:200 l:76 [L:/172.19.48.88:9879 - R:/106.91.198.42:28985]
+12-19 09:56:32.093 INFO  [Zebra-worker-1-thread-5] [com.zebra.net.servers.ZebraConnectionHandler] : Request c:1100 u:104855711423  EmptyMessage(super=ZebraBaseMessage(), msg=0) [L:/172.19.48.88:9879 - R:/106.91.198.42:28985]
+12-19 09:56:32.093 INFO  [Zebra-worker-1-thread-5] [com.zebra.net.codec.ZebraEncoder] : Response c:1100 u:104855711423 r:0 s:200 l:610 [L:/172.19.48.88:9879 - R:/106.91.198.42:28985]
+12-19 09:56:32.139 INFO  [Zebra-worker-1-thread-5] [com.zebra.net.servers.ZebraConnectionHandler] : Request c:1008 u:104855711423  EmptyMessage(super=ZebraBaseMessage(), msg=0) [L:/172.19.48.88:9879 - R:/106.91.198.42:28985]
+12-19 09:56:32.155 INFO  [Zebra-worker-1-thread-5] [com.zebra.net.codec.ZebraEncoder] : Response c:1008 u:104855711423 r:0 s:200 l:10 [L:/172.19.48.88:9879 - R:/106.91.198.42:28985]
+12-19 09:56:32.155 INFO  [Zebra-worker-1-thread-5] [com.zebra.net.servers.ZebraConnectionHandler] : Request c:1003 u:104855711423  EmptyMessage(super=ZebraBaseMessage(), msg=0) [L:/172.19.48.88:9879 - R:/106.91.198.42:28985]
+12-19 09:56:32.155 INFO  [Zebra-worker-1-thread-5] [com.petrel.lobby.handler.gold.GoldHandler] : 1003:104855711423
+12-19 09:56:32.155 INFO  [Zebra-worker-1-thread-5] [com.petrel.lobby.handler.gold.GoldHandler] : 1003:104855711423  GoldMessage(goldNumber=0, bankNumber=0)
+12-19 09:56:32.155 INFO  [Zebra-worker-1-thread-5] [com.zebra.net.codec.ZebraEncoder] : Response c:1003 u:104855711423 r:0 s:200 l:22 [L:/172.19.48.88:9879 - R:/106.91.198.42:28985]
+12-19 09:56:49.529 INFO  [Zebra-worker-1-thread-5] [com.zebra.net.servers.ZebraConnectionHandler] : Request c:1012 u:104855711423  EmptyMessage(super=ZebraBaseMessage(), msg=0) [L:/172.19.48.88:9879 - R:/106.91.198.42:28985]
+12-19 09:56:49.545 INFO  [Zebra-worker-1-thread-5] [com.zebra.net.codec.ZebraEncoder] : Response c:1012 u:104855711423 r:0 s:200 l:6 [L:/172.19.48.88:9879 - R:/106.91.198.42:28985]
+12-19 09:56:52.186 INFO  [Zebra-worker-1-thread-5] [com.zebra.net.servers.ZebraConnectionHandler] : Request c:1001 u:0  LoginGuestRequestMessage(uid=104855711423, mac=c8e5e575-fe90-4752-9698-efeca72fb1c5e2ac16a3a7134d55d3d73e9e77d276a7a653eafe, devicesType=0, ip=127.0.0.1) [L:/172.19.48.88:9879 - R:/106.91.198.42:28985]
+12-19 09:56:52.233 INFO  [Zebra-worker-1-thread-1] [com.zebra.net.codec.ZebraEncoder] : Response c:444 u:88480808 r:0 s:200 l:18 [L:/127.0.0.1:9879 - R:/127.0.0.1:53208]
+12-19 09:56:52.248 INFO  [Zebra-worker-1-thread-5] [com.zebra.rpc.server.ZebraUserEEServer] : UserOnlineServer: uid 104855711423, cid 15245949,  roomId 0, vfx LOBBY, channel [L:/172.19.48.88:9879 - R:/106.91.198.42:28985]
+12-19 09:56:52.249 INFO  [Zebra-worker-1-thread-5] [c.petrel.lobby.handler.login.LoginRegistryService] : Login: uid: LoginResponseMessage= uid: 104855711423 gid: 98023204 goldNumber: 0 bankNumber: 0 [L:/172.19.48.88:9879 - R:/106.91.198.42:28985]
+12-19 09:56:52.249 INFO  [Zebra-worker-1-thread-5] [com.zebra.net.codec.ZebraEncoder] : Response c:1001 u:104855711423 r:0 s:200 l:76 [L:/172.19.48.88:9879 - R:/106.91.198.42:28985]
+12-19 09:56:52.783 INFO  [Zebra-worker-1-thread-5] [com.zebra.net.servers.ZebraConnectionHandler] : Request c:1003 u:104855711423  EmptyMessage(super=ZebraBaseMessage(), msg=0) [L:/172.19.48.88:9879 - R:/106.91.198.42:28985]
+12-19 09:56:52.799 INFO  [Zebra-worker-1-thread-5] [com.petrel.lobby.handler.gold.GoldHandler] : 1003:104855711423
+12-19 09:56:52.799 INFO  [Zebra-worker-1-thread-5] [com.petrel.lobby.handler.gold.GoldHandler] : 1003:104855711423  GoldMessage(goldNumber=0, bankNumber=0)
+12-19 09:56:52.799 INFO  [Zebra-worker-1-thread-5] [com.zebra.net.codec.ZebraEncoder] : Response c:1003 u:104855711423 r:0 s:200 l:22 [L:/172.19.48.88:9879 - R:/106.91.198.42:28985]
+12-19 09:57:12.691 INFO  [Zebra-worker-1-thread-5] [com.zebra.net.servers.ZebraConnectionHandler] : Request c:1012 u:104855711423  EmptyMessage(super=ZebraBaseMessage(), msg=0) [L:/172.19.48.88:9879 - R:/106.91.198.42:28985]
+12-19 09:57:12.691 INFO  [Zebra-worker-1-thread-5] [com.zebra.net.codec.ZebraEncoder] : Response c:1012 u:104855711423 r:0 s:200 l:6 [L:/172.19.48.88:9879 - R:/106.91.198.42:28985]
+12-19 09:57:14.703 INFO  [Zebra-worker-1-thread-5] [com.zebra.net.servers.ZebraConnectionHandler] : Request c:1001 u:0  LoginGuestRequestMessage(uid=104855711423, mac=c8e5e575-fe90-4752-9698-efeca72fb1c5e2ac16a3a7134d55d3d73e9e77d276a7a653eafe, devicesType=0, ip=127.0.0.1) [L:/172.19.48.88:9879 - R:/106.91.198.42:28985]
+12-19 09:57:14.734 INFO  [Zebra-worker-1-thread-1] [com.zebra.net.codec.ZebraEncoder] : Response c:444 u:88480808 r:0 s:200 l:18 [L:/127.0.0.1:9879 - R:/127.0.0.1:53208]
+12-19 09:57:14.734 INFO  [Zebra-worker-1-thread-5] [com.zebra.rpc.server.ZebraUserEEServer] : UserOnlineServer: uid 104855711423, cid 41784538,  roomId 0, vfx LOBBY, channel [L:/172.19.48.88:9879 - R:/106.91.198.42:28985]
+12-19 09:57:14.734 INFO  [Zebra-worker-1-thread-5] [c.petrel.lobby.handler.login.LoginRegistryService] : Login: uid: LoginResponseMessage= uid: 104855711423 gid: 98023204 goldNumber: 0 bankNumber: 0 [L:/172.19.48.88:9879 - R:/106.91.198.42:28985]
+12-19 09:57:14.734 INFO  [Zebra-worker-1-thread-5] [com.zebra.net.codec.ZebraEncoder] : Response c:1001 u:104855711423 r:0 s:200 l:76 [L:/172.19.48.88:9879 - R:/106.91.198.42:28985]
+12-19 09:57:15.189 INFO  [Zebra-worker-1-thread-5] [com.zebra.net.servers.ZebraConnectionHandler] : Request c:1003 u:104855711423  EmptyMessage(super=ZebraBaseMessage(), msg=0) [L:/172.19.48.88:9879 - R:/106.91.198.42:28985]
+12-19 09:57:15.189 INFO  [Zebra-worker-1-thread-5] [com.petrel.lobby.handler.gold.GoldHandler] : 1003:104855711423
+12-19 09:57:15.189 INFO  [Zebra-worker-1-thread-5] [com.petrel.lobby.handler.gold.GoldHandler] : 1003:104855711423  GoldMessage(goldNumber=0, bankNumber=0)
+12-19 09:57:15.205 INFO  [Zebra-worker-1-thread-5] [com.zebra.net.codec.ZebraEncoder] : Response c:1003 u:104855711423 r:0 s:200 l:22 [L:/172.19.48.88:9879 - R:/106.91.198.42:28985]
+12-19 09:59:22.501 INFO  [Zebra-worker-1-thread-5] [com.zebra.net.servers.ZebraConnectionHandler] : Connection channel inactive: 106.91.198.42:28985
+12-19 09:59:22.501 INFO  [Zebra-worker-1-thread-5] [com.zebra.rpc.server.ZebraServerRegisterService] : UserOfflineServer  u: 104855711423  serverId lobby:127.0.0.1:9879  vfx LOBBY 
+12-19 09:59:33.989 INFO  [Zebra-boss-2-thread-1] [io.netty.handler.logging.LoggingHandler] : [id: 0xa787efcc, L:/0:0:0:0:0:0:0:0:9879] READ: [id: 0x8cf403f3, L:/172.19.48.88:9879 - R:/106.91.198.42:29244]
+12-19 09:59:33.989 INFO  [Zebra-boss-2-thread-1] [io.netty.handler.logging.LoggingHandler] : [id: 0xa787efcc, L:/0:0:0:0:0:0:0:0:9879] READ COMPLETE
+12-19 09:59:33.989 INFO  [Zebra-worker-1-thread-6] [com.zebra.net.servers.ZebraConnectionHandler] : Connection channel active: 106.91.198.42:29244
+12-19 09:59:34.116 INFO  [Zebra-worker-1-thread-6] [com.zebra.net.servers.ZebraConnectionHandler] : Request c:1001 u:0  LoginGuestRequestMessage(uid=104855711423, mac=c8e5e575-fe90-4752-9698-efeca72fb1c5e2ac16a3a7134d55d3d73e9e77d276a7a653eafe, devicesType=0, ip=null) [L:/172.19.48.88:9879 - R:/106.91.198.42:29244]
+12-19 09:59:34.147 INFO  [Zebra-worker-1-thread-6] [com.zebra.rpc.server.ZebraUserEEServer] : UserOnlineServer: uid 104855711423, cid 72040394,  roomId 0, vfx LOBBY, channel [L:/172.19.48.88:9879 - R:/106.91.198.42:29244]
+12-19 09:59:34.147 INFO  [Zebra-worker-1-thread-6] [c.petrel.lobby.handler.login.LoginRegistryService] : Login: uid: LoginResponseMessage= uid: 104855711423 gid: 98023204 goldNumber: 0 bankNumber: 0 [L:/172.19.48.88:9879 - R:/106.91.198.42:29244]
+12-19 09:59:34.162 INFO  [Zebra-worker-1-thread-6] [com.zebra.net.codec.ZebraEncoder] : Response c:1001 u:104855711423 r:0 s:200 l:76 [L:/172.19.48.88:9879 - R:/106.91.198.42:29244]
+12-19 09:59:34.838 INFO  [Zebra-worker-1-thread-6] [com.zebra.net.servers.ZebraConnectionHandler] : Request c:1100 u:104855711423  EmptyMessage(super=ZebraBaseMessage(), msg=0) [L:/172.19.48.88:9879 - R:/106.91.198.42:29244]
+12-19 09:59:34.855 INFO  [Zebra-worker-1-thread-6] [com.zebra.net.codec.ZebraEncoder] : Response c:1100 u:104855711423 r:0 s:200 l:610 [L:/172.19.48.88:9879 - R:/106.91.198.42:29244]
+12-19 09:59:34.886 INFO  [Zebra-worker-1-thread-6] [com.zebra.net.servers.ZebraConnectionHandler] : Request c:1008 u:104855711423  EmptyMessage(super=ZebraBaseMessage(), msg=0) [L:/172.19.48.88:9879 - R:/106.91.198.42:29244]
+12-19 09:59:34.901 INFO  [Zebra-worker-1-thread-6] [com.zebra.net.codec.ZebraEncoder] : Response c:1008 u:104855711423 r:0 s:200 l:10 [L:/172.19.48.88:9879 - R:/106.91.198.42:29244]
+12-19 09:59:34.901 INFO  [Zebra-worker-1-thread-6] [com.zebra.net.servers.ZebraConnectionHandler] : Request c:1003 u:104855711423  EmptyMessage(super=ZebraBaseMessage(), msg=0) [L:/172.19.48.88:9879 - R:/106.91.198.42:29244]
+12-19 09:59:34.901 INFO  [Zebra-worker-1-thread-6] [com.petrel.lobby.handler.gold.GoldHandler] : 1003:104855711423
+12-19 09:59:34.901 INFO  [Zebra-worker-1-thread-6] [com.petrel.lobby.handler.gold.GoldHandler] : 1003:104855711423  GoldMessage(goldNumber=0, bankNumber=0)
+12-19 09:59:34.901 INFO  [Zebra-worker-1-thread-6] [com.zebra.net.codec.ZebraEncoder] : Response c:1003 u:104855711423 r:0 s:200 l:22 [L:/172.19.48.88:9879 - R:/106.91.198.42:29244]
+12-19 10:02:29.733 INFO  [Zebra-worker-1-thread-6] [com.zebra.net.servers.ZebraConnectionHandler] : Request c:1012 u:104855711423  EmptyMessage(super=ZebraBaseMessage(), msg=0) [L:/172.19.48.88:9879 - R:/106.91.198.42:29244]
+12-19 10:02:29.749 INFO  [Zebra-worker-1-thread-6] [com.zebra.net.codec.ZebraEncoder] : Response c:1012 u:104855711423 r:0 s:200 l:6 [L:/172.19.48.88:9879 - R:/106.91.198.42:29244]
+12-19 10:02:32.251 INFO  [Zebra-worker-1-thread-6] [com.zebra.net.servers.ZebraConnectionHandler] : Connection channel inactive: 106.91.198.42:29244
+12-19 10:02:32.251 INFO  [Zebra-worker-1-thread-6] [com.zebra.rpc.server.ZebraServerRegisterService] : UserOfflineServer  u: 104855711423  serverId lobby:127.0.0.1:9879  vfx LOBBY 
+12-19 10:03:11.497 INFO  [Zebra-boss-2-thread-1] [io.netty.handler.logging.LoggingHandler] : [id: 0xa787efcc, L:/0:0:0:0:0:0:0:0:9879] READ: [id: 0xf857ea25, L:/172.19.48.88:9879 - R:/106.91.198.42:27692]
+12-19 10:03:11.497 INFO  [Zebra-boss-2-thread-1] [io.netty.handler.logging.LoggingHandler] : [id: 0xa787efcc, L:/0:0:0:0:0:0:0:0:9879] READ COMPLETE
+12-19 10:03:11.497 INFO  [Zebra-worker-1-thread-7] [com.zebra.net.servers.ZebraConnectionHandler] : Connection channel active: 106.91.198.42:27692
+12-19 10:03:11.606 INFO  [Zebra-worker-1-thread-7] [com.zebra.net.servers.ZebraConnectionHandler] : Request c:1001 u:0  LoginGuestRequestMessage(uid=104855711423, mac=c8e5e575-fe90-4752-9698-efeca72fb1c5e2ac16a3a7134d55d3d73e9e77d276a7a653eafe, devicesType=0, ip=null) [L:/172.19.48.88:9879 - R:/106.91.198.42:27692]
+12-19 10:03:11.637 INFO  [Zebra-worker-1-thread-7] [com.zebra.rpc.server.ZebraUserEEServer] : UserOnlineServer: uid 104855711423, cid 77224644,  roomId 0, vfx LOBBY, channel [L:/172.19.48.88:9879 - R:/106.91.198.42:27692]
+12-19 10:03:11.637 INFO  [Zebra-worker-1-thread-7] [c.petrel.lobby.handler.login.LoginRegistryService] : Login: uid: LoginResponseMessage= uid: 104855711423 gid: 98023204 goldNumber: 0 bankNumber: 0 [L:/172.19.48.88:9879 - R:/106.91.198.42:27692]
+12-19 10:03:11.637 INFO  [Zebra-worker-1-thread-7] [com.zebra.net.codec.ZebraEncoder] : Response c:1001 u:104855711423 r:0 s:200 l:76 [L:/172.19.48.88:9879 - R:/106.91.198.42:27692]
+12-19 10:03:12.125 INFO  [Zebra-worker-1-thread-7] [com.zebra.net.servers.ZebraConnectionHandler] : Request c:1100 u:104855711423  EmptyMessage(super=ZebraBaseMessage(), msg=0) [L:/172.19.48.88:9879 - R:/106.91.198.42:27692]
+12-19 10:03:12.125 INFO  [Zebra-worker-1-thread-7] [com.zebra.net.codec.ZebraEncoder] : Response c:1100 u:104855711423 r:0 s:200 l:610 [L:/172.19.48.88:9879 - R:/106.91.198.42:27692]
+12-19 10:03:12.172 INFO  [Zebra-worker-1-thread-7] [com.zebra.net.servers.ZebraConnectionHandler] : Request c:1008 u:104855711423  EmptyMessage(super=ZebraBaseMessage(), msg=0) [L:/172.19.48.88:9879 - R:/106.91.198.42:27692]
+12-19 10:03:12.187 INFO  [Zebra-worker-1-thread-7] [com.zebra.net.codec.ZebraEncoder] : Response c:1008 u:104855711423 r:0 s:200 l:10 [L:/172.19.48.88:9879 - R:/106.91.198.42:27692]
+12-19 10:03:12.187 INFO  [Zebra-worker-1-thread-7] [com.zebra.net.servers.ZebraConnectionHandler] : Request c:1003 u:104855711423  EmptyMessage(super=ZebraBaseMessage(), msg=0) [L:/172.19.48.88:9879 - R:/106.91.198.42:27692]
+12-19 10:03:12.187 INFO  [Zebra-worker-1-thread-7] [com.petrel.lobby.handler.gold.GoldHandler] : 1003:104855711423
+12-19 10:03:12.187 INFO  [Zebra-worker-1-thread-7] [com.petrel.lobby.handler.gold.GoldHandler] : 1003:104855711423  GoldMessage(goldNumber=0, bankNumber=0)
+12-19 10:03:12.187 INFO  [Zebra-worker-1-thread-7] [com.zebra.net.codec.ZebraEncoder] : Response c:1003 u:104855711423 r:0 s:200 l:22 [L:/172.19.48.88:9879 - R:/106.91.198.42:27692]
+12-19 10:03:39.106 INFO  [Zebra-worker-1-thread-7] [com.zebra.net.servers.ZebraConnectionHandler] : Request c:1012 u:104855711423  EmptyMessage(super=ZebraBaseMessage(), msg=0) [L:/172.19.48.88:9879 - R:/106.91.198.42:27692]
+12-19 10:03:39.106 INFO  [Zebra-worker-1-thread-7] [com.zebra.net.codec.ZebraEncoder] : Response c:1012 u:104855711423 r:0 s:200 l:6 [L:/172.19.48.88:9879 - R:/106.91.198.42:27692]
+12-19 10:03:41.622 INFO  [Zebra-worker-1-thread-7] [com.zebra.net.servers.ZebraConnectionHandler] : Connection channel inactive: 106.91.198.42:27692
+12-19 10:03:41.622 INFO  [Zebra-worker-1-thread-7] [com.zebra.rpc.server.ZebraServerRegisterService] : UserOfflineServer  u: 104855711423  serverId lobby:127.0.0.1:9879  vfx LOBBY 
+12-19 10:14:20.468 INFO  [Zebra-boss-2-thread-1] [io.netty.handler.logging.LoggingHandler] : [id: 0xa787efcc, L:/0:0:0:0:0:0:0:0:9879] READ: [id: 0x01c7980c, L:/172.19.48.88:9879 - R:/106.91.198.42:29170]
+12-19 10:14:20.483 INFO  [Zebra-boss-2-thread-1] [io.netty.handler.logging.LoggingHandler] : [id: 0xa787efcc, L:/0:0:0:0:0:0:0:0:9879] READ COMPLETE
+12-19 10:14:20.483 INFO  [Zebra-worker-1-thread-8] [com.zebra.net.servers.ZebraConnectionHandler] : Connection channel active: 106.91.198.42:29170
+12-19 10:14:21.131 INFO  [Zebra-worker-1-thread-8] [com.zebra.net.servers.ZebraConnectionHandler] : Request c:1001 u:0  LoginGuestRequestMessage(uid=423944527471, mac=2c59e16b-20e6-423d-888c-038ebb39fc5febdde248fe8ccc9ff64178f9b9e01733, devicesType=1, ip=null) [L:/172.19.48.88:9879 - R:/106.91.198.42:29170]
+12-19 10:14:21.194 INFO  [Zebra-worker-1-thread-8] [com.zebra.rpc.server.ZebraUserEEServer] : UserOnlineServer: uid 423944527471, cid 52033415,  roomId 0, vfx LOBBY, channel [L:/172.19.48.88:9879 - R:/106.91.198.42:29170]
+12-19 10:14:21.194 INFO  [Zebra-worker-1-thread-8] [c.petrel.lobby.handler.login.LoginRegistryService] : Login: uid: LoginResponseMessage= uid: 423944527471 gid: 50309000 goldNumber: 0 bankNumber: 0 [L:/172.19.48.88:9879 - R:/106.91.198.42:29170]
+12-19 10:14:21.194 INFO  [Zebra-worker-1-thread-8] [com.zebra.net.codec.ZebraEncoder] : Response c:1001 u:423944527471 r:0 s:200 l:76 [L:/172.19.48.88:9879 - R:/106.91.198.42:29170]
+12-19 10:14:21.924 INFO  [Zebra-worker-1-thread-8] [com.zebra.net.servers.ZebraConnectionHandler] : Request c:1100 u:423944527471  EmptyMessage(super=ZebraBaseMessage(), msg=0) [L:/172.19.48.88:9879 - R:/106.91.198.42:29170]
+12-19 10:14:21.924 INFO  [Zebra-worker-1-thread-8] [com.zebra.net.codec.ZebraEncoder] : Response c:1100 u:423944527471 r:0 s:200 l:610 [L:/172.19.48.88:9879 - R:/106.91.198.42:29170]
+12-19 10:14:21.924 INFO  [Zebra-worker-1-thread-8] [com.zebra.net.servers.ZebraConnectionHandler] : Request c:1008 u:423944527471  EmptyMessage(super=ZebraBaseMessage(), msg=0) [L:/172.19.48.88:9879 - R:/106.91.198.42:29170]
+12-19 10:14:21.971 INFO  [Zebra-worker-1-thread-8] [com.zebra.net.codec.ZebraEncoder] : Response c:1008 u:423944527471 r:0 s:200 l:10 [L:/172.19.48.88:9879 - R:/106.91.198.42:29170]
+12-19 10:14:21.971 INFO  [Zebra-worker-1-thread-8] [com.zebra.net.servers.ZebraConnectionHandler] : Request c:1003 u:423944527471  EmptyMessage(super=ZebraBaseMessage(), msg=0) [L:/172.19.48.88:9879 - R:/106.91.198.42:29170]
+12-19 10:14:21.971 INFO  [Zebra-worker-1-thread-8] [com.petrel.lobby.handler.gold.GoldHandler] : 1003:423944527471
+12-19 10:14:21.971 INFO  [Zebra-worker-1-thread-8] [com.petrel.lobby.handler.gold.GoldHandler] : 1003:423944527471  GoldMessage(goldNumber=0, bankNumber=0)
+12-19 10:14:21.971 INFO  [Zebra-worker-1-thread-8] [com.zebra.net.codec.ZebraEncoder] : Response c:1003 u:423944527471 r:0 s:200 l:22 [L:/172.19.48.88:9879 - R:/106.91.198.42:29170]
+12-19 10:14:46.418 INFO  [Zebra-worker-1-thread-8] [com.zebra.net.servers.ZebraConnectionHandler] : Request c:1012 u:423944527471  EmptyMessage(super=ZebraBaseMessage(), msg=0) [L:/172.19.48.88:9879 - R:/106.91.198.42:29170]
+12-19 10:14:46.434 INFO  [Zebra-worker-1-thread-8] [com.zebra.net.codec.ZebraEncoder] : Response c:1012 u:423944527471 r:0 s:200 l:6 [L:/172.19.48.88:9879 - R:/106.91.198.42:29170]
+12-19 10:14:48.516 INFO  [Zebra-worker-1-thread-8] [com.zebra.net.servers.ZebraConnectionHandler] : Request c:1001 u:0  LoginGuestRequestMessage(uid=423944527471, mac=2c59e16b-20e6-423d-888c-038ebb39fc5febdde248fe8ccc9ff64178f9b9e01733, devicesType=1, ip=127.0.0.1) [L:/172.19.48.88:9879 - R:/106.91.198.42:29170]
+12-19 10:14:48.562 INFO  [Zebra-worker-1-thread-1] [com.zebra.net.codec.ZebraEncoder] : Response c:444 u:88480808 r:0 s:200 l:18 [L:/127.0.0.1:9879 - R:/127.0.0.1:53208]
+12-19 10:14:48.562 INFO  [Zebra-worker-1-thread-8] [com.zebra.rpc.server.ZebraUserEEServer] : UserOnlineServer: uid 423944527471, cid 66305211,  roomId 0, vfx LOBBY, channel [L:/172.19.48.88:9879 - R:/106.91.198.42:29170]
+12-19 10:14:48.562 INFO  [Zebra-worker-1-thread-8] [c.petrel.lobby.handler.login.LoginRegistryService] : Login: uid: LoginResponseMessage= uid: 423944527471 gid: 50309000 goldNumber: 0 bankNumber: 0 [L:/172.19.48.88:9879 - R:/106.91.198.42:29170]
+12-19 10:14:48.562 INFO  [Zebra-worker-1-thread-8] [com.zebra.net.codec.ZebraEncoder] : Response c:1001 u:423944527471 r:0 s:200 l:76 [L:/172.19.48.88:9879 - R:/106.91.198.42:29170]
+12-19 10:14:49.019 INFO  [Zebra-worker-1-thread-8] [com.zebra.net.servers.ZebraConnectionHandler] : Request c:1003 u:423944527471  EmptyMessage(super=ZebraBaseMessage(), msg=0) [L:/172.19.48.88:9879 - R:/106.91.198.42:29170]
+12-19 10:14:49.019 INFO  [Zebra-worker-1-thread-8] [com.petrel.lobby.handler.gold.GoldHandler] : 1003:423944527471
+12-19 10:14:49.019 INFO  [Zebra-worker-1-thread-8] [com.petrel.lobby.handler.gold.GoldHandler] : 1003:423944527471  GoldMessage(goldNumber=0, bankNumber=0)
+12-19 10:14:49.019 INFO  [Zebra-worker-1-thread-8] [com.zebra.net.codec.ZebraEncoder] : Response c:1003 u:423944527471 r:0 s:200 l:22 [L:/172.19.48.88:9879 - R:/106.91.198.42:29170]
+12-19 10:14:56.872 INFO  [Zebra-worker-1-thread-8] [com.zebra.net.servers.ZebraConnectionHandler] : Request c:1012 u:423944527471  EmptyMessage(super=ZebraBaseMessage(), msg=0) [L:/172.19.48.88:9879 - R:/106.91.198.42:29170]
+12-19 10:14:56.892 INFO  [Zebra-worker-1-thread-8] [com.zebra.net.codec.ZebraEncoder] : Response c:1012 u:423944527471 r:0 s:200 l:6 [L:/172.19.48.88:9879 - R:/106.91.198.42:29170]
+12-19 10:15:33.244 INFO  [Zebra-worker-1-thread-8] [com.zebra.net.servers.ZebraConnectionHandler] : Connection channel inactive: 106.91.198.42:29170
+12-19 10:15:33.244 INFO  [Zebra-worker-1-thread-8] [com.zebra.rpc.server.ZebraServerRegisterService] : UserOfflineServer  u: 423944527471  serverId lobby:127.0.0.1:9879  vfx LOBBY 
+12-19 10:33:41.739 INFO  [container-4] [com.petrel.lobby.config.RedisKeyExpirationListener] : Expiration key 104855711423
+12-19 10:45:33.329 INFO  [container-5] [com.petrel.lobby.config.RedisKeyExpirationListener] : Expiration key 423944527471
+12-19 21:08:47.349 INFO  [Zebra-boss-2-thread-1] [io.netty.handler.logging.LoggingHandler] : [id: 0xa787efcc, L:/0:0:0:0:0:0:0:0:9879] READ: [id: 0xaefdb00c, L:/172.19.48.88:9879 - R:/124.237.185.204:7729]
+12-19 21:08:47.351 INFO  [Zebra-boss-2-thread-1] [io.netty.handler.logging.LoggingHandler] : [id: 0xa787efcc, L:/0:0:0:0:0:0:0:0:9879] READ COMPLETE
+12-19 21:08:47.352 INFO  [Zebra-worker-1-thread-1] [com.zebra.net.servers.ZebraConnectionHandler] : Connection channel active: 124.237.185.204:7729
+12-19 21:08:48.046 INFO  [Zebra-worker-1-thread-1] [com.zebra.net.servers.ZebraConnectionHandler] : Request c:1001 u:0  LoginGuestRequestMessage(uid=460040843251, mac=629607ac-0242-4e99-afe0-a311b5de2b9dfadb4b89098bd3fd25593ee72522d172, devicesType=1, ip=null) [L:/172.19.48.88:9879 - R:/124.237.185.204:7729]
+12-19 21:08:48.066 INFO  [Zebra-worker-1-thread-1] [com.zebra.net.codec.ZebraEncoder] : Response c:1001 u:0 r:0 s:200 l:6 [L:/172.19.48.88:9879 - R:/124.237.185.204:7729]
+12-19 21:08:59.865 INFO  [Zebra-worker-1-thread-1] [com.zebra.net.servers.ZebraConnectionHandler] : Request c:1001 u:0  LoginGuestRequestMessage(uid=460040843251, mac=629607ac-0242-4e99-afe0-a311b5de2b9dfadb4b89098bd3fd25593ee72522d172, devicesType=1, ip=127.0.0.1) [L:/172.19.48.88:9879 - R:/124.237.185.204:7729]
+12-19 21:08:59.877 INFO  [Zebra-worker-1-thread-1] [com.zebra.net.codec.ZebraEncoder] : Response c:1001 u:0 r:0 s:200 l:6 [L:/172.19.48.88:9879 - R:/124.237.185.204:7729]
+12-19 21:09:01.682 INFO  [Zebra-worker-1-thread-1] [com.zebra.net.servers.ZebraConnectionHandler] : Request c:1001 u:0  LoginGuestRequestMessage(uid=460040843251, mac=629607ac-0242-4e99-afe0-a311b5de2b9dfadb4b89098bd3fd25593ee72522d172, devicesType=1, ip=127.0.0.1) [L:/172.19.48.88:9879 - R:/124.237.185.204:7729]
+12-19 21:09:01.695 INFO  [Zebra-worker-1-thread-1] [com.zebra.net.codec.ZebraEncoder] : Response c:1001 u:0 r:0 s:200 l:6 [L:/172.19.48.88:9879 - R:/124.237.185.204:7729]
+12-19 21:09:02.331 INFO  [Zebra-worker-1-thread-1] [com.zebra.net.servers.ZebraConnectionHandler] : Request c:1001 u:0  LoginGuestRequestMessage(uid=460040843251, mac=629607ac-0242-4e99-afe0-a311b5de2b9dfadb4b89098bd3fd25593ee72522d172, devicesType=1, ip=127.0.0.1) [L:/172.19.48.88:9879 - R:/124.237.185.204:7729]
+12-19 21:09:02.345 INFO  [Zebra-worker-1-thread-1] [com.zebra.net.codec.ZebraEncoder] : Response c:1001 u:0 r:0 s:200 l:6 [L:/172.19.48.88:9879 - R:/124.237.185.204:7729]
+12-19 21:09:02.597 INFO  [Zebra-worker-1-thread-1] [com.zebra.net.servers.ZebraConnectionHandler] : Request c:1001 u:0  LoginGuestRequestMessage(uid=460040843251, mac=629607ac-0242-4e99-afe0-a311b5de2b9dfadb4b89098bd3fd25593ee72522d172, devicesType=1, ip=127.0.0.1) [L:/172.19.48.88:9879 - R:/124.237.185.204:7729]
+12-19 21:09:02.609 INFO  [Zebra-worker-1-thread-1] [com.zebra.net.codec.ZebraEncoder] : Response c:1001 u:0 r:0 s:200 l:6 [L:/172.19.48.88:9879 - R:/124.237.185.204:7729]
+12-19 21:09:02.815 INFO  [Zebra-worker-1-thread-1] [com.zebra.net.servers.ZebraConnectionHandler] : Request c:1001 u:0  LoginGuestRequestMessage(uid=460040843251, mac=629607ac-0242-4e99-afe0-a311b5de2b9dfadb4b89098bd3fd25593ee72522d172, devicesType=1, ip=127.0.0.1) [L:/172.19.48.88:9879 - R:/124.237.185.204:7729]
+12-19 21:09:02.827 INFO  [Zebra-worker-1-thread-1] [com.zebra.net.codec.ZebraEncoder] : Response c:1001 u:0 r:0 s:200 l:6 [L:/172.19.48.88:9879 - R:/124.237.185.204:7729]
+12-19 21:09:03.049 INFO  [Zebra-worker-1-thread-1] [com.zebra.net.servers.ZebraConnectionHandler] : Request c:1001 u:0  LoginGuestRequestMessage(uid=460040843251, mac=629607ac-0242-4e99-afe0-a311b5de2b9dfadb4b89098bd3fd25593ee72522d172, devicesType=1, ip=127.0.0.1) [L:/172.19.48.88:9879 - R:/124.237.185.204:7729]
+12-19 21:09:03.060 INFO  [Zebra-worker-1-thread-1] [com.zebra.net.codec.ZebraEncoder] : Response c:1001 u:0 r:0 s:200 l:6 [L:/172.19.48.88:9879 - R:/124.237.185.204:7729]
+12-19 21:09:03.298 INFO  [Zebra-worker-1-thread-1] [com.zebra.net.servers.ZebraConnectionHandler] : Request c:1001 u:0  LoginGuestRequestMessage(uid=460040843251, mac=629607ac-0242-4e99-afe0-a311b5de2b9dfadb4b89098bd3fd25593ee72522d172, devicesType=1, ip=127.0.0.1) [L:/172.19.48.88:9879 - R:/124.237.185.204:7729]
+12-19 21:09:03.312 INFO  [Zebra-worker-1-thread-1] [com.zebra.net.codec.ZebraEncoder] : Response c:1001 u:0 r:0 s:200 l:6 [L:/172.19.48.88:9879 - R:/124.237.185.204:7729]
+12-19 21:09:05.007 INFO  [Zebra-worker-1-thread-1] [com.zebra.net.servers.ZebraConnectionHandler] : Connection channel inactive: 124.237.185.204:7729
+12-19 21:09:36.754 INFO  [Zebra-boss-2-thread-1] [io.netty.handler.logging.LoggingHandler] : [id: 0xa787efcc, L:/0:0:0:0:0:0:0:0:9879] READ: [id: 0x2f3b31fc, L:/172.19.48.88:9879 - R:/124.237.185.204:7847]
+12-19 21:09:36.756 INFO  [Zebra-boss-2-thread-1] [io.netty.handler.logging.LoggingHandler] : [id: 0xa787efcc, L:/0:0:0:0:0:0:0:0:9879] READ COMPLETE
+12-19 21:09:36.758 INFO  [Zebra-worker-1-thread-2] [com.zebra.net.servers.ZebraConnectionHandler] : Connection channel active: 124.237.185.204:7847
+12-19 21:09:38.385 INFO  [Zebra-worker-1-thread-2] [com.zebra.net.servers.ZebraConnectionHandler] : Request c:1001 u:0  LoginGuestRequestMessage(uid=0, mac=570a48bf-88d3-4466-9657-b901b2031b9cfadb4b89098bd3fd25593ee72522d172, devicesType=1, ip=127.0.0.1) [L:/172.19.48.88:9879 - R:/124.237.185.204:7847]
+12-19 21:09:38.630 INFO  [Zebra-worker-1-thread-2] [com.zebra.rpc.server.ZebraUserEEServer] : UserOnlineServer: uid 735333028658, cid 59812510,  roomId 0, vfx LOBBY, channel [L:/172.19.48.88:9879 - R:/124.237.185.204:7847]
+12-19 21:09:38.630 INFO  [Zebra-worker-1-thread-2] [c.petrel.lobby.handler.login.LoginRegistryService] : Login: uid: LoginResponseMessage= uid: 735333028658 gid: 21410888 goldNumber: 0 bankNumber: 0 [L:/172.19.48.88:9879 - R:/124.237.185.204:7847]
+12-19 21:09:38.632 INFO  [Zebra-worker-1-thread-2] [com.zebra.net.codec.ZebraEncoder] : Response c:1001 u:735333028658 r:0 s:200 l:76 [L:/172.19.48.88:9879 - R:/124.237.185.204:7847]
+12-19 21:09:39.404 INFO  [Zebra-worker-1-thread-2] [com.zebra.net.servers.ZebraConnectionHandler] : Request c:1100 u:735333028658  EmptyMessage(super=ZebraBaseMessage(), msg=0) [L:/172.19.48.88:9879 - R:/124.237.185.204:7847]
+12-19 21:09:39.408 INFO  [Zebra-worker-1-thread-2] [com.zebra.net.codec.ZebraEncoder] : Response c:1100 u:735333028658 r:0 s:200 l:610 [L:/172.19.48.88:9879 - R:/124.237.185.204:7847]
+12-19 21:09:39.410 INFO  [Zebra-worker-1-thread-2] [com.zebra.net.servers.ZebraConnectionHandler] : Request c:1008 u:735333028658  EmptyMessage(super=ZebraBaseMessage(), msg=0) [L:/172.19.48.88:9879 - R:/124.237.185.204:7847]
+12-19 21:09:39.422 INFO  [Zebra-worker-1-thread-2] [com.zebra.net.codec.ZebraEncoder] : Response c:1008 u:735333028658 r:0 s:200 l:10 [L:/172.19.48.88:9879 - R:/124.237.185.204:7847]
+12-19 21:09:39.424 INFO  [Zebra-worker-1-thread-2] [com.zebra.net.servers.ZebraConnectionHandler] : Request c:1003 u:735333028658  EmptyMessage(super=ZebraBaseMessage(), msg=0) [L:/172.19.48.88:9879 - R:/124.237.185.204:7847]
+12-19 21:09:39.426 INFO  [Zebra-worker-1-thread-2] [com.petrel.lobby.handler.gold.GoldHandler] : 1003:735333028658
+12-19 21:09:39.426 INFO  [Zebra-worker-1-thread-2] [com.petrel.lobby.handler.gold.GoldHandler] : 1003:735333028658  GoldMessage(goldNumber=0, bankNumber=0)
+12-19 21:09:39.428 INFO  [Zebra-worker-1-thread-2] [com.zebra.net.codec.ZebraEncoder] : Response c:1003 u:735333028658 r:0 s:200 l:22 [L:/172.19.48.88:9879 - R:/124.237.185.204:7847]
+12-19 21:09:48.345 INFO  [Zebra-worker-1-thread-2] [com.zebra.net.servers.ZebraConnectionHandler] : Request c:1012 u:735333028658  EmptyMessage(super=ZebraBaseMessage(), msg=0) [L:/172.19.48.88:9879 - R:/124.237.185.204:7847]
+12-19 21:09:48.355 INFO  [Zebra-worker-1-thread-2] [com.zebra.net.codec.ZebraEncoder] : Response c:1012 u:735333028658 r:0 s:200 l:6 [L:/172.19.48.88:9879 - R:/124.237.185.204:7847]
+12-19 21:09:49.912 INFO  [Zebra-worker-1-thread-2] [com.zebra.net.servers.ZebraConnectionHandler] : Request c:1001 u:0  LoginGuestRequestMessage(uid=735333028658, mac=570a48bf-88d3-4466-9657-b901b2031b9cfadb4b89098bd3fd25593ee72522d172, devicesType=1, ip=127.0.0.1) [L:/172.19.48.88:9879 - R:/124.237.185.204:7847]
+12-19 21:09:49.942 INFO  [Zebra-worker-1-thread-1] [com.zebra.net.codec.ZebraEncoder] : Response c:444 u:88480808 r:0 s:200 l:18 [L:/127.0.0.1:9879 - R:/127.0.0.1:53208]
+12-19 21:09:49.942 INFO  [Zebra-worker-1-thread-2] [com.zebra.rpc.server.ZebraUserEEServer] : UserOnlineServer: uid 735333028658, cid 35051067,  roomId 0, vfx LOBBY, channel [L:/172.19.48.88:9879 - R:/124.237.185.204:7847]
+12-19 21:09:49.944 INFO  [Zebra-worker-1-thread-2] [c.petrel.lobby.handler.login.LoginRegistryService] : Login: uid: LoginResponseMessage= uid: 735333028658 gid: 21410888 goldNumber: 0 bankNumber: 0 [L:/172.19.48.88:9879 - R:/124.237.185.204:7847]
+12-19 21:09:49.946 INFO  [Zebra-worker-1-thread-2] [com.zebra.net.codec.ZebraEncoder] : Response c:1001 u:735333028658 r:0 s:200 l:76 [L:/172.19.48.88:9879 - R:/124.237.185.204:7847]
+12-19 21:09:50.414 INFO  [Zebra-worker-1-thread-2] [com.zebra.net.servers.ZebraConnectionHandler] : Request c:1003 u:735333028658  EmptyMessage(super=ZebraBaseMessage(), msg=0) [L:/172.19.48.88:9879 - R:/124.237.185.204:7847]
+12-19 21:09:50.418 INFO  [Zebra-worker-1-thread-2] [com.petrel.lobby.handler.gold.GoldHandler] : 1003:735333028658
+12-19 21:09:50.420 INFO  [Zebra-worker-1-thread-2] [com.petrel.lobby.handler.gold.GoldHandler] : 1003:735333028658  GoldMessage(goldNumber=0, bankNumber=0)
+12-19 21:09:50.420 INFO  [Zebra-worker-1-thread-2] [com.zebra.net.codec.ZebraEncoder] : Response c:1003 u:735333028658 r:0 s:200 l:22 [L:/172.19.48.88:9879 - R:/124.237.185.204:7847]
+12-19 21:09:59.665 INFO  [Zebra-worker-1-thread-2] [com.zebra.net.servers.ZebraConnectionHandler] : Request c:1303 u:735333028658  EmptyMessage(super=ZebraBaseMessage(), msg=0) [L:/172.19.48.88:9879 - R:/124.237.185.204:7847]
+12-19 21:09:59.825 INFO  [Zebra-worker-1-thread-2] [com.zebra.net.codec.ZebraEncoder] : Response c:1303 u:735333028658 r:0 s:200 l:10 [L:/172.19.48.88:9879 - R:/124.237.185.204:7847]
+12-19 21:10:04.099 INFO  [Zebra-worker-1-thread-2] [com.zebra.net.servers.ZebraConnectionHandler] : Request c:1008 u:735333028658  EmptyMessage(super=ZebraBaseMessage(), msg=0) [L:/172.19.48.88:9879 - R:/124.237.185.204:7847]
+12-19 21:10:04.115 INFO  [Zebra-worker-1-thread-2] [com.zebra.net.codec.ZebraEncoder] : Response c:1008 u:735333028658 r:0 s:200 l:10 [L:/172.19.48.88:9879 - R:/124.237.185.204:7847]
+12-19 21:10:07.196 INFO  [Zebra-worker-1-thread-2] [com.zebra.net.servers.ZebraConnectionHandler] : Connection channel inactive: 124.237.185.204:7847
+12-19 21:10:07.198 INFO  [Zebra-worker-1-thread-2] [com.zebra.rpc.server.ZebraServerRegisterService] : UserOfflineServer  u: 735333028658  serverId lobby:127.0.0.1:9879  vfx LOBBY 
+12-19 21:40:07.286 INFO  [container-6] [com.petrel.lobby.config.RedisKeyExpirationListener] : Expiration key 735333028658

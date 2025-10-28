@@ -1,0 +1,74 @@
+2021-07-14 14:22:48,911 ERROR long polling error:The request associated with the AsyncContext has already completed processing.
+
+2021-07-14 14:22:55,560 ERROR long polling error:The request associated with the AsyncContext has already completed processing.
+
+2021-07-14 14:23:02,231 ERROR long polling error:The request associated with the AsyncContext has already completed processing.
+
+2021-07-14 14:24:39,415 INFO notifyConnectTimeout:200
+
+2021-07-14 14:24:39,419 INFO notifySocketTimeout:8000
+
+2021-07-14 14:24:39,419 INFO isHealthCheck:true
+
+2021-07-14 14:24:39,419 INFO maxHealthCheckFailCount:12
+
+2021-07-14 14:24:39,419 INFO maxContent:10485760
+
+2021-07-14 14:24:39,420 INFO spring.datasource.platform:mysql
+
+2021-07-14 14:24:43,476 WARN DumpService start
+
+2021-07-14 14:24:43,477 INFO start clear all config-info.
+
+2021-07-14 14:24:43,482 INFO clear all config-info success.
+
+2021-07-14 14:24:43,482 INFO clear all config-info-tenant success.
+
+2021-07-14 14:24:43,511 INFO [all-dump] 40 / 40
+
+2021-07-14 14:24:43,511 INFO start clear all config-info-beta.
+
+2021-07-14 14:24:43,511 WARN clear all config-info-beta failed.
+
+2021-07-14 14:24:43,511 WARN clear all config-info-beta-tenant failed.
+
+2021-07-14 14:24:43,513 INFO start clear all config-info-tag.
+
+2021-07-14 14:24:43,513 WARN clear all config-info-tag failed.
+
+2021-07-14 14:24:43,513 WARN clear all config-info-tag-tenant failed.
+
+2021-07-14 14:25:25,403 INFO notifyConnectTimeout:200
+
+2021-07-14 14:25:25,407 INFO notifySocketTimeout:8000
+
+2021-07-14 14:25:25,407 INFO isHealthCheck:true
+
+2021-07-14 14:25:25,407 INFO maxHealthCheckFailCount:12
+
+2021-07-14 14:25:25,407 INFO maxContent:10485760
+
+2021-07-14 14:25:25,407 INFO spring.datasource.platform:mysql
+
+2021-07-14 14:25:29,138 WARN DumpService start
+
+2021-07-14 14:25:29,139 INFO start clear all config-info.
+
+2021-07-14 14:25:29,144 INFO clear all config-info success.
+
+2021-07-14 14:25:29,144 INFO clear all config-info-tenant success.
+
+2021-07-14 14:25:29,169 INFO [all-dump] 40 / 40
+
+2021-07-14 14:25:29,169 INFO start clear all config-info-beta.
+
+2021-07-14 14:25:29,169 WARN clear all config-info-beta failed.
+
+2021-07-14 14:25:29,169 WARN clear all config-info-beta-tenant failed.
+
+2021-07-14 14:25:29,170 INFO start clear all config-info-tag.
+
+2021-07-14 14:25:29,170 WARN clear all config-info-tag failed.
+
+2021-07-14 14:25:29,170 WARN clear all config-info-tag-tenant failed.
+

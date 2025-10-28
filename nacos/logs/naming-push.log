@@ -1,0 +1,276 @@
+2023-07-13 00:00:23,414 INFO DEFAULT_GROUP@@petrel-kernel-user is changed, add it to push queue.
+
+2023-07-13 00:00:24,802 INFO DEFAULT_GROUP@@petrel-kernel-register is changed, add it to push queue.
+
+2023-07-13 00:00:38,437 INFO DEFAULT_GROUP@@petrel-kernel-user is changed, add it to push queue.
+
+2023-07-13 00:00:39,832 INFO DEFAULT_GROUP@@petrel-kernel-register is changed, add it to push queue.
+
+2023-07-13 00:00:48,068 INFO DEFAULT_GROUP@@petrel-kernel-register is changed, add it to push queue.
+
+2023-07-13 00:01:49,832 INFO DEFAULT_GROUP@@petrel-kernel-register is changed, add it to push queue.
+
+2023-07-13 00:01:52,337 INFO DEFAULT_GROUP@@petrel-kernel-register is changed, add it to push queue.
+
+2023-07-13 00:01:57,330 INFO DEFAULT_GROUP@@petrel-kernel-register is changed, add it to push queue.
+
+2023-07-13 00:03:44,261 INFO DEFAULT_GROUP@@petrel-kernel-game is changed, add it to push queue.
+
+2023-07-13 00:03:44,575 INFO DEFAULT_GROUP@@petrel-kernel-user is changed, add it to push queue.
+
+2023-07-13 00:03:47,302 INFO DEFAULT_GROUP@@petrel-kernel-register is changed, add it to push queue.
+
+2023-07-13 00:04:01,877 INFO DEFAULT_GROUP@@petrel-cms-web is changed, add it to push queue.
+
+2023-07-13 00:06:17,351 INFO DEFAULT_GROUP@@petrel-kernel-register is changed, add it to push queue.
+
+2023-07-13 00:06:20,620 INFO DEFAULT_GROUP@@petrel-kernel-register is changed, add it to push queue.
+
+2023-07-13 00:06:25,611 INFO DEFAULT_GROUP@@petrel-kernel-register is changed, add it to push queue.
+
+2023-07-13 00:06:42,357 INFO DEFAULT_GROUP@@petrel-kernel-register is changed, add it to push queue.
+
+2023-07-13 00:06:57,603 INFO DEFAULT_GROUP@@petrel-kernel-register is changed, add it to push queue.
+
+2023-07-13 00:07:04,664 INFO DEFAULT_GROUP@@petrel-kernel-register is changed, add it to push queue.
+
+2023-07-13 00:07:37,594 INFO DEFAULT_GROUP@@petrel-kernel-register is changed, add it to push queue.
+
+2023-07-13 00:07:40,107 INFO DEFAULT_GROUP@@petrel-kernel-register is changed, add it to push queue.
+
+2023-07-13 00:07:45,109 INFO DEFAULT_GROUP@@petrel-kernel-register is changed, add it to push queue.
+
+2023-07-13 00:09:34,885 INFO DEFAULT_GROUP@@petrel-kernel-user is changed, add it to push queue.
+
+2023-07-13 00:09:35,722 INFO DEFAULT_GROUP@@petrel-kernel-game is changed, add it to push queue.
+
+2023-07-13 00:09:36,846 INFO DEFAULT_GROUP@@petrel-kernel-register is changed, add it to push queue.
+
+2023-07-13 00:09:51,022 INFO DEFAULT_GROUP@@petrel-cms-web is changed, add it to push queue.
+
+2023-07-13 00:12:56,891 INFO DEFAULT_GROUP@@petrel-kernel-register is changed, add it to push queue.
+
+2023-07-13 00:13:12,114 INFO DEFAULT_GROUP@@petrel-kernel-register is changed, add it to push queue.
+
+2023-07-13 00:13:17,107 INFO DEFAULT_GROUP@@petrel-kernel-register is changed, add it to push queue.
+
+2023-07-13 00:22:05,949 INFO DEFAULT_GROUP@@petrel-kernel-game is changed, add it to push queue.
+
+2023-07-13 00:22:13,385 INFO DEFAULT_GROUP@@petrel-kernel-game is changed, add it to push queue.
+
+2023-07-13 00:22:18,379 INFO DEFAULT_GROUP@@petrel-kernel-game is changed, add it to push queue.
+
+2023-07-13 00:24:25,999 INFO DEFAULT_GROUP@@petrel-kernel-game is changed, add it to push queue.
+
+2023-07-13 00:24:31,756 INFO DEFAULT_GROUP@@petrel-kernel-game is changed, add it to push queue.
+
+2023-07-13 00:24:36,751 INFO DEFAULT_GROUP@@petrel-kernel-game is changed, add it to push queue.
+
+2023-07-13 00:42:42,717 INFO DEFAULT_GROUP@@petrel-kernel-register is changed, add it to push queue.
+
+2023-07-13 00:42:42,739 INFO serviceName: DEFAULT_GROUP@@petrel-kernel-register changed, schedule push for: 192.168.10.102:55916, agent: Nacos-Java-Client:v1.2.1, key: 192.168.10.102,55916,19821663406700
+
+2023-07-13 00:42:42,740 INFO send udp packet: 192.168.10.102,55916,19821663406700
+
+2023-07-13 00:42:42,742 INFO serviceName: DEFAULT_GROUP@@petrel-kernel-register changed, schedule push for: 192.168.10.102:60826, agent: Nacos-Java-Client:v1.2.1, key: 192.168.10.102,60826,19821663406700
+
+2023-07-13 00:42:42,742 INFO send udp packet: 192.168.10.102,60826,19821663406700
+
+2023-07-13 00:42:42,743 INFO serviceName: DEFAULT_GROUP@@petrel-kernel-register changed, schedule push for: 192.168.10.102:59638, agent: Nacos-Java-Client:v1.2.1, key: 192.168.10.102,59638,19821663406700
+
+2023-07-13 00:42:42,743 INFO send udp packet: 192.168.10.102,59638,19821663406700
+
+2023-07-13 00:42:42,758 INFO received ack: {"type": "push-ack", "lastRefTime":"19821663406700", "data":""} from: 192.168.10.102:59638, cost: 15 ms, unacked: 2, total push: 3
+
+2023-07-13 00:42:42,759 INFO received ack: {"type": "push-ack", "lastRefTime":"19821663406700", "data":""} from: 192.168.10.102:55916, cost: 19 ms, unacked: 1, total push: 3
+
+2023-07-13 00:42:42,759 INFO received ack: {"type": "push-ack", "lastRefTime":"19821663406700", "data":""} from: 192.168.10.102:60826, cost: 17 ms, unacked: 0, total push: 3
+
+2023-07-13 00:42:49,509 INFO DEFAULT_GROUP@@petrel-kernel-register is changed, add it to push queue.
+
+2023-07-13 00:42:49,510 INFO serviceName: DEFAULT_GROUP@@petrel-kernel-register changed, schedule push for: 192.168.10.102:55916, agent: Nacos-Java-Client:v1.2.1, key: 192.168.10.102,55916,19828455348600
+
+2023-07-13 00:42:49,510 INFO send udp packet: 192.168.10.102,55916,19828455348600
+
+2023-07-13 00:42:49,510 INFO serviceName: DEFAULT_GROUP@@petrel-kernel-register changed, schedule push for: 192.168.10.102:60826, agent: Nacos-Java-Client:v1.2.1, key: 192.168.10.102,60826,19828455348600
+
+2023-07-13 00:42:49,510 INFO send udp packet: 192.168.10.102,60826,19828455348600
+
+2023-07-13 00:42:49,510 INFO serviceName: DEFAULT_GROUP@@petrel-kernel-register changed, schedule push for: 192.168.10.102:59638, agent: Nacos-Java-Client:v1.2.1, key: 192.168.10.102,59638,19828455348600
+
+2023-07-13 00:42:49,510 INFO send udp packet: 192.168.10.102,59638,19828455348600
+
+2023-07-13 00:42:49,512 INFO received ack: {"type": "push-ack", "lastRefTime":"19828455348600", "data":""} from: 192.168.10.102:60826, cost: 2 ms, unacked: 2, total push: 6
+
+2023-07-13 00:42:49,512 INFO received ack: {"type": "push-ack", "lastRefTime":"19828455348600", "data":""} from: 192.168.10.102:55916, cost: 2 ms, unacked: 1, total push: 6
+
+2023-07-13 00:42:49,512 INFO received ack: {"type": "push-ack", "lastRefTime":"19828455348600", "data":""} from: 192.168.10.102:59638, cost: 2 ms, unacked: 0, total push: 6
+
+2023-07-13 00:42:54,504 INFO DEFAULT_GROUP@@petrel-kernel-register is changed, add it to push queue.
+
+2023-07-13 00:42:54,504 INFO serviceName: DEFAULT_GROUP@@petrel-kernel-register changed, schedule push for: 192.168.10.102:55916, agent: Nacos-Java-Client:v1.2.1, key: 192.168.10.102,55916,19833449898700
+
+2023-07-13 00:42:54,504 INFO send udp packet: 192.168.10.102,55916,19833449898700
+
+2023-07-13 00:42:54,504 INFO serviceName: DEFAULT_GROUP@@petrel-kernel-register changed, schedule push for: 192.168.10.102:60826, agent: Nacos-Java-Client:v1.2.1, key: 192.168.10.102,60826,19833449898700
+
+2023-07-13 00:42:54,505 INFO send udp packet: 192.168.10.102,60826,19833449898700
+
+2023-07-13 00:42:54,505 INFO serviceName: DEFAULT_GROUP@@petrel-kernel-register changed, schedule push for: 192.168.10.102:59638, agent: Nacos-Java-Client:v1.2.1, key: 192.168.10.102,59638,19833449898700
+
+2023-07-13 00:42:54,505 INFO send udp packet: 192.168.10.102,59638,19833449898700
+
+2023-07-13 00:42:54,506 INFO received ack: {"type": "push-ack", "lastRefTime":"19833449898700", "data":""} from: 192.168.10.102:60826, cost: 1 ms, unacked: 2, total push: 9
+
+2023-07-13 00:42:54,506 INFO received ack: {"type": "push-ack", "lastRefTime":"19833449898700", "data":""} from: 192.168.10.102:55916, cost: 2 ms, unacked: 1, total push: 9
+
+2023-07-13 00:42:54,507 INFO received ack: {"type": "push-ack", "lastRefTime":"19833449898700", "data":""} from: 192.168.10.102:59638, cost: 2 ms, unacked: 0, total push: 9
+
+2023-07-13 00:47:20,574 INFO DEFAULT_GROUP@@petrel-kernel-game is changed, add it to push queue.
+
+2023-07-13 00:47:22,009 INFO DEFAULT_GROUP@@petrel-kernel-user is changed, add it to push queue.
+
+2023-07-13 00:47:22,829 INFO DEFAULT_GROUP@@petrel-kernel-register is changed, add it to push queue.
+
+2023-07-13 00:47:32,272 INFO DEFAULT_GROUP@@petrel-cms-web is changed, add it to push queue.
+
+2023-07-13 00:55:30,426 INFO DEFAULT_GROUP@@petrel-kernel-game is changed, add it to push queue.
+
+2023-07-13 00:55:31,110 INFO DEFAULT_GROUP@@petrel-kernel-user is changed, add it to push queue.
+
+2023-07-13 00:55:33,593 INFO DEFAULT_GROUP@@petrel-kernel-register is changed, add it to push queue.
+
+2023-07-13 00:55:41,212 INFO DEFAULT_GROUP@@petrel-cms-web is changed, add it to push queue.
+
+2023-07-13 01:28:07,211 INFO DEFAULT_GROUP@@petrel-kernel-user is changed, add it to push queue.
+
+2023-07-13 01:28:07,289 INFO DEFAULT_GROUP@@petrel-kernel-game is changed, add it to push queue.
+
+2023-07-13 01:28:08,435 INFO DEFAULT_GROUP@@petrel-kernel-register is changed, add it to push queue.
+
+2023-07-13 01:28:15,836 INFO DEFAULT_GROUP@@petrel-cms-web is changed, add it to push queue.
+
+2023-07-13 01:44:07,461 INFO DEFAULT_GROUP@@petrel-kernel-game is changed, add it to push queue.
+
+2023-07-13 01:44:10,874 INFO DEFAULT_GROUP@@petrel-kernel-game is changed, add it to push queue.
+
+2023-07-13 01:44:15,869 INFO DEFAULT_GROUP@@petrel-kernel-game is changed, add it to push queue.
+
+2023-07-13 01:46:38,301 INFO DEFAULT_GROUP@@petrel-kernel-game is changed, add it to push queue.
+
+2023-07-13 01:46:39,674 INFO DEFAULT_GROUP@@petrel-kernel-register is changed, add it to push queue.
+
+2023-07-13 01:46:39,797 INFO DEFAULT_GROUP@@petrel-kernel-user is changed, add it to push queue.
+
+2023-07-13 01:46:49,080 INFO DEFAULT_GROUP@@petrel-cms-web is changed, add it to push queue.
+
+2023-07-13 02:08:37,204 INFO DEFAULT_GROUP@@petrel-kernel-game is changed, add it to push queue.
+
+2023-07-13 02:08:38,540 INFO DEFAULT_GROUP@@petrel-kernel-user is changed, add it to push queue.
+
+2023-07-13 02:08:39,559 INFO DEFAULT_GROUP@@petrel-kernel-register is changed, add it to push queue.
+
+2023-07-13 02:08:48,170 INFO DEFAULT_GROUP@@petrel-cms-web is changed, add it to push queue.
+
+2023-07-13 02:15:31,174 INFO DEFAULT_GROUP@@petrel-kernel-user is changed, add it to push queue.
+
+2023-07-13 02:15:31,189 INFO DEFAULT_GROUP@@petrel-kernel-game is changed, add it to push queue.
+
+2023-07-13 02:15:32,674 INFO DEFAULT_GROUP@@petrel-kernel-register is changed, add it to push queue.
+
+2023-07-13 02:15:41,896 INFO DEFAULT_GROUP@@petrel-cms-web is changed, add it to push queue.
+
+2023-07-13 02:21:53,390 INFO DEFAULT_GROUP@@petrel-kernel-user is changed, add it to push queue.
+
+2023-07-13 02:21:54,546 INFO DEFAULT_GROUP@@petrel-kernel-game is changed, add it to push queue.
+
+2023-07-13 02:21:56,249 INFO DEFAULT_GROUP@@petrel-kernel-register is changed, add it to push queue.
+
+2023-07-13 02:22:03,211 INFO DEFAULT_GROUP@@petrel-cms-web is changed, add it to push queue.
+
+2023-07-13 02:28:07,112 INFO DEFAULT_GROUP@@petrel-kernel-game is changed, add it to push queue.
+
+2023-07-13 02:28:08,268 INFO DEFAULT_GROUP@@petrel-kernel-user is changed, add it to push queue.
+
+2023-07-13 02:28:09,283 INFO DEFAULT_GROUP@@petrel-kernel-register is changed, add it to push queue.
+
+2023-07-13 02:28:16,243 INFO DEFAULT_GROUP@@petrel-cms-web is changed, add it to push queue.
+
+2023-07-13 02:46:07,527 INFO DEFAULT_GROUP@@petrel-kernel-game is changed, add it to push queue.
+
+2023-07-13 02:46:08,339 INFO DEFAULT_GROUP@@petrel-kernel-user is changed, add it to push queue.
+
+2023-07-13 02:46:10,308 INFO DEFAULT_GROUP@@petrel-kernel-register is changed, add it to push queue.
+
+2023-07-13 02:46:18,690 INFO DEFAULT_GROUP@@petrel-cms-web is changed, add it to push queue.
+
+2023-07-13 02:51:25,935 INFO DEFAULT_GROUP@@petrel-kernel-user is changed, add it to push queue.
+
+2023-07-13 02:51:26,000 INFO DEFAULT_GROUP@@petrel-kernel-register is changed, add it to push queue.
+
+2023-07-13 02:51:26,201 INFO DEFAULT_GROUP@@petrel-kernel-game is changed, add it to push queue.
+
+2023-07-13 02:51:34,871 INFO DEFAULT_GROUP@@petrel-cms-web is changed, add it to push queue.
+
+2023-07-13 03:02:13,697 INFO DEFAULT_GROUP@@petrel-kernel-game is changed, add it to push queue.
+
+2023-07-13 03:02:14,152 INFO DEFAULT_GROUP@@petrel-kernel-user is changed, add it to push queue.
+
+2023-07-13 03:02:14,592 INFO DEFAULT_GROUP@@petrel-kernel-register is changed, add it to push queue.
+
+2023-07-13 03:02:23,092 INFO DEFAULT_GROUP@@petrel-cms-web is changed, add it to push queue.
+
+2023-07-13 03:14:31,509 INFO DEFAULT_GROUP@@petrel-kernel-game is changed, add it to push queue.
+
+2023-07-13 03:14:32,539 INFO DEFAULT_GROUP@@petrel-kernel-user is changed, add it to push queue.
+
+2023-07-13 03:14:32,691 INFO DEFAULT_GROUP@@petrel-kernel-register is changed, add it to push queue.
+
+2023-07-13 03:14:41,283 INFO DEFAULT_GROUP@@petrel-cms-web is changed, add it to push queue.
+
+2023-07-13 03:25:57,540 INFO DEFAULT_GROUP@@petrel-kernel-game is changed, add it to push queue.
+
+2023-07-13 03:25:58,297 INFO DEFAULT_GROUP@@petrel-kernel-user is changed, add it to push queue.
+
+2023-07-13 03:25:59,725 INFO DEFAULT_GROUP@@petrel-kernel-register is changed, add it to push queue.
+
+2023-07-13 03:29:54,003 INFO DEFAULT_GROUP@@petrel-kernel-game is changed, add it to push queue.
+
+2023-07-13 03:29:54,484 INFO DEFAULT_GROUP@@petrel-kernel-user is changed, add it to push queue.
+
+2023-07-13 03:29:56,572 INFO DEFAULT_GROUP@@petrel-kernel-register is changed, add it to push queue.
+
+2023-07-13 03:30:04,765 INFO DEFAULT_GROUP@@petrel-cms-web is changed, add it to push queue.
+
+2023-07-13 03:32:08,639 INFO DEFAULT_GROUP@@petrel-kernel-game is changed, add it to push queue.
+
+2023-07-13 03:32:08,775 INFO DEFAULT_GROUP@@petrel-kernel-user is changed, add it to push queue.
+
+2023-07-13 03:32:09,027 INFO DEFAULT_GROUP@@petrel-kernel-register is changed, add it to push queue.
+
+2023-07-13 03:32:17,526 INFO DEFAULT_GROUP@@petrel-cms-web is changed, add it to push queue.
+
+2023-07-13 03:33:55,301 INFO DEFAULT_GROUP@@petrel-kernel-game is changed, add it to push queue.
+
+2023-07-13 03:33:56,864 INFO DEFAULT_GROUP@@petrel-kernel-user is changed, add it to push queue.
+
+2023-07-13 03:33:57,688 INFO DEFAULT_GROUP@@petrel-kernel-register is changed, add it to push queue.
+
+2023-07-13 03:34:06,059 INFO DEFAULT_GROUP@@petrel-cms-web is changed, add it to push queue.
+
+2023-07-13 03:49:12,527 INFO DEFAULT_GROUP@@petrel-kernel-register is changed, add it to push queue.
+
+2023-07-13 03:49:12,537 INFO DEFAULT_GROUP@@petrel-kernel-game is changed, add it to push queue.
+
+2023-07-13 03:49:12,897 INFO DEFAULT_GROUP@@petrel-kernel-user is changed, add it to push queue.
+
+2023-07-13 03:49:21,479 INFO DEFAULT_GROUP@@petrel-cms-web is changed, add it to push queue.
+
+2023-07-13 03:54:15,794 INFO DEFAULT_GROUP@@petrel-kernel-game is changed, add it to push queue.
+
+2023-07-13 03:54:15,830 INFO DEFAULT_GROUP@@petrel-kernel-user is changed, add it to push queue.
+
+2023-07-13 03:54:17,142 INFO DEFAULT_GROUP@@petrel-kernel-register is changed, add it to push queue.
+
+2023-07-13 03:54:26,089 INFO DEFAULT_GROUP@@petrel-cms-web is changed, add it to push queue.
+

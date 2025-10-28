@@ -1,0 +1,90 @@
+<?xml version='1.0' encoding='utf-8' ?>
+<Root>
+	<CtrlConfig>
+		<Item ID="1"  Name="大杀" min = "0" max = "1200" bounsId = "2">
+			<iProb Name = "0-0" Scaled = "712911"/>
+			<iProb Name = "0-0.5" Scaled = "111392"/>
+			<iProb Name = "0.5-1" Scaled = "55696"/>
+			<iProb Name = "1-3" Scaled = "45649"/>
+			<iProb Name = "3-5" Scaled = "27389"/>
+			<iProb Name = "5-7" Scaled = "22824"/>
+			<iProb Name = "7-9" Scaled = "18259"/>
+			<iProb Name = "9-11" Scaled = "5421"/>
+			<iProb Name = "11-13" Scaled = "763"/>
+			<iProb Name = "13-15" Scaled = "174"/>
+			<iProb Name = "15-17" Scaled = "1663"/>
+			<iProb Name = "17-19" Scaled = "142"/>
+			<iProb Name = "19-21" Scaled = "89"/>
+			<iProb Name = "21-23" Scaled = "19"/>
+			<iProb Name = "23-25" Scaled = "122"/>
+			<iProb Name = "25-30" Scaled = "26"/>
+			<iProb Name = "30-35" Scaled = "162"/>
+			<iProb Name = "35-40" Scaled = "5"/>
+			<iProb Name = "40-45" Scaled = "2"/>
+			<iProb Name = "45-50" Scaled = "0"/>
+			<iProb Name = "50-55" Scaled = "0"/>
+			<iProb Name = "55-60" Scaled = "0"/>
+			<iProb Name = "60-65" Scaled = "0"/>
+			<iProb Name = "65-70" Scaled = "0"/>
+			<iProb Name = "mfree" Scaled = "0"/>
+			<iProb Name = "free" Scaled = "0"/>
+		</Item>
+		<Item ID="2"  Name="大杀" min = "0" max = "1200" bounsId = "2">
+			<iProb Name = "0-0" Scaled = "712911"/>
+			<iProb Name = "0-0.5" Scaled = "111392"/>
+			<iProb Name = "0.5-1" Scaled = "55696"/>
+			<iProb Name = "1-3" Scaled = "45649"/>
+			<iProb Name = "3-5" Scaled = "27389"/>
+			<iProb Name = "5-7" Scaled = "22824"/>
+			<iProb Name = "7-9" Scaled = "18259"/>
+			<iProb Name = "9-11" Scaled = "5421"/>
+			<iProb Name = "11-13" Scaled = "763"/>
+			<iProb Name = "13-15" Scaled = "174"/>
+			<iProb Name = "15-17" Scaled = "1663"/>
+			<iProb Name = "17-19" Scaled = "142"/>
+			<iProb Name = "19-21" Scaled = "89"/>
+			<iProb Name = "21-23" Scaled = "19"/>
+			<iProb Name = "23-25" Scaled = "122"/>
+			<iProb Name = "25-30" Scaled = "26"/>
+			<iProb Name = "30-35" Scaled = "162"/>
+			<iProb Name = "35-40" Scaled = "5"/>
+			<iProb Name = "40-45" Scaled = "2"/>
+			<iProb Name = "45-50" Scaled = "0"/>
+			<iProb Name = "50-55" Scaled = "0"/>
+			<iProb Name = "55-60" Scaled = "0"/>
+			<iProb Name = "60-65" Scaled = "0"/>
+			<iProb Name = "65-70" Scaled = "0"/>
+			<iProb Name = "mfree" Scaled = "0"/>
+			<iProb Name = "free" Scaled = "0"/>
+		</Item>
+		
+		<Item ID="5"  Name="大杀" min = "0" max = "1200" bounsId = "2">
+	     <iProb Name = "0-0" Scaled = "599494"/>
+			<iProb Name = "0-0.5" Scaled = "93671"/>
+			<iProb Name = "0.5-1" Scaled = "46835"/>
+			<iProb Name = "1-3" Scaled = "98905"/>
+			<iProb Name = "3-5" Scaled = "59343"/>
+			<iProb Name = "5-7" Scaled = "49453"/>
+			<iProb Name = "7-9" Scaled = "39562"/>
+			<iProb Name = "9-11" Scaled = "3474"/>
+			<iProb Name = "11-13" Scaled = "7214"/>
+			<iProb Name = "13-15" Scaled = "500"/>
+			<iProb Name = "15-17" Scaled = "300"/>
+			<iProb Name = "17-19" Scaled = "200"/>
+			<iProb Name = "19-21" Scaled = "100"/>
+			<iProb Name = "21-23" Scaled = "100"/>
+			<iProb Name = "23-25" Scaled = "100"/>
+			<iProb Name = "25-30" Scaled = "2000"/>
+			<iProb Name = "30-35" Scaled = "100"/>
+			<iProb Name = "35-40" Scaled = "100"/>
+			<iProb Name = "40-45" Scaled = "8500"/>
+			<iProb Name = "45-50" Scaled = "100"/>
+			<iProb Name = "50-55" Scaled = "100"/>
+			<iProb Name = "55-60" Scaled = "100"/>
+			<iProb Name = "60-65" Scaled = "580"/>
+			<iProb Name = "65-70" Scaled = "100"/>
+			<iProb Name = "mfree" Scaled = "1500"/>
+			<iProb Name = "free" Scaled = "1500"/>
+		</Item>
+	</CtrlConfig>
+</Root>

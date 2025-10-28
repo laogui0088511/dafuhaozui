@@ -1,0 +1,12 @@
+2021-07-14 14:22:51,630 ERROR [db-error] master db 127.0.0.1 down.
+
+2021-07-14 14:22:51,631 ERROR [master-db] master db not found.
+
+2021-07-14 14:24:42,472 WARN [master-db] jdbc:mysql://127.0.0.1:3306/nacos?characterEncoding=utf8&connectTimeout=1000&socketTimeout=3000&autoReconnect=true&useUnicode=true&useSSL=false&serverTimezone=UTC
+
+2021-07-14 14:24:43,477 WARN isQuickStart:false
+
+2021-07-14 14:25:28,325 WARN [master-db] jdbc:mysql://127.0.0.1:3306/nacos?characterEncoding=utf8&connectTimeout=1000&socketTimeout=3000&autoReconnect=true&useUnicode=true&useSSL=false&serverTimezone=UTC
+
+2021-07-14 14:25:29,139 WARN isQuickStart:false
+

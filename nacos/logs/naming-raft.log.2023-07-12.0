@@ -1,0 +1,640 @@
+2023-07-12 22:55:30,242 INFO raft peers changed: [Member{ip='192.168.10.102', port=6878, state=UP, extendInfo={adWeight=0, raftPort=5878, site=unknow, weight=1}}]
+
+2023-07-12 22:55:30,271 INFO initializing Raft sub-system
+
+2023-07-12 22:55:30,272 INFO finish loading all datums, size: 0 cost 0 ms.
+
+2023-07-12 22:55:30,272 INFO raft notifier started
+
+2023-07-12 22:55:30,276 INFO cache loaded, datum count: 0, current term: 85
+
+2023-07-12 22:55:30,276 INFO finish to load data from disk, cost: 4 ms.
+
+2023-07-12 22:55:30,281 INFO timer started: leader timeout ms: 15000, heart-beat timeout ms: 5000
+
+2023-07-12 22:55:31,244 INFO add listener: com.alibaba.nacos.naming.domains.meta.00-00---000-NACOS_SWITCH_DOMAIN-000---00-00
+
+2023-07-12 22:55:31,267 INFO add listener: com.alibaba.nacos.naming.domains.meta.
+
+2023-07-12 22:55:38,576 INFO leader timeout, start voting,leader: {"ip":"192.168.10.102:6878","term":0,"leaderDueMs":17118,"heartbeatDueMs":4500,"state":"FOLLOWER"}, term: 0
+
+2023-07-12 22:55:55,780 INFO leader timeout, start voting,leader: {"ip":"192.168.10.102:6878","voteFor":"192.168.10.102:6878","term":1,"leaderDueMs":16095,"heartbeatDueMs":5000,"state":"CANDIDATE"}, term: 1
+
+2023-07-12 22:56:12,279 INFO leader timeout, start voting,leader: {"ip":"192.168.10.102:6878","voteFor":"192.168.10.102:6878","term":2,"leaderDueMs":15298,"heartbeatDueMs":5000,"state":"CANDIDATE"}, term: 2
+
+2023-07-12 22:56:27,778 INFO leader timeout, start voting,leader: {"ip":"192.168.10.102:6878","voteFor":"192.168.10.102:6878","term":3,"leaderDueMs":16929,"heartbeatDueMs":5000,"state":"CANDIDATE"}, term: 3
+
+2023-07-12 22:56:44,779 INFO leader timeout, start voting,leader: {"ip":"192.168.10.102:6878","voteFor":"192.168.10.102:6878","term":4,"leaderDueMs":17206,"heartbeatDueMs":5000,"state":"CANDIDATE"}, term: 4
+
+2023-07-12 22:57:02,278 INFO leader timeout, start voting,leader: {"ip":"192.168.10.102:6878","voteFor":"192.168.10.102:6878","term":5,"leaderDueMs":18085,"heartbeatDueMs":5000,"state":"CANDIDATE"}, term: 5
+
+2023-07-12 22:57:20,779 INFO leader timeout, start voting,leader: {"ip":"192.168.10.102:6878","voteFor":"192.168.10.102:6878","term":6,"leaderDueMs":16420,"heartbeatDueMs":5000,"state":"CANDIDATE"}, term: 6
+
+2023-07-12 22:57:37,278 INFO leader timeout, start voting,leader: {"ip":"192.168.10.102:6878","voteFor":"192.168.10.102:6878","term":7,"leaderDueMs":15523,"heartbeatDueMs":5000,"state":"CANDIDATE"}, term: 7
+
+2023-07-12 22:57:53,279 INFO leader timeout, start voting,leader: {"ip":"192.168.10.102:6878","voteFor":"192.168.10.102:6878","term":8,"leaderDueMs":15028,"heartbeatDueMs":5000,"state":"CANDIDATE"}, term: 8
+
+2023-07-12 22:58:08,778 INFO leader timeout, start voting,leader: {"ip":"192.168.10.102:6878","voteFor":"192.168.10.102:6878","term":9,"leaderDueMs":15785,"heartbeatDueMs":5000,"state":"CANDIDATE"}, term: 9
+
+2023-07-12 22:58:24,781 INFO leader timeout, start voting,leader: {"ip":"192.168.10.102:6878","voteFor":"192.168.10.102:6878","term":10,"leaderDueMs":17087,"heartbeatDueMs":5000,"state":"CANDIDATE"}, term: 10
+
+2023-07-12 22:58:42,279 INFO leader timeout, start voting,leader: {"ip":"192.168.10.102:6878","voteFor":"192.168.10.102:6878","term":11,"leaderDueMs":19238,"heartbeatDueMs":5000,"state":"CANDIDATE"}, term: 11
+
+2023-07-12 22:58:50,447 INFO add listener: com.alibaba.nacos.naming.iplist.public##DEFAULT_GROUP@@petrel-kernel-game
+
+2023-07-12 22:58:54,786 INFO add listener: com.alibaba.nacos.naming.iplist.public##DEFAULT_GROUP@@petrel-kernel-user
+
+2023-07-12 22:58:55,023 INFO add listener: com.alibaba.nacos.naming.iplist.public##DEFAULT_GROUP@@petrel-kernel-register
+
+2023-07-12 22:59:01,777 INFO leader timeout, start voting,leader: {"ip":"192.168.10.102:6878","voteFor":"192.168.10.102:6878","term":12,"leaderDueMs":19755,"heartbeatDueMs":5000,"state":"CANDIDATE"}, term: 12
+
+2023-07-12 22:59:09,361 INFO add listener: com.alibaba.nacos.naming.iplist.public##DEFAULT_GROUP@@petrel-cms-web
+
+2023-07-12 22:59:21,777 INFO leader timeout, start voting,leader: {"ip":"192.168.10.102:6878","voteFor":"192.168.10.102:6878","term":13,"leaderDueMs":17600,"heartbeatDueMs":5000,"state":"CANDIDATE"}, term: 13
+
+2023-07-12 22:59:39,778 INFO leader timeout, start voting,leader: {"ip":"192.168.10.102:6878","voteFor":"192.168.10.102:6878","term":14,"leaderDueMs":17383,"heartbeatDueMs":5000,"state":"CANDIDATE"}, term: 14
+
+2023-07-12 22:59:57,277 INFO leader timeout, start voting,leader: {"ip":"192.168.10.102:6878","voteFor":"192.168.10.102:6878","term":15,"leaderDueMs":19365,"heartbeatDueMs":5000,"state":"CANDIDATE"}, term: 15
+
+2023-07-12 23:00:16,778 INFO leader timeout, start voting,leader: {"ip":"192.168.10.102:6878","voteFor":"192.168.10.102:6878","term":16,"leaderDueMs":16547,"heartbeatDueMs":5000,"state":"CANDIDATE"}, term: 16
+
+2023-07-12 23:00:33,782 INFO leader timeout, start voting,leader: {"ip":"192.168.10.102:6878","voteFor":"192.168.10.102:6878","term":17,"leaderDueMs":19697,"heartbeatDueMs":5000,"state":"CANDIDATE"}, term: 17
+
+2023-07-12 23:00:53,777 INFO leader timeout, start voting,leader: {"ip":"192.168.10.102:6878","voteFor":"192.168.10.102:6878","term":18,"leaderDueMs":18713,"heartbeatDueMs":5000,"state":"CANDIDATE"}, term: 18
+
+2023-07-12 23:01:12,777 INFO leader timeout, start voting,leader: {"ip":"192.168.10.102:6878","voteFor":"192.168.10.102:6878","term":19,"leaderDueMs":15344,"heartbeatDueMs":5000,"state":"CANDIDATE"}, term: 19
+
+2023-07-12 23:01:28,277 INFO leader timeout, start voting,leader: {"ip":"192.168.10.102:6878","voteFor":"192.168.10.102:6878","term":20,"leaderDueMs":15941,"heartbeatDueMs":5000,"state":"CANDIDATE"}, term: 20
+
+2023-07-12 23:01:44,279 INFO leader timeout, start voting,leader: {"ip":"192.168.10.102:6878","voteFor":"192.168.10.102:6878","term":21,"leaderDueMs":15971,"heartbeatDueMs":5000,"state":"CANDIDATE"}, term: 21
+
+2023-07-12 23:02:00,276 INFO leader timeout, start voting,leader: {"ip":"192.168.10.102:6878","voteFor":"192.168.10.102:6878","term":22,"leaderDueMs":17606,"heartbeatDueMs":5000,"state":"CANDIDATE"}, term: 22
+
+2023-07-12 23:02:18,288 INFO leader timeout, start voting,leader: {"ip":"192.168.10.102:6878","voteFor":"192.168.10.102:6878","term":23,"leaderDueMs":17398,"heartbeatDueMs":5000,"state":"CANDIDATE"}, term: 23
+
+2023-07-12 23:02:35,777 INFO leader timeout, start voting,leader: {"ip":"192.168.10.102:6878","voteFor":"192.168.10.102:6878","term":24,"leaderDueMs":18956,"heartbeatDueMs":5000,"state":"CANDIDATE"}, term: 24
+
+2023-07-12 23:02:54,777 INFO leader timeout, start voting,leader: {"ip":"192.168.10.102:6878","voteFor":"192.168.10.102:6878","term":25,"leaderDueMs":17044,"heartbeatDueMs":5000,"state":"CANDIDATE"}, term: 25
+
+2023-07-12 23:03:12,276 INFO leader timeout, start voting,leader: {"ip":"192.168.10.102:6878","voteFor":"192.168.10.102:6878","term":26,"leaderDueMs":19375,"heartbeatDueMs":5000,"state":"CANDIDATE"}, term: 26
+
+2023-07-12 23:03:31,778 INFO leader timeout, start voting,leader: {"ip":"192.168.10.102:6878","voteFor":"192.168.10.102:6878","term":27,"leaderDueMs":16154,"heartbeatDueMs":5000,"state":"CANDIDATE"}, term: 27
+
+2023-07-12 23:03:48,277 INFO leader timeout, start voting,leader: {"ip":"192.168.10.102:6878","voteFor":"192.168.10.102:6878","term":28,"leaderDueMs":15849,"heartbeatDueMs":5000,"state":"CANDIDATE"}, term: 28
+
+2023-07-12 23:04:32,711 INFO raft peers changed: [Member{ip='192.168.10.102', port=6878, state=UP, extendInfo={adWeight=0, raftPort=5878, site=unknow, weight=1}}]
+
+2023-07-12 23:04:32,750 INFO initializing Raft sub-system
+
+2023-07-12 23:04:32,750 INFO finish loading all datums, size: 0 cost 0 ms.
+
+2023-07-12 23:04:32,750 INFO raft notifier started
+
+2023-07-12 23:04:32,756 INFO cache loaded, datum count: 0, current term: 85
+
+2023-07-12 23:04:32,756 INFO finish to load data from disk, cost: 6 ms.
+
+2023-07-12 23:04:32,764 INFO timer started: leader timeout ms: 15000, heart-beat timeout ms: 5000
+
+2023-07-12 23:04:33,843 INFO add listener: com.alibaba.nacos.naming.domains.meta.00-00---000-NACOS_SWITCH_DOMAIN-000---00-00
+
+2023-07-12 23:04:33,870 INFO add listener: com.alibaba.nacos.naming.domains.meta.
+
+2023-07-12 23:04:46,799 INFO leader timeout, start voting,leader: {"ip":"192.168.10.102:6878","term":0,"leaderDueMs":16235,"heartbeatDueMs":5000,"state":"FOLLOWER"}, term: 0
+
+2023-07-12 23:05:03,259 INFO leader timeout, start voting,leader: {"ip":"192.168.10.102:6878","voteFor":"192.168.10.102:6878","term":1,"leaderDueMs":16184,"heartbeatDueMs":5000,"state":"CANDIDATE"}, term: 1
+
+2023-07-12 23:05:19,761 INFO leader timeout, start voting,leader: {"ip":"192.168.10.102:6878","voteFor":"192.168.10.102:6878","term":2,"leaderDueMs":17024,"heartbeatDueMs":5000,"state":"CANDIDATE"}, term: 2
+
+2023-07-12 23:05:37,259 INFO leader timeout, start voting,leader: {"ip":"192.168.10.102:6878","voteFor":"192.168.10.102:6878","term":3,"leaderDueMs":16015,"heartbeatDueMs":5000,"state":"CANDIDATE"}, term: 3
+
+2023-07-12 23:05:53,759 INFO leader timeout, start voting,leader: {"ip":"192.168.10.102:6878","voteFor":"192.168.10.102:6878","term":4,"leaderDueMs":17879,"heartbeatDueMs":5000,"state":"CANDIDATE"}, term: 4
+
+2023-07-12 23:06:11,760 INFO leader timeout, start voting,leader: {"ip":"192.168.10.102:6878","voteFor":"192.168.10.102:6878","term":5,"leaderDueMs":18760,"heartbeatDueMs":5000,"state":"CANDIDATE"}, term: 5
+
+2023-07-12 23:06:30,777 INFO leader timeout, start voting,leader: {"ip":"192.168.10.102:6878","voteFor":"192.168.10.102:6878","term":6,"leaderDueMs":15148,"heartbeatDueMs":5000,"state":"CANDIDATE"}, term: 6
+
+2023-07-12 23:06:32,288 INFO add listener: com.alibaba.nacos.naming.iplist.public##DEFAULT_GROUP@@petrel-kernel-game
+
+2023-07-12 23:06:33,645 INFO add listener: com.alibaba.nacos.naming.iplist.public##DEFAULT_GROUP@@petrel-kernel-user
+
+2023-07-12 23:06:33,875 INFO add listener: com.alibaba.nacos.naming.iplist.public##DEFAULT_GROUP@@petrel-kernel-register
+
+2023-07-12 23:06:44,147 INFO add listener: com.alibaba.nacos.naming.iplist.public##DEFAULT_GROUP@@petrel-cms-web
+
+2023-07-12 23:06:46,258 INFO leader timeout, start voting,leader: {"ip":"192.168.10.102:6878","voteFor":"192.168.10.102:6878","term":7,"leaderDueMs":18595,"heartbeatDueMs":5000,"state":"CANDIDATE"}, term: 7
+
+2023-07-12 23:07:05,259 INFO leader timeout, start voting,leader: {"ip":"192.168.10.102:6878","voteFor":"192.168.10.102:6878","term":8,"leaderDueMs":17069,"heartbeatDueMs":5000,"state":"CANDIDATE"}, term: 8
+
+2023-07-12 23:07:22,758 INFO leader timeout, start voting,leader: {"ip":"192.168.10.102:6878","voteFor":"192.168.10.102:6878","term":9,"leaderDueMs":18479,"heartbeatDueMs":5000,"state":"CANDIDATE"}, term: 9
+
+2023-07-12 23:07:41,259 INFO leader timeout, start voting,leader: {"ip":"192.168.10.102:6878","voteFor":"192.168.10.102:6878","term":10,"leaderDueMs":18359,"heartbeatDueMs":5000,"state":"CANDIDATE"}, term: 10
+
+2023-07-12 23:07:59,758 INFO leader timeout, start voting,leader: {"ip":"192.168.10.102:6878","voteFor":"192.168.10.102:6878","term":11,"leaderDueMs":17883,"heartbeatDueMs":5000,"state":"CANDIDATE"}, term: 11
+
+2023-07-12 23:10:03,149 INFO raft peers changed: [Member{ip='192.168.10.102', port=6878, state=UP, extendInfo={adWeight=0, raftPort=5878, site=unknow, weight=1}}]
+
+2023-07-12 23:10:03,216 INFO initializing Raft sub-system
+
+2023-07-12 23:10:03,217 INFO finish loading all datums, size: 0 cost 1 ms.
+
+2023-07-12 23:10:03,217 INFO raft notifier started
+
+2023-07-12 23:10:03,224 INFO cache loaded, datum count: 0, current term: 85
+
+2023-07-12 23:10:03,224 INFO finish to load data from disk, cost: 8 ms.
+
+2023-07-12 23:10:03,245 INFO timer started: leader timeout ms: 15000, heart-beat timeout ms: 5000
+
+2023-07-12 23:10:05,460 INFO add listener: com.alibaba.nacos.naming.domains.meta.00-00---000-NACOS_SWITCH_DOMAIN-000---00-00
+
+2023-07-12 23:10:05,527 INFO add listener: com.alibaba.nacos.naming.domains.meta.
+
+2023-07-12 23:10:06,934 INFO leader timeout, start voting,leader: {"ip":"192.168.10.102:6878","term":0,"leaderDueMs":19221,"heartbeatDueMs":4500,"state":"FOLLOWER"}, term: 0
+
+2023-07-12 23:10:26,283 INFO leader timeout, start voting,leader: {"ip":"192.168.10.102:6878","voteFor":"192.168.10.102:6878","term":1,"leaderDueMs":18682,"heartbeatDueMs":5000,"state":"CANDIDATE"}, term: 1
+
+2023-07-12 23:10:42,799 INFO add listener: com.alibaba.nacos.naming.iplist.public##DEFAULT_GROUP@@petrel-kernel-game
+
+2023-07-12 23:10:43,897 INFO add listener: com.alibaba.nacos.naming.iplist.public##DEFAULT_GROUP@@petrel-kernel-user
+
+2023-07-12 23:10:45,076 INFO add listener: com.alibaba.nacos.naming.iplist.public##DEFAULT_GROUP@@petrel-kernel-register
+
+2023-07-12 23:10:45,231 INFO leader timeout, start voting,leader: {"ip":"192.168.10.102:6878","voteFor":"192.168.10.102:6878","term":2,"leaderDueMs":18289,"heartbeatDueMs":5000,"state":"CANDIDATE"}, term: 2
+
+2023-07-12 23:10:57,470 INFO add listener: com.alibaba.nacos.naming.iplist.public##DEFAULT_GROUP@@petrel-cms-web
+
+2023-07-12 23:11:03,731 INFO leader timeout, start voting,leader: {"ip":"192.168.10.102:6878","voteFor":"192.168.10.102:6878","term":3,"leaderDueMs":18974,"heartbeatDueMs":5000,"state":"CANDIDATE"}, term: 3
+
+2023-07-12 23:11:22,731 INFO leader timeout, start voting,leader: {"ip":"192.168.10.102:6878","voteFor":"192.168.10.102:6878","term":4,"leaderDueMs":16433,"heartbeatDueMs":5000,"state":"CANDIDATE"}, term: 4
+
+2023-07-12 23:11:39,250 INFO leader timeout, start voting,leader: {"ip":"192.168.10.102:6878","voteFor":"192.168.10.102:6878","term":5,"leaderDueMs":18749,"heartbeatDueMs":5000,"state":"CANDIDATE"}, term: 5
+
+2023-07-12 23:11:58,236 INFO leader timeout, start voting,leader: {"ip":"192.168.10.102:6878","voteFor":"192.168.10.102:6878","term":6,"leaderDueMs":17437,"heartbeatDueMs":5000,"state":"CANDIDATE"}, term: 6
+
+2023-07-12 23:12:15,731 INFO leader timeout, start voting,leader: {"ip":"192.168.10.102:6878","voteFor":"192.168.10.102:6878","term":7,"leaderDueMs":16706,"heartbeatDueMs":5000,"state":"CANDIDATE"}, term: 7
+
+2023-07-12 23:12:32,734 INFO leader timeout, start voting,leader: {"ip":"192.168.10.102:6878","voteFor":"192.168.10.102:6878","term":8,"leaderDueMs":19225,"heartbeatDueMs":5000,"state":"CANDIDATE"}, term: 8
+
+2023-07-12 23:12:52,232 INFO leader timeout, start voting,leader: {"ip":"192.168.10.102:6878","voteFor":"192.168.10.102:6878","term":9,"leaderDueMs":17190,"heartbeatDueMs":5000,"state":"CANDIDATE"}, term: 9
+
+2023-07-12 23:13:09,732 INFO leader timeout, start voting,leader: {"ip":"192.168.10.102:6878","voteFor":"192.168.10.102:6878","term":10,"leaderDueMs":16700,"heartbeatDueMs":5000,"state":"CANDIDATE"}, term: 10
+
+2023-07-12 23:13:26,731 INFO leader timeout, start voting,leader: {"ip":"192.168.10.102:6878","voteFor":"192.168.10.102:6878","term":11,"leaderDueMs":19686,"heartbeatDueMs":5000,"state":"CANDIDATE"}, term: 11
+
+2023-07-12 23:13:46,731 INFO leader timeout, start voting,leader: {"ip":"192.168.10.102:6878","voteFor":"192.168.10.102:6878","term":12,"leaderDueMs":15313,"heartbeatDueMs":5000,"state":"CANDIDATE"}, term: 12
+
+2023-07-12 23:14:02,230 INFO leader timeout, start voting,leader: {"ip":"192.168.10.102:6878","voteFor":"192.168.10.102:6878","term":13,"leaderDueMs":18741,"heartbeatDueMs":5000,"state":"CANDIDATE"}, term: 13
+
+2023-07-12 23:14:21,232 INFO leader timeout, start voting,leader: {"ip":"192.168.10.102:6878","voteFor":"192.168.10.102:6878","term":14,"leaderDueMs":18030,"heartbeatDueMs":5000,"state":"CANDIDATE"}, term: 14
+
+2023-07-12 23:14:39,730 INFO leader timeout, start voting,leader: {"ip":"192.168.10.102:6878","voteFor":"192.168.10.102:6878","term":15,"leaderDueMs":18574,"heartbeatDueMs":5000,"state":"CANDIDATE"}, term: 15
+
+2023-07-12 23:14:58,730 INFO leader timeout, start voting,leader: {"ip":"192.168.10.102:6878","voteFor":"192.168.10.102:6878","term":16,"leaderDueMs":18311,"heartbeatDueMs":5000,"state":"CANDIDATE"}, term: 16
+
+2023-07-12 23:15:17,231 INFO leader timeout, start voting,leader: {"ip":"192.168.10.102:6878","voteFor":"192.168.10.102:6878","term":17,"leaderDueMs":16761,"heartbeatDueMs":5000,"state":"CANDIDATE"}, term: 17
+
+2023-07-12 23:15:34,230 INFO leader timeout, start voting,leader: {"ip":"192.168.10.102:6878","voteFor":"192.168.10.102:6878","term":18,"leaderDueMs":16697,"heartbeatDueMs":5000,"state":"CANDIDATE"}, term: 18
+
+2023-07-12 23:15:51,230 INFO leader timeout, start voting,leader: {"ip":"192.168.10.102:6878","voteFor":"192.168.10.102:6878","term":19,"leaderDueMs":17164,"heartbeatDueMs":5000,"state":"CANDIDATE"}, term: 19
+
+2023-07-12 23:16:08,731 INFO leader timeout, start voting,leader: {"ip":"192.168.10.102:6878","voteFor":"192.168.10.102:6878","term":20,"leaderDueMs":18204,"heartbeatDueMs":5000,"state":"CANDIDATE"}, term: 20
+
+2023-07-12 23:16:27,231 INFO leader timeout, start voting,leader: {"ip":"192.168.10.102:6878","voteFor":"192.168.10.102:6878","term":21,"leaderDueMs":18384,"heartbeatDueMs":5000,"state":"CANDIDATE"}, term: 21
+
+2023-07-12 23:17:41,901 INFO raft peers changed: [Member{ip='192.168.10.102', port=6878, state=UP, extendInfo={adWeight=0, raftPort=5878, site=unknow, weight=1}}]
+
+2023-07-12 23:17:41,953 INFO initializing Raft sub-system
+
+2023-07-12 23:17:41,954 INFO finish loading all datums, size: 0 cost 1 ms.
+
+2023-07-12 23:17:41,954 INFO raft notifier started
+
+2023-07-12 23:17:41,961 INFO cache loaded, datum count: 0, current term: 85
+
+2023-07-12 23:17:41,961 INFO finish to load data from disk, cost: 8 ms.
+
+2023-07-12 23:17:41,969 INFO timer started: leader timeout ms: 15000, heart-beat timeout ms: 5000
+
+2023-07-12 23:17:43,839 INFO add listener: com.alibaba.nacos.naming.domains.meta.00-00---000-NACOS_SWITCH_DOMAIN-000---00-00
+
+2023-07-12 23:17:43,881 INFO add listener: com.alibaba.nacos.naming.domains.meta.
+
+2023-07-12 23:17:44,653 INFO leader timeout, start voting,leader: {"ip":"192.168.10.102:6878","term":0,"leaderDueMs":18770,"heartbeatDueMs":4500,"state":"FOLLOWER"}, term: 0
+
+2023-07-12 23:18:03,478 INFO leader timeout, start voting,leader: {"ip":"192.168.10.102:6878","voteFor":"192.168.10.102:6878","term":1,"leaderDueMs":16505,"heartbeatDueMs":5000,"state":"CANDIDATE"}, term: 1
+
+2023-07-12 23:18:04,938 INFO add listener: com.alibaba.nacos.naming.iplist.public##DEFAULT_GROUP@@petrel-kernel-user
+
+2023-07-12 23:18:06,621 INFO add listener: com.alibaba.nacos.naming.iplist.public##DEFAULT_GROUP@@petrel-kernel-register
+
+2023-07-12 23:18:06,801 INFO add listener: com.alibaba.nacos.naming.iplist.public##DEFAULT_GROUP@@petrel-kernel-game
+
+2023-07-12 23:18:16,186 INFO add listener: com.alibaba.nacos.naming.iplist.public##DEFAULT_GROUP@@petrel-cms-web
+
+2023-07-12 23:18:20,467 INFO leader timeout, start voting,leader: {"ip":"192.168.10.102:6878","voteFor":"192.168.10.102:6878","term":2,"leaderDueMs":18093,"heartbeatDueMs":5000,"state":"CANDIDATE"}, term: 2
+
+2023-07-12 23:18:38,968 INFO leader timeout, start voting,leader: {"ip":"192.168.10.102:6878","voteFor":"192.168.10.102:6878","term":3,"leaderDueMs":15620,"heartbeatDueMs":5000,"state":"CANDIDATE"}, term: 3
+
+2023-07-12 23:18:54,972 INFO leader timeout, start voting,leader: {"ip":"192.168.10.102:6878","voteFor":"192.168.10.102:6878","term":4,"leaderDueMs":18243,"heartbeatDueMs":5000,"state":"CANDIDATE"}, term: 4
+
+2023-07-12 23:19:13,466 INFO leader timeout, start voting,leader: {"ip":"192.168.10.102:6878","voteFor":"192.168.10.102:6878","term":5,"leaderDueMs":17877,"heartbeatDueMs":5000,"state":"CANDIDATE"}, term: 5
+
+2023-07-12 23:19:31,465 INFO leader timeout, start voting,leader: {"ip":"192.168.10.102:6878","voteFor":"192.168.10.102:6878","term":6,"leaderDueMs":15463,"heartbeatDueMs":5000,"state":"CANDIDATE"}, term: 6
+
+2023-07-12 23:19:46,963 INFO leader timeout, start voting,leader: {"ip":"192.168.10.102:6878","voteFor":"192.168.10.102:6878","term":7,"leaderDueMs":18810,"heartbeatDueMs":5000,"state":"CANDIDATE"}, term: 7
+
+2023-07-12 23:20:05,960 INFO leader timeout, start voting,leader: {"ip":"192.168.10.102:6878","voteFor":"192.168.10.102:6878","term":8,"leaderDueMs":16611,"heartbeatDueMs":5000,"state":"CANDIDATE"}, term: 8
+
+2023-07-12 23:20:22,960 INFO leader timeout, start voting,leader: {"ip":"192.168.10.102:6878","voteFor":"192.168.10.102:6878","term":9,"leaderDueMs":18031,"heartbeatDueMs":5000,"state":"CANDIDATE"}, term: 9
+
+2023-07-12 23:20:41,460 INFO leader timeout, start voting,leader: {"ip":"192.168.10.102:6878","voteFor":"192.168.10.102:6878","term":10,"leaderDueMs":16882,"heartbeatDueMs":5000,"state":"CANDIDATE"}, term: 10
+
+2023-07-12 23:20:58,458 INFO leader timeout, start voting,leader: {"ip":"192.168.10.102:6878","voteFor":"192.168.10.102:6878","term":11,"leaderDueMs":19231,"heartbeatDueMs":5000,"state":"CANDIDATE"}, term: 11
+
+2023-07-12 23:21:17,957 INFO leader timeout, start voting,leader: {"ip":"192.168.10.102:6878","voteFor":"192.168.10.102:6878","term":12,"leaderDueMs":15347,"heartbeatDueMs":5000,"state":"CANDIDATE"}, term: 12
+
+2023-07-12 23:21:33,456 INFO leader timeout, start voting,leader: {"ip":"192.168.10.102:6878","voteFor":"192.168.10.102:6878","term":13,"leaderDueMs":18890,"heartbeatDueMs":5000,"state":"CANDIDATE"}, term: 13
+
+2023-07-12 23:21:52,455 INFO leader timeout, start voting,leader: {"ip":"192.168.10.102:6878","voteFor":"192.168.10.102:6878","term":14,"leaderDueMs":16054,"heartbeatDueMs":5000,"state":"CANDIDATE"}, term: 14
+
+2023-07-12 23:22:08,954 INFO leader timeout, start voting,leader: {"ip":"192.168.10.102:6878","voteFor":"192.168.10.102:6878","term":15,"leaderDueMs":16700,"heartbeatDueMs":5000,"state":"CANDIDATE"}, term: 15
+
+2023-07-12 23:22:25,953 INFO leader timeout, start voting,leader: {"ip":"192.168.10.102:6878","voteFor":"192.168.10.102:6878","term":16,"leaderDueMs":18102,"heartbeatDueMs":5000,"state":"CANDIDATE"}, term: 16
+
+2023-07-12 23:22:44,454 INFO leader timeout, start voting,leader: {"ip":"192.168.10.102:6878","voteFor":"192.168.10.102:6878","term":17,"leaderDueMs":19653,"heartbeatDueMs":5000,"state":"CANDIDATE"}, term: 17
+
+2023-07-12 23:23:04,453 INFO leader timeout, start voting,leader: {"ip":"192.168.10.102:6878","voteFor":"192.168.10.102:6878","term":18,"leaderDueMs":15526,"heartbeatDueMs":5000,"state":"CANDIDATE"}, term: 18
+
+2023-07-12 23:23:20,450 INFO leader timeout, start voting,leader: {"ip":"192.168.10.102:6878","voteFor":"192.168.10.102:6878","term":19,"leaderDueMs":17294,"heartbeatDueMs":5000,"state":"CANDIDATE"}, term: 19
+
+2023-07-12 23:23:37,950 INFO leader timeout, start voting,leader: {"ip":"192.168.10.102:6878","voteFor":"192.168.10.102:6878","term":20,"leaderDueMs":16165,"heartbeatDueMs":5000,"state":"CANDIDATE"}, term: 20
+
+2023-07-12 23:23:54,452 INFO leader timeout, start voting,leader: {"ip":"192.168.10.102:6878","voteFor":"192.168.10.102:6878","term":21,"leaderDueMs":16054,"heartbeatDueMs":5000,"state":"CANDIDATE"}, term: 21
+
+2023-07-12 23:24:10,949 INFO leader timeout, start voting,leader: {"ip":"192.168.10.102:6878","voteFor":"192.168.10.102:6878","term":22,"leaderDueMs":17939,"heartbeatDueMs":5000,"state":"CANDIDATE"}, term: 22
+
+2023-07-12 23:24:28,949 INFO leader timeout, start voting,leader: {"ip":"192.168.10.102:6878","voteFor":"192.168.10.102:6878","term":23,"leaderDueMs":18513,"heartbeatDueMs":5000,"state":"CANDIDATE"}, term: 23
+
+2023-07-12 23:24:47,948 INFO leader timeout, start voting,leader: {"ip":"192.168.10.102:6878","voteFor":"192.168.10.102:6878","term":24,"leaderDueMs":19150,"heartbeatDueMs":5000,"state":"CANDIDATE"}, term: 24
+
+2023-07-12 23:25:07,449 INFO leader timeout, start voting,leader: {"ip":"192.168.10.102:6878","voteFor":"192.168.10.102:6878","term":25,"leaderDueMs":17242,"heartbeatDueMs":5000,"state":"CANDIDATE"}, term: 25
+
+2023-07-12 23:25:24,949 INFO leader timeout, start voting,leader: {"ip":"192.168.10.102:6878","voteFor":"192.168.10.102:6878","term":26,"leaderDueMs":18090,"heartbeatDueMs":5000,"state":"CANDIDATE"}, term: 26
+
+2023-07-12 23:25:43,447 INFO leader timeout, start voting,leader: {"ip":"192.168.10.102:6878","voteFor":"192.168.10.102:6878","term":27,"leaderDueMs":17769,"heartbeatDueMs":5000,"state":"CANDIDATE"}, term: 27
+
+2023-07-12 23:26:01,454 INFO leader timeout, start voting,leader: {"ip":"192.168.10.102:6878","voteFor":"192.168.10.102:6878","term":28,"leaderDueMs":18144,"heartbeatDueMs":5000,"state":"CANDIDATE"}, term: 28
+
+2023-07-12 23:26:19,947 INFO leader timeout, start voting,leader: {"ip":"192.168.10.102:6878","voteFor":"192.168.10.102:6878","term":29,"leaderDueMs":19712,"heartbeatDueMs":5000,"state":"CANDIDATE"}, term: 29
+
+2023-07-12 23:26:39,947 INFO leader timeout, start voting,leader: {"ip":"192.168.10.102:6878","voteFor":"192.168.10.102:6878","term":30,"leaderDueMs":15723,"heartbeatDueMs":5000,"state":"CANDIDATE"}, term: 30
+
+2023-07-12 23:26:55,945 INFO leader timeout, start voting,leader: {"ip":"192.168.10.102:6878","voteFor":"192.168.10.102:6878","term":31,"leaderDueMs":17191,"heartbeatDueMs":5000,"state":"CANDIDATE"}, term: 31
+
+2023-07-12 23:27:43,794 INFO raft peers changed: [Member{ip='192.168.10.102', port=6878, state=UP, extendInfo={adWeight=0, raftPort=5878, site=unknow, weight=1}}]
+
+2023-07-12 23:27:43,848 INFO initializing Raft sub-system
+
+2023-07-12 23:27:43,849 INFO finish loading all datums, size: 0 cost 1 ms.
+
+2023-07-12 23:27:43,853 INFO cache loaded, datum count: 0, current term: 85
+
+2023-07-12 23:27:43,854 INFO raft notifier started
+
+2023-07-12 23:27:43,854 INFO finish to load data from disk, cost: 6 ms.
+
+2023-07-12 23:27:43,882 INFO timer started: leader timeout ms: 15000, heart-beat timeout ms: 5000
+
+2023-07-12 23:27:45,967 INFO add listener: com.alibaba.nacos.naming.domains.meta.00-00---000-NACOS_SWITCH_DOMAIN-000---00-00
+
+2023-07-12 23:27:46,020 INFO add listener: com.alibaba.nacos.naming.domains.meta.
+
+2023-07-12 23:27:53,145 INFO leader timeout, start voting,leader: {"ip":"192.168.10.102:6878","term":0,"leaderDueMs":17046,"heartbeatDueMs":4500,"state":"FOLLOWER"}, term: 0
+
+2023-07-12 23:28:08,155 INFO add listener: com.alibaba.nacos.naming.iplist.public##DEFAULT_GROUP@@petrel-kernel-user
+
+2023-07-12 23:28:09,708 INFO add listener: com.alibaba.nacos.naming.iplist.public##DEFAULT_GROUP@@petrel-kernel-game
+
+2023-07-12 23:28:09,863 INFO leader timeout, start voting,leader: {"ip":"192.168.10.102:6878","voteFor":"192.168.10.102:6878","term":1,"leaderDueMs":18841,"heartbeatDueMs":5000,"state":"CANDIDATE"}, term: 1
+
+2023-07-12 23:28:10,500 INFO add listener: com.alibaba.nacos.naming.iplist.public##DEFAULT_GROUP@@petrel-kernel-register
+
+2023-07-12 23:28:20,448 INFO add listener: com.alibaba.nacos.naming.iplist.public##DEFAULT_GROUP@@petrel-cms-web
+
+2023-07-12 23:28:28,863 INFO leader timeout, start voting,leader: {"ip":"192.168.10.102:6878","voteFor":"192.168.10.102:6878","term":2,"leaderDueMs":19834,"heartbeatDueMs":5000,"state":"CANDIDATE"}, term: 2
+
+2023-07-12 23:28:48,864 INFO leader timeout, start voting,leader: {"ip":"192.168.10.102:6878","voteFor":"192.168.10.102:6878","term":3,"leaderDueMs":17015,"heartbeatDueMs":5000,"state":"CANDIDATE"}, term: 3
+
+2023-07-12 23:29:06,362 INFO leader timeout, start voting,leader: {"ip":"192.168.10.102:6878","voteFor":"192.168.10.102:6878","term":4,"leaderDueMs":18764,"heartbeatDueMs":5000,"state":"CANDIDATE"}, term: 4
+
+2023-07-12 23:29:25,362 INFO leader timeout, start voting,leader: {"ip":"192.168.10.102:6878","voteFor":"192.168.10.102:6878","term":5,"leaderDueMs":17769,"heartbeatDueMs":5000,"state":"CANDIDATE"}, term: 5
+
+2023-07-12 23:29:43,364 INFO leader timeout, start voting,leader: {"ip":"192.168.10.102:6878","voteFor":"192.168.10.102:6878","term":6,"leaderDueMs":18742,"heartbeatDueMs":5000,"state":"CANDIDATE"}, term: 6
+
+2023-07-12 23:30:02,363 INFO leader timeout, start voting,leader: {"ip":"192.168.10.102:6878","voteFor":"192.168.10.102:6878","term":7,"leaderDueMs":16914,"heartbeatDueMs":5000,"state":"CANDIDATE"}, term: 7
+
+2023-07-12 23:30:19,361 INFO leader timeout, start voting,leader: {"ip":"192.168.10.102:6878","voteFor":"192.168.10.102:6878","term":8,"leaderDueMs":18584,"heartbeatDueMs":5000,"state":"CANDIDATE"}, term: 8
+
+2023-07-12 23:30:38,362 INFO leader timeout, start voting,leader: {"ip":"192.168.10.102:6878","voteFor":"192.168.10.102:6878","term":9,"leaderDueMs":17983,"heartbeatDueMs":5000,"state":"CANDIDATE"}, term: 9
+
+2023-07-12 23:30:56,361 INFO leader timeout, start voting,leader: {"ip":"192.168.10.102:6878","voteFor":"192.168.10.102:6878","term":10,"leaderDueMs":18443,"heartbeatDueMs":5000,"state":"CANDIDATE"}, term: 10
+
+2023-07-12 23:31:14,861 INFO leader timeout, start voting,leader: {"ip":"192.168.10.102:6878","voteFor":"192.168.10.102:6878","term":11,"leaderDueMs":15259,"heartbeatDueMs":5000,"state":"CANDIDATE"}, term: 11
+
+2023-07-12 23:31:30,361 INFO leader timeout, start voting,leader: {"ip":"192.168.10.102:6878","voteFor":"192.168.10.102:6878","term":12,"leaderDueMs":16244,"heartbeatDueMs":5000,"state":"CANDIDATE"}, term: 12
+
+2023-07-12 23:31:46,861 INFO leader timeout, start voting,leader: {"ip":"192.168.10.102:6878","voteFor":"192.168.10.102:6878","term":13,"leaderDueMs":15552,"heartbeatDueMs":5000,"state":"CANDIDATE"}, term: 13
+
+2023-07-12 23:32:02,861 INFO leader timeout, start voting,leader: {"ip":"192.168.10.102:6878","voteFor":"192.168.10.102:6878","term":14,"leaderDueMs":15652,"heartbeatDueMs":5000,"state":"CANDIDATE"}, term: 14
+
+2023-07-12 23:32:18,862 INFO leader timeout, start voting,leader: {"ip":"192.168.10.102:6878","voteFor":"192.168.10.102:6878","term":15,"leaderDueMs":16365,"heartbeatDueMs":5000,"state":"CANDIDATE"}, term: 15
+
+2023-07-12 23:32:35,360 INFO leader timeout, start voting,leader: {"ip":"192.168.10.102:6878","voteFor":"192.168.10.102:6878","term":16,"leaderDueMs":19350,"heartbeatDueMs":5000,"state":"CANDIDATE"}, term: 16
+
+2023-07-12 23:32:54,860 INFO leader timeout, start voting,leader: {"ip":"192.168.10.102:6878","voteFor":"192.168.10.102:6878","term":17,"leaderDueMs":17678,"heartbeatDueMs":5000,"state":"CANDIDATE"}, term: 17
+
+2023-07-12 23:33:29,939 INFO raft peers changed: [Member{ip='192.168.10.102', port=6878, state=UP, extendInfo={adWeight=0, raftPort=5878, site=unknow, weight=1}}]
+
+2023-07-12 23:33:29,978 INFO initializing Raft sub-system
+
+2023-07-12 23:33:29,978 INFO raft notifier started
+
+2023-07-12 23:33:29,978 INFO finish loading all datums, size: 0 cost 0 ms.
+
+2023-07-12 23:33:29,984 INFO cache loaded, datum count: 0, current term: 85
+
+2023-07-12 23:33:29,985 INFO finish to load data from disk, cost: 7 ms.
+
+2023-07-12 23:33:29,994 INFO timer started: leader timeout ms: 15000, heart-beat timeout ms: 5000
+
+2023-07-12 23:33:32,413 INFO add listener: com.alibaba.nacos.naming.domains.meta.00-00---000-NACOS_SWITCH_DOMAIN-000---00-00
+
+2023-07-12 23:33:32,495 INFO add listener: com.alibaba.nacos.naming.domains.meta.
+
+2023-07-12 23:33:39,806 INFO leader timeout, start voting,leader: {"ip":"192.168.10.102:6878","term":0,"leaderDueMs":15223,"heartbeatDueMs":4500,"state":"FOLLOWER"}, term: 0
+
+2023-07-12 23:33:49,250 INFO add listener: com.alibaba.nacos.naming.iplist.public##DEFAULT_GROUP@@petrel-kernel-register
+
+2023-07-12 23:33:49,452 INFO add listener: com.alibaba.nacos.naming.iplist.public##DEFAULT_GROUP@@petrel-kernel-game
+
+2023-07-12 23:33:50,189 INFO add listener: com.alibaba.nacos.naming.iplist.public##DEFAULT_GROUP@@petrel-kernel-user
+
+2023-07-12 23:33:53,989 INFO leader timeout, start voting,leader: {"ip":"192.168.10.102:6878","voteFor":"192.168.10.102:6878","term":1,"leaderDueMs":16501,"heartbeatDueMs":5000,"state":"CANDIDATE"}, term: 1
+
+2023-07-12 23:33:57,991 INFO add listener: com.alibaba.nacos.naming.iplist.public##DEFAULT_GROUP@@petrel-cms-web
+
+2023-07-12 23:34:10,988 INFO leader timeout, start voting,leader: {"ip":"192.168.10.102:6878","voteFor":"192.168.10.102:6878","term":2,"leaderDueMs":17538,"heartbeatDueMs":5000,"state":"CANDIDATE"}, term: 2
+
+2023-07-12 23:34:28,988 INFO leader timeout, start voting,leader: {"ip":"192.168.10.102:6878","voteFor":"192.168.10.102:6878","term":3,"leaderDueMs":16604,"heartbeatDueMs":5000,"state":"CANDIDATE"}, term: 3
+
+2023-07-12 23:34:45,988 INFO leader timeout, start voting,leader: {"ip":"192.168.10.102:6878","voteFor":"192.168.10.102:6878","term":4,"leaderDueMs":17708,"heartbeatDueMs":5000,"state":"CANDIDATE"}, term: 4
+
+2023-07-12 23:36:21,447 INFO raft peers changed: [Member{ip='192.168.10.102', port=6878, state=UP, extendInfo={adWeight=0, raftPort=5878, site=unknow, weight=1}}]
+
+2023-07-12 23:36:21,471 INFO initializing Raft sub-system
+
+2023-07-12 23:36:21,472 INFO raft notifier started
+
+2023-07-12 23:36:21,472 INFO finish loading all datums, size: 0 cost 0 ms.
+
+2023-07-12 23:36:21,476 INFO cache loaded, datum count: 0, current term: 85
+
+2023-07-12 23:36:21,476 INFO finish to load data from disk, cost: 4 ms.
+
+2023-07-12 23:36:21,481 INFO timer started: leader timeout ms: 15000, heart-beat timeout ms: 5000
+
+2023-07-12 23:36:22,339 INFO add listener: com.alibaba.nacos.naming.domains.meta.00-00---000-NACOS_SWITCH_DOMAIN-000---00-00
+
+2023-07-12 23:36:22,357 INFO add listener: com.alibaba.nacos.naming.domains.meta.
+
+2023-07-12 23:36:26,568 INFO leader timeout, start voting,leader: {"ip":"192.168.10.102:6878","term":0,"leaderDueMs":19940,"heartbeatDueMs":5000,"state":"FOLLOWER"}, term: 0
+
+2023-07-12 23:36:46,478 INFO leader timeout, start voting,leader: {"ip":"192.168.10.102:6878","voteFor":"192.168.10.102:6878","term":1,"leaderDueMs":15971,"heartbeatDueMs":5000,"state":"CANDIDATE"}, term: 1
+
+2023-07-12 23:36:47,430 INFO add listener: com.alibaba.nacos.naming.iplist.public##DEFAULT_GROUP@@petrel-kernel-game
+
+2023-07-12 23:36:50,031 INFO add listener: com.alibaba.nacos.naming.iplist.public##DEFAULT_GROUP@@petrel-kernel-user
+
+2023-07-12 23:36:51,171 INFO add listener: com.alibaba.nacos.naming.iplist.public##DEFAULT_GROUP@@petrel-kernel-register
+
+2023-07-12 23:37:02,477 INFO leader timeout, start voting,leader: {"ip":"192.168.10.102:6878","voteFor":"192.168.10.102:6878","term":2,"leaderDueMs":16272,"heartbeatDueMs":5000,"state":"CANDIDATE"}, term: 2
+
+2023-07-12 23:37:10,889 INFO add listener: com.alibaba.nacos.naming.iplist.public##DEFAULT_GROUP@@petrel-cms-web
+
+2023-07-12 23:37:18,977 INFO leader timeout, start voting,leader: {"ip":"192.168.10.102:6878","voteFor":"192.168.10.102:6878","term":3,"leaderDueMs":19359,"heartbeatDueMs":5000,"state":"CANDIDATE"}, term: 3
+
+2023-07-12 23:37:38,476 INFO leader timeout, start voting,leader: {"ip":"192.168.10.102:6878","voteFor":"192.168.10.102:6878","term":4,"leaderDueMs":18722,"heartbeatDueMs":5000,"state":"CANDIDATE"}, term: 4
+
+2023-07-12 23:37:57,475 INFO leader timeout, start voting,leader: {"ip":"192.168.10.102:6878","voteFor":"192.168.10.102:6878","term":5,"leaderDueMs":19506,"heartbeatDueMs":5000,"state":"CANDIDATE"}, term: 5
+
+2023-07-12 23:38:25,790 INFO raft peers changed: [Member{ip='192.168.10.102', port=6878, state=UP, extendInfo={adWeight=0, raftPort=5878, site=unknow, weight=1}}]
+
+2023-07-12 23:38:25,820 INFO initializing Raft sub-system
+
+2023-07-12 23:38:25,821 INFO finish loading all datums, size: 0 cost 0 ms.
+
+2023-07-12 23:38:25,821 INFO raft notifier started
+
+2023-07-12 23:38:25,824 INFO cache loaded, datum count: 0, current term: 85
+
+2023-07-12 23:38:25,824 INFO finish to load data from disk, cost: 4 ms.
+
+2023-07-12 23:38:25,829 INFO timer started: leader timeout ms: 15000, heart-beat timeout ms: 5000
+
+2023-07-12 23:38:25,897 INFO leader timeout, start voting,leader: {"ip":"192.168.10.102:6878","term":0,"leaderDueMs":18553,"heartbeatDueMs":4500,"state":"FOLLOWER"}, term: 0
+
+2023-07-12 23:38:26,775 INFO add listener: com.alibaba.nacos.naming.domains.meta.00-00---000-NACOS_SWITCH_DOMAIN-000---00-00
+
+2023-07-12 23:38:26,800 INFO add listener: com.alibaba.nacos.naming.domains.meta.
+
+2023-07-12 23:38:44,832 INFO leader timeout, start voting,leader: {"ip":"192.168.10.102:6878","voteFor":"192.168.10.102:6878","term":1,"leaderDueMs":16326,"heartbeatDueMs":5000,"state":"CANDIDATE"}, term: 1
+
+2023-07-12 23:38:53,424 INFO add listener: com.alibaba.nacos.naming.iplist.public##DEFAULT_GROUP@@petrel-kernel-game
+
+2023-07-12 23:38:56,798 INFO add listener: com.alibaba.nacos.naming.iplist.public##DEFAULT_GROUP@@petrel-kernel-user
+
+2023-07-12 23:38:57,478 INFO add listener: com.alibaba.nacos.naming.iplist.public##DEFAULT_GROUP@@petrel-kernel-register
+
+2023-07-12 23:39:01,326 INFO leader timeout, start voting,leader: {"ip":"192.168.10.102:6878","voteFor":"192.168.10.102:6878","term":2,"leaderDueMs":16946,"heartbeatDueMs":5000,"state":"CANDIDATE"}, term: 2
+
+2023-07-12 23:39:08,375 INFO add listener: com.alibaba.nacos.naming.iplist.public##DEFAULT_GROUP@@petrel-cms-web
+
+2023-07-12 23:39:18,325 INFO leader timeout, start voting,leader: {"ip":"192.168.10.102:6878","voteFor":"192.168.10.102:6878","term":3,"leaderDueMs":18473,"heartbeatDueMs":5000,"state":"CANDIDATE"}, term: 3
+
+2023-07-12 23:39:36,825 INFO leader timeout, start voting,leader: {"ip":"192.168.10.102:6878","voteFor":"192.168.10.102:6878","term":4,"leaderDueMs":19412,"heartbeatDueMs":5000,"state":"CANDIDATE"}, term: 4
+
+2023-07-12 23:39:56,324 INFO leader timeout, start voting,leader: {"ip":"192.168.10.102:6878","voteFor":"192.168.10.102:6878","term":5,"leaderDueMs":19259,"heartbeatDueMs":5000,"state":"CANDIDATE"}, term: 5
+
+2023-07-12 23:40:15,824 INFO leader timeout, start voting,leader: {"ip":"192.168.10.102:6878","voteFor":"192.168.10.102:6878","term":6,"leaderDueMs":16941,"heartbeatDueMs":5000,"state":"CANDIDATE"}, term: 6
+
+2023-07-12 23:40:32,824 INFO leader timeout, start voting,leader: {"ip":"192.168.10.102:6878","voteFor":"192.168.10.102:6878","term":7,"leaderDueMs":19908,"heartbeatDueMs":5000,"state":"CANDIDATE"}, term: 7
+
+2023-07-12 23:40:52,822 INFO leader timeout, start voting,leader: {"ip":"192.168.10.102:6878","voteFor":"192.168.10.102:6878","term":8,"leaderDueMs":16813,"heartbeatDueMs":5000,"state":"CANDIDATE"}, term: 8
+
+2023-07-12 23:41:09,823 INFO leader timeout, start voting,leader: {"ip":"192.168.10.102:6878","voteFor":"192.168.10.102:6878","term":9,"leaderDueMs":18405,"heartbeatDueMs":5000,"state":"CANDIDATE"}, term: 9
+
+2023-07-12 23:41:28,322 INFO leader timeout, start voting,leader: {"ip":"192.168.10.102:6878","voteFor":"192.168.10.102:6878","term":10,"leaderDueMs":17625,"heartbeatDueMs":5000,"state":"CANDIDATE"}, term: 10
+
+2023-07-12 23:41:46,321 INFO leader timeout, start voting,leader: {"ip":"192.168.10.102:6878","voteFor":"192.168.10.102:6878","term":11,"leaderDueMs":15278,"heartbeatDueMs":5000,"state":"CANDIDATE"}, term: 11
+
+2023-07-12 23:42:01,821 INFO leader timeout, start voting,leader: {"ip":"192.168.10.102:6878","voteFor":"192.168.10.102:6878","term":12,"leaderDueMs":17632,"heartbeatDueMs":5000,"state":"CANDIDATE"}, term: 12
+
+2023-07-12 23:42:19,823 INFO leader timeout, start voting,leader: {"ip":"192.168.10.102:6878","voteFor":"192.168.10.102:6878","term":13,"leaderDueMs":15587,"heartbeatDueMs":5000,"state":"CANDIDATE"}, term: 13
+
+2023-07-12 23:42:35,821 INFO leader timeout, start voting,leader: {"ip":"192.168.10.102:6878","voteFor":"192.168.10.102:6878","term":14,"leaderDueMs":16682,"heartbeatDueMs":5000,"state":"CANDIDATE"}, term: 14
+
+2023-07-12 23:42:52,822 INFO leader timeout, start voting,leader: {"ip":"192.168.10.102:6878","voteFor":"192.168.10.102:6878","term":15,"leaderDueMs":17332,"heartbeatDueMs":5000,"state":"CANDIDATE"}, term: 15
+
+2023-07-12 23:43:10,321 INFO leader timeout, start voting,leader: {"ip":"192.168.10.102:6878","voteFor":"192.168.10.102:6878","term":16,"leaderDueMs":16449,"heartbeatDueMs":5000,"state":"CANDIDATE"}, term: 16
+
+2023-07-12 23:43:26,822 INFO leader timeout, start voting,leader: {"ip":"192.168.10.102:6878","voteFor":"192.168.10.102:6878","term":17,"leaderDueMs":16812,"heartbeatDueMs":5000,"state":"CANDIDATE"}, term: 17
+
+2023-07-12 23:44:08,756 INFO raft peers changed: [Member{ip='192.168.10.102', port=6878, state=UP, extendInfo={adWeight=0, raftPort=5878, site=unknow, weight=1}}]
+
+2023-07-12 23:44:08,921 INFO initializing Raft sub-system
+
+2023-07-12 23:44:08,923 INFO finish loading all datums, size: 0 cost 0 ms.
+
+2023-07-12 23:44:08,933 INFO raft notifier started
+
+2023-07-12 23:44:08,935 INFO cache loaded, datum count: 0, current term: 85
+
+2023-07-12 23:44:08,935 INFO finish to load data from disk, cost: 12 ms.
+
+2023-07-12 23:44:08,946 INFO timer started: leader timeout ms: 15000, heart-beat timeout ms: 5000
+
+2023-07-12 23:44:10,174 INFO leader timeout, start voting,leader: {"ip":"192.168.10.102:6878","term":0,"leaderDueMs":15739,"heartbeatDueMs":4500,"state":"FOLLOWER"}, term: 0
+
+2023-07-12 23:44:10,909 INFO add listener: com.alibaba.nacos.naming.domains.meta.00-00---000-NACOS_SWITCH_DOMAIN-000---00-00
+
+2023-07-12 23:44:11,029 INFO add listener: com.alibaba.nacos.naming.domains.meta.
+
+2023-07-12 23:44:25,979 INFO leader timeout, start voting,leader: {"ip":"192.168.10.102:6878","voteFor":"192.168.10.102:6878","term":1,"leaderDueMs":18608,"heartbeatDueMs":5000,"state":"CANDIDATE"}, term: 1
+
+2023-07-12 23:44:39,248 INFO add listener: com.alibaba.nacos.naming.iplist.public##DEFAULT_GROUP@@petrel-kernel-game
+
+2023-07-12 23:44:41,277 INFO add listener: com.alibaba.nacos.naming.iplist.public##DEFAULT_GROUP@@petrel-kernel-user
+
+2023-07-12 23:44:41,419 INFO add listener: com.alibaba.nacos.naming.iplist.public##DEFAULT_GROUP@@petrel-kernel-register
+
+2023-07-12 23:44:44,939 INFO leader timeout, start voting,leader: {"ip":"192.168.10.102:6878","voteFor":"192.168.10.102:6878","term":2,"leaderDueMs":17851,"heartbeatDueMs":5000,"state":"CANDIDATE"}, term: 2
+
+2023-07-12 23:44:48,525 INFO add listener: com.alibaba.nacos.naming.iplist.public##DEFAULT_GROUP@@petrel-cms-web
+
+2023-07-12 23:45:02,938 INFO leader timeout, start voting,leader: {"ip":"192.168.10.102:6878","voteFor":"192.168.10.102:6878","term":3,"leaderDueMs":19440,"heartbeatDueMs":5000,"state":"CANDIDATE"}, term: 3
+
+2023-07-12 23:45:22,439 INFO leader timeout, start voting,leader: {"ip":"192.168.10.102:6878","voteFor":"192.168.10.102:6878","term":4,"leaderDueMs":15656,"heartbeatDueMs":5000,"state":"CANDIDATE"}, term: 4
+
+2023-07-12 23:45:38,438 INFO leader timeout, start voting,leader: {"ip":"192.168.10.102:6878","voteFor":"192.168.10.102:6878","term":5,"leaderDueMs":19829,"heartbeatDueMs":5000,"state":"CANDIDATE"}, term: 5
+
+2023-07-12 23:45:58,437 INFO leader timeout, start voting,leader: {"ip":"192.168.10.102:6878","voteFor":"192.168.10.102:6878","term":6,"leaderDueMs":19702,"heartbeatDueMs":5000,"state":"CANDIDATE"}, term: 6
+
+2023-07-12 23:46:18,439 INFO leader timeout, start voting,leader: {"ip":"192.168.10.102:6878","voteFor":"192.168.10.102:6878","term":7,"leaderDueMs":16627,"heartbeatDueMs":5000,"state":"CANDIDATE"}, term: 7
+
+2023-07-12 23:46:35,438 INFO leader timeout, start voting,leader: {"ip":"192.168.10.102:6878","voteFor":"192.168.10.102:6878","term":8,"leaderDueMs":15082,"heartbeatDueMs":5000,"state":"CANDIDATE"}, term: 8
+
+2023-07-12 23:46:50,937 INFO leader timeout, start voting,leader: {"ip":"192.168.10.102:6878","voteFor":"192.168.10.102:6878","term":9,"leaderDueMs":16079,"heartbeatDueMs":5000,"state":"CANDIDATE"}, term: 9
+
+2023-07-12 23:47:07,439 INFO leader timeout, start voting,leader: {"ip":"192.168.10.102:6878","voteFor":"192.168.10.102:6878","term":10,"leaderDueMs":17468,"heartbeatDueMs":5000,"state":"CANDIDATE"}, term: 10
+
+2023-07-12 23:47:24,947 INFO leader timeout, start voting,leader: {"ip":"192.168.10.102:6878","voteFor":"192.168.10.102:6878","term":11,"leaderDueMs":16522,"heartbeatDueMs":5000,"state":"CANDIDATE"}, term: 11
+
+2023-07-12 23:47:41,937 INFO leader timeout, start voting,leader: {"ip":"192.168.10.102:6878","voteFor":"192.168.10.102:6878","term":12,"leaderDueMs":19121,"heartbeatDueMs":5000,"state":"CANDIDATE"}, term: 12
+
+2023-07-12 23:48:01,437 INFO leader timeout, start voting,leader: {"ip":"192.168.10.102:6878","voteFor":"192.168.10.102:6878","term":13,"leaderDueMs":16890,"heartbeatDueMs":5000,"state":"CANDIDATE"}, term: 13
+
+2023-07-12 23:48:18,437 INFO leader timeout, start voting,leader: {"ip":"192.168.10.102:6878","voteFor":"192.168.10.102:6878","term":14,"leaderDueMs":18536,"heartbeatDueMs":5000,"state":"CANDIDATE"}, term: 14
+
+2023-07-12 23:48:37,438 INFO leader timeout, start voting,leader: {"ip":"192.168.10.102:6878","voteFor":"192.168.10.102:6878","term":15,"leaderDueMs":17813,"heartbeatDueMs":5000,"state":"CANDIDATE"}, term: 15
+
+2023-07-12 23:48:55,437 INFO leader timeout, start voting,leader: {"ip":"192.168.10.102:6878","voteFor":"192.168.10.102:6878","term":16,"leaderDueMs":17615,"heartbeatDueMs":5000,"state":"CANDIDATE"}, term: 16
+
+2023-07-12 23:49:13,436 INFO leader timeout, start voting,leader: {"ip":"192.168.10.102:6878","voteFor":"192.168.10.102:6878","term":17,"leaderDueMs":15415,"heartbeatDueMs":5000,"state":"CANDIDATE"}, term: 17
+
+2023-07-12 23:49:28,937 INFO leader timeout, start voting,leader: {"ip":"192.168.10.102:6878","voteFor":"192.168.10.102:6878","term":18,"leaderDueMs":19671,"heartbeatDueMs":5000,"state":"CANDIDATE"}, term: 18
+
+2023-07-12 23:49:58,398 INFO raft peers changed: [Member{ip='192.168.10.102', port=6878, state=UP, extendInfo={adWeight=0, raftPort=5878, site=unknow, weight=1}}]
+
+2023-07-12 23:49:58,449 INFO initializing Raft sub-system
+
+2023-07-12 23:49:58,450 INFO finish loading all datums, size: 0 cost 1 ms.
+
+2023-07-12 23:49:58,450 INFO raft notifier started
+
+2023-07-12 23:49:58,453 INFO cache loaded, datum count: 0, current term: 85
+
+2023-07-12 23:49:58,454 INFO finish to load data from disk, cost: 5 ms.
+
+2023-07-12 23:49:58,458 INFO timer started: leader timeout ms: 15000, heart-beat timeout ms: 5000
+
+2023-07-12 23:49:59,346 INFO add listener: com.alibaba.nacos.naming.domains.meta.00-00---000-NACOS_SWITCH_DOMAIN-000---00-00
+
+2023-07-12 23:49:59,376 INFO add listener: com.alibaba.nacos.naming.domains.meta.
+
+2023-07-12 23:50:05,558 INFO leader timeout, start voting,leader: {"ip":"192.168.10.102:6878","term":0,"leaderDueMs":19159,"heartbeatDueMs":5000,"state":"FOLLOWER"}, term: 0
+
+2023-07-12 23:50:24,957 INFO leader timeout, start voting,leader: {"ip":"192.168.10.102:6878","voteFor":"192.168.10.102:6878","term":1,"leaderDueMs":16951,"heartbeatDueMs":5000,"state":"CANDIDATE"}, term: 1
+
+2023-07-12 23:50:41,957 INFO leader timeout, start voting,leader: {"ip":"192.168.10.102:6878","voteFor":"192.168.10.102:6878","term":2,"leaderDueMs":18302,"heartbeatDueMs":5000,"state":"CANDIDATE"}, term: 2
+
+2023-07-12 23:51:00,456 INFO leader timeout, start voting,leader: {"ip":"192.168.10.102:6878","voteFor":"192.168.10.102:6878","term":3,"leaderDueMs":19870,"heartbeatDueMs":5000,"state":"CANDIDATE"}, term: 3
+
+2023-07-12 23:51:20,455 INFO leader timeout, start voting,leader: {"ip":"192.168.10.102:6878","voteFor":"192.168.10.102:6878","term":4,"leaderDueMs":19548,"heartbeatDueMs":5000,"state":"CANDIDATE"}, term: 4
+
+2023-07-12 23:55:41,069 INFO raft peers changed: [Member{ip='192.168.10.102', port=6878, state=UP, extendInfo={adWeight=0, raftPort=5878, site=unknow, weight=1}}]
+
+2023-07-12 23:55:41,173 INFO initializing Raft sub-system
+
+2023-07-12 23:55:41,174 INFO raft notifier started
+
+2023-07-12 23:55:41,174 INFO finish loading all datums, size: 0 cost 0 ms.
+
+2023-07-12 23:55:41,182 INFO cache loaded, datum count: 0, current term: 85
+
+2023-07-12 23:55:41,183 INFO finish to load data from disk, cost: 9 ms.
+
+2023-07-12 23:55:41,195 INFO timer started: leader timeout ms: 15000, heart-beat timeout ms: 5000
+
+2023-07-12 23:55:44,087 INFO add listener: com.alibaba.nacos.naming.domains.meta.00-00---000-NACOS_SWITCH_DOMAIN-000---00-00
+
+2023-07-12 23:55:44,136 INFO add listener: com.alibaba.nacos.naming.domains.meta.
+
+2023-07-12 23:55:49,545 INFO leader timeout, start voting,leader: {"ip":"192.168.10.102:6878","term":0,"leaderDueMs":16929,"heartbeatDueMs":5000,"state":"FOLLOWER"}, term: 0
+
+2023-07-12 23:56:06,188 INFO leader timeout, start voting,leader: {"ip":"192.168.10.102:6878","voteFor":"192.168.10.102:6878","term":1,"leaderDueMs":15595,"heartbeatDueMs":5000,"state":"CANDIDATE"}, term: 1
+
+2023-07-12 23:56:21,226 INFO add listener: com.alibaba.nacos.naming.iplist.public##DEFAULT_GROUP@@petrel-kernel-game
+
+2023-07-12 23:56:22,191 INFO leader timeout, start voting,leader: {"ip":"192.168.10.102:6878","voteFor":"192.168.10.102:6878","term":2,"leaderDueMs":19723,"heartbeatDueMs":5000,"state":"CANDIDATE"}, term: 2
+
+2023-07-12 23:56:22,327 INFO add listener: com.alibaba.nacos.naming.iplist.public##DEFAULT_GROUP@@petrel-kernel-user
+
+2023-07-12 23:56:23,314 INFO add listener: com.alibaba.nacos.naming.iplist.public##DEFAULT_GROUP@@petrel-kernel-register
+
+2023-07-12 23:56:34,198 INFO add listener: com.alibaba.nacos.naming.iplist.public##DEFAULT_GROUP@@petrel-cms-web
+
+2023-07-12 23:56:42,187 INFO leader timeout, start voting,leader: {"ip":"192.168.10.102:6878","voteFor":"192.168.10.102:6878","term":3,"leaderDueMs":15019,"heartbeatDueMs":5000,"state":"CANDIDATE"}, term: 3
+
+2023-07-12 23:56:57,688 INFO leader timeout, start voting,leader: {"ip":"192.168.10.102:6878","voteFor":"192.168.10.102:6878","term":4,"leaderDueMs":15139,"heartbeatDueMs":5000,"state":"CANDIDATE"}, term: 4
+
+2023-07-12 23:57:13,196 INFO leader timeout, start voting,leader: {"ip":"192.168.10.102:6878","voteFor":"192.168.10.102:6878","term":5,"leaderDueMs":16777,"heartbeatDueMs":5000,"state":"CANDIDATE"}, term: 5
+
+2023-07-12 23:57:30,186 INFO leader timeout, start voting,leader: {"ip":"192.168.10.102:6878","voteFor":"192.168.10.102:6878","term":6,"leaderDueMs":19804,"heartbeatDueMs":5000,"state":"CANDIDATE"}, term: 6
+
+2023-07-12 23:57:50,187 INFO leader timeout, start voting,leader: {"ip":"192.168.10.102:6878","voteFor":"192.168.10.102:6878","term":7,"leaderDueMs":15954,"heartbeatDueMs":5000,"state":"CANDIDATE"}, term: 7
+
+2023-07-12 23:58:06,185 INFO leader timeout, start voting,leader: {"ip":"192.168.10.102:6878","voteFor":"192.168.10.102:6878","term":8,"leaderDueMs":19450,"heartbeatDueMs":5000,"state":"CANDIDATE"}, term: 8
+
+2023-07-12 23:58:25,685 INFO leader timeout, start voting,leader: {"ip":"192.168.10.102:6878","voteFor":"192.168.10.102:6878","term":9,"leaderDueMs":15119,"heartbeatDueMs":5000,"state":"CANDIDATE"}, term: 9
+
+2023-07-12 23:58:41,184 INFO leader timeout, start voting,leader: {"ip":"192.168.10.102:6878","voteFor":"192.168.10.102:6878","term":10,"leaderDueMs":15429,"heartbeatDueMs":5000,"state":"CANDIDATE"}, term: 10
+
+2023-07-12 23:58:56,685 INFO leader timeout, start voting,leader: {"ip":"192.168.10.102:6878","voteFor":"192.168.10.102:6878","term":11,"leaderDueMs":18852,"heartbeatDueMs":5000,"state":"CANDIDATE"}, term: 11
+
+2023-07-12 23:59:15,683 INFO leader timeout, start voting,leader: {"ip":"192.168.10.102:6878","voteFor":"192.168.10.102:6878","term":12,"leaderDueMs":15495,"heartbeatDueMs":5000,"state":"CANDIDATE"}, term: 12
+
+2023-07-12 23:59:31,184 INFO leader timeout, start voting,leader: {"ip":"192.168.10.102:6878","voteFor":"192.168.10.102:6878","term":13,"leaderDueMs":17831,"heartbeatDueMs":5000,"state":"CANDIDATE"}, term: 13
+
+2023-07-12 23:59:49,185 INFO leader timeout, start voting,leader: {"ip":"192.168.10.102:6878","voteFor":"192.168.10.102:6878","term":14,"leaderDueMs":19557,"heartbeatDueMs":5000,"state":"CANDIDATE"}, term: 14
+

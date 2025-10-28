@@ -1,0 +1,36 @@
+<?xml version='1.0' encoding='utf-8' ?>
+<Root>
+	<CtrlConfig>
+		<Item ID="1"  Name="输值" min = "0" max = "1200" bounsId = "2">
+			<iProb Name = "f-0-0" Scaled = "90"/>
+			<iProb Name = "f-0-10" Scaled = "10"/>
+			<iProb Name = "f-10-20" Scaled = "2"/>
+			<iProb Name = "f-free" Scaled = "0"/>
+		</Item>
+		<Item ID="2"  Name="输值" min = "0" max = "1200" bounsId = "2">
+			<iProb Name = "f-0-0" Scaled = "80"/>
+			<iProb Name = "f-0-10" Scaled = "15"/>
+			<iProb Name = "f-10-20" Scaled = "5"/>
+			<iProb Name = "f-free" Scaled = "0"/>
+		</Item>
+		<Item ID="3"  Name="输值" min = "0" max = "1200" bounsId = "2">
+			<iProb Name = "f-0-0" Scaled = "50"/>
+			<iProb Name = "f-0-10" Scaled = "50"/>
+			<iProb Name = "f-10-20" Scaled = "50"/>
+			<iProb Name = "f-free" Scaled = "0"/>
+		</Item>
+		<Item ID="4"  Name="输值" min = "0" max = "1200" bounsId = "2">
+			<iProb Name = "f-0-0" Scaled = "50"/>
+			<iProb Name = "f-0-10" Scaled = "30"/>
+			<iProb Name = "f-10-20" Scaled = "10"/>
+			<iProb Name = "f-free" Scaled = "10"/>
+		</Item>
+		<Item ID="5"  Name="输值" min = "0" max = "1200" bounsId = "2">
+			<iProb Name = "f-0-0" Scaled = "30"/>
+			<iProb Name = "f-0-10" Scaled = "50"/>
+			<iProb Name = "f-10-20" Scaled = "20"/>
+			<iProb Name = "f-free" Scaled = "10"/>
+		</Item>
+	</CtrlConfig>
+	
+</Root>
