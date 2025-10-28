@@ -232,8 +232,9 @@ echo ""
 # ==========================================
 # 步骤 5: 启动 Lobby 服务
 # 关键：确保在 Register 完全就绪后启动
+# 增加内存以避免频繁 GC 导致心跳超时
 # ==========================================
-log_step "[5/7] 启动 Lobby 服务 (端口 9879)..."
+log_step "[5/7] 启动 Lobby 服务 (端口 9879) - 优化配置防止掉线..."
 
 if check_service_running "$LOBBY_JAR"; then
     log_warn "Lobby 服务已在运行，跳过启动"
@@ -242,10 +243,23 @@ else
     ZEBRA_IP_OUT=${1:-127.0.0.1}
     
     log_info "启动 Lobby 服务 (外部 IP: ${ZEBRA_IP_OUT})..."
-    nohup java -jar -Xmn512m -Xms1024m -Xmx1024m "$LOBBY_JAR" \
+    log_info "配置: 增加内存以提高稳定性，启用 GC 日志监控"
+    
+    # 创建 GC 日志目录
+    mkdir -p "${PETREL_DIR}/logs/gc"
+    
+    # 优化启动参数：增加内存，优化 GC，启用详细日志
+    nohup java -jar \
+        -Xmn1024m -Xms2048m -Xmx2048m \
+        -XX:+UseG1GC \
+        -XX:MaxGCPauseMillis=200 \
+        -XX:+PrintGCDetails \
+        -XX:+PrintGCDateStamps \
+        -Xloggc:"${PETREL_DIR}/logs/gc/lobby-gc-$(date +%Y%m%d-%H%M%S).log" \
+        "$LOBBY_JAR" \
         --spring.profiles.active=prod \
         --zebra.ip.out=${ZEBRA_IP_OUT} \
-        > /dev/null 2>&1 &
+        > "${PETREL_DIR}/logs/lobby-stdout.log" 2>&1 &
     
     # 根据日志，Lobby 启动需要约 5-6 秒
     log_info "等待 Lobby 应用启动 (预计 5-6 秒)..."
@@ -260,12 +274,14 @@ else
     fi
     
     # 关键：等待 Lobby 向 Register 发送注册请求
-    # 根据日志，从 Lobby 启动到发送注册请求约需要 0.2 秒
     # 从发送注册到 Register 接收约需要 0.8 秒
     log_info "等待 Lobby 向 Register 注册 (预计 2-3 秒)..."
     sleep 3
     
     log_info "✓ Lobby 服务已启动并完成注册"
+    log_info "  内存配置: 堆 2GB (年轻代 1GB)"
+    log_info "  GC 日志: logs/gc/lobby-gc-*.log"
+    log_info "  标准输出: logs/lobby-stdout.log"
 fi
 
 echo ""
@@ -362,6 +378,20 @@ echo "  查看 Lobby 日志确认连接："
 echo "  tail -20 ${PETREL_DIR}/logs/petrel-game-lobby/info_9879.txt | grep 'StartAfter send register msg'"
 echo ""
 
+log_info "监控 Lobby 连接稳定性（防止掉线）："
+echo "  持续监控连接状态："
+echo "  watch -n 10 'tail -5 ${PETREL_DIR}/logs/petrel-kernel-register/info_7180.log | grep lobby'"
+echo ""
+echo "  监控 GC 情况（防止 GC 暂停导致心跳超时）："
+echo "  tail -f ${PETREL_DIR}/logs/gc/lobby-gc-*.log"
+echo ""
+echo "  如果发现 Lobby 掉线："
+echo "  1. 检查 GC 日志，查看是否有长时间暂停"
+echo "  2. 检查是否有大量后台管理系统的查询"
+echo "  3. 考虑进一步增加内存或优化后台查询缓存"
+echo "  4. 查看详细分析: Lobby掉线问题分析.md"
+echo ""
+
 log_info "关键时间点说明（基于 2022-12-18 生产日志）："
 echo "  1. Register 启动需要:      8-10 秒"
 echo "  2. Register HTTP 就绪:     启动后额外 10 秒"
@@ -371,6 +401,13 @@ echo "  5. Register 接收注册:      Lobby 发送后 0.8 秒"
 echo "  6. 总时间（Register → Lobby 注册完成）: 约 25-30 秒"
 echo ""
 
+log_info "Lobby 优化配置："
+echo "  内存:    堆 2GB (从 1GB 增加，减少 GC 频率)"
+echo "  GC:      G1GC 最大暂停 200ms (减少心跳超时风险)"
+echo "  日志:    启用 GC 日志监控"
+echo "  目的:    防止 GC 暂停和内存不足导致掉线"
+echo ""
+
 log_info "常见问题排查："
 echo "  如果 Lobby 注册失败："
 echo "  1. 确认 Register 服务完全启动（检查端口 7180）"
@@ -378,6 +415,12 @@ echo "  2. 确认 Register HTTP 接口就绪（启动后等待至少 20 秒）"
 echo "  3. 确认 Nacos 服务正常运行"
 echo "  4. 查看 Register 日志: tail -f logs/petrel-kernel-register/info_7180.log"
 echo "  5. 查看 Lobby 日志: tail -f logs/petrel-game-lobby/info_9879.txt"
+echo ""
+echo "  如果 Lobby 注册后掉线："
+echo "  1. 检查 GC 日志: tail -f logs/gc/lobby-gc-*.log"
+echo "  2. 监控连接: watch -n 10 'tail -5 logs/petrel-kernel-register/info_7180.log'"
+echo "  3. 查看后台访问日志: tail -f logs/petrel-cms-web/info_721.log"
+echo "  4. 参考详细分析: Lobby掉线问题分析.md"
 echo ""
 
 log_info "启动完成！"
