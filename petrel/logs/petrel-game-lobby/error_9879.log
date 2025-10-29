@@ -1,16 +1,21 @@
-12-21 01:59:06.500 ERROR [Zebra-worker-1-thread-8] [com.zebra.net.servers.HeartbeatServerHandler] : Channel close By: Heartbeat Broken links: [id: 0x682d3ee0, L:/172.19.48.88:9527 - R:/92.63.196.155:62844]
-12-21 02:26:25.380 ERROR [Zebra-worker-1-thread-1] [com.zebra.net.servers.ZebraConnectionHandler] : ExceptionCaught in connection: [id: 0x02e8fc3d, L:/172.19.48.88:9527 - R:/167.248.133.47:40444], close the connection! Cause[IOException:远程主机强迫关闭了一个现有的连接。]
-12-21 02:26:28.583 ERROR [Zebra-worker-1-thread-2] [com.zebra.net.servers.ZebraConnectionHandler] : ExceptionCaught in connection: [id: 0xd028486f, L:/172.19.48.88:9527 - R:/167.248.133.47:43060], close the connection! Cause[IOException:远程主机强迫关闭了一个现有的连接。]
-12-21 02:26:32.780 ERROR [Zebra-worker-1-thread-3] [com.zebra.net.servers.ZebraConnectionHandler] : ExceptionCaught in connection: [id: 0x2783a7c8, L:/172.19.48.88:9527 - R:/167.248.133.47:39442], close the connection! Cause[IOException:远程主机强迫关闭了一个现有的连接。]
-12-21 02:26:32.982 ERROR [Zebra-worker-1-thread-4] [com.zebra.net.servers.ZebraConnectionHandler] : ExceptionCaught in connection: [id: 0xd61240dc, L:/172.19.48.88:9527 - R:/167.248.133.47:38676], close the connection! Cause[IOException:远程主机强迫关闭了一个现有的连接。]
-10-29 03:50:27.783 ERROR [main] [org.springframework.boot.SpringApplication] : Application run failed
-java.lang.IllegalStateException: Failed to execute ApplicationRunner
-	at org.springframework.boot.SpringApplication.callRunner(SpringApplication.java:778)
-	at org.springframework.boot.SpringApplication.callRunners(SpringApplication.java:765)
-	at org.springframework.boot.SpringApplication.run(SpringApplication.java:322)
+10-29 03:50:16.273 ERROR [main] [org.springframework.boot.SpringApplication] : Application run failed
+org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'redisKeyExpirationListener' defined in URL [jar:file:/home/runner/work/dafuhaozui/dafuhaozui/petrel/petrel-game-lobby-1.0-SNAPSHOT-boot.jar!/BOOT-INF/lib/petrel-game-lobby-core-1.0-SNAPSHOT.jar!/com/petrel/lobby/config/RedisKeyExpirationListener.class]: Invocation of init method failed; nested exception is org.springframework.data.redis.connection.PoolException: Could not get a resource from the pool; nested exception is io.lettuce.core.RedisConnectionException: Unable to connect to 127.0.0.1/<unresolved>:6379
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1796)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:595)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:517)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:323)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:222)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:321)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:202)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:879)
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:878)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:550)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:747)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:397)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:315)
 	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1226)
 	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1215)
-	at com.petrel.slots.all.AllApplication.main(AllApplication.java:24)
+	at com.petrel.lobby.LobbyApplication.main(LobbyApplication.java:21)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
 	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -25,19 +30,11 @@ Caused by: org.springframework.data.redis.connection.PoolException: Could not ge
 	at org.springframework.data.redis.connection.lettuce.LettuceConnectionFactory$SharedConnection.getConnection(LettuceConnectionFactory.java:1178)
 	at org.springframework.data.redis.connection.lettuce.LettuceConnectionFactory.getSharedConnection(LettuceConnectionFactory.java:942)
 	at org.springframework.data.redis.connection.lettuce.LettuceConnectionFactory.getConnection(LettuceConnectionFactory.java:353)
-	at org.springframework.data.redis.core.RedisConnectionUtils.doGetConnection(RedisConnectionUtils.java:134)
-	at org.springframework.data.redis.core.RedisConnectionUtils.getConnection(RedisConnectionUtils.java:97)
-	at org.springframework.data.redis.core.RedisConnectionUtils.getConnection(RedisConnectionUtils.java:84)
-	at org.springframework.data.redis.core.RedisTemplate.execute(RedisTemplate.java:215)
-	at org.springframework.data.redis.core.RedisTemplate.execute(RedisTemplate.java:188)
-	at org.springframework.data.redis.core.AbstractOperations.execute(AbstractOperations.java:96)
-	at org.springframework.data.redis.core.DefaultHashOperations.values(DefaultHashOperations.java:219)
-	at com.petrel.common.dc.redis.GameRoomRedisService.findGameByType(GameRoomRedisService.java:49)
-	at com.petrel.slots.core.common.service.GameServerStartService.startBefore(GameServerStartService.java:47)
-	at com.petrel.slots.all.StartInitialize.start(StartInitialize.java:34)
-	at com.petrel.slots.all.StartInitialize.run(StartInitialize.java:41)
-	at org.springframework.boot.SpringApplication.callRunner(SpringApplication.java:775)
-	... 13 common frames omitted
+	at org.springframework.data.redis.listener.KeyspaceEventMessageListener.init(KeyspaceEventMessageListener.java:85)
+	at org.springframework.data.redis.listener.KeyspaceEventMessageListener.afterPropertiesSet(KeyspaceEventMessageListener.java:137)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.invokeInitMethods(AbstractAutowireCapableBeanFactory.java:1855)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1792)
+	... 23 common frames omitted
 Caused by: io.lettuce.core.RedisConnectionException: Unable to connect to 127.0.0.1/<unresolved>:6379
 	at io.lettuce.core.RedisConnectionException.create(RedisConnectionException.java:78)
 	at io.lettuce.core.RedisConnectionException.create(RedisConnectionException.java:56)
@@ -56,7 +53,7 @@ Caused by: io.lettuce.core.RedisConnectionException: Unable to connect to 127.0.
 	at io.lettuce.core.support.ConnectionPoolSupport$1.borrowObject(ConnectionPoolSupport.java:122)
 	at io.lettuce.core.support.ConnectionPoolSupport$1.borrowObject(ConnectionPoolSupport.java:117)
 	at org.springframework.data.redis.connection.lettuce.LettucePoolingConnectionProvider.getConnection(LettucePoolingConnectionProvider.java:103)
-	... 29 common frames omitted
+	... 31 common frames omitted
 Caused by: io.netty.channel.AbstractChannel$AnnotatedConnectException: finishConnect(..) failed: Connection refused: /127.0.0.1:6379
 Caused by: java.net.ConnectException: finishConnect(..) failed: Connection refused
 	at io.netty.channel.unix.Errors.throwConnectException(Errors.java:124)
@@ -70,14 +67,24 @@ Caused by: java.net.ConnectException: finishConnect(..) failed: Connection refus
 	at io.netty.util.internal.ThreadExecutorMap$2.run(ThreadExecutorMap.java:74)
 	at io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30)
 	at java.base/java.lang.Thread.run(Thread.java:840)
-10-29 03:50:27.785 ERROR [main] [com.petrel.slots.all.AllApplication] : start error:
-java.lang.IllegalStateException: Failed to execute ApplicationRunner
-	at org.springframework.boot.SpringApplication.callRunner(SpringApplication.java:778)
-	at org.springframework.boot.SpringApplication.callRunners(SpringApplication.java:765)
-	at org.springframework.boot.SpringApplication.run(SpringApplication.java:322)
+10-29 03:50:16.275 ERROR [main] [com.petrel.lobby.LobbyApplication] : start error:
+org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'redisKeyExpirationListener' defined in URL [jar:file:/home/runner/work/dafuhaozui/dafuhaozui/petrel/petrel-game-lobby-1.0-SNAPSHOT-boot.jar!/BOOT-INF/lib/petrel-game-lobby-core-1.0-SNAPSHOT.jar!/com/petrel/lobby/config/RedisKeyExpirationListener.class]: Invocation of init method failed; nested exception is org.springframework.data.redis.connection.PoolException: Could not get a resource from the pool; nested exception is io.lettuce.core.RedisConnectionException: Unable to connect to 127.0.0.1/<unresolved>:6379
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1796)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:595)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:517)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:323)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:222)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:321)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:202)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:879)
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:878)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:550)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:747)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:397)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:315)
 	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1226)
 	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1215)
-	at com.petrel.slots.all.AllApplication.main(AllApplication.java:24)
+	at com.petrel.lobby.LobbyApplication.main(LobbyApplication.java:21)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
 	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -92,19 +99,11 @@ Caused by: org.springframework.data.redis.connection.PoolException: Could not ge
 	at org.springframework.data.redis.connection.lettuce.LettuceConnectionFactory$SharedConnection.getConnection(LettuceConnectionFactory.java:1178)
 	at org.springframework.data.redis.connection.lettuce.LettuceConnectionFactory.getSharedConnection(LettuceConnectionFactory.java:942)
 	at org.springframework.data.redis.connection.lettuce.LettuceConnectionFactory.getConnection(LettuceConnectionFactory.java:353)
-	at org.springframework.data.redis.core.RedisConnectionUtils.doGetConnection(RedisConnectionUtils.java:134)
-	at org.springframework.data.redis.core.RedisConnectionUtils.getConnection(RedisConnectionUtils.java:97)
-	at org.springframework.data.redis.core.RedisConnectionUtils.getConnection(RedisConnectionUtils.java:84)
-	at org.springframework.data.redis.core.RedisTemplate.execute(RedisTemplate.java:215)
-	at org.springframework.data.redis.core.RedisTemplate.execute(RedisTemplate.java:188)
-	at org.springframework.data.redis.core.AbstractOperations.execute(AbstractOperations.java:96)
-	at org.springframework.data.redis.core.DefaultHashOperations.values(DefaultHashOperations.java:219)
-	at com.petrel.common.dc.redis.GameRoomRedisService.findGameByType(GameRoomRedisService.java:49)
-	at com.petrel.slots.core.common.service.GameServerStartService.startBefore(GameServerStartService.java:47)
-	at com.petrel.slots.all.StartInitialize.start(StartInitialize.java:34)
-	at com.petrel.slots.all.StartInitialize.run(StartInitialize.java:41)
-	at org.springframework.boot.SpringApplication.callRunner(SpringApplication.java:775)
-	... 13 common frames omitted
+	at org.springframework.data.redis.listener.KeyspaceEventMessageListener.init(KeyspaceEventMessageListener.java:85)
+	at org.springframework.data.redis.listener.KeyspaceEventMessageListener.afterPropertiesSet(KeyspaceEventMessageListener.java:137)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.invokeInitMethods(AbstractAutowireCapableBeanFactory.java:1855)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1792)
+	... 23 common frames omitted
 Caused by: io.lettuce.core.RedisConnectionException: Unable to connect to 127.0.0.1/<unresolved>:6379
 	at io.lettuce.core.RedisConnectionException.create(RedisConnectionException.java:78)
 	at io.lettuce.core.RedisConnectionException.create(RedisConnectionException.java:56)
@@ -123,7 +122,7 @@ Caused by: io.lettuce.core.RedisConnectionException: Unable to connect to 127.0.
 	at io.lettuce.core.support.ConnectionPoolSupport$1.borrowObject(ConnectionPoolSupport.java:122)
 	at io.lettuce.core.support.ConnectionPoolSupport$1.borrowObject(ConnectionPoolSupport.java:117)
 	at org.springframework.data.redis.connection.lettuce.LettucePoolingConnectionProvider.getConnection(LettucePoolingConnectionProvider.java:103)
-	... 29 common frames omitted
+	... 31 common frames omitted
 Caused by: io.netty.channel.AbstractChannel$AnnotatedConnectException: finishConnect(..) failed: Connection refused: /127.0.0.1:6379
 Caused by: java.net.ConnectException: finishConnect(..) failed: Connection refused
 	at io.netty.channel.unix.Errors.throwConnectException(Errors.java:124)

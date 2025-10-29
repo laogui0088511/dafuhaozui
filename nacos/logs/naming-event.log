@@ -398,3 +398,5 @@
 
 2023-07-13 03:54:25,088 INFO [IP-UPDATED] namespace: public, service: DEFAULT_GROUP@@petrel-cms-web, ips: 192.168.10.102:8787_true,
 
+2025-10-29 03:49:55,277 ERROR [UPDATE-DOMAIN] Exception while taking item from LinkedBlockingDeque.
+
