@@ -115,7 +115,11 @@ stop() {
 # game--start-------------- message="ALL|user|register|game|lobby|slots|web"
 start_user(){
 	echo "-----------start-user------------------"
-	nohup java  -jar -Xmn512m -Xms1024m -Xmx1024m $user --spring.profiles.active=prod  >/dev/null 2>&1&
+	nohup java  -jar -Xmn512m -Xms1024m -Xmx1024m $user \
+		--spring.profiles.active=prod \
+		--spring.cloud.nacos.discovery.server-addr=127.0.0.1:6878 \
+		--spring.cloud.nacos.config.server-addr=127.0.0.1:6878 \
+		>/dev/null 2>&1&
 	sleep 8s
 	tail -n  300 $user_log`ls $user_log -t1|awk '{if (NR ==1) print}'`  
 	echo "-----------end-user----------------------"
@@ -123,7 +127,11 @@ start_user(){
 
 start_register(){
 	echo "-----------start-register-------------------"
-	nohup java -jar -Xmn200m -Xms400m -Xmx400m  $register --spring.profiles.active=prod  >/dev/null 2>&1&
+	nohup java -jar -Xmn200m -Xms400m -Xmx400m  $register \
+		--spring.profiles.active=prod \
+		--spring.cloud.nacos.discovery.server-addr=127.0.0.1:6878 \
+		--spring.cloud.nacos.config.server-addr=127.0.0.1:6878 \
+		>/dev/null 2>&1&
 	sleep 18s
 	tail -n  300 $register_log`ls $register_log -t1|awk '{if (NR ==1) print}'`  
 	echo "-----------end-register----------------------"
@@ -132,7 +140,11 @@ start_register(){
 
 start_game(){
         echo "-----------start-game-------------------"
-        nohup java  -jar -Xmn512m -Xms1024m -Xmx1024m $game --spring.profiles.active=prod  >/dev/null 2>&1&
+        nohup java  -jar -Xmn512m -Xms1024m -Xmx1024m $game \
+		--spring.profiles.active=prod \
+		--spring.cloud.nacos.discovery.server-addr=127.0.0.1:6878 \
+		--spring.cloud.nacos.config.server-addr=127.0.0.1:6878 \
+		>/dev/null 2>&1&
         sleep 8s
        tail -n  300 $game_log`ls $game_log -t1|awk '{if (NR ==1) print}'`  
         echo "-----------end-game----------------------"
@@ -140,7 +152,12 @@ start_game(){
 
 start_lobby(){
         echo "-----------start-lobby-------------------"
-        nohup java  -jar -Xmn512m -Xms1024m -Xmx1024m $lobby --spring.profiles.active=prod   --zebra.ip.out=122.114.55.213 --zebra.port=8989  >/dev/null 2>&1&
+        nohup java  -jar -Xmn512m -Xms1024m -Xmx1024m $lobby \
+		--spring.profiles.active=prod \
+		--spring.cloud.nacos.discovery.server-addr=127.0.0.1:6878 \
+		--spring.cloud.nacos.config.server-addr=127.0.0.1:6878 \
+		--zebra.ip.out=122.114.55.213 --zebra.port=8989 \
+		>/dev/null 2>&1&
         sleep 10s
       tail -n  300 $lobby_log`ls $lobby_log -t1|awk '{if (NR ==1) print}'`  
         echo "-----------end-lobby----------------------"
@@ -148,14 +165,23 @@ start_lobby(){
 
 start_slots(){
         echo "-----------start-slots------------------"
-        nohup java  -jar -Xmn512m -Xms1024m -Xmx1024m $slots --spring.profiles.active=prod  --zebra.ip.out=122.114.55.213 >/dev/null 2>&1&
+        nohup java  -jar -Xmn512m -Xms1024m -Xmx1024m $slots \
+		--spring.profiles.active=prod \
+		--spring.cloud.nacos.discovery.server-addr=127.0.0.1:6878 \
+		--spring.cloud.nacos.config.server-addr=127.0.0.1:6878 \
+		--zebra.ip.out=122.114.55.213 \
+		>/dev/null 2>&1&
         sleep 10s
       tail -n  300 $slots_log`ls $slots_log -t1|awk '{if (NR ==1) print}'`  
         echo "-----------end-slots----------------------"
 }
 start_web(){
         echo "-----------start-web------------------"
-        nohup java  -jar -Xmn512m -Xms1024m -Xmx1024m $web --spring.profiles.active=prod  >/dev/null 2>&1&
+        nohup java  -jar -Xmn512m -Xms1024m -Xmx1024m $web \
+		--spring.profiles.active=prod \
+		--spring.cloud.nacos.discovery.server-addr=127.0.0.1:6878 \
+		--spring.cloud.nacos.config.server-addr=127.0.0.1:6878 \
+		>/dev/null 2>&1&
         sleep 10s
       tail -n  300 $web_log`ls $web_log -t1|awk '{if (NR ==1) print}'`  
         echo "-----------end-web----------------------"
@@ -235,12 +261,42 @@ stop_web(){
             echo "web  killed success"
         fi
 }
+
+# Status check function
+status() {
+	echo "=========================================="
+	echo "   Petrel Services Status"
+	echo "=========================================="
+	echo ""
+	
+	check_service_status "Register" "$register"
+	check_service_status "User" "$user"
+	check_service_status "Game" "$game"
+	check_service_status "Lobby" "$lobby"
+	check_service_status "Slots" "$slots"
+	check_service_status "Web" "$web"
+	
+	echo ""
+	echo "=========================================="
+}
+
+check_service_status() {
+	local name=$1
+	local jar=$2
+	
+	P_ID=`ps -ef | grep -w "$jar" | grep -v "grep" | awk '{print $2}'`
+	if [ "$P_ID" != "" ]; then
+		echo "✓ $name: RUNNING (PID: $P_ID)"
+	else
+		echo "✗ $name: STOPPED"
+	fi
+}
  
 
 
 tips() {
 	echo "----------------Error command------------------------"
-	echo "parameter1  start stop  "
+	echo "parameter1  start stop status"
 	echo $message
 	exit 1
 }
@@ -250,7 +306,10 @@ case $1 in
      ;;
   (stop)
      stop
-     ;;  
+     ;;
+  (status)
+     status
+     ;;
   (*)
      tips
      ;;
