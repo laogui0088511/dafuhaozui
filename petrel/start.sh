@@ -128,11 +128,10 @@ start_user(){
 
 start_register(){
 	echo "-----------start-register-------------------"
+	# Register服务可能是独立的注册中心，不连接到Nacos
 	nohup java -jar -Xmn200m -Xms400m -Xmx400m  $register \
 		--spring.config.location=classpath:/,file:./config/ \
 		--spring.profiles.active=prod \
-		--spring.cloud.nacos.discovery.server-addr=127.0.0.1:6878 \
-		--spring.cloud.nacos.config.server-addr=127.0.0.1:6878 \
 		>/dev/null 2>&1&
 	sleep 18s
 	tail -n  300 $register_log`ls $register_log -t1|awk '{if (NR ==1) print}'`  
