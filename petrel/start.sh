@@ -116,6 +116,7 @@ stop() {
 start_user(){
 	echo "-----------start-user------------------"
 	nohup java  -jar -Xmn512m -Xms1024m -Xmx1024m $user \
+		--spring.config.location=classpath:/,file:./config/ \
 		--spring.profiles.active=prod \
 		--spring.cloud.nacos.discovery.server-addr=127.0.0.1:6878 \
 		--spring.cloud.nacos.config.server-addr=127.0.0.1:6878 \
@@ -128,6 +129,7 @@ start_user(){
 start_register(){
 	echo "-----------start-register-------------------"
 	nohup java -jar -Xmn200m -Xms400m -Xmx400m  $register \
+		--spring.config.location=classpath:/,file:./config/ \
 		--spring.profiles.active=prod \
 		--spring.cloud.nacos.discovery.server-addr=127.0.0.1:6878 \
 		--spring.cloud.nacos.config.server-addr=127.0.0.1:6878 \
@@ -141,6 +143,7 @@ start_register(){
 start_game(){
         echo "-----------start-game-------------------"
         nohup java  -jar -Xmn512m -Xms1024m -Xmx1024m $game \
+		--spring.config.location=classpath:/,file:./config/ \
 		--spring.profiles.active=prod \
 		--spring.cloud.nacos.discovery.server-addr=127.0.0.1:6878 \
 		--spring.cloud.nacos.config.server-addr=127.0.0.1:6878 \
@@ -153,6 +156,7 @@ start_game(){
 start_lobby(){
         echo "-----------start-lobby-------------------"
         nohup java  -jar -Xmn512m -Xms1024m -Xmx1024m $lobby \
+		--spring.config.location=classpath:/,file:./config/ \
 		--spring.profiles.active=prod \
 		--spring.cloud.nacos.discovery.server-addr=127.0.0.1:6878 \
 		--spring.cloud.nacos.config.server-addr=127.0.0.1:6878 \
@@ -166,6 +170,7 @@ start_lobby(){
 start_slots(){
         echo "-----------start-slots------------------"
         nohup java  -jar -Xmn512m -Xms1024m -Xmx1024m $slots \
+		--spring.config.location=classpath:/,file:./config/ \
 		--spring.profiles.active=prod \
 		--spring.cloud.nacos.discovery.server-addr=127.0.0.1:6878 \
 		--spring.cloud.nacos.config.server-addr=127.0.0.1:6878 \
@@ -178,6 +183,7 @@ start_slots(){
 start_web(){
         echo "-----------start-web------------------"
         nohup java  -jar -Xmn512m -Xms1024m -Xmx1024m $web \
+		--spring.config.location=classpath:/,file:./config/ \
 		--spring.profiles.active=prod \
 		--spring.cloud.nacos.discovery.server-addr=127.0.0.1:6878 \
 		--spring.cloud.nacos.config.server-addr=127.0.0.1:6878 \
