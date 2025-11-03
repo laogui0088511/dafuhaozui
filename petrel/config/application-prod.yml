@@ -1,0 +1,65 @@
+# Spring Boot External Configuration
+# Database Connection Pool Settings for Petrel Services
+
+spring:
+  datasource:
+    url: jdbc:mysql://202.189.7.196:3306/petrel_core?characterEncoding=utf8&useSSL=false&serverTimezone=UTC&autoReconnect=true&failOverReadOnly=false&maxReconnects=10&initialTimeout=30
+    username: root
+    password: Fagp@1908!
+    driver-class-name: com.mysql.jdbc.Driver
+    
+    # HikariCP Connection Pool Settings (Spring Boot 2.x default)
+    hikari:
+      # Connection pool size
+      minimum-idle: 10
+      maximum-pool-size: 50
+      # Connection timeout (30 seconds)
+      connection-timeout: 30000
+      # Maximum lifetime of connection (30 minutes)
+      max-lifetime: 1800000
+      # Idle timeout (10 minutes)
+      idle-timeout: 600000
+      # Keepalive time (5 minutes)
+      keepalive-time: 300000
+      # Validate connection
+      connection-test-query: SELECT 1
+      # Leak detection threshold (60 seconds)
+      leak-detection-threshold: 60000
+      
+  # Redis Configuration
+  redis:
+    host: 127.0.0.1
+    port: 6379
+    timeout: 10000
+    jedis:
+      pool:
+        max-active: 50
+        max-idle: 20
+        min-idle: 5
+        max-wait: 10000
+        
+# Server Configuration        
+server:
+  # Connection timeout (60 seconds)
+  connection-timeout: 60000
+  tomcat:
+    # Keep alive timeout (60 seconds)
+    keep-alive-timeout: 60000
+    # Max keep alive requests
+    max-keep-alive-requests: 200
+    # Connection timeout
+    connection-timeout: 60000
+    threads:
+      # Thread pool settings
+      max: 500
+      min-spare: 50
+    # Accept count
+    accept-count: 200
+    # Max connections
+    max-connections: 10000
+
+# Logging
+logging:
+  level:
+    com.zaxxer.hikari: DEBUG
+    com.alibaba.druid: DEBUG

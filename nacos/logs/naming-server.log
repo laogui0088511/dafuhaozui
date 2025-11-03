@@ -772,3 +772,7 @@
 
 2023-07-13 03:54:25,087 INFO [NACOS-RAFT] datum is changed, key: com.alibaba.nacos.naming.iplist.ephemeral.public##DEFAULT_GROUP@@petrel-cms-web, value: {"instanceList":[{"instanceId":"192.168.10.102#8787#DEFAULT#DEFAULT_GROUP@@petrel-cms-web","ip":"192.168.10.102","port":8787,"weight":1.0,"healthy":true,"enabled":true,"ephemeral":true,"clusterName":"DEFAULT","serviceName":"DEFAULT_GROUP@@petrel-cms-web","metadata":{"preserved.register.source":"SPRING_CLOUD"},"lastBeat":1689191665086,"marked":false,"app":"unknown","ipDeleteTimeout":30000,"instanceHeartBeatTimeOut":15000,"instanceHeartBeatInterval":5000}]}
 
+2025-10-29 03:49:43,119 INFO open empty service auto clean job, initialDelay : 50000 ms, period : 30000 ms
+
+2025-10-29 03:49:43,120 INFO listen for service meta change
+

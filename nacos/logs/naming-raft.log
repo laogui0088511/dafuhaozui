@@ -1978,3 +1978,35 @@
 
 2023-07-13 04:02:17,167 INFO leader timeout, start voting,leader: {"ip":"192.168.10.102:6878","voteFor":"192.168.10.102:6878","term":28,"leaderDueMs":19789,"heartbeatDueMs":5000,"state":"CANDIDATE"}, term: 28
 
+2025-10-29 03:49:42,658 INFO raft peers changed: [Member{ip='10.1.0.116', port=6878, state=UP, extendInfo={adWeight=0, raftPort=5878, site=unknow, weight=1}}]
+
+2025-10-29 03:49:42,671 INFO initializing Raft sub-system
+
+2025-10-29 03:49:42,672 INFO raft notifier started
+
+2025-10-29 03:49:42,672 INFO finish loading all datums, size: 0 cost 1 ms.
+
+2025-10-29 03:49:42,673 INFO cache loaded, datum count: 0, current term: 85
+
+2025-10-29 03:49:42,673 INFO finish to load data from disk, cost: 2 ms.
+
+2025-10-29 03:49:42,676 INFO timer started: leader timeout ms: 15000, heart-beat timeout ms: 5000
+
+2025-10-29 03:49:43,101 INFO add listener: com.alibaba.nacos.naming.domains.meta.00-00---000-NACOS_SWITCH_DOMAIN-000---00-00
+
+2025-10-29 03:49:43,120 INFO add listener: com.alibaba.nacos.naming.domains.meta.
+
+2025-10-29 03:49:51,717 INFO leader timeout, start voting,leader: {"ip":"10.1.0.116:6878","term":0,"leaderDueMs":15105,"heartbeatDueMs":4500,"state":"FOLLOWER"}, term: 0
+
+2025-10-29 03:49:52,274 ERROR [NACOS-RAFT] Error while handling notifying task
+
+java.lang.InterruptedException: null
+	at java.base/java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.await(AbstractQueuedSynchronizer.java:1645)
+	at java.base/java.util.concurrent.LinkedBlockingQueue.take(LinkedBlockingQueue.java:435)
+	at com.alibaba.nacos.naming.consistency.persistent.raft.RaftCore$Notifier.run(RaftCore.java:1052)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:539)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:304)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:840)

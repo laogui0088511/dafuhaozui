@@ -1,4 +1,16 @@
 mysql:
- url: mysql.url-06
+  url: jdbc:mysql://202.189.7.196:3306/petrel_core?characterEncoding=utf8&useSSL=false&serverTimezone=UTC&autoReconnect=true&failOverReadOnly=false&maxReconnects=10&initialTimeout=30&socketTimeout=60000
+  username: root
+  password: Fagp@1908!
+  # Connection pool settings
+  hikari:
+    minimum-idle: 10
+    maximum-pool-size: 50
+    connection-timeout: 30000
+    max-lifetime: 1800000
+    idle-timeout: 600000
+    keepalive-time: 300000
 redis:
-  ip: redis.ip-02
+  host: 127.0.0.1
+  port: 6379
+  timeout: 10000

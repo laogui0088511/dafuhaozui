@@ -7722,3 +7722,43 @@
 
 2023-07-13 04:02:17,298 INFO [long-pulling] client count 7
 
+2025-10-29 03:49:43,155 INFO [long-pulling] client count 0
+
+2025-10-29 03:49:53,135 INFO toNotifyTaskSize = 0
+
+2025-10-29 03:49:53,136 INFO groupCount = 0, subscriberClientCount = 0, subscriberCount = 0
+
+2025-10-29 03:49:53,155 INFO [long-pulling] client count 0
+
+2025-10-29 03:50:03,156 INFO [long-pulling] client count 0
+
+2025-10-29 03:50:13,156 INFO [long-pulling] client count 0
+
+2025-10-29 03:50:23,157 INFO [long-pulling] client count 0
+
+2025-10-29 03:50:33,158 INFO [long-pulling] client count 0
+
+2025-10-29 03:50:43,158 INFO [long-pulling] client count 0
+
+2025-10-29 03:50:53,158 INFO [long-pulling] client count 0
+
+2025-10-29 03:51:03,160 INFO [long-pulling] client count 0
+
+2025-10-29 03:51:13,161 INFO [long-pulling] client count 0
+
+2025-10-29 03:51:23,161 INFO [long-pulling] client count 0
+
+2025-10-29 03:51:33,161 INFO [long-pulling] client count 0
+
+2025-10-29 03:51:43,162 INFO [long-pulling] client count 0
+
+2025-10-29 03:51:53,162 INFO [long-pulling] client count 0
+
+2025-10-29 03:52:03,162 INFO [long-pulling] client count 0
+
+2025-10-29 03:52:13,163 INFO [long-pulling] client count 0
+
+2025-10-29 03:52:23,163 INFO [long-pulling] client count 0
+
+2025-10-29 03:52:33,163 INFO [long-pulling] client count 0
+
