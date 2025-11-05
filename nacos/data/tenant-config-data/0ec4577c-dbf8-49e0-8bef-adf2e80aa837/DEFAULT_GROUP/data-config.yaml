@@ -14,3 +14,16 @@ redis:
   host: 127.0.0.1
   port: 6379
   timeout: 10000
+  database: 0
+  # Connection pool settings for better reliability
+  jedis:
+    pool:
+      max-active: 50      # Maximum active connections
+      max-idle: 20        # Maximum idle connections
+      min-idle: 5         # Minimum idle connections
+      max-wait: 10000     # Maximum wait time (ms) when pool exhausted
+      time-between-eviction-runs: 30000  # Eviction check interval
+      min-evictable-idle-time: 60000     # Minimum idle time before eviction
+      test-on-borrow: true               # Test connection when borrowing
+      test-on-return: false              # Don't test when returning
+      test-while-idle: true              # Test idle connections
