@@ -31,6 +31,27 @@ cd petrel
 
 详细分析：[Lobby掉线问题分析.md](./Lobby掉线问题分析.md)
 
+### 3. Redis-Database 数据同步
+
+系统采用 Redis 作为缓存层提高性能，MySQL 作为持久化存储。
+
+**关键特性**：
+- Redis 连接池优化（最大50连接，空闲20连接）
+- 自动重连和健康检查
+- 云端更新检查机制
+- 数据同步监控工具
+
+**监控工具**：
+```bash
+# 检查 Redis-MySQL 同步状态
+./monitor-redis-db-sync.sh
+
+# 检查云端更新
+./check-cloud-updates.sh
+```
+
+详细说明：[Redis-Database同步指南](./REDIS-DATABASE-SYNC-GUIDE.md)
+
 ## 重要架构说明 / Architecture Notice
 
 **Lobby 服务使用双重注册机制：**
@@ -43,7 +64,8 @@ cd petrel
 ## 快速开始 / Quick Start
 
 ### 中文文档
-- **[Lobby掉线问题分析.md](./Lobby掉线问题分析.md)** - Lobby 掉线问题的原因和解决方案（新增）
+- **[Redis-Database同步指南](./REDIS-DATABASE-SYNC-GUIDE.md)** - Redis缓存与数据库同步机制（新增）
+- **[Lobby掉线问题分析.md](./Lobby掉线问题分析.md)** - Lobby 掉线问题的原因和解决方案
 - **[Lobby注册失败问题分析.md](./Lobby注册失败问题分析.md)** - 注册问题根本原因和解决方案
 - **[架构澄清-Lobby服务注册机制.md](./架构澄清-Lobby服务注册机制.md)** - 正确的架构理解
 - **[部署指南](./部署指南.md)** - 完整的部署流程和配置说明
@@ -212,6 +234,37 @@ tail -20 petrel/logs/petrel-kernel-register/info_7180.log | grep "Connection cha
 
 详细的问题排查步骤请参考 [Lobby注册失败问题分析.md](./Lobby注册失败问题分析.md)
 
+### Redis-Database 同步问题排查
+
+1. **Redis 连接失败**
+   ```bash
+   # 检查 Redis 运行状态
+   redis-cli ping
+   
+   # 监控 Redis-MySQL 同步
+   ./monitor-redis-db-sync.sh
+   ```
+
+2. **缓存命中率低**
+   ```bash
+   # 查看缓存统计
+   redis-cli info stats | grep keyspace
+   
+   # 检查性能指标
+   ./monitor-redis-db-sync.sh
+   ```
+
+3. **云端更新失败**
+   ```bash
+   # 检查云端服务可用性
+   ./check-cloud-updates.sh --check
+   
+   # 生成完整报告
+   ./check-cloud-updates.sh --report
+   ```
+
+详细排查指南请参考 [Redis-Database同步指南](./REDIS-DATABASE-SYNC-GUIDE.md)
+
 ## 脚本说明 / Scripts
 
 | 脚本 | 用途 | 推荐程度 | 说明 |
@@ -220,3 +273,5 @@ tail -20 petrel/logs/petrel-kernel-register/info_7180.log | grep "Connection cha
 | `start-all-improved.sh` | 改进的启动脚本 | ⭐⭐⭐⭐ | 可用但等待时间可能不足 |
 | `start.sh` | 原始启动脚本 | ⭐⭐ | 需要手动修改等待时间 |
 | `stop-all-improved.sh` | 停止所有服务 | ⭐⭐⭐⭐⭐ | 优雅关闭 |
+| `monitor-redis-db-sync.sh` | Redis-MySQL 同步监控 | ⭐⭐⭐⭐⭐ | **新增** - 监控数据同步状态 |
+| `check-cloud-updates.sh` | 云端更新检查 | ⭐⭐⭐⭐⭐ | **新增** - 检查和验证云端更新 |
