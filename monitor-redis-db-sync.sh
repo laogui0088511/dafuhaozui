@@ -4,6 +4,21 @@
 # Redis-Database Synchronization Monitor
 # Monitors data synchronization between Redis cache and MySQL database
 # ============================================
+#
+# Usage:
+#   Basic check: ./monitor-redis-db-sync.sh
+#   
+#   With MySQL password:
+#     export MYSQL_PASS='your_password'
+#     ./monitor-redis-db-sync.sh
+#
+#   Custom configuration via environment variables:
+#     export REDIS_HOST='192.168.1.100'
+#     export MYSQL_HOST='192.168.1.200'
+#     export MYSQL_USER='admin'
+#     export MYSQL_PASS='password'
+#     ./monitor-redis-db-sync.sh
+# ============================================
 
 # Colors
 RED='\033[0;31m'
@@ -13,13 +28,13 @@ BLUE='\033[0;34m'
 NC='\033[0m' # No Color
 
 # Configuration
-REDIS_HOST="127.0.0.1"
-REDIS_PORT="6379"
-MYSQL_HOST="202.189.7.196"
-MYSQL_PORT="3306"
-MYSQL_USER="root"
-MYSQL_PASS="Fagp@1908!"
-MYSQL_DB="petrel_core"
+REDIS_HOST="${REDIS_HOST:-127.0.0.1}"
+REDIS_PORT="${REDIS_PORT:-6379}"
+MYSQL_HOST="${MYSQL_HOST:-202.189.7.196}"
+MYSQL_PORT="${MYSQL_PORT:-3306}"
+MYSQL_USER="${MYSQL_USER:-root}"
+MYSQL_PASS="${MYSQL_PASS:-}"  # Set via environment variable for security
+MYSQL_DB="${MYSQL_DB:-petrel_core}"
 
 LOG_FILE="redis-db-sync-monitor.log"
 
@@ -65,6 +80,12 @@ check_redis_connection() {
 # Check MySQL connection
 check_mysql_connection() {
     log_info "Checking MySQL connection..."
+    
+    if [ -z "$MYSQL_PASS" ]; then
+        log_warn "MYSQL_PASS not set. Set environment variable to enable MySQL checks."
+        log_warn "Example: export MYSQL_PASS='your_password'"
+        return 2
+    fi
     
     if command -v mysql &> /dev/null; then
         if mysql -h "$MYSQL_HOST" -P "$MYSQL_PORT" -u "$MYSQL_USER" -p"$MYSQL_PASS" -e "SELECT 1" > /dev/null 2>&1; then
@@ -150,6 +171,11 @@ check_redis_persistence() {
 
 # Check MySQL database size
 check_mysql_stats() {
+    if [ -z "$MYSQL_PASS" ]; then
+        log_warn "Skipping MySQL stats check (MYSQL_PASS not set)"
+        return 2
+    fi
+    
     if command -v mysql &> /dev/null; then
         log_info "Checking MySQL database statistics..."
         
@@ -179,10 +205,13 @@ check_performance_metrics() {
         if [ -n "$keyspace_hits" ] && [ -n "$keyspace_misses" ]; then
             local total=$((keyspace_hits + keyspace_misses))
             if [ $total -gt 0 ]; then
+                # Use awk for portable floating point arithmetic
                 local hit_rate=$(awk "BEGIN {printf \"%.2f\", ($keyspace_hits / $total) * 100}")
                 log_info "Cache hit rate: ${hit_rate}%"
                 
-                if (( $(echo "$hit_rate < 80" | bc -l) )); then
+                # Use awk for comparison as well
+                local is_low=$(awk "BEGIN {print ($hit_rate < 80) ? 1 : 0}")
+                if [ "$is_low" -eq 1 ]; then
                     log_warn "Cache hit rate is below 80%. Consider reviewing caching strategy."
                 fi
             fi

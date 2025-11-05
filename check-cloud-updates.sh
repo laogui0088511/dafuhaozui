@@ -102,7 +102,21 @@ validate_update_data() {
         return 1
     fi
     
-    local file_size=$(stat -f%z "$data_file" 2>/dev/null || stat -c%s "$data_file" 2>/dev/null)
+    local file_size
+    # Portable way to get file size - try different approaches
+    if command -v stat &> /dev/null; then
+        # Try BSD/macOS format first
+        file_size=$(stat -f%z "$data_file" 2>/dev/null)
+        # If that fails, try GNU/Linux format
+        if [ -z "$file_size" ]; then
+            file_size=$(stat -c%s "$data_file" 2>/dev/null)
+        fi
+    fi
+    
+    # Fallback to wc if stat doesn't work
+    if [ -z "$file_size" ] && command -v wc &> /dev/null; then
+        file_size=$(wc -c < "$data_file" 2>/dev/null)
+    fi
     
     if [ -z "$file_size" ] || [ "$file_size" -eq 0 ]; then
         log_error "✗ Update data file is empty"
@@ -147,8 +161,14 @@ check_local_external_files() {
             log_info "Sample roller files:"
             find "$roller_dir" -type f -name "*.xml" -o -name "*.json" 2>/dev/null | head -5 | while read file; do
                 local basename=$(basename "$file")
-                local filesize=$(stat -f%z "$file" 2>/dev/null || stat -c%s "$file" 2>/dev/null)
-                log_info "  - $basename (${filesize} bytes)"
+                # Portable file size detection
+                local filesize
+                if command -v stat &> /dev/null; then
+                    filesize=$(stat -f%z "$file" 2>/dev/null)
+                    [ -z "$filesize" ] && filesize=$(stat -c%s "$file" 2>/dev/null)
+                fi
+                [ -z "$filesize" ] && command -v wc &> /dev/null && filesize=$(wc -c < "$file" 2>/dev/null)
+                log_info "  - $basename (${filesize:-unknown} bytes)"
             done
         fi
     else

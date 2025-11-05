@@ -305,14 +305,15 @@ redis-cli info memory
 **排查步骤**:
 
 ```bash
-# 1. 测试数据库连接
-mysql -h 202.189.7.196 -P 3306 -u root -p'Fagp@1908!' -e "SELECT 1"
+# 1. 测试数据库连接（使用环境变量存储密码）
+export MYSQL_PASS='your_password'
+mysql -h 202.189.7.196 -P 3306 -u root -p"$MYSQL_PASS" -e "SELECT 1"
 
 # 2. 检查网络延迟
 ping -c 10 202.189.7.196
 
 # 3. 检查数据库状态
-mysql -h 202.189.7.196 -P 3306 -u root -p'Fagp@1908!' -e "SHOW PROCESSLIST"
+mysql -h 202.189.7.196 -P 3306 -u root -p"$MYSQL_PASS" -e "SHOW PROCESSLIST"
 
 # 4. 查看应用日志中的连接池信息
 grep -i "HikariPool\|connection" petrel/logs/*/info_*.log | tail -50
@@ -495,8 +496,9 @@ ls -lah petrel/external/roller/
    # Redis 备份
    redis-cli save
    cp /var/lib/redis/dump.rdb /backup/redis-$DATE.rdb
-   # MySQL 备份
-   mysqldump -h 202.189.7.196 -u root -p'Fagp@1908!' petrel_core > /backup/mysql-$DATE.sql
+   # MySQL 备份（使用环境变量存储密码）
+   export MYSQL_PASS='your_password'
+   mysqldump -h 202.189.7.196 -u root -p"$MYSQL_PASS" petrel_core > /backup/mysql-$DATE.sql
    ```
 
 ### 6.3 监控和告警
