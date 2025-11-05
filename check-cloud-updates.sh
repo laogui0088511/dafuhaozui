@@ -4,6 +4,25 @@
 # Cloud Update Checker
 # Checks for updates from cloud endpoint and validates data
 # ============================================
+#
+# Usage:
+#   Basic check: ./check-cloud-updates.sh
+#   
+#   With custom URLs:
+#     export CLOUD_UPDATE_URL='http://your-server:8089/dtc_update/'
+#     export ROLLER_URL='http://your-server:8555/chfs/shared/java'
+#     ./check-cloud-updates.sh
+#
+#   With custom paths:
+#     export LOCAL_EXTERNAL_DIR='/path/to/petrel/external'
+#     ./check-cloud-updates.sh
+#
+#   Generate report only:
+#     ./check-cloud-updates.sh --report
+#
+#   Check endpoints only:
+#     ./check-cloud-updates.sh --check
+# ============================================
 
 # Colors
 RED='\033[0;31m'
@@ -12,11 +31,11 @@ YELLOW='\033[1;33m'
 BLUE='\033[0;34m'
 NC='\033[0m' # No Color
 
-# Configuration - Read from Nacos config
-CLOUD_UPDATE_URL="http://192.168.10.102:8089/dtc_update/"
-ROLLER_URL="http://192.168.10.102:8555/chfs/shared/java"
-LOCAL_EXTERNAL_DIR="/home/runner/work/dafuhaozui/dafuhaozui/petrel/external"
-LOG_FILE="cloud-update-check.log"
+# Configuration - Read from Nacos config or environment variables
+CLOUD_UPDATE_URL="${CLOUD_UPDATE_URL:-http://192.168.10.102:8089/dtc_update/}"
+ROLLER_URL="${ROLLER_URL:-http://192.168.10.102:8555/chfs/shared/java}"
+LOCAL_EXTERNAL_DIR="${LOCAL_EXTERNAL_DIR:-$(pwd)/petrel/external}"
+LOG_FILE="${LOG_FILE:-cloud-update-check.log}"
 UPDATE_CACHE_FILE="/tmp/cloud-update-cache.json"
 MAX_RETRIES=3
 RETRY_DELAY=5

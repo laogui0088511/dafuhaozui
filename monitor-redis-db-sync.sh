@@ -88,11 +88,21 @@ check_mysql_connection() {
     fi
     
     if command -v mysql &> /dev/null; then
-        if mysql -h "$MYSQL_HOST" -P "$MYSQL_PORT" -u "$MYSQL_USER" -p"$MYSQL_PASS" -e "SELECT 1" > /dev/null 2>&1; then
+        # Create temporary MySQL config file for secure password passing
+        local mysql_config=$(mktemp)
+        cat > "$mysql_config" << EOF
+[client]
+password=$MYSQL_PASS
+EOF
+        chmod 600 "$mysql_config"
+        
+        if mysql --defaults-file="$mysql_config" -h "$MYSQL_HOST" -P "$MYSQL_PORT" -u "$MYSQL_USER" -e "SELECT 1" > /dev/null 2>&1; then
             log_info "✓ MySQL is running and responding"
+            rm -f "$mysql_config"
             return 0
         else
             log_error "✗ MySQL is not responding at ${MYSQL_HOST}:${MYSQL_PORT}"
+            rm -f "$mysql_config"
             return 1
         fi
     else
@@ -179,17 +189,27 @@ check_mysql_stats() {
     if command -v mysql &> /dev/null; then
         log_info "Checking MySQL database statistics..."
         
-        local table_count=$(mysql -h "$MYSQL_HOST" -P "$MYSQL_PORT" -u "$MYSQL_USER" -p"$MYSQL_PASS" -D "$MYSQL_DB" -sN -e "SELECT COUNT(*) FROM information_schema.tables WHERE table_schema='$MYSQL_DB'" 2>/dev/null)
+        # Create temporary MySQL config file for secure password passing
+        local mysql_config=$(mktemp)
+        cat > "$mysql_config" << EOF
+[client]
+password=$MYSQL_PASS
+EOF
+        chmod 600 "$mysql_config"
+        
+        local table_count=$(mysql --defaults-file="$mysql_config" -h "$MYSQL_HOST" -P "$MYSQL_PORT" -u "$MYSQL_USER" -D "$MYSQL_DB" -sN -e "SELECT COUNT(*) FROM information_schema.tables WHERE table_schema='$MYSQL_DB'" 2>/dev/null)
         
         if [ -n "$table_count" ]; then
             log_info "Number of tables in ${MYSQL_DB}: ${table_count}"
             
             # Get database size
-            local db_size=$(mysql -h "$MYSQL_HOST" -P "$MYSQL_PORT" -u "$MYSQL_USER" -p"$MYSQL_PASS" -sN -e "SELECT ROUND(SUM(data_length + index_length) / 1024 / 1024, 2) FROM information_schema.tables WHERE table_schema='$MYSQL_DB'" 2>/dev/null)
+            local db_size=$(mysql --defaults-file="$mysql_config" -h "$MYSQL_HOST" -P "$MYSQL_PORT" -u "$MYSQL_USER" -sN -e "SELECT ROUND(SUM(data_length + index_length) / 1024 / 1024, 2) FROM information_schema.tables WHERE table_schema='$MYSQL_DB'" 2>/dev/null)
             if [ -n "$db_size" ]; then
                 log_info "Database size: ${db_size} MB"
             fi
         fi
+        
+        rm -f "$mysql_config"
     fi
 }
 
