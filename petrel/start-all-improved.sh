@@ -150,7 +150,9 @@ log_info "[2/7] 启动注册中心服务 (petrel-kernel-register)..."
 if check_service_running "petrel-kernel-register"; then
     log_warn "注册中心服务已在运行，跳过启动"
 else
-    nohup java -jar -Xmn200m -Xms400m -Xmx400m petrel-kernel-register-1.0-SNAPSHOT-boot.jar --spring.profiles.active=prod > /dev/null 2>&1 &
+    nohup java -jar -Xmn200m -Xms400m -Xmx400m petrel-kernel-register-1.0-SNAPSHOT-boot.jar \
+        --spring.config.location=classpath:/,file:./config/ \
+        --spring.profiles.active=prod > /dev/null 2>&1 &
     
     if wait_for_port 7180 30; then
         log_info "✓ 注册中心服务启动成功 (端口 7180)"
@@ -172,7 +174,9 @@ log_info "[3/7] 启动用户服务 (petrel-kernel-user)..."
 if check_service_running "petrel-kernel-user"; then
     log_warn "用户服务已在运行，跳过启动"
 else
-    nohup java -jar -Xmn512m -Xms1024m -Xmx1024m petrel-kernel-user-1.0-SNAPSHOT-boot.jar --spring.profiles.active=prod > /dev/null 2>&1 &
+    nohup java -jar -Xmn512m -Xms1024m -Xmx1024m petrel-kernel-user-1.0-SNAPSHOT-boot.jar \
+        --spring.config.location=classpath:/,file:./config/ \
+        --spring.profiles.active=prod > /dev/null 2>&1 &
     
     log_info "等待用户服务启动..."
     sleep 15
@@ -192,7 +196,9 @@ log_info "[4/7] 启动游戏核心服务 (petrel-kernel-game)..."
 if check_service_running "petrel-kernel-game"; then
     log_warn "游戏核心服务已在运行，跳过启动"
 else
-    nohup java -jar -Xmn512m -Xms1024m -Xmx1024m petrel-kernel-game-1.0-SNAPSHOT-boot.jar --spring.profiles.active=prod > /dev/null 2>&1 &
+    nohup java -jar -Xmn512m -Xms1024m -Xmx1024m petrel-kernel-game-1.0-SNAPSHOT-boot.jar \
+        --spring.config.location=classpath:/,file:./config/ \
+        --spring.profiles.active=prod > /dev/null 2>&1 &
     
     log_info "等待游戏核心服务启动..."
     sleep 15
@@ -220,6 +226,7 @@ else
     
     nohup java -jar -Xmn512m -Xms1024m -Xmx1024m \
         petrel-game-lobby-1.0-SNAPSHOT-boot.jar \
+        --spring.config.location=classpath:/,file:./config/ \
         --spring.profiles.active=prod \
         --zebra.ip.out=${ZEBRA_IP_OUT} \
         > /dev/null 2>&1 &
@@ -245,7 +252,10 @@ if check_service_running "petrel-game-slots"; then
     log_warn "老虎机服务已在运行，跳过启动"
 else
     ZEBRA_IP_OUT=${1:-127.0.0.1}
-    nohup java -jar -Xmn512m -Xms1024m -Xmx1024m petrel-game-slots-1.0-SNAPSHOT-boot.jar --spring.profiles.active=prod --zebra.ip.out=${ZEBRA_IP_OUT} > /dev/null 2>&1 &
+    nohup java -jar -Xmn512m -Xms1024m -Xmx1024m petrel-game-slots-1.0-SNAPSHOT-boot.jar \
+        --spring.config.location=classpath:/,file:./config/ \
+        --spring.profiles.active=prod \
+        --zebra.ip.out=${ZEBRA_IP_OUT} > /dev/null 2>&1 &
     
     log_info "等待老虎机服务启动..."
     sleep 15
@@ -264,7 +274,9 @@ log_info "[7/7] 启动 Web 管理服务 (petrel-cms-web)..."
 if check_service_running "petrel-cms-web"; then
     log_warn "Web 服务已在运行，跳过启动"
 else
-    nohup java -jar -Xmn512m -Xms1024m -Xmx1024m petrel-cms-web-1.0-SNAPSHOT.war --spring.profiles.active=prod > /dev/null 2>&1 &
+    nohup java -jar -Xmn512m -Xms1024m -Xmx1024m petrel-cms-web-1.0-SNAPSHOT.war \
+        --spring.config.location=classpath:/,file:./config/ \
+        --spring.profiles.active=prod > /dev/null 2>&1 &
     
     log_info "等待 Web 服务启动..."
     sleep 15

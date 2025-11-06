@@ -157,7 +157,9 @@ if check_service_running "$REGISTER_JAR"; then
     log_warn "Register 服务已在运行，跳过启动"
 else
     log_info "启动 Register 服务..."
-    nohup java -jar -Xmn200m -Xms400m -Xmx400m "$REGISTER_JAR" --spring.profiles.active=prod > /dev/null 2>&1 &
+    nohup java -jar -Xmn200m -Xms400m -Xmx400m "$REGISTER_JAR" \
+        --spring.config.location=classpath:/,file:./config/ \
+        --spring.profiles.active=prod > /dev/null 2>&1 &
     
     # 根据日志，Register 启动需要约 8-9 秒
     log_info "等待 Register 服务启动 (预计 8-10 秒)..."
@@ -190,7 +192,9 @@ if check_service_running "$USER_JAR"; then
     log_warn "User 服务已在运行，跳过启动"
 else
     log_info "启动 User 服务..."
-    nohup java -jar -Xmn512m -Xms1024m -Xmx1024m "$USER_JAR" --spring.profiles.active=prod > /dev/null 2>&1 &
+    nohup java -jar -Xmn512m -Xms1024m -Xmx1024m "$USER_JAR" \
+        --spring.config.location=classpath:/,file:./config/ \
+        --spring.profiles.active=prod > /dev/null 2>&1 &
     
     log_info "等待 User 服务启动..."
     sleep 15
@@ -214,7 +218,9 @@ if check_service_running "$GAME_JAR"; then
     log_warn "Game 服务已在运行，跳过启动"
 else
     log_info "启动 Game 服务..."
-    nohup java -jar -Xmn512m -Xms1024m -Xmx1024m "$GAME_JAR" --spring.profiles.active=prod > /dev/null 2>&1 &
+    nohup java -jar -Xmn512m -Xms1024m -Xmx1024m "$GAME_JAR" \
+        --spring.config.location=classpath:/,file:./config/ \
+        --spring.profiles.active=prod > /dev/null 2>&1 &
     
     log_info "等待 Game 服务启动..."
     sleep 15
@@ -257,6 +263,7 @@ else
         -XX:+PrintGCDateStamps \
         -Xloggc:"${PETREL_DIR}/logs/gc/lobby-gc-$(date +%Y%m%d-%H%M%S).log" \
         "$LOBBY_JAR" \
+        --spring.config.location=classpath:/,file:./config/ \
         --spring.profiles.active=prod \
         --zebra.ip.out=${ZEBRA_IP_OUT} \
         > "${PETREL_DIR}/logs/lobby-stdout.log" 2>&1 &
@@ -299,6 +306,7 @@ if [ -f "$CHESS_JAR" ]; then
         
         log_info "启动 Chess 服务..."
         nohup java -jar -Xmn512m -Xms1024m -Xmx1024m "$CHESS_JAR" \
+            --spring.config.location=classpath:/,file:./config/ \
             --spring.profiles.active=prod \
             --zebra.ip.out=${ZEBRA_IP_OUT} \
             > /dev/null 2>&1 &
@@ -331,6 +339,7 @@ if [ -f "$SLOTS_JAR" ]; then
         
         log_info "启动 Slots 服务..."
         nohup java -jar -Xmn512m -Xms1024m -Xmx1024m "$SLOTS_JAR" \
+            --spring.config.location=classpath:/,file:./config/ \
             --spring.profiles.active=prod \
             --zebra.ip.out=${ZEBRA_IP_OUT} \
             > /dev/null 2>&1 &
