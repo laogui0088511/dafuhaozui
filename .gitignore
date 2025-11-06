@@ -1,0 +1,95 @@
+# Log files
+*.log
+*.txt
+*.out
+
+# Temporary files
+*.tmp
+*.temp
+*.swp
+*.swo
+*~
+.DS_Store
+
+# Backup files
+*.bak
+*.backup
+*.old
+
+# Build artifacts
+target/
+build/
+dist/
+*.class
+*.jar
+!petrel/*.jar
+!petrel/sh-jar-with-dependencies.jar
+*.war
+!petrel/*.war
+
+# IDE files
+.idea/
+.vscode/
+*.iml
+*.ipr
+*.iws
+.project
+.classpath
+.settings/
+
+# OS files
+Thumbs.db
+desktop.ini
+
+# Dependency directories
+node_modules/
+vendor/
+
+# Runtime data
+pids
+*.pid
+*.seed
+*.pid.lock
+
+# Cache files
+.cache/
+*.cache
+
+# Local configuration
+.env
+.env.local
+.env.*.local
+local.properties
+
+# Compiled files
+*.pyc
+*.pyo
+__pycache__/
+
+# Package files (keep essential ones in petrel/)
+*.rar
+!petrel/*.rar
+*.zip
+*.tar.gz
+*.7z
+
+# Database dumps
+*.sql
+*.rdb
+dump.rdb
+
+# Test coverage
+coverage/
+.nyc_output/
+
+# Generated reports
+*-report-*.txt
+cloud-sync-report-*.txt
+redis-db-sync-monitor.log
+cloud-update-check.log
+
+# Temporary update cache
+/tmp/
+*.json.tmp
+/cloud-update-cache.json
+/last_cloud_check.txt
