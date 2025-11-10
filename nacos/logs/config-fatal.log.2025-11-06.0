@@ -1,0 +1,283 @@
+2023-07-13 00:02:48,493 WARN [master-db] jdbc:mysql://127.0.0.1:3306/nacos?characterEncoding=utf8&connectTimeout=1000&socketTimeout=3000&autoReconnect=true&useUnicode=true&useSSL=false&serverTimezone=UTC
+
+2023-07-13 00:02:50,542 WARN isQuickStart:false
+
+2023-07-13 00:09:00,408 WARN [master-db] jdbc:mysql://127.0.0.1:3306/nacos?characterEncoding=utf8&connectTimeout=1000&socketTimeout=3000&autoReconnect=true&useUnicode=true&useSSL=false&serverTimezone=UTC
+
+2023-07-13 00:09:06,951 WARN isQuickStart:false
+
+2023-07-13 00:46:57,630 WARN [master-db] jdbc:mysql://127.0.0.1:3306/nacos?characterEncoding=utf8&connectTimeout=1000&socketTimeout=3000&autoReconnect=true&useUnicode=true&useSSL=false&serverTimezone=UTC
+
+2023-07-13 00:47:01,869 WARN isQuickStart:false
+
+2023-07-13 00:55:08,546 WARN [master-db] jdbc:mysql://127.0.0.1:3306/nacos?characterEncoding=utf8&connectTimeout=1000&socketTimeout=3000&autoReconnect=true&useUnicode=true&useSSL=false&serverTimezone=UTC
+
+2023-07-13 00:55:12,290 WARN isQuickStart:false
+
+2023-07-13 01:27:46,295 WARN [master-db] jdbc:mysql://127.0.0.1:3306/nacos?characterEncoding=utf8&connectTimeout=1000&socketTimeout=3000&autoReconnect=true&useUnicode=true&useSSL=false&serverTimezone=UTC
+
+2023-07-13 01:27:49,923 WARN isQuickStart:false
+
+2023-07-13 01:46:17,611 WARN [master-db] jdbc:mysql://127.0.0.1:3306/nacos?characterEncoding=utf8&connectTimeout=1000&socketTimeout=3000&autoReconnect=true&useUnicode=true&useSSL=false&serverTimezone=UTC
+
+2023-07-13 01:46:21,063 WARN isQuickStart:false
+
+2023-07-13 02:07:52,431 WARN [master-db] jdbc:mysql://127.0.0.1:3306/nacos?characterEncoding=utf8&connectTimeout=1000&socketTimeout=3000&autoReconnect=true&useUnicode=true&useSSL=false&serverTimezone=UTC
+
+2023-07-13 02:07:54,164 WARN isQuickStart:false
+
+2023-07-13 02:14:57,430 WARN [master-db] jdbc:mysql://127.0.0.1:3306/nacos?characterEncoding=utf8&connectTimeout=1000&socketTimeout=3000&autoReconnect=true&useUnicode=true&useSSL=false&serverTimezone=UTC
+
+2023-07-13 02:14:59,109 WARN isQuickStart:false
+
+2023-07-13 02:21:34,025 WARN [master-db] jdbc:mysql://127.0.0.1:3306/nacos?characterEncoding=utf8&connectTimeout=1000&socketTimeout=3000&autoReconnect=true&useUnicode=true&useSSL=false&serverTimezone=UTC
+
+2023-07-13 02:21:37,743 WARN isQuickStart:false
+
+2023-07-13 02:27:47,016 WARN [master-db] jdbc:mysql://127.0.0.1:3306/nacos?characterEncoding=utf8&connectTimeout=1000&socketTimeout=3000&autoReconnect=true&useUnicode=true&useSSL=false&serverTimezone=UTC
+
+2023-07-13 02:27:50,766 WARN isQuickStart:false
+
+2023-07-13 02:45:41,768 WARN [master-db] jdbc:mysql://127.0.0.1:3306/nacos?characterEncoding=utf8&connectTimeout=1000&socketTimeout=3000&autoReconnect=true&useUnicode=true&useSSL=false&serverTimezone=UTC
+
+2023-07-13 02:45:45,201 WARN isQuickStart:false
+
+2023-07-13 02:51:07,870 WARN [master-db] jdbc:mysql://127.0.0.1:3306/nacos?characterEncoding=utf8&connectTimeout=1000&socketTimeout=3000&autoReconnect=true&useUnicode=true&useSSL=false&serverTimezone=UTC
+
+2023-07-13 02:51:11,779 WARN isQuickStart:false
+
+2023-07-13 03:01:51,804 WARN [master-db] jdbc:mysql://127.0.0.1:3306/nacos?characterEncoding=utf8&connectTimeout=1000&socketTimeout=3000&autoReconnect=true&useUnicode=true&useSSL=false&serverTimezone=UTC
+
+2023-07-13 03:01:56,482 WARN isQuickStart:false
+
+2023-07-13 03:14:03,715 WARN [master-db] jdbc:mysql://127.0.0.1:3306/nacos?characterEncoding=utf8&connectTimeout=1000&socketTimeout=3000&autoReconnect=true&useUnicode=true&useSSL=false&serverTimezone=UTC
+
+2023-07-13 03:14:06,721 WARN isQuickStart:false
+
+2023-07-13 03:25:38,078 WARN [master-db] jdbc:mysql://127.0.0.1:3306/nacos?characterEncoding=utf8&connectTimeout=1000&socketTimeout=3000&autoReconnect=true&useUnicode=true&useSSL=false&serverTimezone=UTC
+
+2023-07-13 03:25:41,320 WARN isQuickStart:false
+
+2023-07-13 03:29:25,676 WARN [master-db] jdbc:mysql://127.0.0.1:3306/nacos?characterEncoding=utf8&connectTimeout=1000&socketTimeout=3000&autoReconnect=true&useUnicode=true&useSSL=false&serverTimezone=UTC
+
+2023-07-13 03:29:28,862 WARN isQuickStart:false
+
+2023-07-13 03:31:49,200 WARN [master-db] jdbc:mysql://127.0.0.1:3306/nacos?characterEncoding=utf8&connectTimeout=1000&socketTimeout=3000&autoReconnect=true&useUnicode=true&useSSL=false&serverTimezone=UTC
+
+2023-07-13 03:31:51,544 WARN isQuickStart:false
+
+2023-07-13 03:33:33,662 WARN [master-db] jdbc:mysql://127.0.0.1:3306/nacos?characterEncoding=utf8&connectTimeout=1000&socketTimeout=3000&autoReconnect=true&useUnicode=true&useSSL=false&serverTimezone=UTC
+
+2023-07-13 03:33:37,457 WARN isQuickStart:false
+
+2023-07-13 03:48:52,973 WARN [master-db] jdbc:mysql://127.0.0.1:3306/nacos?characterEncoding=utf8&connectTimeout=1000&socketTimeout=3000&autoReconnect=true&useUnicode=true&useSSL=false&serverTimezone=UTC
+
+2023-07-13 03:48:56,745 WARN isQuickStart:false
+
+2023-07-13 03:53:53,297 WARN [master-db] jdbc:mysql://127.0.0.1:3306/nacos?characterEncoding=utf8&connectTimeout=1000&socketTimeout=3000&autoReconnect=true&useUnicode=true&useSSL=false&serverTimezone=UTC
+
+2023-07-13 03:53:57,260 WARN isQuickStart:false
+
+2025-10-29 03:49:28,024 ERROR [master-db] master db not found.
+
+2025-10-29 03:49:42,048 ERROR [db-error] master db 202.189.7.196 down.
+
+2025-10-29 03:49:43,221 WARN isQuickStart:false
+
+2025-10-29 03:49:43,240 ERROR Nacos Server did not start because dumpservice bean construction failure :
+java.lang.IllegalStateException: No DataSource set
+
+2025-10-29 03:50:06,062 ERROR [master-db] master db not found.
+
+2025-10-29 03:50:18,074 ERROR [db-error] master db 202.189.7.196 down.
+
+2025-11-06 05:34:02,407 ERROR [master-db] master db not found.
+
+2025-11-06 05:34:16,433 ERROR [db-error] master db 202.189.7.196 down.
+
+2025-11-06 05:34:18,711 WARN isQuickStart:false
+
+2025-11-06 05:34:18,729 ERROR Nacos Server did not start because dumpservice bean construction failure :
+java.lang.IllegalStateException: No DataSource set
+
+2025-11-06 05:34:40,477 ERROR [master-db] master db not found.
+
+2025-11-06 05:34:52,512 ERROR [db-error] master db 202.189.7.196 down.
+
+2025-11-06 05:58:04,708 ERROR [master-db] master db not found.
+
+2025-11-06 05:58:18,746 ERROR [db-error] master db 202.189.7.196 down.
+
+2025-11-06 05:58:21,231 WARN isQuickStart:false
+
+2025-11-06 05:58:21,246 ERROR Nacos Server did not start because dumpservice bean construction failure :
+java.lang.IllegalStateException: No DataSource set
+
+2025-11-06 05:58:42,772 ERROR [master-db] master db not found.
+
+2025-11-06 05:58:54,784 ERROR [db-error] master db 202.189.7.196 down.
+
+2025-11-06 06:02:26,782 ERROR [master-db] master db not found.
+
+2025-11-06 06:02:31,317 WARN isQuickStart:false
+
+2025-11-06 06:02:31,330 ERROR Nacos Server did not start because dumpservice bean construction failure :
+java.lang.IllegalStateException: No DataSource set
+
+2025-11-06 06:02:39,474 WARN [master-db] jdbc:mysql://202.189.7.196:3306/nacos?characterEncoding=utf8&connectTimeout=10000&socketTimeout=30000&autoReconnect=true&useUnicode=true&useSSL=false&serverTimezone=UTC
+
+2025-11-06 06:25:48,015 WARN [master-db] jdbc:mysql://202.189.7.196:3306/nacos?characterEncoding=utf8&connectTimeout=10000&socketTimeout=30000&autoReconnect=true&useUnicode=true&useSSL=false&serverTimezone=UTC
+
+2025-11-06 06:25:50,063 WARN isQuickStart:false
+
+2025-11-06 06:35:20,794 WARN [master-db] jdbc:mysql://202.189.7.196:3306/nacos?characterEncoding=utf8&connectTimeout=10000&socketTimeout=30000&autoReconnect=true&useUnicode=true&useSSL=false&serverTimezone=UTC
+
+2025-11-06 06:35:22,312 WARN isQuickStart:false
+
+2025-11-06 06:38:37,939 WARN [master-db] jdbc:mysql://202.189.7.196:3306/nacos?characterEncoding=utf8&connectTimeout=10000&socketTimeout=30000&autoReconnect=true&useUnicode=true&useSSL=false&serverTimezone=UTC
+
+2025-11-06 06:38:39,783 WARN isQuickStart:false
+
+2025-11-06 06:41:24,532 WARN [master-db] jdbc:mysql://202.189.7.196:3306/nacos?characterEncoding=utf8&connectTimeout=10000&socketTimeout=30000&autoReconnect=true&useUnicode=true&useSSL=false&serverTimezone=UTC
+
+2025-11-06 06:41:25,791 WARN isQuickStart:false
+
+2025-11-06 06:51:45,631 WARN [master-db] jdbc:mysql://202.189.7.196:3306/nacos?characterEncoding=utf8&connectTimeout=10000&socketTimeout=30000&autoReconnect=true&useUnicode=true&useSSL=false&serverTimezone=UTC
+
+2025-11-06 06:51:47,442 WARN isQuickStart:false
+
+2025-11-06 07:05:14,997 WARN [master-db] jdbc:mysql://202.189.7.196:3306/nacos?characterEncoding=utf8&connectTimeout=10000&socketTimeout=30000&autoReconnect=true&useUnicode=true&useSSL=false&serverTimezone=UTC
+
+2025-11-06 07:05:16,523 WARN isQuickStart:false
+
+2025-11-06 07:17:11,547 WARN [master-db] jdbc:mysql://202.189.7.196:3306/nacos?characterEncoding=utf8&connectTimeout=10000&socketTimeout=30000&autoReconnect=true&useUnicode=true&useSSL=false&serverTimezone=UTC
+
+2025-11-06 07:17:12,893 WARN isQuickStart:false
+
+2025-11-06 07:23:01,720 WARN [master-db] jdbc:mysql://202.189.7.196:3306/nacos?characterEncoding=utf8&connectTimeout=10000&socketTimeout=30000&autoReconnect=true&useUnicode=true&useSSL=false&serverTimezone=UTC
+
+2025-11-06 07:23:03,158 WARN isQuickStart:false
+
+2025-11-06 07:26:16,976 WARN [master-db] jdbc:mysql://202.189.7.196:3306/nacos?characterEncoding=utf8&connectTimeout=10000&socketTimeout=30000&autoReconnect=true&useUnicode=true&useSSL=false&serverTimezone=UTC
+
+2025-11-06 07:26:18,314 WARN isQuickStart:false
+
+2025-11-06 07:29:45,415 WARN [master-db] jdbc:mysql://202.189.7.196:3306/nacos?characterEncoding=utf8&connectTimeout=10000&socketTimeout=30000&autoReconnect=true&useUnicode=true&useSSL=false&serverTimezone=UTC
+
+2025-11-06 07:29:47,244 WARN isQuickStart:false
+
+2025-11-06 07:32:33,700 WARN [master-db] jdbc:mysql://202.189.7.196:3306/nacos?characterEncoding=utf8&connectTimeout=10000&socketTimeout=30000&autoReconnect=true&useUnicode=true&useSSL=false&serverTimezone=UTC
+
+2025-11-06 07:32:34,970 WARN isQuickStart:false
+
+2025-11-06 07:40:08,253 WARN [master-db] jdbc:mysql://202.189.7.196:3306/nacos?characterEncoding=utf8&connectTimeout=10000&socketTimeout=30000&autoReconnect=true&useUnicode=true&useSSL=false&serverTimezone=UTC
+
+2025-11-06 07:40:10,144 WARN isQuickStart:false
+
+2025-11-06 07:44:09,966 WARN [master-db] jdbc:mysql://202.189.7.196:3306/nacos?characterEncoding=utf8&connectTimeout=10000&socketTimeout=30000&autoReconnect=true&useUnicode=true&useSSL=false&serverTimezone=UTC
+
+2025-11-06 07:44:11,373 WARN isQuickStart:false
+
+2025-11-06 08:28:15,990 WARN [master-db] jdbc:mysql://202.189.7.196:3306/nacos?characterEncoding=utf8&connectTimeout=10000&socketTimeout=30000&autoReconnect=true&useUnicode=true&useSSL=false&serverTimezone=UTC
+
+2025-11-06 08:28:18,765 WARN isQuickStart:false
+
+2025-11-06 08:36:09,192 WARN [master-db] jdbc:mysql://202.189.7.196:3306/nacos?characterEncoding=utf8&connectTimeout=10000&socketTimeout=30000&autoReconnect=true&useUnicode=true&useSSL=false&serverTimezone=UTC
+
+2025-11-06 08:36:10,517 WARN isQuickStart:false
+
+2025-11-06 08:47:14,664 WARN [master-db] jdbc:mysql://202.189.7.196:3306/nacos?characterEncoding=utf8&connectTimeout=10000&socketTimeout=30000&autoReconnect=true&useUnicode=true&useSSL=false&serverTimezone=UTC
+
+2025-11-06 08:47:16,145 WARN isQuickStart:false
+
+2025-11-06 08:47:50,495 WARN [master-db] jdbc:mysql://202.189.7.196:3306/nacos?characterEncoding=utf8&connectTimeout=10000&socketTimeout=30000&autoReconnect=true&useUnicode=true&useSSL=false&serverTimezone=UTC
+
+2025-11-06 08:47:52,690 WARN isQuickStart:false
+
+2025-11-06 08:53:35,406 WARN [master-db] jdbc:mysql://202.189.7.196:3306/nacos?characterEncoding=utf8&connectTimeout=10000&socketTimeout=30000&autoReconnect=true&useUnicode=true&useSSL=false&serverTimezone=UTC
+
+2025-11-06 08:53:36,795 WARN isQuickStart:false
+
+2025-11-06 08:56:11,494 WARN [master-db] jdbc:mysql://202.189.7.196:3306/nacos?characterEncoding=utf8&connectTimeout=10000&socketTimeout=30000&autoReconnect=true&useUnicode=true&useSSL=false&serverTimezone=UTC
+
+2025-11-06 08:56:13,714 WARN isQuickStart:false
+
+2025-11-06 08:59:10,093 WARN [master-db] jdbc:mysql://202.189.7.196:3306/nacos?characterEncoding=utf8&connectTimeout=10000&socketTimeout=30000&autoReconnect=true&useUnicode=true&useSSL=false&serverTimezone=UTC
+
+2025-11-06 08:59:11,430 WARN isQuickStart:false
+
+2025-11-06 09:08:15,573 WARN [master-db] jdbc:mysql://202.189.7.196:3306/nacos?characterEncoding=utf8&connectTimeout=10000&socketTimeout=30000&autoReconnect=true&useUnicode=true&useSSL=false&serverTimezone=UTC
+
+2025-11-06 09:08:17,546 WARN isQuickStart:false
+
+2025-11-06 09:21:55,168 WARN [master-db] jdbc:mysql://202.189.7.196:3306/nacos?characterEncoding=utf8&connectTimeout=10000&socketTimeout=30000&autoReconnect=true&useUnicode=true&useSSL=false&serverTimezone=UTC
+
+2025-11-06 09:21:58,075 WARN isQuickStart:false
+
+2025-11-06 09:32:02,408 WARN [master-db] jdbc:mysql://202.189.7.196:3306/nacos?characterEncoding=utf8&connectTimeout=10000&socketTimeout=30000&autoReconnect=true&useUnicode=true&useSSL=false&serverTimezone=UTC
+
+2025-11-06 09:32:03,848 WARN isQuickStart:false
+
+2025-11-06 09:39:37,626 WARN [master-db] jdbc:mysql://202.189.7.196:3306/nacos?characterEncoding=utf8&connectTimeout=10000&socketTimeout=30000&autoReconnect=true&useUnicode=true&useSSL=false&serverTimezone=UTC
+
+2025-11-06 09:39:39,078 WARN isQuickStart:false
+
+2025-11-06 10:01:58,140 WARN [master-db] jdbc:mysql://202.189.7.196:3306/nacos?characterEncoding=utf8&connectTimeout=10000&socketTimeout=30000&autoReconnect=true&useUnicode=true&useSSL=false&serverTimezone=UTC
+
+2025-11-06 10:02:00,482 WARN isQuickStart:false
+
+2025-11-06 10:11:52,965 WARN [master-db] jdbc:mysql://202.189.7.196:3306/nacos?characterEncoding=utf8&connectTimeout=10000&socketTimeout=30000&autoReconnect=true&useUnicode=true&useSSL=false&serverTimezone=UTC
+
+2025-11-06 10:11:54,504 WARN isQuickStart:false
+
+2025-11-06 19:07:02,461 ERROR [master-db] master db not found.
+
+2025-11-06 19:07:16,523 ERROR [db-error] master db 202.189.7.196 down.
+
+2025-11-06 19:07:17,912 WARN isQuickStart:false
+
+2025-11-06 19:07:17,974 ERROR Nacos Server did not start because dumpservice bean construction failure :
+java.lang.IllegalStateException: No DataSource set
+
+2025-11-06 19:07:39,754 ERROR [master-db] master db not found.
+
+2025-11-06 19:07:51,762 ERROR [db-error] master db 202.189.7.196 down.
+
+2025-11-06 19:16:01,882 ERROR [master-db] master db not found.
+
+2025-11-06 19:16:15,905 ERROR [db-error] master db 202.189.7.196 down.
+
+2025-11-06 19:16:17,111 WARN isQuickStart:false
+
+2025-11-06 19:16:17,118 ERROR Nacos Server did not start because dumpservice bean construction failure :
+java.lang.IllegalStateException: No DataSource set
+
+2025-11-06 19:16:39,923 ERROR [master-db] master db not found.
+
+2025-11-06 19:16:51,938 ERROR [db-error] master db 202.189.7.196 down.
+
+2025-11-06 19:44:29,651 ERROR [master-db] master db not found.
+
+2025-11-06 19:44:43,676 ERROR [db-error] master db 202.189.7.196 down.
+
+2025-11-06 19:44:44,841 WARN isQuickStart:false
+
+2025-11-06 19:44:44,848 ERROR Nacos Server did not start because dumpservice bean construction failure :
+java.lang.IllegalStateException: No DataSource set
+
+2025-11-06 19:45:06,724 ERROR [master-db] master db not found.
+
+2025-11-06 19:45:18,739 ERROR [db-error] master db 202.189.7.196 down.
+
+2025-11-06 19:48:21,202 WARN isQuickStart:false
+
+2025-11-06 19:48:21,487 ERROR [db-error] DataAccessException : caused: StatementCallback; bad SQL grammar [select 1 from config_info_beta limit 1]; nested exception is java.sql.SQLSyntaxErrorException: Syntax error: Encountered "1" at line 1, column 38.;caused: Syntax error: Encountered "1" at line 1, column 38.;caused: Syntax error: Encountered "1" at line 1, column 38.;
+
+2025-11-06 19:48:21,492 ERROR [db-error] DataAccessException : caused: StatementCallback; bad SQL grammar [select 1 from config_info_tag limit 1]; nested exception is java.sql.SQLSyntaxErrorException: Syntax error: Encountered "1" at line 1, column 37.;caused: Syntax error: Encountered "1" at line 1, column 37.;caused: Syntax error: Encountered "1" at line 1, column 37.;
+
+2025-11-06 19:50:52,365 WARN isQuickStart:false
+
+2025-11-06 19:50:52,529 ERROR [db-error] DataAccessException : caused: StatementCallback; bad SQL grammar [select 1 from config_info_beta limit 1]; nested exception is java.sql.SQLSyntaxErrorException: Syntax error: Encountered "1" at line 1, column 38.;caused: Syntax error: Encountered "1" at line 1, column 38.;caused: Syntax error: Encountered "1" at line 1, column 38.;
+
+2025-11-06 19:50:52,531 ERROR [db-error] DataAccessException : caused: StatementCallback; bad SQL grammar [select 1 from config_info_tag limit 1]; nested exception is java.sql.SQLSyntaxErrorException: Syntax error: Encountered "1" at line 1, column 37.;caused: Syntax error: Encountered "1" at line 1, column 37.;caused: Syntax error: Encountered "1" at line 1, column 37.;
+

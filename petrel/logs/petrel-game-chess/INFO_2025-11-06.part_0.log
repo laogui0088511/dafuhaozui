@@ -1,0 +1,392 @@
+11-06 10:03:54.644 WARN  [background-preinit] [o.s.h.converter.json.Jackson2ObjectMapperBuilder] : For Jackson Kotlin classes support please add "com.fasterxml.jackson.module:jackson-module-kotlin" to the classpath
+11-06 10:03:55.815 INFO  [main] [com.petrel.chess.ChessApplication] : The following profiles are active: prod
+11-06 10:03:58.069 WARN  [main] [o.springframework.boot.actuate.endpoint.EndpointId] : Endpoint ID 'nacos-discovery' contains invalid characters, please migrate to a valid format.
+11-06 10:03:58.655 INFO  [main] [o.s.d.r.config.RepositoryConfigurationDelegate] : Multiple Spring Data modules found, entering strict repository configuration mode!
+11-06 10:03:58.661 INFO  [main] [o.s.d.r.config.RepositoryConfigurationDelegate] : Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+11-06 10:03:58.776 INFO  [main] [o.s.d.r.config.RepositoryConfigurationDelegate] : Finished Spring Data repository scanning in 63ms. Found 0 Redis repository interfaces.
+11-06 10:03:58.914 WARN  [main] [o.springframework.boot.actuate.endpoint.EndpointId] : Endpoint ID 'service-registry' contains invalid characters, please migrate to a valid format.
+11-06 10:03:59.395 INFO  [main] [o.springframework.cloud.context.scope.GenericScope] : BeanFactory id=24c37c7c-c14e-310e-b66a-193819f8ed70
+11-06 10:03:59.702 INFO  [main] [o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker] : Bean 'com.petrel.chess.core.common.provide.GameFeignService' of type [org.springframework.cloud.openfeign.FeignClientFactoryBean] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+11-06 10:03:59.708 INFO  [main] [o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker] : Bean 'com.petrel.chess.core.common.provide.ServerRegisterFeignService' of type [org.springframework.cloud.openfeign.FeignClientFactoryBean] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+11-06 10:04:01.338 INFO  [main] [c.a.n.s.c.e.LoggingNacosConfigMetadataEventListener] : Nacos Config Metadata : dataId='petrel-game-config.yaml', groupId='DEFAULT_GROUP', beanName='gameConfig', bean='GameConfig(fishControl=0)', beanType='class com.petrel.chess.core.common.config.GameConfig', annotatedElement='class com.petrel.chess.core.common.config.GameConfig', xmlResource='null', nacosProperties='{encode=UTF-8, password=nacos, serverAddr=127.0.0.1:6878, username=nacos}', nacosPropertiesAttributes='{accessKey=${nacos.access-key:}, clusterName=${nacos.cluster-name:}, configLongPollTimeout=${nacos.configLongPollTimeout:}, configRetryTime=${nacos.configRetryTime:}, contextPath=${nacos.context-path:}, enableRemoteSyncConfig=${nacos.enableRemoteSyncConfig:}, encode=${nacos.encode:UTF-8}, endpoint=${nacos.endpoint:}, maxRetry=${nacos.maxRetry:}, namespace=${nacos.namespace:}, password=${nacos.password:}, secretKey=${nacos.secret-key:}, serverAddr=${nacos.server-addr:}, username=${nacos.username:}}', source='@com.alibaba.nacos.api.config.annotation.NacosConfigurationProperties(autoRefreshed=true, dataId=petrel-game-config.yaml, exceptionIfInvalid=true, groupId=DEFAULT_GROUP, ignoreInvalidFields=false, ignoreNestedProperties=false, ignoreUnknownFields=true, prefix=, properties=@com.alibaba.nacos.api.annotation.NacosProperties(accessKey=${nacos.access-key:}, clusterName=${nacos.cluster-name:}, configLongPollTimeout=${nacos.configLongPollTimeout:}, configRetryTime=${nacos.configRetryTime:}, contextPath=${nacos.context-path:}, enableRemoteSyncConfig=${nacos.enableRemoteSyncConfig:}, encode=${nacos.encode:UTF-8}, endpoint=${nacos.endpoint:}, maxRetry=${nacos.maxRetry:}, namespace=${nacos.namespace:}, password=${nacos.password:}, secretKey=${nacos.secret-key:}, serverAddr=${nacos.server-addr:}, username=${nacos.username:}), type=YAML, yaml=false)', timestamp='1762423441331'
+11-06 10:04:01.490 WARN  [main] [com.netflix.config.sources.URLConfigurationSource] : No URLs will be polled as dynamic configuration sources.
+11-06 10:04:01.490 INFO  [main] [com.netflix.config.sources.URLConfigurationSource] : To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+11-06 10:04:01.497 WARN  [main] [com.netflix.config.sources.URLConfigurationSource] : No URLs will be polled as dynamic configuration sources.
+11-06 10:04:01.500 INFO  [main] [com.netflix.config.sources.URLConfigurationSource] : To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+11-06 10:04:01.551 INFO  [NacosConfigListener-ThreadPool-1] [c.a.n.s.c.e.LoggingNacosConfigMetadataEventListener] : Nacos Config Metadata : dataId='petrel-game-config.yaml', groupId='DEFAULT_GROUP', beanName='gameConfig', bean='GameConfig(fishControl=0)', beanType='class com.petrel.chess.core.common.config.GameConfig', annotatedElement='class com.petrel.chess.core.common.config.GameConfig', xmlResource='null', nacosProperties='{encode=UTF-8, password=nacos, serverAddr=127.0.0.1:6878, username=nacos}', nacosPropertiesAttributes='{accessKey=${nacos.access-key:}, clusterName=${nacos.cluster-name:}, configLongPollTimeout=${nacos.configLongPollTimeout:}, configRetryTime=${nacos.configRetryTime:}, contextPath=${nacos.context-path:}, enableRemoteSyncConfig=${nacos.enableRemoteSyncConfig:}, encode=${nacos.encode:UTF-8}, endpoint=${nacos.endpoint:}, maxRetry=${nacos.maxRetry:}, namespace=${nacos.namespace:}, password=${nacos.password:}, secretKey=${nacos.secret-key:}, serverAddr=${nacos.server-addr:}, username=${nacos.username:}}', source='@com.alibaba.nacos.api.config.annotation.NacosConfigurationProperties(autoRefreshed=true, dataId=petrel-game-config.yaml, exceptionIfInvalid=true, groupId=DEFAULT_GROUP, ignoreInvalidFields=false, ignoreNestedProperties=false, ignoreUnknownFields=true, prefix=, properties=@com.alibaba.nacos.api.annotation.NacosProperties(accessKey=${nacos.access-key:}, clusterName=${nacos.cluster-name:}, configLongPollTimeout=${nacos.configLongPollTimeout:}, configRetryTime=${nacos.configRetryTime:}, contextPath=${nacos.context-path:}, enableRemoteSyncConfig=${nacos.enableRemoteSyncConfig:}, encode=${nacos.encode:UTF-8}, endpoint=${nacos.endpoint:}, maxRetry=${nacos.maxRetry:}, namespace=${nacos.namespace:}, password=${nacos.password:}, secretKey=${nacos.secret-key:}, serverAddr=${nacos.server-addr:}, username=${nacos.username:}), type=YAML, yaml=false)', timestamp='1762423441549'
+11-06 10:04:01.608 INFO  [main] [o.s.scheduling.concurrent.ThreadPoolTaskScheduler] : Initializing ExecutorService 'Nacso-Watch-Task-Scheduler'
+11-06 10:04:03.156 INFO  [main] [com.petrel.chess.ChessApplication] : Started ChessApplication in 10.978 seconds (JVM running for 13.376)
+11-06 10:04:03.186 INFO  [main] [c.p.c.core.common.handler.InitializeStartMapping] : Initialize StartMapping success 3 
+11-06 10:04:03.205 INFO  [main] [c.p.c.c.common.handler.InitializeEEHandlerMapping] : Initialize EEHandler success 3 
+11-06 10:04:03.218 INFO  [main] [c.p.c.c.c.handler.InitializePlayHandlerMapping] : Initialize PlayHandler success 8 
+11-06 10:04:03.557 INFO  [main] [io.lettuce.core.EpollProvider] : Starting with epoll library
+11-06 10:04:03.564 INFO  [main] [io.lettuce.core.KqueueProvider] : Starting without optional kqueue library
+11-06 10:04:04.078 INFO  [main] [c.p.chess.core.game.shbz.game.ShbzStartService] : Fishing gameId:44 ---start-success-----
+11-06 10:04:04.085 INFO  [main] [c.p.c.core.common.handler.ChessServerStartService] : start game: SHBZ
+11-06 10:04:04.111 WARN  [main] [com.zebra.net.servers.ZebraRpcServer] : [server side] bolt netty low water mark is 16384 bytes, high water mark is 32768 bytes
+11-06 10:04:04.116 WARN  [main] [com.zebra.net.servers.AbstractRemotingServer] : Prepare to start server on port 9637 
+11-06 10:04:04.127 INFO  [Zebra-boss-20-thread-1] [io.netty.handler.logging.LoggingHandler] : [id: 0x40820f0b] REGISTERED
+11-06 10:04:04.129 INFO  [Zebra-boss-20-thread-1] [io.netty.handler.logging.LoggingHandler] : [id: 0x40820f0b] BIND: 0.0.0.0/0.0.0.0:9637
+11-06 10:04:04.130 INFO  [Zebra-boss-20-thread-1] [io.netty.handler.logging.LoggingHandler] : [id: 0x40820f0b, L:/[0:0:0:0:0:0:0:0%0]:9637] ACTIVE
+11-06 10:04:04.454 INFO  [main] [com.zebra.net.servers.ZebraRpcServer] : Rpc AbstractBootstrap$PendingRegistrationPromise@11eed657(success) 1762423444454
+11-06 10:13:50.954 WARN  [background-preinit] [o.s.h.converter.json.Jackson2ObjectMapperBuilder] : For Jackson Kotlin classes support please add "com.fasterxml.jackson.module:jackson-module-kotlin" to the classpath
+11-06 10:13:53.089 INFO  [main] [com.petrel.chess.ChessApplication] : The following profiles are active: prod
+11-06 10:13:58.654 WARN  [main] [o.springframework.boot.actuate.endpoint.EndpointId] : Endpoint ID 'nacos-discovery' contains invalid characters, please migrate to a valid format.
+11-06 10:14:01.080 INFO  [main] [o.s.d.r.config.RepositoryConfigurationDelegate] : Multiple Spring Data modules found, entering strict repository configuration mode!
+11-06 10:14:01.106 INFO  [main] [o.s.d.r.config.RepositoryConfigurationDelegate] : Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+11-06 10:14:01.360 INFO  [main] [o.s.d.r.config.RepositoryConfigurationDelegate] : Finished Spring Data repository scanning in 166ms. Found 0 Redis repository interfaces.
+11-06 10:14:01.592 WARN  [main] [o.springframework.boot.actuate.endpoint.EndpointId] : Endpoint ID 'service-registry' contains invalid characters, please migrate to a valid format.
+11-06 10:14:03.075 INFO  [main] [o.springframework.cloud.context.scope.GenericScope] : BeanFactory id=24c37c7c-c14e-310e-b66a-193819f8ed70
+11-06 10:14:04.106 INFO  [main] [o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker] : Bean 'com.petrel.chess.core.common.provide.GameFeignService' of type [org.springframework.cloud.openfeign.FeignClientFactoryBean] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+11-06 10:14:04.117 INFO  [main] [o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker] : Bean 'com.petrel.chess.core.common.provide.ServerRegisterFeignService' of type [org.springframework.cloud.openfeign.FeignClientFactoryBean] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+11-06 10:14:09.330 INFO  [main] [c.a.n.s.c.e.LoggingNacosConfigMetadataEventListener] : Nacos Config Metadata : dataId='petrel-game-config.yaml', groupId='DEFAULT_GROUP', beanName='gameConfig', bean='GameConfig(fishControl=0)', beanType='class com.petrel.chess.core.common.config.GameConfig', annotatedElement='class com.petrel.chess.core.common.config.GameConfig', xmlResource='null', nacosProperties='{encode=UTF-8, password=nacos, serverAddr=127.0.0.1:6878, username=nacos}', nacosPropertiesAttributes='{accessKey=${nacos.access-key:}, clusterName=${nacos.cluster-name:}, configLongPollTimeout=${nacos.configLongPollTimeout:}, configRetryTime=${nacos.configRetryTime:}, contextPath=${nacos.context-path:}, enableRemoteSyncConfig=${nacos.enableRemoteSyncConfig:}, encode=${nacos.encode:UTF-8}, endpoint=${nacos.endpoint:}, maxRetry=${nacos.maxRetry:}, namespace=${nacos.namespace:}, password=${nacos.password:}, secretKey=${nacos.secret-key:}, serverAddr=${nacos.server-addr:}, username=${nacos.username:}}', source='@com.alibaba.nacos.api.config.annotation.NacosConfigurationProperties(autoRefreshed=true, dataId=petrel-game-config.yaml, exceptionIfInvalid=true, groupId=DEFAULT_GROUP, ignoreInvalidFields=false, ignoreNestedProperties=false, ignoreUnknownFields=true, prefix=, properties=@com.alibaba.nacos.api.annotation.NacosProperties(accessKey=${nacos.access-key:}, clusterName=${nacos.cluster-name:}, configLongPollTimeout=${nacos.configLongPollTimeout:}, configRetryTime=${nacos.configRetryTime:}, contextPath=${nacos.context-path:}, enableRemoteSyncConfig=${nacos.enableRemoteSyncConfig:}, encode=${nacos.encode:UTF-8}, endpoint=${nacos.endpoint:}, maxRetry=${nacos.maxRetry:}, namespace=${nacos.namespace:}, password=${nacos.password:}, secretKey=${nacos.secret-key:}, serverAddr=${nacos.server-addr:}, username=${nacos.username:}), type=YAML, yaml=false)', timestamp='1762424049322'
+11-06 10:14:09.533 WARN  [main] [com.netflix.config.sources.URLConfigurationSource] : No URLs will be polled as dynamic configuration sources.
+11-06 10:14:09.533 INFO  [main] [com.netflix.config.sources.URLConfigurationSource] : To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+11-06 10:14:09.543 WARN  [main] [com.netflix.config.sources.URLConfigurationSource] : No URLs will be polled as dynamic configuration sources.
+11-06 10:14:09.543 INFO  [main] [com.netflix.config.sources.URLConfigurationSource] : To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+11-06 10:14:09.660 INFO  [main] [o.s.scheduling.concurrent.ThreadPoolTaskScheduler] : Initializing ExecutorService 'Nacso-Watch-Task-Scheduler'
+11-06 10:14:12.251 INFO  [main] [com.petrel.chess.ChessApplication] : Started ChessApplication in 24.739 seconds (JVM running for 28.471)
+11-06 10:14:12.283 INFO  [main] [c.p.c.core.common.handler.InitializeStartMapping] : Initialize StartMapping success 3 
+11-06 10:14:12.305 INFO  [main] [c.p.c.c.common.handler.InitializeEEHandlerMapping] : Initialize EEHandler success 3 
+11-06 10:14:12.319 INFO  [main] [c.p.c.c.c.handler.InitializePlayHandlerMapping] : Initialize PlayHandler success 8 
+11-06 10:14:12.852 INFO  [main] [io.lettuce.core.EpollProvider] : Starting with epoll library
+11-06 10:14:12.866 INFO  [main] [io.lettuce.core.KqueueProvider] : Starting without optional kqueue library
+11-06 10:14:13.378 INFO  [main] [c.p.chess.core.game.shbz.game.ShbzStartService] : Fishing gameId:44 ---start-success-----
+11-06 10:14:13.386 INFO  [main] [c.p.c.core.common.handler.ChessServerStartService] : start game: SHBZ
+11-06 10:14:13.417 WARN  [main] [com.zebra.net.servers.ZebraRpcServer] : [server side] bolt netty low water mark is 16384 bytes, high water mark is 32768 bytes
+11-06 10:14:13.424 WARN  [main] [com.zebra.net.servers.AbstractRemotingServer] : Prepare to start server on port 9637 
+11-06 10:14:13.449 INFO  [Zebra-boss-20-thread-1] [io.netty.handler.logging.LoggingHandler] : [id: 0xe6c04d89] REGISTERED
+11-06 10:14:13.453 INFO  [Zebra-boss-20-thread-1] [io.netty.handler.logging.LoggingHandler] : [id: 0xe6c04d89] BIND: 0.0.0.0/0.0.0.0:9637
+11-06 10:14:13.456 INFO  [Zebra-boss-20-thread-1] [io.netty.handler.logging.LoggingHandler] : [id: 0xe6c04d89, L:/[0:0:0:0:0:0:0:0%0]:9637] ACTIVE
+11-06 10:14:13.954 INFO  [main] [com.zebra.net.servers.ZebraRpcServer] : Rpc AbstractBootstrap$PendingRegistrationPromise@15d42ccb(success) 1762424053948
+11-06 10:44:13.957 INFO  [Zebra-boss-20-thread-1] [io.netty.handler.logging.LoggingHandler] : [id: 0xe6c04d89, L:/[0:0:0:0:0:0:0:0%0]:9637] CLOSE
+11-06 10:44:13.960 INFO  [Zebra-boss-20-thread-1] [io.netty.handler.logging.LoggingHandler] : [id: 0xe6c04d89, L:/[0:0:0:0:0:0:0:0%0]:9637] INACTIVE
+11-06 10:44:13.960 INFO  [Zebra-boss-20-thread-1] [io.netty.handler.logging.LoggingHandler] : [id: 0xe6c04d89, L:/[0:0:0:0:0:0:0:0%0]:9637] UNREGISTERED
+11-06 10:44:13.959 WARN  [main] [com.zebra.net.servers.ZebraRpcServer] : Rpc Server stopped!
+11-06 10:44:13.962 INFO  [main] [com.zebra.net.servers.AbstractRemotingServer] : Server started on port 9637
+11-06 10:44:13.962 INFO  [main] [com.zebra.common.concurrent.ZebraExecutorManager] : Initialize executorGroup size 0
+11-06 10:44:13.977 INFO  [main] [com.petrel.chess.StartAfterInitialize] : StartAfter send register msg ServerRegistryRequest(serverId=chess:10.0.0.1:9637, appName=petrel-game-chess, inIp=10.0.0.1, port=9637, vfx=SHBZ, gameType=2, outIp=127.0.0.1, weight=50)
+11-06 10:44:14.374 INFO  [main] [com.netflix.config.ChainedDynamicProperty] : Flipping property: petrel-kernel-register.ribbon.ActiveConnectionsLimit to use NEXT property: niws.loadbalancer.availabilityFilteringRule.activeConnectionsLimit = 2147483647
+11-06 10:44:14.397 INFO  [main] [com.netflix.loadbalancer.BaseLoadBalancer] : Client: petrel-kernel-register instantiated a LoadBalancer: DynamicServerListLoadBalancer:{NFLoadBalancer:name=petrel-kernel-register,current list of Servers=[],Load balancer stats=Zone stats: {},Server stats: []}ServerList:null
+11-06 10:44:14.408 INFO  [main] [c.n.loadbalancer.DynamicServerListLoadBalancer] : Using serverListUpdater PollingServerListUpdater
+11-06 10:44:14.615 INFO  [main] [c.n.loadbalancer.DynamicServerListLoadBalancer] : DynamicServerListLoadBalancer for client petrel-kernel-register initialized: DynamicServerListLoadBalancer:{NFLoadBalancer:name=petrel-kernel-register,current list of Servers=[],Load balancer stats=Zone stats: {},Server stats: []}ServerList:com.alibaba.cloud.nacos.ribbon.NacosServerList@3965bdf9
+11-06 10:44:14.686 INFO  [main] [o.s.b.a.l.ConditionEvaluationReportLoggingListener] : 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+11-06 10:44:14.688 INFO  [main] [o.s.scheduling.concurrent.ThreadPoolTaskScheduler] : Shutting down ExecutorService 'Nacso-Watch-Task-Scheduler'
+11-06 10:44:14.832 INFO  [main] [c.a.n.s.c.a.c.NacosValueAnnotationBeanPostProcessor] : class com.alibaba.nacos.spring.context.annotation.config.NacosValueAnnotationBeanPostProcessor was destroying!
+11-06 10:44:14.833 INFO  [main] [c.a.n.s.b.f.a.AnnotationNacosInjectedBeanPostProcessor] : class com.alibaba.nacos.spring.beans.factory.annotation.AnnotationNacosInjectedBeanPostProcessor was destroying!
+11-06 10:44:14.843 ERROR [main] [org.springframework.boot.SpringApplication] : Application run failed
+java.lang.IllegalStateException: Failed to execute ApplicationRunner
+	at org.springframework.boot.SpringApplication.callRunner(SpringApplication.java:778)
+	at org.springframework.boot.SpringApplication.callRunners(SpringApplication.java:765)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:322)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1226)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1215)
+	at com.petrel.chess.ChessApplication.main(ChessApplication.java:19)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.springframework.boot.loader.MainMethodRunner.run(MainMethodRunner.java:48)
+	at org.springframework.boot.loader.Launcher.launch(Launcher.java:87)
+	at org.springframework.boot.loader.Launcher.launch(Launcher.java:51)
+	at org.springframework.boot.loader.PropertiesLauncher.main(PropertiesLauncher.java:597)
+Caused by: java.lang.RuntimeException: com.netflix.client.ClientException: Load balancer does not have available server for client: petrel-kernel-register
+	at org.springframework.cloud.openfeign.ribbon.LoadBalancerFeignClient.execute(LoadBalancerFeignClient.java:90)
+	at feign.SynchronousMethodHandler.executeAndDecode(SynchronousMethodHandler.java:110)
+	at feign.SynchronousMethodHandler.invoke(SynchronousMethodHandler.java:80)
+	at feign.ReflectiveFeign$FeignInvocationHandler.invoke(ReflectiveFeign.java:100)
+	at jdk.proxy2/jdk.proxy2.$Proxy107.registerServer(Unknown Source)
+	at com.petrel.chess.StartAfterInitialize.run(StartAfterInitialize.java:38)
+	at org.springframework.boot.SpringApplication.callRunner(SpringApplication.java:775)
+	... 11 common frames omitted
+Caused by: com.netflix.client.ClientException: Load balancer does not have available server for client: petrel-kernel-register
+	at com.netflix.loadbalancer.LoadBalancerContext.getServerFromLoadBalancer(LoadBalancerContext.java:483)
+	at com.netflix.loadbalancer.reactive.LoadBalancerCommand$1.call(LoadBalancerCommand.java:184)
+	at com.netflix.loadbalancer.reactive.LoadBalancerCommand$1.call(LoadBalancerCommand.java:180)
+	at rx.Observable.unsafeSubscribe(Observable.java:10327)
+	at rx.internal.operators.OnSubscribeConcatMap.call(OnSubscribeConcatMap.java:94)
+	at rx.internal.operators.OnSubscribeConcatMap.call(OnSubscribeConcatMap.java:42)
+	at rx.Observable.unsafeSubscribe(Observable.java:10327)
+	at rx.internal.operators.OperatorRetryWithPredicate$SourceSubscriber$1.call(OperatorRetryWithPredicate.java:127)
+	at rx.internal.schedulers.TrampolineScheduler$InnerCurrentThreadScheduler.enqueue(TrampolineScheduler.java:73)
+	at rx.internal.schedulers.TrampolineScheduler$InnerCurrentThreadScheduler.schedule(TrampolineScheduler.java:52)
+	at rx.internal.operators.OperatorRetryWithPredicate$SourceSubscriber.onNext(OperatorRetryWithPredicate.java:79)
+	at rx.internal.operators.OperatorRetryWithPredicate$SourceSubscriber.onNext(OperatorRetryWithPredicate.java:45)
+	at rx.internal.util.ScalarSynchronousObservable$WeakSingleProducer.request(ScalarSynchronousObservable.java:276)
+	at rx.Subscriber.setProducer(Subscriber.java:209)
+	at rx.internal.util.ScalarSynchronousObservable$JustOnSubscribe.call(ScalarSynchronousObservable.java:138)
+	at rx.internal.util.ScalarSynchronousObservable$JustOnSubscribe.call(ScalarSynchronousObservable.java:129)
+	at rx.internal.operators.OnSubscribeLift.call(OnSubscribeLift.java:48)
+	at rx.internal.operators.OnSubscribeLift.call(OnSubscribeLift.java:30)
+	at rx.internal.operators.OnSubscribeLift.call(OnSubscribeLift.java:48)
+	at rx.internal.operators.OnSubscribeLift.call(OnSubscribeLift.java:30)
+	at rx.internal.operators.OnSubscribeLift.call(OnSubscribeLift.java:48)
+	at rx.internal.operators.OnSubscribeLift.call(OnSubscribeLift.java:30)
+	at rx.Observable.subscribe(Observable.java:10423)
+	at rx.Observable.subscribe(Observable.java:10390)
+	at rx.observables.BlockingObservable.blockForSingle(BlockingObservable.java:443)
+	at rx.observables.BlockingObservable.single(BlockingObservable.java:340)
+	at com.netflix.client.AbstractLoadBalancerAwareClient.executeWithLoadBalancer(AbstractLoadBalancerAwareClient.java:112)
+	at org.springframework.cloud.openfeign.ribbon.LoadBalancerFeignClient.execute(LoadBalancerFeignClient.java:83)
+	... 17 common frames omitted
+11-06 10:44:14.844 ERROR [main] [com.petrel.chess.ChessApplication] : start error:
+java.lang.IllegalStateException: Failed to execute ApplicationRunner
+	at org.springframework.boot.SpringApplication.callRunner(SpringApplication.java:778)
+	at org.springframework.boot.SpringApplication.callRunners(SpringApplication.java:765)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:322)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1226)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1215)
+	at com.petrel.chess.ChessApplication.main(ChessApplication.java:19)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.springframework.boot.loader.MainMethodRunner.run(MainMethodRunner.java:48)
+	at org.springframework.boot.loader.Launcher.launch(Launcher.java:87)
+	at org.springframework.boot.loader.Launcher.launch(Launcher.java:51)
+	at org.springframework.boot.loader.PropertiesLauncher.main(PropertiesLauncher.java:597)
+Caused by: java.lang.RuntimeException: com.netflix.client.ClientException: Load balancer does not have available server for client: petrel-kernel-register
+	at org.springframework.cloud.openfeign.ribbon.LoadBalancerFeignClient.execute(LoadBalancerFeignClient.java:90)
+	at feign.SynchronousMethodHandler.executeAndDecode(SynchronousMethodHandler.java:110)
+	at feign.SynchronousMethodHandler.invoke(SynchronousMethodHandler.java:80)
+	at feign.ReflectiveFeign$FeignInvocationHandler.invoke(ReflectiveFeign.java:100)
+	at jdk.proxy2/jdk.proxy2.$Proxy107.registerServer(Unknown Source)
+	at com.petrel.chess.StartAfterInitialize.run(StartAfterInitialize.java:38)
+	at org.springframework.boot.SpringApplication.callRunner(SpringApplication.java:775)
+	... 11 common frames omitted
+Caused by: com.netflix.client.ClientException: Load balancer does not have available server for client: petrel-kernel-register
+	at com.netflix.loadbalancer.LoadBalancerContext.getServerFromLoadBalancer(LoadBalancerContext.java:483)
+	at com.netflix.loadbalancer.reactive.LoadBalancerCommand$1.call(LoadBalancerCommand.java:184)
+	at com.netflix.loadbalancer.reactive.LoadBalancerCommand$1.call(LoadBalancerCommand.java:180)
+	at rx.Observable.unsafeSubscribe(Observable.java:10327)
+	at rx.internal.operators.OnSubscribeConcatMap.call(OnSubscribeConcatMap.java:94)
+	at rx.internal.operators.OnSubscribeConcatMap.call(OnSubscribeConcatMap.java:42)
+	at rx.Observable.unsafeSubscribe(Observable.java:10327)
+	at rx.internal.operators.OperatorRetryWithPredicate$SourceSubscriber$1.call(OperatorRetryWithPredicate.java:127)
+	at rx.internal.schedulers.TrampolineScheduler$InnerCurrentThreadScheduler.enqueue(TrampolineScheduler.java:73)
+	at rx.internal.schedulers.TrampolineScheduler$InnerCurrentThreadScheduler.schedule(TrampolineScheduler.java:52)
+	at rx.internal.operators.OperatorRetryWithPredicate$SourceSubscriber.onNext(OperatorRetryWithPredicate.java:79)
+	at rx.internal.operators.OperatorRetryWithPredicate$SourceSubscriber.onNext(OperatorRetryWithPredicate.java:45)
+	at rx.internal.util.ScalarSynchronousObservable$WeakSingleProducer.request(ScalarSynchronousObservable.java:276)
+	at rx.Subscriber.setProducer(Subscriber.java:209)
+	at rx.internal.util.ScalarSynchronousObservable$JustOnSubscribe.call(ScalarSynchronousObservable.java:138)
+	at rx.internal.util.ScalarSynchronousObservable$JustOnSubscribe.call(ScalarSynchronousObservable.java:129)
+	at rx.internal.operators.OnSubscribeLift.call(OnSubscribeLift.java:48)
+	at rx.internal.operators.OnSubscribeLift.call(OnSubscribeLift.java:30)
+	at rx.internal.operators.OnSubscribeLift.call(OnSubscribeLift.java:48)
+	at rx.internal.operators.OnSubscribeLift.call(OnSubscribeLift.java:30)
+	at rx.internal.operators.OnSubscribeLift.call(OnSubscribeLift.java:48)
+	at rx.internal.operators.OnSubscribeLift.call(OnSubscribeLift.java:30)
+	at rx.Observable.subscribe(Observable.java:10423)
+	at rx.Observable.subscribe(Observable.java:10390)
+	at rx.observables.BlockingObservable.blockForSingle(BlockingObservable.java:443)
+	at rx.observables.BlockingObservable.single(BlockingObservable.java:340)
+	at com.netflix.client.AbstractLoadBalancerAwareClient.executeWithLoadBalancer(AbstractLoadBalancerAwareClient.java:112)
+	at org.springframework.cloud.openfeign.ribbon.LoadBalancerFeignClient.execute(LoadBalancerFeignClient.java:83)
+	... 17 common frames omitted
+11-06 19:52:59.824 INFO  [main] [com.petrel.chess.ChessApplication] : The following profiles are active: prod
+11-06 19:53:04.817 WARN  [main] [o.springframework.boot.actuate.endpoint.EndpointId] : Endpoint ID 'nacos-discovery' contains invalid characters, please migrate to a valid format.
+11-06 19:53:06.207 INFO  [main] [o.s.d.r.config.RepositoryConfigurationDelegate] : Multiple Spring Data modules found, entering strict repository configuration mode!
+11-06 19:53:06.245 INFO  [main] [o.s.d.r.config.RepositoryConfigurationDelegate] : Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+11-06 19:53:06.541 INFO  [main] [o.s.d.r.config.RepositoryConfigurationDelegate] : Finished Spring Data repository scanning in 181ms. Found 0 Redis repository interfaces.
+11-06 19:53:06.913 WARN  [main] [o.springframework.boot.actuate.endpoint.EndpointId] : Endpoint ID 'service-registry' contains invalid characters, please migrate to a valid format.
+11-06 19:53:07.947 INFO  [main] [o.springframework.cloud.context.scope.GenericScope] : BeanFactory id=24c37c7c-c14e-310e-b66a-193819f8ed70
+11-06 19:53:08.989 INFO  [main] [o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker] : Bean 'com.petrel.chess.core.common.provide.GameFeignService' of type [org.springframework.cloud.openfeign.FeignClientFactoryBean] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+11-06 19:53:09.003 INFO  [main] [o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker] : Bean 'com.petrel.chess.core.common.provide.ServerRegisterFeignService' of type [org.springframework.cloud.openfeign.FeignClientFactoryBean] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+11-06 19:53:14.543 INFO  [NacosConfigListener-ThreadPool-1] [c.a.n.s.c.e.LoggingNacosConfigMetadataEventListener] : Nacos Config Metadata : dataId='petrel-game-config.yaml', groupId='DEFAULT_GROUP', beanName='gameConfig', bean='GameConfig(fishControl=0)', beanType='class com.petrel.chess.core.common.config.GameConfig', annotatedElement='class com.petrel.chess.core.common.config.GameConfig', xmlResource='null', nacosProperties='{encode=UTF-8, password=nacos, serverAddr=127.0.0.1:6878, username=nacos}', nacosPropertiesAttributes='{accessKey=${nacos.access-key:}, clusterName=${nacos.cluster-name:}, configLongPollTimeout=${nacos.configLongPollTimeout:}, configRetryTime=${nacos.configRetryTime:}, contextPath=${nacos.context-path:}, enableRemoteSyncConfig=${nacos.enableRemoteSyncConfig:}, encode=${nacos.encode:UTF-8}, endpoint=${nacos.endpoint:}, maxRetry=${nacos.maxRetry:}, namespace=${nacos.namespace:}, password=${nacos.password:}, secretKey=${nacos.secret-key:}, serverAddr=${nacos.server-addr:}, username=${nacos.username:}}', source='@com.alibaba.nacos.api.config.annotation.NacosConfigurationProperties(autoRefreshed=true, dataId=petrel-game-config.yaml, exceptionIfInvalid=true, groupId=DEFAULT_GROUP, ignoreInvalidFields=false, ignoreNestedProperties=false, ignoreUnknownFields=true, prefix=, properties=@com.alibaba.nacos.api.annotation.NacosProperties(accessKey=${nacos.access-key:}, clusterName=${nacos.cluster-name:}, configLongPollTimeout=${nacos.configLongPollTimeout:}, configRetryTime=${nacos.configRetryTime:}, contextPath=${nacos.context-path:}, enableRemoteSyncConfig=${nacos.enableRemoteSyncConfig:}, encode=${nacos.encode:UTF-8}, endpoint=${nacos.endpoint:}, maxRetry=${nacos.maxRetry:}, namespace=${nacos.namespace:}, password=${nacos.password:}, secretKey=${nacos.secret-key:}, serverAddr=${nacos.server-addr:}, username=${nacos.username:}), type=YAML, yaml=false)', timestamp='1762458794542'
+11-06 19:53:14.692 WARN  [main] [com.netflix.config.sources.URLConfigurationSource] : No URLs will be polled as dynamic configuration sources.
+11-06 19:53:14.692 INFO  [main] [com.netflix.config.sources.URLConfigurationSource] : To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+11-06 19:53:14.705 WARN  [main] [com.netflix.config.sources.URLConfigurationSource] : No URLs will be polled as dynamic configuration sources.
+11-06 19:53:14.707 INFO  [main] [com.netflix.config.sources.URLConfigurationSource] : To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+11-06 19:53:14.886 INFO  [main] [o.s.scheduling.concurrent.ThreadPoolTaskScheduler] : Initializing ExecutorService 'Nacso-Watch-Task-Scheduler'
+11-06 19:53:17.965 INFO  [main] [com.petrel.chess.ChessApplication] : Started ChessApplication in 25.897 seconds (JVM running for 28.834)
+11-06 19:53:18.031 INFO  [main] [c.p.c.core.common.handler.InitializeStartMapping] : Initialize StartMapping success 3 
+11-06 19:53:18.085 INFO  [main] [c.p.c.c.common.handler.InitializeEEHandlerMapping] : Initialize EEHandler success 3 
+11-06 19:53:18.123 INFO  [main] [c.p.c.c.c.handler.InitializePlayHandlerMapping] : Initialize PlayHandler success 8 
+11-06 19:53:19.489 INFO  [main] [io.lettuce.core.EpollProvider] : Starting with epoll library
+11-06 19:53:19.592 INFO  [main] [io.lettuce.core.KqueueProvider] : Starting without optional kqueue library
+11-06 19:53:22.209 INFO  [main] [c.p.chess.core.game.shbz.game.ShbzStartService] : Fishing gameId:44 ---start-success-----
+11-06 19:53:22.264 INFO  [main] [c.p.c.core.common.handler.ChessServerStartService] : start game: SHBZ
+11-06 19:53:23.160 WARN  [main] [com.zebra.net.servers.ZebraRpcServer] : [server side] bolt netty low water mark is 16384 bytes, high water mark is 32768 bytes
+11-06 19:53:23.281 WARN  [main] [com.zebra.net.servers.AbstractRemotingServer] : Prepare to start server on port 9637 
+11-06 19:53:23.331 INFO  [Zebra-boss-20-thread-1] [io.netty.handler.logging.LoggingHandler] : [id: 0x93f84a2b] REGISTERED
+11-06 19:53:23.336 INFO  [Zebra-boss-20-thread-1] [io.netty.handler.logging.LoggingHandler] : [id: 0x93f84a2b] BIND: 0.0.0.0/0.0.0.0:9637
+11-06 19:53:23.340 INFO  [Zebra-boss-20-thread-1] [io.netty.handler.logging.LoggingHandler] : [id: 0x93f84a2b, L:/[0:0:0:0:0:0:0:0%0]:9637] ACTIVE
+11-06 19:53:24.175 INFO  [main] [com.zebra.net.servers.ZebraRpcServer] : Rpc AbstractBootstrap$PendingRegistrationPromise@5478ce1e(success) 1762458804175
+11-06 20:23:24.181 INFO  [Zebra-boss-20-thread-1] [io.netty.handler.logging.LoggingHandler] : [id: 0x93f84a2b, L:/[0:0:0:0:0:0:0:0%0]:9637] CLOSE
+11-06 20:23:24.186 WARN  [main] [com.zebra.net.servers.ZebraRpcServer] : Rpc Server stopped!
+11-06 20:23:24.200 INFO  [main] [com.zebra.net.servers.AbstractRemotingServer] : Server started on port 9637
+11-06 20:23:24.200 INFO  [main] [com.zebra.common.concurrent.ZebraExecutorManager] : Initialize executorGroup size 0
+11-06 20:23:24.202 INFO  [Zebra-boss-20-thread-1] [io.netty.handler.logging.LoggingHandler] : [id: 0x93f84a2b, L:/[0:0:0:0:0:0:0:0%0]:9637] INACTIVE
+11-06 20:23:24.203 INFO  [Zebra-boss-20-thread-1] [io.netty.handler.logging.LoggingHandler] : [id: 0x93f84a2b, L:/[0:0:0:0:0:0:0:0%0]:9637] UNREGISTERED
+11-06 20:23:24.353 INFO  [main] [com.petrel.chess.StartAfterInitialize] : StartAfter send register msg ServerRegistryRequest(serverId=chess:10.0.0.1:9637, appName=petrel-game-chess, inIp=10.0.0.1, port=9637, vfx=SHBZ, gameType=2, outIp=127.0.0.1, weight=50)
+11-06 20:23:28.768 INFO  [main] [com.netflix.config.ChainedDynamicProperty] : Flipping property: petrel-kernel-register.ribbon.ActiveConnectionsLimit to use NEXT property: niws.loadbalancer.availabilityFilteringRule.activeConnectionsLimit = 2147483647
+11-06 20:23:28.921 INFO  [main] [com.netflix.loadbalancer.BaseLoadBalancer] : Client: petrel-kernel-register instantiated a LoadBalancer: DynamicServerListLoadBalancer:{NFLoadBalancer:name=petrel-kernel-register,current list of Servers=[],Load balancer stats=Zone stats: {},Server stats: []}ServerList:null
+11-06 20:23:28.970 INFO  [main] [c.n.loadbalancer.DynamicServerListLoadBalancer] : Using serverListUpdater PollingServerListUpdater
+11-06 20:23:30.082 INFO  [main] [com.netflix.config.ChainedDynamicProperty] : Flipping property: petrel-kernel-register.ribbon.ActiveConnectionsLimit to use NEXT property: niws.loadbalancer.availabilityFilteringRule.activeConnectionsLimit = 2147483647
+11-06 20:23:30.099 INFO  [main] [c.n.loadbalancer.DynamicServerListLoadBalancer] : DynamicServerListLoadBalancer for client petrel-kernel-register initialized: DynamicServerListLoadBalancer:{NFLoadBalancer:name=petrel-kernel-register,current list of Servers=[202.189.7.196:7180],Load balancer stats=Zone stats: {unknown=[Zone:unknown;	Instance count:1;	Active connections count: 0;	Circuit breaker tripped count: 0;	Active connections per server: 0.0;]
+},Server stats: [[Server:202.189.7.196:7180;	Zone:UNKNOWN;	Total Requests:0;	Successive connection failure:0;	Total blackout seconds:0;	Last connection made:Thu Jan 01 00:00:00 UTC 1970;	First connection made: Thu Jan 01 00:00:00 UTC 1970;	Active Connections:0;	total failure count in last (1000) msecs:0;	average resp time:0.0;	90 percentile resp time:0.0;	95 percentile resp time:0.0;	min resp time:0.0;	max resp time:0.0;	stddev resp time:0.0]
+]}ServerList:com.alibaba.cloud.nacos.ribbon.NacosServerList@2582b0ef
+11-06 20:23:31.123 INFO  [PollingServerListUpdater-0] [com.netflix.config.ChainedDynamicProperty] : Flipping property: petrel-kernel-register.ribbon.ActiveConnectionsLimit to use NEXT property: niws.loadbalancer.availabilityFilteringRule.activeConnectionsLimit = 2147483647
+11-06 20:23:31.894 INFO  [main] [o.s.b.a.l.ConditionEvaluationReportLoggingListener] : 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+11-06 20:23:31.985 INFO  [main] [o.s.scheduling.concurrent.ThreadPoolTaskScheduler] : Shutting down ExecutorService 'Nacso-Watch-Task-Scheduler'
+11-06 20:23:32.473 INFO  [main] [c.a.n.s.c.a.c.NacosValueAnnotationBeanPostProcessor] : class com.alibaba.nacos.spring.context.annotation.config.NacosValueAnnotationBeanPostProcessor was destroying!
+11-06 20:23:32.474 INFO  [main] [c.a.n.s.b.f.a.AnnotationNacosInjectedBeanPostProcessor] : class com.alibaba.nacos.spring.beans.factory.annotation.AnnotationNacosInjectedBeanPostProcessor was destroying!
+11-06 20:23:32.540 ERROR [main] [org.springframework.boot.SpringApplication] : Application run failed
+java.lang.IllegalStateException: Failed to execute ApplicationRunner
+	at org.springframework.boot.SpringApplication.callRunner(SpringApplication.java:778)
+	at org.springframework.boot.SpringApplication.callRunners(SpringApplication.java:765)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:322)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1226)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1215)
+	at com.petrel.chess.ChessApplication.main(ChessApplication.java:19)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.springframework.boot.loader.MainMethodRunner.run(MainMethodRunner.java:48)
+	at org.springframework.boot.loader.Launcher.launch(Launcher.java:87)
+	at org.springframework.boot.loader.Launcher.launch(Launcher.java:51)
+	at org.springframework.boot.loader.PropertiesLauncher.main(PropertiesLauncher.java:597)
+Caused by: feign.RetryableException: Read timed out executing POST http://petrel-kernel-register/register/server
+	at feign.FeignException.errorExecuting(FeignException.java:249)
+	at feign.SynchronousMethodHandler.executeAndDecode(SynchronousMethodHandler.java:120)
+	at feign.SynchronousMethodHandler.invoke(SynchronousMethodHandler.java:80)
+	at feign.ReflectiveFeign$FeignInvocationHandler.invoke(ReflectiveFeign.java:100)
+	at jdk.proxy2/jdk.proxy2.$Proxy106.registerServer(Unknown Source)
+	at com.petrel.chess.StartAfterInitialize.run(StartAfterInitialize.java:38)
+	at org.springframework.boot.SpringApplication.callRunner(SpringApplication.java:775)
+	... 11 common frames omitted
+Caused by: java.net.SocketTimeoutException: Read timed out
+	at java.base/sun.nio.ch.NioSocketImpl.timedRead(NioSocketImpl.java:278)
+	at java.base/sun.nio.ch.NioSocketImpl.implRead(NioSocketImpl.java:304)
+	at java.base/sun.nio.ch.NioSocketImpl.read(NioSocketImpl.java:346)
+	at java.base/sun.nio.ch.NioSocketImpl$1.read(NioSocketImpl.java:796)
+	at java.base/java.net.Socket$SocketInputStream.read(Socket.java:1099)
+	at java.base/java.io.BufferedInputStream.fill(BufferedInputStream.java:291)
+	at java.base/java.io.BufferedInputStream.read1(BufferedInputStream.java:347)
+	at java.base/java.io.BufferedInputStream.implRead(BufferedInputStream.java:420)
+	at java.base/java.io.BufferedInputStream.read(BufferedInputStream.java:399)
+	at java.base/sun.net.www.http.HttpClient.parseHTTPHeader(HttpClient.java:827)
+	at java.base/sun.net.www.http.HttpClient.parseHTTP(HttpClient.java:759)
+	at java.base/sun.net.www.protocol.http.HttpURLConnection.getInputStream0(HttpURLConnection.java:1706)
+	at java.base/sun.net.www.protocol.http.HttpURLConnection.getInputStream(HttpURLConnection.java:1615)
+	at java.base/java.net.HttpURLConnection.getResponseCode(HttpURLConnection.java:531)
+	at feign.Client$Default.convertResponse(Client.java:78)
+	at feign.Client$Default.execute(Client.java:74)
+	at org.springframework.cloud.openfeign.ribbon.FeignLoadBalancer.execute(FeignLoadBalancer.java:93)
+	at org.springframework.cloud.openfeign.ribbon.FeignLoadBalancer.execute(FeignLoadBalancer.java:56)
+	at com.netflix.client.AbstractLoadBalancerAwareClient$1.call(AbstractLoadBalancerAwareClient.java:104)
+	at com.netflix.loadbalancer.reactive.LoadBalancerCommand$3$1.call(LoadBalancerCommand.java:303)
+	at com.netflix.loadbalancer.reactive.LoadBalancerCommand$3$1.call(LoadBalancerCommand.java:287)
+	at rx.internal.util.ScalarSynchronousObservable$3.call(ScalarSynchronousObservable.java:231)
+	at rx.internal.util.ScalarSynchronousObservable$3.call(ScalarSynchronousObservable.java:228)
+	at rx.Observable.unsafeSubscribe(Observable.java:10327)
+	at rx.internal.operators.OnSubscribeConcatMap$ConcatMapSubscriber.drain(OnSubscribeConcatMap.java:286)
+	at rx.internal.operators.OnSubscribeConcatMap$ConcatMapSubscriber.onNext(OnSubscribeConcatMap.java:144)
+	at com.netflix.loadbalancer.reactive.LoadBalancerCommand$1.call(LoadBalancerCommand.java:185)
+	at com.netflix.loadbalancer.reactive.LoadBalancerCommand$1.call(LoadBalancerCommand.java:180)
+	at rx.Observable.unsafeSubscribe(Observable.java:10327)
+	at rx.internal.operators.OnSubscribeConcatMap.call(OnSubscribeConcatMap.java:94)
+	at rx.internal.operators.OnSubscribeConcatMap.call(OnSubscribeConcatMap.java:42)
+	at rx.Observable.unsafeSubscribe(Observable.java:10327)
+	at rx.internal.operators.OperatorRetryWithPredicate$SourceSubscriber$1.call(OperatorRetryWithPredicate.java:127)
+	at rx.internal.schedulers.TrampolineScheduler$InnerCurrentThreadScheduler.enqueue(TrampolineScheduler.java:73)
+	at rx.internal.schedulers.TrampolineScheduler$InnerCurrentThreadScheduler.schedule(TrampolineScheduler.java:52)
+	at rx.internal.operators.OperatorRetryWithPredicate$SourceSubscriber.onNext(OperatorRetryWithPredicate.java:79)
+	at rx.internal.operators.OperatorRetryWithPredicate$SourceSubscriber.onNext(OperatorRetryWithPredicate.java:45)
+	at rx.internal.util.ScalarSynchronousObservable$WeakSingleProducer.request(ScalarSynchronousObservable.java:276)
+	at rx.Subscriber.setProducer(Subscriber.java:209)
+	at rx.internal.util.ScalarSynchronousObservable$JustOnSubscribe.call(ScalarSynchronousObservable.java:138)
+	at rx.internal.util.ScalarSynchronousObservable$JustOnSubscribe.call(ScalarSynchronousObservable.java:129)
+	at rx.internal.operators.OnSubscribeLift.call(OnSubscribeLift.java:48)
+	at rx.internal.operators.OnSubscribeLift.call(OnSubscribeLift.java:30)
+	at rx.internal.operators.OnSubscribeLift.call(OnSubscribeLift.java:48)
+	at rx.internal.operators.OnSubscribeLift.call(OnSubscribeLift.java:30)
+	at rx.internal.operators.OnSubscribeLift.call(OnSubscribeLift.java:48)
+	at rx.internal.operators.OnSubscribeLift.call(OnSubscribeLift.java:30)
+	at rx.Observable.subscribe(Observable.java:10423)
+	at rx.Observable.subscribe(Observable.java:10390)
+	at rx.observables.BlockingObservable.blockForSingle(BlockingObservable.java:443)
+	at rx.observables.BlockingObservable.single(BlockingObservable.java:340)
+	at com.netflix.client.AbstractLoadBalancerAwareClient.executeWithLoadBalancer(AbstractLoadBalancerAwareClient.java:112)
+	at org.springframework.cloud.openfeign.ribbon.LoadBalancerFeignClient.execute(LoadBalancerFeignClient.java:83)
+	at feign.SynchronousMethodHandler.executeAndDecode(SynchronousMethodHandler.java:110)
+	... 16 common frames omitted
+11-06 20:23:32.559 ERROR [main] [com.petrel.chess.ChessApplication] : start error:
+java.lang.IllegalStateException: Failed to execute ApplicationRunner
+	at org.springframework.boot.SpringApplication.callRunner(SpringApplication.java:778)
+	at org.springframework.boot.SpringApplication.callRunners(SpringApplication.java:765)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:322)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1226)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1215)
+	at com.petrel.chess.ChessApplication.main(ChessApplication.java:19)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.springframework.boot.loader.MainMethodRunner.run(MainMethodRunner.java:48)
+	at org.springframework.boot.loader.Launcher.launch(Launcher.java:87)
+	at org.springframework.boot.loader.Launcher.launch(Launcher.java:51)
+	at org.springframework.boot.loader.PropertiesLauncher.main(PropertiesLauncher.java:597)
+Caused by: feign.RetryableException: Read timed out executing POST http://petrel-kernel-register/register/server
+	at feign.FeignException.errorExecuting(FeignException.java:249)
+	at feign.SynchronousMethodHandler.executeAndDecode(SynchronousMethodHandler.java:120)
+	at feign.SynchronousMethodHandler.invoke(SynchronousMethodHandler.java:80)
+	at feign.ReflectiveFeign$FeignInvocationHandler.invoke(ReflectiveFeign.java:100)
+	at jdk.proxy2/jdk.proxy2.$Proxy106.registerServer(Unknown Source)
+	at com.petrel.chess.StartAfterInitialize.run(StartAfterInitialize.java:38)
+	at org.springframework.boot.SpringApplication.callRunner(SpringApplication.java:775)
+	... 11 common frames omitted
+Caused by: java.net.SocketTimeoutException: Read timed out
+	at java.base/sun.nio.ch.NioSocketImpl.timedRead(NioSocketImpl.java:278)
+	at java.base/sun.nio.ch.NioSocketImpl.implRead(NioSocketImpl.java:304)
+	at java.base/sun.nio.ch.NioSocketImpl.read(NioSocketImpl.java:346)
+	at java.base/sun.nio.ch.NioSocketImpl$1.read(NioSocketImpl.java:796)
+	at java.base/java.net.Socket$SocketInputStream.read(Socket.java:1099)
+	at java.base/java.io.BufferedInputStream.fill(BufferedInputStream.java:291)
+	at java.base/java.io.BufferedInputStream.read1(BufferedInputStream.java:347)
+	at java.base/java.io.BufferedInputStream.implRead(BufferedInputStream.java:420)
+	at java.base/java.io.BufferedInputStream.read(BufferedInputStream.java:399)
+	at java.base/sun.net.www.http.HttpClient.parseHTTPHeader(HttpClient.java:827)
+	at java.base/sun.net.www.http.HttpClient.parseHTTP(HttpClient.java:759)
+	at java.base/sun.net.www.protocol.http.HttpURLConnection.getInputStream0(HttpURLConnection.java:1706)
+	at java.base/sun.net.www.protocol.http.HttpURLConnection.getInputStream(HttpURLConnection.java:1615)
+	at java.base/java.net.HttpURLConnection.getResponseCode(HttpURLConnection.java:531)
+	at feign.Client$Default.convertResponse(Client.java:78)
+	at feign.Client$Default.execute(Client.java:74)
+	at org.springframework.cloud.openfeign.ribbon.FeignLoadBalancer.execute(FeignLoadBalancer.java:93)
+	at org.springframework.cloud.openfeign.ribbon.FeignLoadBalancer.execute(FeignLoadBalancer.java:56)
+	at com.netflix.client.AbstractLoadBalancerAwareClient$1.call(AbstractLoadBalancerAwareClient.java:104)
+	at com.netflix.loadbalancer.reactive.LoadBalancerCommand$3$1.call(LoadBalancerCommand.java:303)
+	at com.netflix.loadbalancer.reactive.LoadBalancerCommand$3$1.call(LoadBalancerCommand.java:287)
+	at rx.internal.util.ScalarSynchronousObservable$3.call(ScalarSynchronousObservable.java:231)
+	at rx.internal.util.ScalarSynchronousObservable$3.call(ScalarSynchronousObservable.java:228)
+	at rx.Observable.unsafeSubscribe(Observable.java:10327)
+	at rx.internal.operators.OnSubscribeConcatMap$ConcatMapSubscriber.drain(OnSubscribeConcatMap.java:286)
+	at rx.internal.operators.OnSubscribeConcatMap$ConcatMapSubscriber.onNext(OnSubscribeConcatMap.java:144)
+	at com.netflix.loadbalancer.reactive.LoadBalancerCommand$1.call(LoadBalancerCommand.java:185)
+	at com.netflix.loadbalancer.reactive.LoadBalancerCommand$1.call(LoadBalancerCommand.java:180)
+	at rx.Observable.unsafeSubscribe(Observable.java:10327)
+	at rx.internal.operators.OnSubscribeConcatMap.call(OnSubscribeConcatMap.java:94)
+	at rx.internal.operators.OnSubscribeConcatMap.call(OnSubscribeConcatMap.java:42)
+	at rx.Observable.unsafeSubscribe(Observable.java:10327)
+	at rx.internal.operators.OperatorRetryWithPredicate$SourceSubscriber$1.call(OperatorRetryWithPredicate.java:127)
+	at rx.internal.schedulers.TrampolineScheduler$InnerCurrentThreadScheduler.enqueue(TrampolineScheduler.java:73)
+	at rx.internal.schedulers.TrampolineScheduler$InnerCurrentThreadScheduler.schedule(TrampolineScheduler.java:52)
+	at rx.internal.operators.OperatorRetryWithPredicate$SourceSubscriber.onNext(OperatorRetryWithPredicate.java:79)
+	at rx.internal.operators.OperatorRetryWithPredicate$SourceSubscriber.onNext(OperatorRetryWithPredicate.java:45)
+	at rx.internal.util.ScalarSynchronousObservable$WeakSingleProducer.request(ScalarSynchronousObservable.java:276)
+	at rx.Subscriber.setProducer(Subscriber.java:209)
+	at rx.internal.util.ScalarSynchronousObservable$JustOnSubscribe.call(ScalarSynchronousObservable.java:138)
+	at rx.internal.util.ScalarSynchronousObservable$JustOnSubscribe.call(ScalarSynchronousObservable.java:129)
+	at rx.internal.operators.OnSubscribeLift.call(OnSubscribeLift.java:48)
+	at rx.internal.operators.OnSubscribeLift.call(OnSubscribeLift.java:30)
+	at rx.internal.operators.OnSubscribeLift.call(OnSubscribeLift.java:48)
+	at rx.internal.operators.OnSubscribeLift.call(OnSubscribeLift.java:30)
+	at rx.internal.operators.OnSubscribeLift.call(OnSubscribeLift.java:48)
+	at rx.internal.operators.OnSubscribeLift.call(OnSubscribeLift.java:30)
+	at rx.Observable.subscribe(Observable.java:10423)
+	at rx.Observable.subscribe(Observable.java:10390)
+	at rx.observables.BlockingObservable.blockForSingle(BlockingObservable.java:443)
+	at rx.observables.BlockingObservable.single(BlockingObservable.java:340)
+	at com.netflix.client.AbstractLoadBalancerAwareClient.executeWithLoadBalancer(AbstractLoadBalancerAwareClient.java:112)
+	at org.springframework.cloud.openfeign.ribbon.LoadBalancerFeignClient.execute(LoadBalancerFeignClient.java:83)
+	at feign.SynchronousMethodHandler.executeAndDecode(SynchronousMethodHandler.java:110)
+	... 16 common frames omitted

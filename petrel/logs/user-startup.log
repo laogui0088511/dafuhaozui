@@ -1,0 +1,33 @@
+19:33:07.479 [main] INFO org.springframework.core.KotlinDetector - Kotlin reflection implementation not found at runtime, related features won't be available.
+2025-11-09 19:33:08.914  WARN 46814 --- [kground-preinit] o.s.h.c.j.Jackson2ObjectMapperBuilder    : For Jackson Kotlin classes support please add "com.fasterxml.jackson.module:jackson-module-kotlin" to the classpath
+
+  .   ____          _            __ _ _
+ /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
+( ( )\___ | '_ | '_| | '_ \/ _` | \ \ \ \
+ \\/  ___)| |_)| | | | | || (_| |  ) ) ) )
+  '  |____| .__|_| |_|_| |_\__, | / / / /
+ =========|_|==============|___/=/_/_/_/
+ :: Spring Boot ::        (v2.2.5.RELEASE)
+
+2025-11-09 19:33:09.573  INFO 46814 --- [           main] com.petrel.user.UserApplication          : The following profiles are active: prod
+2025-11-09 19:33:10.844  WARN 46814 --- [           main] o.s.boot.actuate.endpoint.EndpointId     : Endpoint ID 'nacos-discovery' contains invalid characters, please migrate to a valid format.
+2025-11-09 19:33:11.148  INFO 46814 --- [           main] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode!
+2025-11-09 19:33:11.154  INFO 46814 --- [           main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2025-11-09 19:33:11.191  INFO 46814 --- [           main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 16ms. Found 0 Redis repository interfaces.
+2025-11-09 19:33:11.267  WARN 46814 --- [           main] o.s.boot.actuate.endpoint.EndpointId     : Endpoint ID 'service-registry' contains invalid characters, please migrate to a valid format.
+2025-11-09 19:33:11.587  INFO 46814 --- [           main] o.s.cloud.context.scope.GenericScope     : BeanFactory id=ce81e8a4-9faa-3e8e-a614-e20eee678bf6
+2025-11-09 19:33:12.525  INFO 46814 --- [           main] trationDelegate$BeanPostProcessorChecker : Bean 'spring.datasource.dynamic-com.baomidou.dynamic.datasource.spring.boot.autoconfigure.DynamicDataSourceProperties' of type [com.baomidou.dynamic.datasource.spring.boot.autoconfigure.DynamicDataSourceProperties] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2025-11-09 19:33:12.552  INFO 46814 --- [           main] trationDelegate$BeanPostProcessorChecker : Bean 'com.baomidou.dynamic.datasource.spring.boot.autoconfigure.DynamicDataSourceAutoConfiguration' of type [com.baomidou.dynamic.datasource.spring.boot.autoconfigure.DynamicDataSourceAutoConfiguration$$EnhancerBySpringCGLIB$$4f69fe9a] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2025-11-09 19:33:12.592  INFO 46814 --- [           main] trationDelegate$BeanPostProcessorChecker : Bean 'dsProcessor' of type [com.baomidou.dynamic.datasource.processor.DsHeaderProcessor] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2025-11-09 19:33:13.205  INFO 46814 --- [           main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8719 (http)
+2025-11-09 19:33:13.340  INFO 46814 --- [           main] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 3734 ms
+ _ _   |_  _ _|_. ___ _ |    _ 
+| | |\/|_)(_| | |_\  |_)||_|_\ 
+     /               |         
+                        3.4.0 
+2025-11-09 19:35:29.016  WARN 46814 --- [           main] o.s.c.n.a.ArchaiusAutoConfiguration      : No spring.application.name found, defaulting to 'application'
+2025-11-09 19:35:29.682  INFO 46814 --- [           main] o.s.s.c.ThreadPoolTaskScheduler          : Initializing ExecutorService 'Nacso-Watch-Task-Scheduler'
+2025-11-09 19:35:30.709  INFO 46814 --- [           main] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 2 endpoint(s) beneath base path '/actuator'
+2025-11-09 19:35:31.136  INFO 46814 --- [           main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8719 (http) with context path ''
+2025-11-09 19:35:31.142  INFO 46814 --- [           main] com.petrel.user.UserApplication          : Started UserApplication in 143.492 seconds (JVM running for 144.595)
+2025-11-09 19:35:31.151  INFO 46814 --- [           main] com.petrel.user.config.StartInitialize   : Start init NickName config success

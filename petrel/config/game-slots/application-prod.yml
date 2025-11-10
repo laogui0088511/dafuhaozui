@@ -1,0 +1,46 @@
+server:
+  port: 9527
+
+spring:
+  application:
+    name: petrel-game-slots
+  profiles:
+    active: prod
+  game-lobby:
+    name: petrel-game-slots  
+  cloud:
+    nacos:
+      username: nacos
+      password: nacos
+      discovery:
+        server-addr: 202.189.7.196:6878
+
+redis:
+  database: 0
+  host: 127.0.0.1
+  port: 6379
+  password: Fagp_1908
+
+nacos:
+  username: nacos
+  password: nacos
+  server-addr: 127.0.0.1:6878
+
+logging:
+  config: classpath:logback-spring.xml
+  level:
+    com.petrel.slots.all: INFO
+
+
+zebra:
+  port: 9527
+  ip:
+    out: 202.189.7.196
+    in: 10.0.0.1
+  size: 8
+  weight: 50
+
+
+game:
+  contains: 1  #0 不包含， 1 包含
+  list: 0

@@ -137,3 +137,43 @@ Caused by: java.net.ConnectException: finishConnect(..) failed: Connection refus
 	at io.netty.util.internal.ThreadExecutorMap$2.run(ThreadExecutorMap.java:74)
 	at io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30)
 	at java.base/java.lang.Thread.run(Thread.java:840)
+11-06 05:35:17.129 ERROR [main] [org.springframework.boot.SpringApplication] : Application run failed
+java.lang.IllegalStateException: Failed to execute ApplicationRunner
+	at org.springframework.boot.SpringApplication.callRunner(SpringApplication.java:778)
+	at org.springframework.boot.SpringApplication.callRunners(SpringApplication.java:765)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:322)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1226)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1215)
+	at com.petrel.slots.all.AllApplication.main(AllApplication.java:24)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.springframework.boot.loader.MainMethodRunner.run(MainMethodRunner.java:48)
+	at org.springframework.boot.loader.Launcher.launch(Launcher.java:87)
+	at org.springframework.boot.loader.Launcher.launch(Launcher.java:51)
+	at org.springframework.boot.loader.PropertiesLauncher.main(PropertiesLauncher.java:597)
+Caused by: java.lang.Exception: Redis game is null
+	at com.petrel.slots.core.common.service.GameServerStartService.startBefore(GameServerStartService.java:49)
+	at com.petrel.slots.all.StartInitialize.start(StartInitialize.java:34)
+	at com.petrel.slots.all.StartInitialize.run(StartInitialize.java:41)
+	at org.springframework.boot.SpringApplication.callRunner(SpringApplication.java:775)
+	... 11 common frames omitted
+11-06 05:35:17.135 ERROR [main] [com.petrel.slots.all.AllApplication] : start error:
+java.lang.IllegalStateException: Failed to execute ApplicationRunner
+	at org.springframework.boot.SpringApplication.callRunner(SpringApplication.java:778)
+	at org.springframework.boot.SpringApplication.callRunners(SpringApplication.java:765)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:322)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1226)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1215)
+	at com.petrel.slots.all.AllApplication.main(AllApplication.java:24)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.springframework.boot.loader.MainMethodRunner.run(MainMethodRunner.java:48)
+	at org.springframework.boot.loader.Launcher.launch(Launcher.java:87)
+	at org.springframework.boot.loader.Launcher.launch(Launcher.java:51)
+	at org.springframework.boot.loader.PropertiesLauncher.main(PropertiesLauncher.java:597)
+Caused by: java.lang.Exception: Redis game is null
+	at com.petrel.slots.core.common.service.GameServerStartService.startBefore(GameServerStartService.java:49)
+	at com.petrel.slots.all.StartInitialize.start(StartInitialize.java:34)
+	at com.petrel.slots.all.StartInitialize.run(StartInitialize.java:41)
+	at org.springframework.boot.SpringApplication.callRunner(SpringApplication.java:775)
+	... 11 common frames omitted

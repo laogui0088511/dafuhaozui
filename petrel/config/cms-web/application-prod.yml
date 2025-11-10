@@ -1,0 +1,92 @@
+﻿
+spring:
+  profiles:
+    active: prod
+  application:
+    name: petrel-cms-web
+  cloud:
+    nacos:
+      username: nacos
+      password: nacos
+      discovery:
+        server-addr: 202.189.7.196:6878
+
+  datasource:
+    dynamic:
+      druid:
+        initial-size: 1
+        min-idle: 1
+        maxActive: 20
+        maxWait: 60000
+        timeBetweenEvictionRunsMillis: 60000
+        minEvictableIdleTimeMillis: 300000
+        validationQuery: SELECT 1
+        testWhileIdle: true
+        testOnBorrow: false
+        testOnReturn: false
+        filters: stat
+      primary: petrel_core
+      strict: false
+      datasource:
+        petrel_core:
+          driver-class-name: com.mysql.cj.jdbc.Driver
+          url: jdbc:mysql://202.189.7.196:3306/petrel_core?useUnicode=true&characterEncoding=utf-8&useSSL=true&serverTimezone=UTC&serverTimezone=Asia/Shanghai
+          username: root
+          password: Fagp@1908!
+          timeout: 5000ms
+        petrel_record:
+          driver-class-name: com.mysql.cj.jdbc.Driver
+          url: jdbc:mysql://202.189.7.196:3306/petrel_record?useUnicode=true&characterEncoding=utf-8&useSSL=true&serverTimezone=UTC&serverTimezone=Asia/Shanghai
+          username: root
+          password: Fagp@1908!
+          timeout: 5000ms
+  mvc:
+    view:
+      prefix: /WEB-INF/views/
+      suffix: .jsp
+
+  jackson:
+    date-format: yyyy-MM-dd HH:mm:ss
+    time-zone: GMT+8
+    # Redis数据库索引（默认为0）
+
+
+redis:
+  database: 0
+  host: 127.0.0.1
+  port: 6379
+  password: Fagp_1908
+
+server:
+  port: 8787
+
+mybatis-plus:
+  mapper-locations: classpath*:com/petrel/common/dc/mapper/xml/*.xml
+  type-aliases-package: com.petrel.common.entity
+
+# pagehelper
+pagehelper:
+  helperDialect: mysql
+  reasonable: true
+  supportMethodsArguments: true
+  params: count=countSql
+
+
+nacos:
+  username: nacos
+  password: nacos
+  server-addr: 202.189.7.196:6878
+
+logging:
+  config: classpath:logback-spring.xml
+  level:
+    com.fagp.petrel.user: DEBUG
+
+log:
+  random: ${random.int(100,999)}
+
+management:
+  endpoints:
+    web:
+      exposure:
+        include: '*'

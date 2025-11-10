@@ -157,3 +157,153 @@ Caused by: java.net.ConnectException: finishConnect(..) failed: Connection refus
 	at io.netty.util.internal.ThreadExecutorMap$2.run(ThreadExecutorMap.java:74)
 	at io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30)
 	at java.base/java.lang.Thread.run(Thread.java:840)
+11-06 05:34:44.630 INFO  [main] [com.petrel.lobby.LobbyApplication] : The following profiles are active: prod
+11-06 05:34:46.829 WARN  [main] [o.springframework.boot.actuate.endpoint.EndpointId] : Endpoint ID 'nacos-discovery' contains invalid characters, please migrate to a valid format.
+11-06 05:34:47.300 INFO  [main] [o.s.d.r.config.RepositoryConfigurationDelegate] : Multiple Spring Data modules found, entering strict repository configuration mode!
+11-06 05:34:47.312 INFO  [main] [o.s.d.r.config.RepositoryConfigurationDelegate] : Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+11-06 05:34:47.435 INFO  [main] [o.s.d.r.config.RepositoryConfigurationDelegate] : Finished Spring Data repository scanning in 81ms. Found 0 Redis repository interfaces.
+11-06 05:34:47.574 WARN  [main] [o.springframework.boot.actuate.endpoint.EndpointId] : Endpoint ID 'service-registry' contains invalid characters, please migrate to a valid format.
+11-06 05:34:48.164 INFO  [main] [o.springframework.cloud.context.scope.GenericScope] : BeanFactory id=de85f6a1-592e-31da-a6ed-f5492fd7d879
+11-06 05:34:48.560 INFO  [main] [o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker] : Bean 'com.petrel.lobby.provide.CardFeignService' of type [org.springframework.cloud.openfeign.FeignClientFactoryBean] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+11-06 05:34:48.578 INFO  [main] [o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker] : Bean 'com.petrel.lobby.provide.LoginRegisterFeignService' of type [org.springframework.cloud.openfeign.FeignClientFactoryBean] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+11-06 05:34:48.587 INFO  [main] [o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker] : Bean 'com.petrel.lobby.provide.GoldBankFeignService' of type [org.springframework.cloud.openfeign.FeignClientFactoryBean] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+11-06 05:34:48.591 INFO  [main] [o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker] : Bean 'com.petrel.lobby.provide.ServerRegisterFeignService' of type [org.springframework.cloud.openfeign.FeignClientFactoryBean] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+11-06 05:34:48.607 INFO  [main] [o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker] : Bean 'com.petrel.lobby.provide.UserInfoFeignService' of type [org.springframework.cloud.openfeign.FeignClientFactoryBean] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+11-06 05:34:48.612 INFO  [main] [o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker] : Bean 'com.petrel.lobby.provide.StrategyFeignService' of type [org.springframework.cloud.openfeign.FeignClientFactoryBean] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+11-06 05:34:53.896 INFO  [main] [io.lettuce.core.EpollProvider] : Starting with epoll library
+11-06 05:34:53.908 INFO  [main] [io.lettuce.core.KqueueProvider] : Starting without optional kqueue library
+11-06 05:34:55.347 WARN  [main] [com.netflix.config.sources.URLConfigurationSource] : No URLs will be polled as dynamic configuration sources.
+11-06 05:34:55.347 INFO  [main] [com.netflix.config.sources.URLConfigurationSource] : To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+11-06 05:34:55.366 WARN  [main] [com.netflix.config.sources.URLConfigurationSource] : No URLs will be polled as dynamic configuration sources.
+11-06 05:34:55.369 INFO  [main] [com.netflix.config.sources.URLConfigurationSource] : To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+11-06 05:34:55.632 INFO  [main] [o.s.scheduling.concurrent.ThreadPoolTaskScheduler] : Initializing ExecutorService 'Nacso-Watch-Task-Scheduler'
+11-06 05:35:01.264 INFO  [main] [com.petrel.lobby.LobbyApplication] : Started LobbyApplication in 22.302 seconds (JVM running for 23.977)
+11-06 05:35:01.473 WARN  [main] [com.zebra.net.servers.ZebraRpcServer] : [server side] bolt netty low water mark is 16384 bytes, high water mark is 32768 bytes
+11-06 05:35:01.495 WARN  [main] [com.zebra.net.servers.AbstractRemotingServer] : Prepare to start server on port 8989 
+11-06 05:35:01.547 INFO  [Zebra-boss-2-thread-1] [io.netty.handler.logging.LoggingHandler] : [id: 0x61f47c96] REGISTERED
+11-06 05:35:01.548 INFO  [Zebra-boss-2-thread-1] [io.netty.handler.logging.LoggingHandler] : [id: 0x61f47c96] BIND: 0.0.0.0/0.0.0.0:8989
+11-06 05:35:01.554 INFO  [Zebra-boss-2-thread-1] [io.netty.handler.logging.LoggingHandler] : [id: 0x61f47c96, L:/[0:0:0:0:0:0:0:0%0]:8989] ACTIVE
+11-06 05:35:02.460 INFO  [main] [com.zebra.net.servers.ZebraRpcServer] : Rpc AbstractBootstrap$PendingRegistrationPromise@5114b7c7(success) 1762407302460
+11-06 06:05:02.478 INFO  [Zebra-boss-2-thread-1] [io.netty.handler.logging.LoggingHandler] : [id: 0x61f47c96, L:/[0:0:0:0:0:0:0:0%0]:8989] CLOSE
+11-06 06:05:02.482 INFO  [Zebra-boss-2-thread-1] [io.netty.handler.logging.LoggingHandler] : [id: 0x61f47c96, L:/[0:0:0:0:0:0:0:0%0]:8989] INACTIVE
+11-06 06:05:02.482 INFO  [Zebra-boss-2-thread-1] [io.netty.handler.logging.LoggingHandler] : [id: 0x61f47c96, L:/[0:0:0:0:0:0:0:0%0]:8989] UNREGISTERED
+11-06 06:05:02.480 WARN  [main] [com.zebra.net.servers.ZebraRpcServer] : Rpc Server stopped!
+11-06 06:05:02.483 INFO  [main] [com.zebra.net.servers.AbstractRemotingServer] : Server started on port 8989
+11-06 06:05:02.486 INFO  [main] [com.zebra.common.concurrent.ZebraExecutorManager] : Initialize executorGroup size 64
+11-06 06:05:02.530 INFO  [main] [com.petrel.lobby.net.StartAfterInitialize] : StartAfter send register msg ServerRegistryRequest(serverId=lobby:127.0.0.1:8989, appName=petrel-game-lobby, inIp=127.0.0.1, port=8989, vfx=LOBBY, gameType=0, outIp=122.114.55.213, weight=50)
+11-06 06:05:02.946 INFO  [main] [com.netflix.config.ChainedDynamicProperty] : Flipping property: petrel-kernel-register.ribbon.ActiveConnectionsLimit to use NEXT property: niws.loadbalancer.availabilityFilteringRule.activeConnectionsLimit = 2147483647
+11-06 06:05:02.971 INFO  [main] [com.netflix.loadbalancer.BaseLoadBalancer] : Client: petrel-kernel-register instantiated a LoadBalancer: DynamicServerListLoadBalancer:{NFLoadBalancer:name=petrel-kernel-register,current list of Servers=[],Load balancer stats=Zone stats: {},Server stats: []}ServerList:null
+11-06 06:05:02.979 INFO  [main] [c.n.loadbalancer.DynamicServerListLoadBalancer] : Using serverListUpdater PollingServerListUpdater
+11-06 06:05:02.990 INFO  [main] [c.n.loadbalancer.DynamicServerListLoadBalancer] : DynamicServerListLoadBalancer for client petrel-kernel-register initialized: DynamicServerListLoadBalancer:{NFLoadBalancer:name=petrel-kernel-register,current list of Servers=[],Load balancer stats=Zone stats: {},Server stats: []}ServerList:com.alibaba.cloud.nacos.ribbon.NacosServerList@60e3c26e
+11-06 06:05:03.060 INFO  [main] [o.s.b.a.l.ConditionEvaluationReportLoggingListener] : 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+11-06 06:05:03.063 INFO  [main] [o.s.scheduling.concurrent.ThreadPoolTaskScheduler] : Shutting down ExecutorService 'Nacso-Watch-Task-Scheduler'
+11-06 06:05:03.194 INFO  [main] [c.a.n.s.c.a.c.NacosValueAnnotationBeanPostProcessor] : class com.alibaba.nacos.spring.context.annotation.config.NacosValueAnnotationBeanPostProcessor was destroying!
+11-06 06:05:03.196 INFO  [main] [c.a.n.s.b.f.a.AnnotationNacosInjectedBeanPostProcessor] : class com.alibaba.nacos.spring.beans.factory.annotation.AnnotationNacosInjectedBeanPostProcessor was destroying!
+11-06 06:05:03.198 ERROR [main] [org.springframework.boot.SpringApplication] : Application run failed
+java.lang.IllegalStateException: Failed to execute ApplicationRunner
+	at org.springframework.boot.SpringApplication.callRunner(SpringApplication.java:778)
+	at org.springframework.boot.SpringApplication.callRunners(SpringApplication.java:765)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:322)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1226)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1215)
+	at com.petrel.lobby.LobbyApplication.main(LobbyApplication.java:21)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.springframework.boot.loader.MainMethodRunner.run(MainMethodRunner.java:48)
+	at org.springframework.boot.loader.Launcher.launch(Launcher.java:87)
+	at org.springframework.boot.loader.Launcher.launch(Launcher.java:51)
+	at org.springframework.boot.loader.PropertiesLauncher.main(PropertiesLauncher.java:597)
+Caused by: java.lang.RuntimeException: com.netflix.client.ClientException: Load balancer does not have available server for client: petrel-kernel-register
+	at org.springframework.cloud.openfeign.ribbon.LoadBalancerFeignClient.execute(LoadBalancerFeignClient.java:90)
+	at feign.SynchronousMethodHandler.executeAndDecode(SynchronousMethodHandler.java:110)
+	at feign.SynchronousMethodHandler.invoke(SynchronousMethodHandler.java:80)
+	at feign.ReflectiveFeign$FeignInvocationHandler.invoke(ReflectiveFeign.java:100)
+	at jdk.proxy2/jdk.proxy2.$Proxy110.registerServer(Unknown Source)
+	at com.petrel.lobby.net.StartAfterInitialize.run(StartAfterInitialize.java:47)
+	at org.springframework.boot.SpringApplication.callRunner(SpringApplication.java:775)
+	... 11 common frames omitted
+Caused by: com.netflix.client.ClientException: Load balancer does not have available server for client: petrel-kernel-register
+	at com.netflix.loadbalancer.LoadBalancerContext.getServerFromLoadBalancer(LoadBalancerContext.java:483)
+	at com.netflix.loadbalancer.reactive.LoadBalancerCommand$1.call(LoadBalancerCommand.java:184)
+	at com.netflix.loadbalancer.reactive.LoadBalancerCommand$1.call(LoadBalancerCommand.java:180)
+	at rx.Observable.unsafeSubscribe(Observable.java:10327)
+	at rx.internal.operators.OnSubscribeConcatMap.call(OnSubscribeConcatMap.java:94)
+	at rx.internal.operators.OnSubscribeConcatMap.call(OnSubscribeConcatMap.java:42)
+	at rx.Observable.unsafeSubscribe(Observable.java:10327)
+	at rx.internal.operators.OperatorRetryWithPredicate$SourceSubscriber$1.call(OperatorRetryWithPredicate.java:127)
+	at rx.internal.schedulers.TrampolineScheduler$InnerCurrentThreadScheduler.enqueue(TrampolineScheduler.java:73)
+	at rx.internal.schedulers.TrampolineScheduler$InnerCurrentThreadScheduler.schedule(TrampolineScheduler.java:52)
+	at rx.internal.operators.OperatorRetryWithPredicate$SourceSubscriber.onNext(OperatorRetryWithPredicate.java:79)
+	at rx.internal.operators.OperatorRetryWithPredicate$SourceSubscriber.onNext(OperatorRetryWithPredicate.java:45)
+	at rx.internal.util.ScalarSynchronousObservable$WeakSingleProducer.request(ScalarSynchronousObservable.java:276)
+	at rx.Subscriber.setProducer(Subscriber.java:209)
+	at rx.internal.util.ScalarSynchronousObservable$JustOnSubscribe.call(ScalarSynchronousObservable.java:138)
+	at rx.internal.util.ScalarSynchronousObservable$JustOnSubscribe.call(ScalarSynchronousObservable.java:129)
+	at rx.internal.operators.OnSubscribeLift.call(OnSubscribeLift.java:48)
+	at rx.internal.operators.OnSubscribeLift.call(OnSubscribeLift.java:30)
+	at rx.internal.operators.OnSubscribeLift.call(OnSubscribeLift.java:48)
+	at rx.internal.operators.OnSubscribeLift.call(OnSubscribeLift.java:30)
+	at rx.internal.operators.OnSubscribeLift.call(OnSubscribeLift.java:48)
+	at rx.internal.operators.OnSubscribeLift.call(OnSubscribeLift.java:30)
+	at rx.Observable.subscribe(Observable.java:10423)
+	at rx.Observable.subscribe(Observable.java:10390)
+	at rx.observables.BlockingObservable.blockForSingle(BlockingObservable.java:443)
+	at rx.observables.BlockingObservable.single(BlockingObservable.java:340)
+	at com.netflix.client.AbstractLoadBalancerAwareClient.executeWithLoadBalancer(AbstractLoadBalancerAwareClient.java:112)
+	at org.springframework.cloud.openfeign.ribbon.LoadBalancerFeignClient.execute(LoadBalancerFeignClient.java:83)
+	... 17 common frames omitted
+11-06 06:05:03.200 ERROR [main] [com.petrel.lobby.LobbyApplication] : start error:
+java.lang.IllegalStateException: Failed to execute ApplicationRunner
+	at org.springframework.boot.SpringApplication.callRunner(SpringApplication.java:778)
+	at org.springframework.boot.SpringApplication.callRunners(SpringApplication.java:765)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:322)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1226)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1215)
+	at com.petrel.lobby.LobbyApplication.main(LobbyApplication.java:21)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.springframework.boot.loader.MainMethodRunner.run(MainMethodRunner.java:48)
+	at org.springframework.boot.loader.Launcher.launch(Launcher.java:87)
+	at org.springframework.boot.loader.Launcher.launch(Launcher.java:51)
+	at org.springframework.boot.loader.PropertiesLauncher.main(PropertiesLauncher.java:597)
+Caused by: java.lang.RuntimeException: com.netflix.client.ClientException: Load balancer does not have available server for client: petrel-kernel-register
+	at org.springframework.cloud.openfeign.ribbon.LoadBalancerFeignClient.execute(LoadBalancerFeignClient.java:90)
+	at feign.SynchronousMethodHandler.executeAndDecode(SynchronousMethodHandler.java:110)
+	at feign.SynchronousMethodHandler.invoke(SynchronousMethodHandler.java:80)
+	at feign.ReflectiveFeign$FeignInvocationHandler.invoke(ReflectiveFeign.java:100)
+	at jdk.proxy2/jdk.proxy2.$Proxy110.registerServer(Unknown Source)
+	at com.petrel.lobby.net.StartAfterInitialize.run(StartAfterInitialize.java:47)
+	at org.springframework.boot.SpringApplication.callRunner(SpringApplication.java:775)
+	... 11 common frames omitted
+Caused by: com.netflix.client.ClientException: Load balancer does not have available server for client: petrel-kernel-register
+	at com.netflix.loadbalancer.LoadBalancerContext.getServerFromLoadBalancer(LoadBalancerContext.java:483)
+	at com.netflix.loadbalancer.reactive.LoadBalancerCommand$1.call(LoadBalancerCommand.java:184)
+	at com.netflix.loadbalancer.reactive.LoadBalancerCommand$1.call(LoadBalancerCommand.java:180)
+	at rx.Observable.unsafeSubscribe(Observable.java:10327)
+	at rx.internal.operators.OnSubscribeConcatMap.call(OnSubscribeConcatMap.java:94)
+	at rx.internal.operators.OnSubscribeConcatMap.call(OnSubscribeConcatMap.java:42)
+	at rx.Observable.unsafeSubscribe(Observable.java:10327)
+	at rx.internal.operators.OperatorRetryWithPredicate$SourceSubscriber$1.call(OperatorRetryWithPredicate.java:127)
+	at rx.internal.schedulers.TrampolineScheduler$InnerCurrentThreadScheduler.enqueue(TrampolineScheduler.java:73)
+	at rx.internal.schedulers.TrampolineScheduler$InnerCurrentThreadScheduler.schedule(TrampolineScheduler.java:52)
+	at rx.internal.operators.OperatorRetryWithPredicate$SourceSubscriber.onNext(OperatorRetryWithPredicate.java:79)
+	at rx.internal.operators.OperatorRetryWithPredicate$SourceSubscriber.onNext(OperatorRetryWithPredicate.java:45)
+	at rx.internal.util.ScalarSynchronousObservable$WeakSingleProducer.request(ScalarSynchronousObservable.java:276)
+	at rx.Subscriber.setProducer(Subscriber.java:209)
+	at rx.internal.util.ScalarSynchronousObservable$JustOnSubscribe.call(ScalarSynchronousObservable.java:138)
+	at rx.internal.util.ScalarSynchronousObservable$JustOnSubscribe.call(ScalarSynchronousObservable.java:129)
+	at rx.internal.operators.OnSubscribeLift.call(OnSubscribeLift.java:48)
+	at rx.internal.operators.OnSubscribeLift.call(OnSubscribeLift.java:30)
+	at rx.internal.operators.OnSubscribeLift.call(OnSubscribeLift.java:48)
+	at rx.internal.operators.OnSubscribeLift.call(OnSubscribeLift.java:30)
+	at rx.internal.operators.OnSubscribeLift.call(OnSubscribeLift.java:48)
+	at rx.internal.operators.OnSubscribeLift.call(OnSubscribeLift.java:30)
+	at rx.Observable.subscribe(Observable.java:10423)
+	at rx.Observable.subscribe(Observable.java:10390)
+	at rx.observables.BlockingObservable.blockForSingle(BlockingObservable.java:443)
+	at rx.observables.BlockingObservable.single(BlockingObservable.java:340)
+	at com.netflix.client.AbstractLoadBalancerAwareClient.executeWithLoadBalancer(AbstractLoadBalancerAwareClient.java:112)
+	at org.springframework.cloud.openfeign.ribbon.LoadBalancerFeignClient.execute(LoadBalancerFeignClient.java:83)
+	... 17 common frames omitted

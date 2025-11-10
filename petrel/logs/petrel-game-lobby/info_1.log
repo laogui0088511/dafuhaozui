@@ -1,0 +1,637 @@
+11-09 18:25:59.736 INFO  [main] [com.petrel.lobby.LobbyApplication] : The following profiles are active: prod
+11-09 18:26:02.304 WARN  [main] [o.springframework.boot.actuate.endpoint.EndpointId] : Endpoint ID 'nacos-discovery' contains invalid characters, please migrate to a valid format.
+11-09 18:26:02.927 INFO  [main] [o.s.d.r.config.RepositoryConfigurationDelegate] : Multiple Spring Data modules found, entering strict repository configuration mode!
+11-09 18:26:02.949 INFO  [main] [o.s.d.r.config.RepositoryConfigurationDelegate] : Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+11-09 18:26:03.152 INFO  [main] [o.s.d.r.config.RepositoryConfigurationDelegate] : Finished Spring Data repository scanning in 114ms. Found 0 Redis repository interfaces.
+11-09 18:26:03.241 WARN  [main] [o.springframework.boot.actuate.endpoint.EndpointId] : Endpoint ID 'service-registry' contains invalid characters, please migrate to a valid format.
+11-09 18:26:03.581 INFO  [main] [o.springframework.cloud.context.scope.GenericScope] : BeanFactory id=de85f6a1-592e-31da-a6ed-f5492fd7d879
+11-09 18:26:03.870 INFO  [main] [o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker] : Bean 'com.petrel.lobby.provide.CardFeignService' of type [org.springframework.cloud.openfeign.FeignClientFactoryBean] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+11-09 18:26:03.876 INFO  [main] [o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker] : Bean 'com.petrel.lobby.provide.LoginRegisterFeignService' of type [org.springframework.cloud.openfeign.FeignClientFactoryBean] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+11-09 18:26:03.881 INFO  [main] [o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker] : Bean 'com.petrel.lobby.provide.GoldBankFeignService' of type [org.springframework.cloud.openfeign.FeignClientFactoryBean] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+11-09 18:26:03.885 INFO  [main] [o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker] : Bean 'com.petrel.lobby.provide.ServerRegisterFeignService' of type [org.springframework.cloud.openfeign.FeignClientFactoryBean] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+11-09 18:26:03.890 INFO  [main] [o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker] : Bean 'com.petrel.lobby.provide.UserInfoFeignService' of type [org.springframework.cloud.openfeign.FeignClientFactoryBean] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+11-09 18:26:03.894 INFO  [main] [o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker] : Bean 'com.petrel.lobby.provide.StrategyFeignService' of type [org.springframework.cloud.openfeign.FeignClientFactoryBean] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+11-09 18:26:07.195 INFO  [main] [io.lettuce.core.EpollProvider] : Starting with epoll library
+11-09 18:26:07.200 INFO  [main] [io.lettuce.core.KqueueProvider] : Starting without optional kqueue library
+11-09 18:26:07.386 WARN  [main] [o.s.c.a.AnnotationConfigApplicationContext] : Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'redisKeyExpirationListener' defined in URL [jar:file:/workspaces/dafuhaozui/petrel/petrel-game-lobby-1.0-SNAPSHOT-boot.jar!/BOOT-INF/lib/petrel-game-lobby-core-1.0-SNAPSHOT.jar!/com/petrel/lobby/config/RedisKeyExpirationListener.class]: Invocation of init method failed; nested exception is org.springframework.data.redis.connection.PoolException: Could not get a resource from the pool; nested exception is io.lettuce.core.RedisConnectionException: Unable to connect to 127.0.0.1/<unresolved>:6379
+11-09 18:26:07.500 INFO  [main] [c.a.n.s.c.a.c.NacosValueAnnotationBeanPostProcessor] : class com.alibaba.nacos.spring.context.annotation.config.NacosValueAnnotationBeanPostProcessor was destroying!
+11-09 18:26:07.501 INFO  [main] [c.a.n.s.b.f.a.AnnotationNacosInjectedBeanPostProcessor] : class com.alibaba.nacos.spring.beans.factory.annotation.AnnotationNacosInjectedBeanPostProcessor was destroying!
+11-09 18:26:07.514 INFO  [main] [o.s.b.a.l.ConditionEvaluationReportLoggingListener] : 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+11-09 18:26:07.522 ERROR [main] [org.springframework.boot.SpringApplication] : Application run failed
+org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'redisKeyExpirationListener' defined in URL [jar:file:/workspaces/dafuhaozui/petrel/petrel-game-lobby-1.0-SNAPSHOT-boot.jar!/BOOT-INF/lib/petrel-game-lobby-core-1.0-SNAPSHOT.jar!/com/petrel/lobby/config/RedisKeyExpirationListener.class]: Invocation of init method failed; nested exception is org.springframework.data.redis.connection.PoolException: Could not get a resource from the pool; nested exception is io.lettuce.core.RedisConnectionException: Unable to connect to 127.0.0.1/<unresolved>:6379
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1796)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:595)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:517)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:323)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:222)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:321)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:202)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:879)
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:878)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:550)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:747)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:397)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:315)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1226)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1215)
+	at com.petrel.lobby.LobbyApplication.main(LobbyApplication.java:21)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.springframework.boot.loader.MainMethodRunner.run(MainMethodRunner.java:48)
+	at org.springframework.boot.loader.Launcher.launch(Launcher.java:87)
+	at org.springframework.boot.loader.Launcher.launch(Launcher.java:51)
+	at org.springframework.boot.loader.PropertiesLauncher.main(PropertiesLauncher.java:597)
+Caused by: org.springframework.data.redis.connection.PoolException: Could not get a resource from the pool; nested exception is io.lettuce.core.RedisConnectionException: Unable to connect to 127.0.0.1/<unresolved>:6379
+	at org.springframework.data.redis.connection.lettuce.LettucePoolingConnectionProvider.getConnection(LettucePoolingConnectionProvider.java:109)
+	at org.springframework.data.redis.connection.lettuce.LettuceConnectionFactory$SharedConnection.getNativeConnection(LettuceConnectionFactory.java:1197)
+	at org.springframework.data.redis.connection.lettuce.LettuceConnectionFactory$SharedConnection.getConnection(LettuceConnectionFactory.java:1178)
+	at org.springframework.data.redis.connection.lettuce.LettuceConnectionFactory.getSharedConnection(LettuceConnectionFactory.java:942)
+	at org.springframework.data.redis.connection.lettuce.LettuceConnectionFactory.getConnection(LettuceConnectionFactory.java:353)
+	at org.springframework.data.redis.listener.KeyspaceEventMessageListener.init(KeyspaceEventMessageListener.java:85)
+	at org.springframework.data.redis.listener.KeyspaceEventMessageListener.afterPropertiesSet(KeyspaceEventMessageListener.java:137)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.invokeInitMethods(AbstractAutowireCapableBeanFactory.java:1855)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1792)
+	... 21 common frames omitted
+Caused by: io.lettuce.core.RedisConnectionException: Unable to connect to 127.0.0.1/<unresolved>:6379
+	at io.lettuce.core.RedisConnectionException.create(RedisConnectionException.java:78)
+	at io.lettuce.core.RedisConnectionException.create(RedisConnectionException.java:56)
+	at io.lettuce.core.AbstractRedisClient.getConnection(AbstractRedisClient.java:234)
+	at io.lettuce.core.RedisClient.connect(RedisClient.java:207)
+	at org.springframework.data.redis.connection.lettuce.StandaloneConnectionProvider.lambda$getConnection$1(StandaloneConnectionProvider.java:115)
+	at java.base/java.util.Optional.orElseGet(Optional.java:364)
+	at org.springframework.data.redis.connection.lettuce.StandaloneConnectionProvider.getConnection(StandaloneConnectionProvider.java:115)
+	at org.springframework.data.redis.connection.lettuce.LettucePoolingConnectionProvider.lambda$null$0(LettucePoolingConnectionProvider.java:97)
+	at io.lettuce.core.support.ConnectionPoolSupport$RedisPooledObjectFactory.create(ConnectionPoolSupport.java:209)
+	at io.lettuce.core.support.ConnectionPoolSupport$RedisPooledObjectFactory.create(ConnectionPoolSupport.java:199)
+	at org.apache.commons.pool2.BasePooledObjectFactory.makeObject(BasePooledObjectFactory.java:58)
+	at org.apache.commons.pool2.impl.GenericObjectPool.create(GenericObjectPool.java:899)
+	at org.apache.commons.pool2.impl.GenericObjectPool.borrowObject(GenericObjectPool.java:429)
+	at org.apache.commons.pool2.impl.GenericObjectPool.borrowObject(GenericObjectPool.java:354)
+	at io.lettuce.core.support.ConnectionPoolSupport$1.borrowObject(ConnectionPoolSupport.java:122)
+	at io.lettuce.core.support.ConnectionPoolSupport$1.borrowObject(ConnectionPoolSupport.java:117)
+	at org.springframework.data.redis.connection.lettuce.LettucePoolingConnectionProvider.getConnection(LettucePoolingConnectionProvider.java:103)
+	... 29 common frames omitted
+Caused by: io.netty.channel.AbstractChannel$AnnotatedConnectException: finishConnect(..) failed: Connection refused: /127.0.0.1:6379
+Caused by: java.net.ConnectException: finishConnect(..) failed: Connection refused
+	at io.netty.channel.unix.Errors.throwConnectException(Errors.java:124)
+	at io.netty.channel.unix.Socket.finishConnect(Socket.java:243)
+	at io.netty.channel.epoll.AbstractEpollChannel$AbstractEpollUnsafe.doFinishConnect(AbstractEpollChannel.java:672)
+	at io.netty.channel.epoll.AbstractEpollChannel$AbstractEpollUnsafe.finishConnect(AbstractEpollChannel.java:649)
+	at io.netty.channel.epoll.AbstractEpollChannel$AbstractEpollUnsafe.epollOutReady(AbstractEpollChannel.java:529)
+	at io.netty.channel.epoll.EpollEventLoop.processReady(EpollEventLoop.java:465)
+	at io.netty.channel.epoll.EpollEventLoop.run(EpollEventLoop.java:378)
+	at io.netty.util.concurrent.SingleThreadEventExecutor$4.run(SingleThreadEventExecutor.java:989)
+	at io.netty.util.internal.ThreadExecutorMap$2.run(ThreadExecutorMap.java:74)
+	at io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30)
+	at java.base/java.lang.Thread.run(Thread.java:1583)
+11-09 18:26:07.530 ERROR [main] [com.petrel.lobby.LobbyApplication] : start error:
+org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'redisKeyExpirationListener' defined in URL [jar:file:/workspaces/dafuhaozui/petrel/petrel-game-lobby-1.0-SNAPSHOT-boot.jar!/BOOT-INF/lib/petrel-game-lobby-core-1.0-SNAPSHOT.jar!/com/petrel/lobby/config/RedisKeyExpirationListener.class]: Invocation of init method failed; nested exception is org.springframework.data.redis.connection.PoolException: Could not get a resource from the pool; nested exception is io.lettuce.core.RedisConnectionException: Unable to connect to 127.0.0.1/<unresolved>:6379
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1796)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:595)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:517)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:323)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:222)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:321)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:202)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:879)
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:878)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:550)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:747)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:397)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:315)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1226)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1215)
+	at com.petrel.lobby.LobbyApplication.main(LobbyApplication.java:21)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.springframework.boot.loader.MainMethodRunner.run(MainMethodRunner.java:48)
+	at org.springframework.boot.loader.Launcher.launch(Launcher.java:87)
+	at org.springframework.boot.loader.Launcher.launch(Launcher.java:51)
+	at org.springframework.boot.loader.PropertiesLauncher.main(PropertiesLauncher.java:597)
+Caused by: org.springframework.data.redis.connection.PoolException: Could not get a resource from the pool; nested exception is io.lettuce.core.RedisConnectionException: Unable to connect to 127.0.0.1/<unresolved>:6379
+	at org.springframework.data.redis.connection.lettuce.LettucePoolingConnectionProvider.getConnection(LettucePoolingConnectionProvider.java:109)
+	at org.springframework.data.redis.connection.lettuce.LettuceConnectionFactory$SharedConnection.getNativeConnection(LettuceConnectionFactory.java:1197)
+	at org.springframework.data.redis.connection.lettuce.LettuceConnectionFactory$SharedConnection.getConnection(LettuceConnectionFactory.java:1178)
+	at org.springframework.data.redis.connection.lettuce.LettuceConnectionFactory.getSharedConnection(LettuceConnectionFactory.java:942)
+	at org.springframework.data.redis.connection.lettuce.LettuceConnectionFactory.getConnection(LettuceConnectionFactory.java:353)
+	at org.springframework.data.redis.listener.KeyspaceEventMessageListener.init(KeyspaceEventMessageListener.java:85)
+	at org.springframework.data.redis.listener.KeyspaceEventMessageListener.afterPropertiesSet(KeyspaceEventMessageListener.java:137)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.invokeInitMethods(AbstractAutowireCapableBeanFactory.java:1855)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1792)
+	... 21 common frames omitted
+Caused by: io.lettuce.core.RedisConnectionException: Unable to connect to 127.0.0.1/<unresolved>:6379
+	at io.lettuce.core.RedisConnectionException.create(RedisConnectionException.java:78)
+	at io.lettuce.core.RedisConnectionException.create(RedisConnectionException.java:56)
+	at io.lettuce.core.AbstractRedisClient.getConnection(AbstractRedisClient.java:234)
+	at io.lettuce.core.RedisClient.connect(RedisClient.java:207)
+	at org.springframework.data.redis.connection.lettuce.StandaloneConnectionProvider.lambda$getConnection$1(StandaloneConnectionProvider.java:115)
+	at java.base/java.util.Optional.orElseGet(Optional.java:364)
+	at org.springframework.data.redis.connection.lettuce.StandaloneConnectionProvider.getConnection(StandaloneConnectionProvider.java:115)
+	at org.springframework.data.redis.connection.lettuce.LettucePoolingConnectionProvider.lambda$null$0(LettucePoolingConnectionProvider.java:97)
+	at io.lettuce.core.support.ConnectionPoolSupport$RedisPooledObjectFactory.create(ConnectionPoolSupport.java:209)
+	at io.lettuce.core.support.ConnectionPoolSupport$RedisPooledObjectFactory.create(ConnectionPoolSupport.java:199)
+	at org.apache.commons.pool2.BasePooledObjectFactory.makeObject(BasePooledObjectFactory.java:58)
+	at org.apache.commons.pool2.impl.GenericObjectPool.create(GenericObjectPool.java:899)
+	at org.apache.commons.pool2.impl.GenericObjectPool.borrowObject(GenericObjectPool.java:429)
+	at org.apache.commons.pool2.impl.GenericObjectPool.borrowObject(GenericObjectPool.java:354)
+	at io.lettuce.core.support.ConnectionPoolSupport$1.borrowObject(ConnectionPoolSupport.java:122)
+	at io.lettuce.core.support.ConnectionPoolSupport$1.borrowObject(ConnectionPoolSupport.java:117)
+	at org.springframework.data.redis.connection.lettuce.LettucePoolingConnectionProvider.getConnection(LettucePoolingConnectionProvider.java:103)
+	... 29 common frames omitted
+Caused by: io.netty.channel.AbstractChannel$AnnotatedConnectException: finishConnect(..) failed: Connection refused: /127.0.0.1:6379
+Caused by: java.net.ConnectException: finishConnect(..) failed: Connection refused
+	at io.netty.channel.unix.Errors.throwConnectException(Errors.java:124)
+	at io.netty.channel.unix.Socket.finishConnect(Socket.java:243)
+	at io.netty.channel.epoll.AbstractEpollChannel$AbstractEpollUnsafe.doFinishConnect(AbstractEpollChannel.java:672)
+	at io.netty.channel.epoll.AbstractEpollChannel$AbstractEpollUnsafe.finishConnect(AbstractEpollChannel.java:649)
+	at io.netty.channel.epoll.AbstractEpollChannel$AbstractEpollUnsafe.epollOutReady(AbstractEpollChannel.java:529)
+	at io.netty.channel.epoll.EpollEventLoop.processReady(EpollEventLoop.java:465)
+	at io.netty.channel.epoll.EpollEventLoop.run(EpollEventLoop.java:378)
+	at io.netty.util.concurrent.SingleThreadEventExecutor$4.run(SingleThreadEventExecutor.java:989)
+	at io.netty.util.internal.ThreadExecutorMap$2.run(ThreadExecutorMap.java:74)
+	at io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30)
+	at java.base/java.lang.Thread.run(Thread.java:1583)
+11-09 18:33:09.564 INFO  [main] [com.petrel.lobby.LobbyApplication] : The following profiles are active: prod
+11-09 18:33:10.621 WARN  [main] [o.springframework.boot.actuate.endpoint.EndpointId] : Endpoint ID 'nacos-discovery' contains invalid characters, please migrate to a valid format.
+11-09 18:33:10.902 INFO  [main] [o.s.d.r.config.RepositoryConfigurationDelegate] : Multiple Spring Data modules found, entering strict repository configuration mode!
+11-09 18:33:10.906 INFO  [main] [o.s.d.r.config.RepositoryConfigurationDelegate] : Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+11-09 18:33:10.966 INFO  [main] [o.s.d.r.config.RepositoryConfigurationDelegate] : Finished Spring Data repository scanning in 38ms. Found 0 Redis repository interfaces.
+11-09 18:33:11.035 WARN  [main] [o.springframework.boot.actuate.endpoint.EndpointId] : Endpoint ID 'service-registry' contains invalid characters, please migrate to a valid format.
+11-09 18:33:11.299 INFO  [main] [o.springframework.cloud.context.scope.GenericScope] : BeanFactory id=de85f6a1-592e-31da-a6ed-f5492fd7d879
+11-09 18:33:11.441 INFO  [main] [o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker] : Bean 'com.petrel.lobby.provide.CardFeignService' of type [org.springframework.cloud.openfeign.FeignClientFactoryBean] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+11-09 18:33:11.446 INFO  [main] [o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker] : Bean 'com.petrel.lobby.provide.LoginRegisterFeignService' of type [org.springframework.cloud.openfeign.FeignClientFactoryBean] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+11-09 18:33:11.450 INFO  [main] [o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker] : Bean 'com.petrel.lobby.provide.GoldBankFeignService' of type [org.springframework.cloud.openfeign.FeignClientFactoryBean] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+11-09 18:33:11.455 INFO  [main] [o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker] : Bean 'com.petrel.lobby.provide.ServerRegisterFeignService' of type [org.springframework.cloud.openfeign.FeignClientFactoryBean] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+11-09 18:33:11.460 INFO  [main] [o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker] : Bean 'com.petrel.lobby.provide.UserInfoFeignService' of type [org.springframework.cloud.openfeign.FeignClientFactoryBean] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+11-09 18:33:11.462 INFO  [main] [o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker] : Bean 'com.petrel.lobby.provide.StrategyFeignService' of type [org.springframework.cloud.openfeign.FeignClientFactoryBean] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+11-09 18:33:14.906 INFO  [main] [io.lettuce.core.EpollProvider] : Starting with epoll library
+11-09 18:33:14.918 INFO  [main] [io.lettuce.core.KqueueProvider] : Starting without optional kqueue library
+11-09 18:33:15.247 WARN  [main] [o.s.c.a.AnnotationConfigApplicationContext] : Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'redisKeyExpirationListener' defined in URL [jar:file:/workspaces/dafuhaozui/petrel/petrel-game-lobby-1.0-SNAPSHOT-boot.jar!/BOOT-INF/lib/petrel-game-lobby-core-1.0-SNAPSHOT.jar!/com/petrel/lobby/config/RedisKeyExpirationListener.class]: Invocation of init method failed; nested exception is org.springframework.data.redis.connection.PoolException: Could not get a resource from the pool; nested exception is io.lettuce.core.RedisConnectionException: Unable to connect to 127.0.0.1/<unresolved>:6379
+11-09 18:33:15.398 INFO  [main] [c.a.n.s.c.a.c.NacosValueAnnotationBeanPostProcessor] : class com.alibaba.nacos.spring.context.annotation.config.NacosValueAnnotationBeanPostProcessor was destroying!
+11-09 18:33:15.398 INFO  [main] [c.a.n.s.b.f.a.AnnotationNacosInjectedBeanPostProcessor] : class com.alibaba.nacos.spring.beans.factory.annotation.AnnotationNacosInjectedBeanPostProcessor was destroying!
+11-09 18:33:15.434 INFO  [main] [o.s.b.a.l.ConditionEvaluationReportLoggingListener] : 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+11-09 18:33:15.449 ERROR [main] [org.springframework.boot.SpringApplication] : Application run failed
+org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'redisKeyExpirationListener' defined in URL [jar:file:/workspaces/dafuhaozui/petrel/petrel-game-lobby-1.0-SNAPSHOT-boot.jar!/BOOT-INF/lib/petrel-game-lobby-core-1.0-SNAPSHOT.jar!/com/petrel/lobby/config/RedisKeyExpirationListener.class]: Invocation of init method failed; nested exception is org.springframework.data.redis.connection.PoolException: Could not get a resource from the pool; nested exception is io.lettuce.core.RedisConnectionException: Unable to connect to 127.0.0.1/<unresolved>:6379
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1796)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:595)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:517)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:323)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:222)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:321)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:202)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:879)
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:878)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:550)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:747)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:397)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:315)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1226)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1215)
+	at com.petrel.lobby.LobbyApplication.main(LobbyApplication.java:21)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.springframework.boot.loader.MainMethodRunner.run(MainMethodRunner.java:48)
+	at org.springframework.boot.loader.Launcher.launch(Launcher.java:87)
+	at org.springframework.boot.loader.Launcher.launch(Launcher.java:51)
+	at org.springframework.boot.loader.PropertiesLauncher.main(PropertiesLauncher.java:597)
+Caused by: org.springframework.data.redis.connection.PoolException: Could not get a resource from the pool; nested exception is io.lettuce.core.RedisConnectionException: Unable to connect to 127.0.0.1/<unresolved>:6379
+	at org.springframework.data.redis.connection.lettuce.LettucePoolingConnectionProvider.getConnection(LettucePoolingConnectionProvider.java:109)
+	at org.springframework.data.redis.connection.lettuce.LettuceConnectionFactory$SharedConnection.getNativeConnection(LettuceConnectionFactory.java:1197)
+	at org.springframework.data.redis.connection.lettuce.LettuceConnectionFactory$SharedConnection.getConnection(LettuceConnectionFactory.java:1178)
+	at org.springframework.data.redis.connection.lettuce.LettuceConnectionFactory.getSharedConnection(LettuceConnectionFactory.java:942)
+	at org.springframework.data.redis.connection.lettuce.LettuceConnectionFactory.getConnection(LettuceConnectionFactory.java:353)
+	at org.springframework.data.redis.listener.KeyspaceEventMessageListener.init(KeyspaceEventMessageListener.java:85)
+	at org.springframework.data.redis.listener.KeyspaceEventMessageListener.afterPropertiesSet(KeyspaceEventMessageListener.java:137)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.invokeInitMethods(AbstractAutowireCapableBeanFactory.java:1855)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1792)
+	... 21 common frames omitted
+Caused by: io.lettuce.core.RedisConnectionException: Unable to connect to 127.0.0.1/<unresolved>:6379
+	at io.lettuce.core.RedisConnectionException.create(RedisConnectionException.java:78)
+	at io.lettuce.core.RedisConnectionException.create(RedisConnectionException.java:56)
+	at io.lettuce.core.AbstractRedisClient.getConnection(AbstractRedisClient.java:234)
+	at io.lettuce.core.RedisClient.connect(RedisClient.java:207)
+	at org.springframework.data.redis.connection.lettuce.StandaloneConnectionProvider.lambda$getConnection$1(StandaloneConnectionProvider.java:115)
+	at java.base/java.util.Optional.orElseGet(Optional.java:364)
+	at org.springframework.data.redis.connection.lettuce.StandaloneConnectionProvider.getConnection(StandaloneConnectionProvider.java:115)
+	at org.springframework.data.redis.connection.lettuce.LettucePoolingConnectionProvider.lambda$null$0(LettucePoolingConnectionProvider.java:97)
+	at io.lettuce.core.support.ConnectionPoolSupport$RedisPooledObjectFactory.create(ConnectionPoolSupport.java:209)
+	at io.lettuce.core.support.ConnectionPoolSupport$RedisPooledObjectFactory.create(ConnectionPoolSupport.java:199)
+	at org.apache.commons.pool2.BasePooledObjectFactory.makeObject(BasePooledObjectFactory.java:58)
+	at org.apache.commons.pool2.impl.GenericObjectPool.create(GenericObjectPool.java:899)
+	at org.apache.commons.pool2.impl.GenericObjectPool.borrowObject(GenericObjectPool.java:429)
+	at org.apache.commons.pool2.impl.GenericObjectPool.borrowObject(GenericObjectPool.java:354)
+	at io.lettuce.core.support.ConnectionPoolSupport$1.borrowObject(ConnectionPoolSupport.java:122)
+	at io.lettuce.core.support.ConnectionPoolSupport$1.borrowObject(ConnectionPoolSupport.java:117)
+	at org.springframework.data.redis.connection.lettuce.LettucePoolingConnectionProvider.getConnection(LettucePoolingConnectionProvider.java:103)
+	... 29 common frames omitted
+Caused by: io.netty.channel.AbstractChannel$AnnotatedConnectException: finishConnect(..) failed: Connection refused: /127.0.0.1:6379
+Caused by: java.net.ConnectException: finishConnect(..) failed: Connection refused
+	at io.netty.channel.unix.Errors.throwConnectException(Errors.java:124)
+	at io.netty.channel.unix.Socket.finishConnect(Socket.java:243)
+	at io.netty.channel.epoll.AbstractEpollChannel$AbstractEpollUnsafe.doFinishConnect(AbstractEpollChannel.java:672)
+	at io.netty.channel.epoll.AbstractEpollChannel$AbstractEpollUnsafe.finishConnect(AbstractEpollChannel.java:649)
+	at io.netty.channel.epoll.AbstractEpollChannel$AbstractEpollUnsafe.epollOutReady(AbstractEpollChannel.java:529)
+	at io.netty.channel.epoll.EpollEventLoop.processReady(EpollEventLoop.java:465)
+	at io.netty.channel.epoll.EpollEventLoop.run(EpollEventLoop.java:378)
+	at io.netty.util.concurrent.SingleThreadEventExecutor$4.run(SingleThreadEventExecutor.java:989)
+	at io.netty.util.internal.ThreadExecutorMap$2.run(ThreadExecutorMap.java:74)
+	at io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30)
+	at java.base/java.lang.Thread.run(Thread.java:1583)
+11-09 18:33:15.452 ERROR [main] [com.petrel.lobby.LobbyApplication] : start error:
+org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'redisKeyExpirationListener' defined in URL [jar:file:/workspaces/dafuhaozui/petrel/petrel-game-lobby-1.0-SNAPSHOT-boot.jar!/BOOT-INF/lib/petrel-game-lobby-core-1.0-SNAPSHOT.jar!/com/petrel/lobby/config/RedisKeyExpirationListener.class]: Invocation of init method failed; nested exception is org.springframework.data.redis.connection.PoolException: Could not get a resource from the pool; nested exception is io.lettuce.core.RedisConnectionException: Unable to connect to 127.0.0.1/<unresolved>:6379
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1796)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:595)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:517)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:323)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:222)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:321)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:202)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:879)
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:878)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:550)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:747)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:397)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:315)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1226)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1215)
+	at com.petrel.lobby.LobbyApplication.main(LobbyApplication.java:21)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.springframework.boot.loader.MainMethodRunner.run(MainMethodRunner.java:48)
+	at org.springframework.boot.loader.Launcher.launch(Launcher.java:87)
+	at org.springframework.boot.loader.Launcher.launch(Launcher.java:51)
+	at org.springframework.boot.loader.PropertiesLauncher.main(PropertiesLauncher.java:597)
+Caused by: org.springframework.data.redis.connection.PoolException: Could not get a resource from the pool; nested exception is io.lettuce.core.RedisConnectionException: Unable to connect to 127.0.0.1/<unresolved>:6379
+	at org.springframework.data.redis.connection.lettuce.LettucePoolingConnectionProvider.getConnection(LettucePoolingConnectionProvider.java:109)
+	at org.springframework.data.redis.connection.lettuce.LettuceConnectionFactory$SharedConnection.getNativeConnection(LettuceConnectionFactory.java:1197)
+	at org.springframework.data.redis.connection.lettuce.LettuceConnectionFactory$SharedConnection.getConnection(LettuceConnectionFactory.java:1178)
+	at org.springframework.data.redis.connection.lettuce.LettuceConnectionFactory.getSharedConnection(LettuceConnectionFactory.java:942)
+	at org.springframework.data.redis.connection.lettuce.LettuceConnectionFactory.getConnection(LettuceConnectionFactory.java:353)
+	at org.springframework.data.redis.listener.KeyspaceEventMessageListener.init(KeyspaceEventMessageListener.java:85)
+	at org.springframework.data.redis.listener.KeyspaceEventMessageListener.afterPropertiesSet(KeyspaceEventMessageListener.java:137)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.invokeInitMethods(AbstractAutowireCapableBeanFactory.java:1855)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1792)
+	... 21 common frames omitted
+Caused by: io.lettuce.core.RedisConnectionException: Unable to connect to 127.0.0.1/<unresolved>:6379
+	at io.lettuce.core.RedisConnectionException.create(RedisConnectionException.java:78)
+	at io.lettuce.core.RedisConnectionException.create(RedisConnectionException.java:56)
+	at io.lettuce.core.AbstractRedisClient.getConnection(AbstractRedisClient.java:234)
+	at io.lettuce.core.RedisClient.connect(RedisClient.java:207)
+	at org.springframework.data.redis.connection.lettuce.StandaloneConnectionProvider.lambda$getConnection$1(StandaloneConnectionProvider.java:115)
+	at java.base/java.util.Optional.orElseGet(Optional.java:364)
+	at org.springframework.data.redis.connection.lettuce.StandaloneConnectionProvider.getConnection(StandaloneConnectionProvider.java:115)
+	at org.springframework.data.redis.connection.lettuce.LettucePoolingConnectionProvider.lambda$null$0(LettucePoolingConnectionProvider.java:97)
+	at io.lettuce.core.support.ConnectionPoolSupport$RedisPooledObjectFactory.create(ConnectionPoolSupport.java:209)
+	at io.lettuce.core.support.ConnectionPoolSupport$RedisPooledObjectFactory.create(ConnectionPoolSupport.java:199)
+	at org.apache.commons.pool2.BasePooledObjectFactory.makeObject(BasePooledObjectFactory.java:58)
+	at org.apache.commons.pool2.impl.GenericObjectPool.create(GenericObjectPool.java:899)
+	at org.apache.commons.pool2.impl.GenericObjectPool.borrowObject(GenericObjectPool.java:429)
+	at org.apache.commons.pool2.impl.GenericObjectPool.borrowObject(GenericObjectPool.java:354)
+	at io.lettuce.core.support.ConnectionPoolSupport$1.borrowObject(ConnectionPoolSupport.java:122)
+	at io.lettuce.core.support.ConnectionPoolSupport$1.borrowObject(ConnectionPoolSupport.java:117)
+	at org.springframework.data.redis.connection.lettuce.LettucePoolingConnectionProvider.getConnection(LettucePoolingConnectionProvider.java:103)
+	... 29 common frames omitted
+Caused by: io.netty.channel.AbstractChannel$AnnotatedConnectException: finishConnect(..) failed: Connection refused: /127.0.0.1:6379
+Caused by: java.net.ConnectException: finishConnect(..) failed: Connection refused
+	at io.netty.channel.unix.Errors.throwConnectException(Errors.java:124)
+	at io.netty.channel.unix.Socket.finishConnect(Socket.java:243)
+	at io.netty.channel.epoll.AbstractEpollChannel$AbstractEpollUnsafe.doFinishConnect(AbstractEpollChannel.java:672)
+	at io.netty.channel.epoll.AbstractEpollChannel$AbstractEpollUnsafe.finishConnect(AbstractEpollChannel.java:649)
+	at io.netty.channel.epoll.AbstractEpollChannel$AbstractEpollUnsafe.epollOutReady(AbstractEpollChannel.java:529)
+	at io.netty.channel.epoll.EpollEventLoop.processReady(EpollEventLoop.java:465)
+	at io.netty.channel.epoll.EpollEventLoop.run(EpollEventLoop.java:378)
+	at io.netty.util.concurrent.SingleThreadEventExecutor$4.run(SingleThreadEventExecutor.java:989)
+	at io.netty.util.internal.ThreadExecutorMap$2.run(ThreadExecutorMap.java:74)
+	at io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30)
+	at java.base/java.lang.Thread.run(Thread.java:1583)
+11-09 18:40:57.954 INFO  [main] [com.petrel.lobby.LobbyApplication] : The following profiles are active: prod
+11-09 18:41:01.534 WARN  [main] [o.springframework.boot.actuate.endpoint.EndpointId] : Endpoint ID 'nacos-discovery' contains invalid characters, please migrate to a valid format.
+11-09 18:41:02.213 INFO  [main] [o.s.d.r.config.RepositoryConfigurationDelegate] : Multiple Spring Data modules found, entering strict repository configuration mode!
+11-09 18:41:02.284 INFO  [main] [o.s.d.r.config.RepositoryConfigurationDelegate] : Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+11-09 18:41:02.444 INFO  [main] [o.s.d.r.config.RepositoryConfigurationDelegate] : Finished Spring Data repository scanning in 77ms. Found 0 Redis repository interfaces.
+11-09 18:41:02.559 WARN  [main] [o.springframework.boot.actuate.endpoint.EndpointId] : Endpoint ID 'service-registry' contains invalid characters, please migrate to a valid format.
+11-09 18:41:02.923 INFO  [main] [o.springframework.cloud.context.scope.GenericScope] : BeanFactory id=de85f6a1-592e-31da-a6ed-f5492fd7d879
+11-09 18:41:03.351 INFO  [main] [o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker] : Bean 'com.petrel.lobby.provide.CardFeignService' of type [org.springframework.cloud.openfeign.FeignClientFactoryBean] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+11-09 18:41:03.361 INFO  [main] [o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker] : Bean 'com.petrel.lobby.provide.LoginRegisterFeignService' of type [org.springframework.cloud.openfeign.FeignClientFactoryBean] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+11-09 18:41:03.369 INFO  [main] [o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker] : Bean 'com.petrel.lobby.provide.GoldBankFeignService' of type [org.springframework.cloud.openfeign.FeignClientFactoryBean] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+11-09 18:41:03.381 INFO  [main] [o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker] : Bean 'com.petrel.lobby.provide.ServerRegisterFeignService' of type [org.springframework.cloud.openfeign.FeignClientFactoryBean] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+11-09 18:41:03.389 INFO  [main] [o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker] : Bean 'com.petrel.lobby.provide.UserInfoFeignService' of type [org.springframework.cloud.openfeign.FeignClientFactoryBean] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+11-09 18:41:03.400 INFO  [main] [o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker] : Bean 'com.petrel.lobby.provide.StrategyFeignService' of type [org.springframework.cloud.openfeign.FeignClientFactoryBean] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+11-09 18:41:07.994 INFO  [main] [io.lettuce.core.EpollProvider] : Starting with epoll library
+11-09 18:41:07.998 INFO  [main] [io.lettuce.core.KqueueProvider] : Starting without optional kqueue library
+11-09 18:41:08.464 WARN  [main] [com.netflix.config.sources.URLConfigurationSource] : No URLs will be polled as dynamic configuration sources.
+11-09 18:41:08.465 INFO  [main] [com.netflix.config.sources.URLConfigurationSource] : To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+11-09 18:41:08.470 WARN  [main] [com.netflix.config.sources.URLConfigurationSource] : No URLs will be polled as dynamic configuration sources.
+11-09 18:41:08.471 INFO  [main] [com.netflix.config.sources.URLConfigurationSource] : To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+11-09 18:41:08.533 INFO  [main] [o.s.scheduling.concurrent.ThreadPoolTaskScheduler] : Initializing ExecutorService 'Nacso-Watch-Task-Scheduler'
+11-09 18:41:10.715 INFO  [main] [com.petrel.lobby.LobbyApplication] : Started LobbyApplication in 15.169 seconds (JVM running for 16.124)
+11-09 18:41:10.774 WARN  [main] [com.zebra.net.servers.ZebraRpcServer] : [server side] bolt netty low water mark is 16384 bytes, high water mark is 32768 bytes
+11-09 18:41:10.779 WARN  [main] [com.zebra.net.servers.AbstractRemotingServer] : Prepare to start server on port 9879 
+11-09 18:41:10.796 INFO  [Zebra-boss-2-thread-1] [io.netty.handler.logging.LoggingHandler] : [id: 0x71a4be60] REGISTERED
+11-09 18:41:10.798 INFO  [Zebra-boss-2-thread-1] [io.netty.handler.logging.LoggingHandler] : [id: 0x71a4be60] BIND: 0.0.0.0/0.0.0.0:9879
+11-09 18:41:10.799 INFO  [Zebra-boss-2-thread-1] [io.netty.handler.logging.LoggingHandler] : [id: 0x71a4be60, L:/[0:0:0:0:0:0:0:0%0]:9879] ACTIVE
+11-09 18:41:11.283 INFO  [main] [com.zebra.net.servers.ZebraRpcServer] : Rpc AbstractBootstrap$PendingRegistrationPromise@6a2c717f(success) 1762713671283
+11-09 19:11:11.303 INFO  [Zebra-boss-2-thread-1] [io.netty.handler.logging.LoggingHandler] : [id: 0x71a4be60, L:/[0:0:0:0:0:0:0:0%0]:9879] CLOSE
+11-09 19:11:11.307 WARN  [main] [com.zebra.net.servers.ZebraRpcServer] : Rpc Server stopped!
+11-09 19:11:11.329 INFO  [main] [com.zebra.net.servers.AbstractRemotingServer] : Server started on port 9879
+11-09 19:11:11.343 INFO  [Zebra-boss-2-thread-1] [io.netty.handler.logging.LoggingHandler] : [id: 0x71a4be60, L:/[0:0:0:0:0:0:0:0%0]:9879] INACTIVE
+11-09 19:11:11.344 INFO  [Zebra-boss-2-thread-1] [io.netty.handler.logging.LoggingHandler] : [id: 0x71a4be60, L:/[0:0:0:0:0:0:0:0%0]:9879] UNREGISTERED
+11-09 19:11:11.358 INFO  [main] [com.zebra.common.concurrent.ZebraExecutorManager] : Initialize executorGroup size 64
+11-09 19:11:11.554 INFO  [main] [com.petrel.lobby.net.StartAfterInitialize] : StartAfter send register msg ServerRegistryRequest(serverId=lobby:10.0.0.1:9879, appName=petrel-game-lobby, inIp=10.0.0.1, port=9879, vfx=LOBBY, gameType=0, outIp=202.189.7.196, weight=50)
+11-09 19:11:12.786 INFO  [main] [com.netflix.config.ChainedDynamicProperty] : Flipping property: petrel-kernel-register.ribbon.ActiveConnectionsLimit to use NEXT property: niws.loadbalancer.availabilityFilteringRule.activeConnectionsLimit = 2147483647
+11-09 19:11:12.833 INFO  [main] [com.netflix.loadbalancer.BaseLoadBalancer] : Client: petrel-kernel-register instantiated a LoadBalancer: DynamicServerListLoadBalancer:{NFLoadBalancer:name=petrel-kernel-register,current list of Servers=[],Load balancer stats=Zone stats: {},Server stats: []}ServerList:null
+11-09 19:11:12.858 INFO  [main] [c.n.loadbalancer.DynamicServerListLoadBalancer] : Using serverListUpdater PollingServerListUpdater
+11-09 19:11:13.102 INFO  [main] [c.n.loadbalancer.DynamicServerListLoadBalancer] : DynamicServerListLoadBalancer for client petrel-kernel-register initialized: DynamicServerListLoadBalancer:{NFLoadBalancer:name=petrel-kernel-register,current list of Servers=[],Load balancer stats=Zone stats: {},Server stats: []}ServerList:com.alibaba.cloud.nacos.ribbon.NacosServerList@2c63762b
+11-09 19:11:13.249 INFO  [main] [o.s.b.a.l.ConditionEvaluationReportLoggingListener] : 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+11-09 19:11:13.287 INFO  [main] [o.s.scheduling.concurrent.ThreadPoolTaskScheduler] : Shutting down ExecutorService 'Nacso-Watch-Task-Scheduler'
+11-09 19:11:13.488 INFO  [main] [c.a.n.s.c.a.c.NacosValueAnnotationBeanPostProcessor] : class com.alibaba.nacos.spring.context.annotation.config.NacosValueAnnotationBeanPostProcessor was destroying!
+11-09 19:11:13.491 INFO  [main] [c.a.n.s.b.f.a.AnnotationNacosInjectedBeanPostProcessor] : class com.alibaba.nacos.spring.beans.factory.annotation.AnnotationNacosInjectedBeanPostProcessor was destroying!
+11-09 19:11:13.510 ERROR [main] [org.springframework.boot.SpringApplication] : Application run failed
+java.lang.IllegalStateException: Failed to execute ApplicationRunner
+	at org.springframework.boot.SpringApplication.callRunner(SpringApplication.java:778)
+	at org.springframework.boot.SpringApplication.callRunners(SpringApplication.java:765)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:322)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1226)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1215)
+	at com.petrel.lobby.LobbyApplication.main(LobbyApplication.java:21)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.springframework.boot.loader.MainMethodRunner.run(MainMethodRunner.java:48)
+	at org.springframework.boot.loader.Launcher.launch(Launcher.java:87)
+	at org.springframework.boot.loader.Launcher.launch(Launcher.java:51)
+	at org.springframework.boot.loader.PropertiesLauncher.main(PropertiesLauncher.java:597)
+Caused by: java.lang.RuntimeException: com.netflix.client.ClientException: Load balancer does not have available server for client: petrel-kernel-register
+	at org.springframework.cloud.openfeign.ribbon.LoadBalancerFeignClient.execute(LoadBalancerFeignClient.java:90)
+	at feign.SynchronousMethodHandler.executeAndDecode(SynchronousMethodHandler.java:110)
+	at feign.SynchronousMethodHandler.invoke(SynchronousMethodHandler.java:80)
+	at feign.ReflectiveFeign$FeignInvocationHandler.invoke(ReflectiveFeign.java:100)
+	at jdk.proxy2/jdk.proxy2.$Proxy110.registerServer(Unknown Source)
+	at com.petrel.lobby.net.StartAfterInitialize.run(StartAfterInitialize.java:47)
+	at org.springframework.boot.SpringApplication.callRunner(SpringApplication.java:775)
+	... 11 common frames omitted
+Caused by: com.netflix.client.ClientException: Load balancer does not have available server for client: petrel-kernel-register
+	at com.netflix.loadbalancer.LoadBalancerContext.getServerFromLoadBalancer(LoadBalancerContext.java:483)
+	at com.netflix.loadbalancer.reactive.LoadBalancerCommand$1.call(LoadBalancerCommand.java:184)
+	at com.netflix.loadbalancer.reactive.LoadBalancerCommand$1.call(LoadBalancerCommand.java:180)
+	at rx.Observable.unsafeSubscribe(Observable.java:10327)
+	at rx.internal.operators.OnSubscribeConcatMap.call(OnSubscribeConcatMap.java:94)
+	at rx.internal.operators.OnSubscribeConcatMap.call(OnSubscribeConcatMap.java:42)
+	at rx.Observable.unsafeSubscribe(Observable.java:10327)
+	at rx.internal.operators.OperatorRetryWithPredicate$SourceSubscriber$1.call(OperatorRetryWithPredicate.java:127)
+	at rx.internal.schedulers.TrampolineScheduler$InnerCurrentThreadScheduler.enqueue(TrampolineScheduler.java:73)
+	at rx.internal.schedulers.TrampolineScheduler$InnerCurrentThreadScheduler.schedule(TrampolineScheduler.java:52)
+	at rx.internal.operators.OperatorRetryWithPredicate$SourceSubscriber.onNext(OperatorRetryWithPredicate.java:79)
+	at rx.internal.operators.OperatorRetryWithPredicate$SourceSubscriber.onNext(OperatorRetryWithPredicate.java:45)
+	at rx.internal.util.ScalarSynchronousObservable$WeakSingleProducer.request(ScalarSynchronousObservable.java:276)
+	at rx.Subscriber.setProducer(Subscriber.java:209)
+	at rx.internal.util.ScalarSynchronousObservable$JustOnSubscribe.call(ScalarSynchronousObservable.java:138)
+	at rx.internal.util.ScalarSynchronousObservable$JustOnSubscribe.call(ScalarSynchronousObservable.java:129)
+	at rx.internal.operators.OnSubscribeLift.call(OnSubscribeLift.java:48)
+	at rx.internal.operators.OnSubscribeLift.call(OnSubscribeLift.java:30)
+	at rx.internal.operators.OnSubscribeLift.call(OnSubscribeLift.java:48)
+	at rx.internal.operators.OnSubscribeLift.call(OnSubscribeLift.java:30)
+	at rx.internal.operators.OnSubscribeLift.call(OnSubscribeLift.java:48)
+	at rx.internal.operators.OnSubscribeLift.call(OnSubscribeLift.java:30)
+	at rx.Observable.subscribe(Observable.java:10423)
+	at rx.Observable.subscribe(Observable.java:10390)
+	at rx.observables.BlockingObservable.blockForSingle(BlockingObservable.java:443)
+	at rx.observables.BlockingObservable.single(BlockingObservable.java:340)
+	at com.netflix.client.AbstractLoadBalancerAwareClient.executeWithLoadBalancer(AbstractLoadBalancerAwareClient.java:112)
+	at org.springframework.cloud.openfeign.ribbon.LoadBalancerFeignClient.execute(LoadBalancerFeignClient.java:83)
+	... 17 common frames omitted
+11-09 19:11:13.555 ERROR [main] [com.petrel.lobby.LobbyApplication] : start error:
+java.lang.IllegalStateException: Failed to execute ApplicationRunner
+	at org.springframework.boot.SpringApplication.callRunner(SpringApplication.java:778)
+	at org.springframework.boot.SpringApplication.callRunners(SpringApplication.java:765)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:322)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1226)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1215)
+	at com.petrel.lobby.LobbyApplication.main(LobbyApplication.java:21)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.springframework.boot.loader.MainMethodRunner.run(MainMethodRunner.java:48)
+	at org.springframework.boot.loader.Launcher.launch(Launcher.java:87)
+	at org.springframework.boot.loader.Launcher.launch(Launcher.java:51)
+	at org.springframework.boot.loader.PropertiesLauncher.main(PropertiesLauncher.java:597)
+Caused by: java.lang.RuntimeException: com.netflix.client.ClientException: Load balancer does not have available server for client: petrel-kernel-register
+	at org.springframework.cloud.openfeign.ribbon.LoadBalancerFeignClient.execute(LoadBalancerFeignClient.java:90)
+	at feign.SynchronousMethodHandler.executeAndDecode(SynchronousMethodHandler.java:110)
+	at feign.SynchronousMethodHandler.invoke(SynchronousMethodHandler.java:80)
+	at feign.ReflectiveFeign$FeignInvocationHandler.invoke(ReflectiveFeign.java:100)
+	at jdk.proxy2/jdk.proxy2.$Proxy110.registerServer(Unknown Source)
+	at com.petrel.lobby.net.StartAfterInitialize.run(StartAfterInitialize.java:47)
+	at org.springframework.boot.SpringApplication.callRunner(SpringApplication.java:775)
+	... 11 common frames omitted
+Caused by: com.netflix.client.ClientException: Load balancer does not have available server for client: petrel-kernel-register
+	at com.netflix.loadbalancer.LoadBalancerContext.getServerFromLoadBalancer(LoadBalancerContext.java:483)
+	at com.netflix.loadbalancer.reactive.LoadBalancerCommand$1.call(LoadBalancerCommand.java:184)
+	at com.netflix.loadbalancer.reactive.LoadBalancerCommand$1.call(LoadBalancerCommand.java:180)
+	at rx.Observable.unsafeSubscribe(Observable.java:10327)
+	at rx.internal.operators.OnSubscribeConcatMap.call(OnSubscribeConcatMap.java:94)
+	at rx.internal.operators.OnSubscribeConcatMap.call(OnSubscribeConcatMap.java:42)
+	at rx.Observable.unsafeSubscribe(Observable.java:10327)
+	at rx.internal.operators.OperatorRetryWithPredicate$SourceSubscriber$1.call(OperatorRetryWithPredicate.java:127)
+	at rx.internal.schedulers.TrampolineScheduler$InnerCurrentThreadScheduler.enqueue(TrampolineScheduler.java:73)
+	at rx.internal.schedulers.TrampolineScheduler$InnerCurrentThreadScheduler.schedule(TrampolineScheduler.java:52)
+	at rx.internal.operators.OperatorRetryWithPredicate$SourceSubscriber.onNext(OperatorRetryWithPredicate.java:79)
+	at rx.internal.operators.OperatorRetryWithPredicate$SourceSubscriber.onNext(OperatorRetryWithPredicate.java:45)
+	at rx.internal.util.ScalarSynchronousObservable$WeakSingleProducer.request(ScalarSynchronousObservable.java:276)
+	at rx.Subscriber.setProducer(Subscriber.java:209)
+	at rx.internal.util.ScalarSynchronousObservable$JustOnSubscribe.call(ScalarSynchronousObservable.java:138)
+	at rx.internal.util.ScalarSynchronousObservable$JustOnSubscribe.call(ScalarSynchronousObservable.java:129)
+	at rx.internal.operators.OnSubscribeLift.call(OnSubscribeLift.java:48)
+	at rx.internal.operators.OnSubscribeLift.call(OnSubscribeLift.java:30)
+	at rx.internal.operators.OnSubscribeLift.call(OnSubscribeLift.java:48)
+	at rx.internal.operators.OnSubscribeLift.call(OnSubscribeLift.java:30)
+	at rx.internal.operators.OnSubscribeLift.call(OnSubscribeLift.java:48)
+	at rx.internal.operators.OnSubscribeLift.call(OnSubscribeLift.java:30)
+	at rx.Observable.subscribe(Observable.java:10423)
+	at rx.Observable.subscribe(Observable.java:10390)
+	at rx.observables.BlockingObservable.blockForSingle(BlockingObservable.java:443)
+	at rx.observables.BlockingObservable.single(BlockingObservable.java:340)
+	at com.netflix.client.AbstractLoadBalancerAwareClient.executeWithLoadBalancer(AbstractLoadBalancerAwareClient.java:112)
+	at org.springframework.cloud.openfeign.ribbon.LoadBalancerFeignClient.execute(LoadBalancerFeignClient.java:83)
+	... 17 common frames omitted
+11-09 19:14:04.888 INFO  [main] [com.petrel.lobby.LobbyApplication] : The following profiles are active: prod
+11-09 19:14:06.046 WARN  [main] [o.springframework.boot.actuate.endpoint.EndpointId] : Endpoint ID 'nacos-discovery' contains invalid characters, please migrate to a valid format.
+11-09 19:14:06.294 INFO  [main] [o.s.d.r.config.RepositoryConfigurationDelegate] : Multiple Spring Data modules found, entering strict repository configuration mode!
+11-09 19:14:06.304 INFO  [main] [o.s.d.r.config.RepositoryConfigurationDelegate] : Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+11-09 19:14:06.345 INFO  [main] [o.s.d.r.config.RepositoryConfigurationDelegate] : Finished Spring Data repository scanning in 21ms. Found 0 Redis repository interfaces.
+11-09 19:14:06.392 WARN  [main] [o.springframework.boot.actuate.endpoint.EndpointId] : Endpoint ID 'service-registry' contains invalid characters, please migrate to a valid format.
+11-09 19:14:06.598 INFO  [main] [o.springframework.cloud.context.scope.GenericScope] : BeanFactory id=de85f6a1-592e-31da-a6ed-f5492fd7d879
+11-09 19:14:06.752 INFO  [main] [o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker] : Bean 'com.petrel.lobby.provide.CardFeignService' of type [org.springframework.cloud.openfeign.FeignClientFactoryBean] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+11-09 19:14:06.758 INFO  [main] [o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker] : Bean 'com.petrel.lobby.provide.LoginRegisterFeignService' of type [org.springframework.cloud.openfeign.FeignClientFactoryBean] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+11-09 19:14:06.760 INFO  [main] [o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker] : Bean 'com.petrel.lobby.provide.GoldBankFeignService' of type [org.springframework.cloud.openfeign.FeignClientFactoryBean] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+11-09 19:14:06.763 INFO  [main] [o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker] : Bean 'com.petrel.lobby.provide.ServerRegisterFeignService' of type [org.springframework.cloud.openfeign.FeignClientFactoryBean] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+11-09 19:14:06.766 INFO  [main] [o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker] : Bean 'com.petrel.lobby.provide.UserInfoFeignService' of type [org.springframework.cloud.openfeign.FeignClientFactoryBean] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+11-09 19:14:06.768 INFO  [main] [o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker] : Bean 'com.petrel.lobby.provide.StrategyFeignService' of type [org.springframework.cloud.openfeign.FeignClientFactoryBean] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+11-09 19:14:08.924 INFO  [main] [io.lettuce.core.EpollProvider] : Starting with epoll library
+11-09 19:14:08.935 INFO  [main] [io.lettuce.core.KqueueProvider] : Starting without optional kqueue library
+11-09 19:14:09.500 WARN  [main] [com.netflix.config.sources.URLConfigurationSource] : No URLs will be polled as dynamic configuration sources.
+11-09 19:14:09.500 INFO  [main] [com.netflix.config.sources.URLConfigurationSource] : To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+11-09 19:14:09.506 WARN  [main] [com.netflix.config.sources.URLConfigurationSource] : No URLs will be polled as dynamic configuration sources.
+11-09 19:14:09.506 INFO  [main] [com.netflix.config.sources.URLConfigurationSource] : To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+11-09 19:14:09.565 INFO  [main] [o.s.scheduling.concurrent.ThreadPoolTaskScheduler] : Initializing ExecutorService 'Nacso-Watch-Task-Scheduler'
+11-09 19:14:11.209 INFO  [main] [com.petrel.lobby.LobbyApplication] : Started LobbyApplication in 8.146 seconds (JVM running for 9.037)
+11-09 19:14:11.251 WARN  [main] [com.zebra.net.servers.ZebraRpcServer] : [server side] bolt netty low water mark is 16384 bytes, high water mark is 32768 bytes
+11-09 19:14:11.256 WARN  [main] [com.zebra.net.servers.AbstractRemotingServer] : Prepare to start server on port 9879 
+11-09 19:14:11.269 INFO  [Zebra-boss-2-thread-1] [io.netty.handler.logging.LoggingHandler] : [id: 0xa3624ed0] REGISTERED
+11-09 19:14:11.270 INFO  [Zebra-boss-2-thread-1] [io.netty.handler.logging.LoggingHandler] : [id: 0xa3624ed0] BIND: 0.0.0.0/0.0.0.0:9879
+11-09 19:14:11.271 INFO  [Zebra-boss-2-thread-1] [io.netty.handler.logging.LoggingHandler] : [id: 0xa3624ed0, L:/[0:0:0:0:0:0:0:0%0]:9879] ACTIVE
+11-09 19:14:11.460 INFO  [main] [com.zebra.net.servers.ZebraRpcServer] : Rpc AbstractBootstrap$PendingRegistrationPromise@7fb48179(success) 1762715651460
+11-09 19:33:39.547 INFO  [main] [com.petrel.lobby.LobbyApplication] : The following profiles are active: prod
+11-09 19:33:40.960 WARN  [main] [o.springframework.boot.actuate.endpoint.EndpointId] : Endpoint ID 'nacos-discovery' contains invalid characters, please migrate to a valid format.
+11-09 19:33:41.239 INFO  [main] [o.s.d.r.config.RepositoryConfigurationDelegate] : Multiple Spring Data modules found, entering strict repository configuration mode!
+11-09 19:33:41.248 INFO  [main] [o.s.d.r.config.RepositoryConfigurationDelegate] : Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+11-09 19:33:41.296 INFO  [main] [o.s.d.r.config.RepositoryConfigurationDelegate] : Finished Spring Data repository scanning in 27ms. Found 0 Redis repository interfaces.
+11-09 19:33:41.340 WARN  [main] [o.springframework.boot.actuate.endpoint.EndpointId] : Endpoint ID 'service-registry' contains invalid characters, please migrate to a valid format.
+11-09 19:33:41.548 INFO  [main] [o.springframework.cloud.context.scope.GenericScope] : BeanFactory id=de85f6a1-592e-31da-a6ed-f5492fd7d879
+11-09 19:33:41.711 INFO  [main] [o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker] : Bean 'com.petrel.lobby.provide.CardFeignService' of type [org.springframework.cloud.openfeign.FeignClientFactoryBean] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+11-09 19:33:41.717 INFO  [main] [o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker] : Bean 'com.petrel.lobby.provide.LoginRegisterFeignService' of type [org.springframework.cloud.openfeign.FeignClientFactoryBean] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+11-09 19:33:41.722 INFO  [main] [o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker] : Bean 'com.petrel.lobby.provide.GoldBankFeignService' of type [org.springframework.cloud.openfeign.FeignClientFactoryBean] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+11-09 19:33:41.724 INFO  [main] [o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker] : Bean 'com.petrel.lobby.provide.ServerRegisterFeignService' of type [org.springframework.cloud.openfeign.FeignClientFactoryBean] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+11-09 19:33:41.727 INFO  [main] [o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker] : Bean 'com.petrel.lobby.provide.UserInfoFeignService' of type [org.springframework.cloud.openfeign.FeignClientFactoryBean] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+11-09 19:33:41.730 INFO  [main] [o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker] : Bean 'com.petrel.lobby.provide.StrategyFeignService' of type [org.springframework.cloud.openfeign.FeignClientFactoryBean] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+11-09 19:33:44.362 INFO  [main] [io.lettuce.core.EpollProvider] : Starting with epoll library
+11-09 19:33:44.374 INFO  [main] [io.lettuce.core.KqueueProvider] : Starting without optional kqueue library
+11-09 19:33:44.883 WARN  [main] [com.netflix.config.sources.URLConfigurationSource] : No URLs will be polled as dynamic configuration sources.
+11-09 19:33:44.883 INFO  [main] [com.netflix.config.sources.URLConfigurationSource] : To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+11-09 19:33:44.891 WARN  [main] [com.netflix.config.sources.URLConfigurationSource] : No URLs will be polled as dynamic configuration sources.
+11-09 19:33:44.891 INFO  [main] [com.netflix.config.sources.URLConfigurationSource] : To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+11-09 19:33:44.951 INFO  [main] [o.s.scheduling.concurrent.ThreadPoolTaskScheduler] : Initializing ExecutorService 'Nacso-Watch-Task-Scheduler'
+11-09 19:33:46.780 INFO  [main] [com.petrel.lobby.LobbyApplication] : Started LobbyApplication in 9.147 seconds (JVM running for 10.183)
+11-09 19:33:46.854 WARN  [main] [com.zebra.net.servers.ZebraRpcServer] : [server side] bolt netty low water mark is 16384 bytes, high water mark is 32768 bytes
+11-09 19:33:46.868 WARN  [main] [com.zebra.net.servers.AbstractRemotingServer] : Prepare to start server on port 9879 
+11-09 19:33:46.886 INFO  [Zebra-boss-2-thread-1] [io.netty.handler.logging.LoggingHandler] : [id: 0x330f21d2] REGISTERED
+11-09 19:33:46.889 INFO  [Zebra-boss-2-thread-1] [io.netty.handler.logging.LoggingHandler] : [id: 0x330f21d2] BIND: 0.0.0.0/0.0.0.0:9879
+11-09 19:33:46.891 INFO  [Zebra-boss-2-thread-1] [io.netty.handler.logging.LoggingHandler] : [id: 0x330f21d2, L:/[0:0:0:0:0:0:0:0%0]:9879] ACTIVE
+11-09 19:33:47.149 INFO  [main] [com.zebra.net.servers.ZebraRpcServer] : Rpc AbstractBootstrap$PendingRegistrationPromise@78e17a99(success) 1762716827149
+11-09 20:03:47.153 INFO  [Zebra-boss-2-thread-1] [io.netty.handler.logging.LoggingHandler] : [id: 0x330f21d2, L:/[0:0:0:0:0:0:0:0%0]:9879] CLOSE
+11-09 20:03:47.154 WARN  [main] [com.zebra.net.servers.ZebraRpcServer] : Rpc Server stopped!
+11-09 20:03:47.160 INFO  [main] [com.zebra.net.servers.AbstractRemotingServer] : Server started on port 9879
+11-09 20:03:47.165 INFO  [Zebra-boss-2-thread-1] [io.netty.handler.logging.LoggingHandler] : [id: 0x330f21d2, L:/[0:0:0:0:0:0:0:0%0]:9879] INACTIVE
+11-09 20:03:47.165 INFO  [Zebra-boss-2-thread-1] [io.netty.handler.logging.LoggingHandler] : [id: 0x330f21d2, L:/[0:0:0:0:0:0:0:0%0]:9879] UNREGISTERED
+11-09 20:03:47.170 INFO  [main] [com.zebra.common.concurrent.ZebraExecutorManager] : Initialize executorGroup size 64
+11-09 20:03:47.264 INFO  [main] [com.petrel.lobby.net.StartAfterInitialize] : StartAfter send register msg ServerRegistryRequest(serverId=lobby:10.0.0.1:9879, appName=petrel-game-lobby, inIp=10.0.0.1, port=9879, vfx=LOBBY, gameType=0, outIp=202.189.7.196, weight=50)
+11-09 20:03:47.949 INFO  [main] [com.netflix.config.ChainedDynamicProperty] : Flipping property: petrel-kernel-register.ribbon.ActiveConnectionsLimit to use NEXT property: niws.loadbalancer.availabilityFilteringRule.activeConnectionsLimit = 2147483647
+11-09 20:03:47.972 INFO  [main] [com.netflix.loadbalancer.BaseLoadBalancer] : Client: petrel-kernel-register instantiated a LoadBalancer: DynamicServerListLoadBalancer:{NFLoadBalancer:name=petrel-kernel-register,current list of Servers=[],Load balancer stats=Zone stats: {},Server stats: []}ServerList:null
+11-09 20:03:47.983 INFO  [main] [c.n.loadbalancer.DynamicServerListLoadBalancer] : Using serverListUpdater PollingServerListUpdater
+11-09 20:03:48.184 INFO  [main] [c.n.loadbalancer.DynamicServerListLoadBalancer] : DynamicServerListLoadBalancer for client petrel-kernel-register initialized: DynamicServerListLoadBalancer:{NFLoadBalancer:name=petrel-kernel-register,current list of Servers=[],Load balancer stats=Zone stats: {},Server stats: []}ServerList:com.alibaba.cloud.nacos.ribbon.NacosServerList@3f6bf8aa
+11-09 20:03:48.288 INFO  [main] [o.s.b.a.l.ConditionEvaluationReportLoggingListener] : 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+11-09 20:03:48.303 INFO  [main] [o.s.scheduling.concurrent.ThreadPoolTaskScheduler] : Shutting down ExecutorService 'Nacso-Watch-Task-Scheduler'
+11-09 20:03:48.478 INFO  [main] [c.a.n.s.c.a.c.NacosValueAnnotationBeanPostProcessor] : class com.alibaba.nacos.spring.context.annotation.config.NacosValueAnnotationBeanPostProcessor was destroying!
+11-09 20:03:48.479 INFO  [main] [c.a.n.s.b.f.a.AnnotationNacosInjectedBeanPostProcessor] : class com.alibaba.nacos.spring.beans.factory.annotation.AnnotationNacosInjectedBeanPostProcessor was destroying!
+11-09 20:03:48.489 ERROR [main] [org.springframework.boot.SpringApplication] : Application run failed
+java.lang.IllegalStateException: Failed to execute ApplicationRunner
+	at org.springframework.boot.SpringApplication.callRunner(SpringApplication.java:778)
+	at org.springframework.boot.SpringApplication.callRunners(SpringApplication.java:765)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:322)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1226)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1215)
+	at com.petrel.lobby.LobbyApplication.main(LobbyApplication.java:21)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.springframework.boot.loader.MainMethodRunner.run(MainMethodRunner.java:48)
+	at org.springframework.boot.loader.Launcher.launch(Launcher.java:87)
+	at org.springframework.boot.loader.Launcher.launch(Launcher.java:51)
+	at org.springframework.boot.loader.PropertiesLauncher.main(PropertiesLauncher.java:597)
+Caused by: java.lang.RuntimeException: com.netflix.client.ClientException: Load balancer does not have available server for client: petrel-kernel-register
+	at org.springframework.cloud.openfeign.ribbon.LoadBalancerFeignClient.execute(LoadBalancerFeignClient.java:90)
+	at feign.SynchronousMethodHandler.executeAndDecode(SynchronousMethodHandler.java:110)
+	at feign.SynchronousMethodHandler.invoke(SynchronousMethodHandler.java:80)
+	at feign.ReflectiveFeign$FeignInvocationHandler.invoke(ReflectiveFeign.java:100)
+	at jdk.proxy2/jdk.proxy2.$Proxy110.registerServer(Unknown Source)
+	at com.petrel.lobby.net.StartAfterInitialize.run(StartAfterInitialize.java:47)
+	at org.springframework.boot.SpringApplication.callRunner(SpringApplication.java:775)
+	... 11 common frames omitted
+Caused by: com.netflix.client.ClientException: Load balancer does not have available server for client: petrel-kernel-register
+	at com.netflix.loadbalancer.LoadBalancerContext.getServerFromLoadBalancer(LoadBalancerContext.java:483)
+	at com.netflix.loadbalancer.reactive.LoadBalancerCommand$1.call(LoadBalancerCommand.java:184)
+	at com.netflix.loadbalancer.reactive.LoadBalancerCommand$1.call(LoadBalancerCommand.java:180)
+	at rx.Observable.unsafeSubscribe(Observable.java:10327)
+	at rx.internal.operators.OnSubscribeConcatMap.call(OnSubscribeConcatMap.java:94)
+	at rx.internal.operators.OnSubscribeConcatMap.call(OnSubscribeConcatMap.java:42)
+	at rx.Observable.unsafeSubscribe(Observable.java:10327)
+	at rx.internal.operators.OperatorRetryWithPredicate$SourceSubscriber$1.call(OperatorRetryWithPredicate.java:127)
+	at rx.internal.schedulers.TrampolineScheduler$InnerCurrentThreadScheduler.enqueue(TrampolineScheduler.java:73)
+	at rx.internal.schedulers.TrampolineScheduler$InnerCurrentThreadScheduler.schedule(TrampolineScheduler.java:52)
+	at rx.internal.operators.OperatorRetryWithPredicate$SourceSubscriber.onNext(OperatorRetryWithPredicate.java:79)
+	at rx.internal.operators.OperatorRetryWithPredicate$SourceSubscriber.onNext(OperatorRetryWithPredicate.java:45)
+	at rx.internal.util.ScalarSynchronousObservable$WeakSingleProducer.request(ScalarSynchronousObservable.java:276)
+	at rx.Subscriber.setProducer(Subscriber.java:209)
+	at rx.internal.util.ScalarSynchronousObservable$JustOnSubscribe.call(ScalarSynchronousObservable.java:138)
+	at rx.internal.util.ScalarSynchronousObservable$JustOnSubscribe.call(ScalarSynchronousObservable.java:129)
+	at rx.internal.operators.OnSubscribeLift.call(OnSubscribeLift.java:48)
+	at rx.internal.operators.OnSubscribeLift.call(OnSubscribeLift.java:30)
+	at rx.internal.operators.OnSubscribeLift.call(OnSubscribeLift.java:48)
+	at rx.internal.operators.OnSubscribeLift.call(OnSubscribeLift.java:30)
+	at rx.internal.operators.OnSubscribeLift.call(OnSubscribeLift.java:48)
+	at rx.internal.operators.OnSubscribeLift.call(OnSubscribeLift.java:30)
+	at rx.Observable.subscribe(Observable.java:10423)
+	at rx.Observable.subscribe(Observable.java:10390)
+	at rx.observables.BlockingObservable.blockForSingle(BlockingObservable.java:443)
+	at rx.observables.BlockingObservable.single(BlockingObservable.java:340)
+	at com.netflix.client.AbstractLoadBalancerAwareClient.executeWithLoadBalancer(AbstractLoadBalancerAwareClient.java:112)
+	at org.springframework.cloud.openfeign.ribbon.LoadBalancerFeignClient.execute(LoadBalancerFeignClient.java:83)
+	... 17 common frames omitted
+11-09 20:03:48.514 ERROR [main] [com.petrel.lobby.LobbyApplication] : start error:
+java.lang.IllegalStateException: Failed to execute ApplicationRunner
+	at org.springframework.boot.SpringApplication.callRunner(SpringApplication.java:778)
+	at org.springframework.boot.SpringApplication.callRunners(SpringApplication.java:765)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:322)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1226)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1215)
+	at com.petrel.lobby.LobbyApplication.main(LobbyApplication.java:21)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.springframework.boot.loader.MainMethodRunner.run(MainMethodRunner.java:48)
+	at org.springframework.boot.loader.Launcher.launch(Launcher.java:87)
+	at org.springframework.boot.loader.Launcher.launch(Launcher.java:51)
+	at org.springframework.boot.loader.PropertiesLauncher.main(PropertiesLauncher.java:597)
+Caused by: java.lang.RuntimeException: com.netflix.client.ClientException: Load balancer does not have available server for client: petrel-kernel-register
+	at org.springframework.cloud.openfeign.ribbon.LoadBalancerFeignClient.execute(LoadBalancerFeignClient.java:90)
+	at feign.SynchronousMethodHandler.executeAndDecode(SynchronousMethodHandler.java:110)
+	at feign.SynchronousMethodHandler.invoke(SynchronousMethodHandler.java:80)
+	at feign.ReflectiveFeign$FeignInvocationHandler.invoke(ReflectiveFeign.java:100)
+	at jdk.proxy2/jdk.proxy2.$Proxy110.registerServer(Unknown Source)
+	at com.petrel.lobby.net.StartAfterInitialize.run(StartAfterInitialize.java:47)
+	at org.springframework.boot.SpringApplication.callRunner(SpringApplication.java:775)
+	... 11 common frames omitted
+Caused by: com.netflix.client.ClientException: Load balancer does not have available server for client: petrel-kernel-register
+	at com.netflix.loadbalancer.LoadBalancerContext.getServerFromLoadBalancer(LoadBalancerContext.java:483)
+	at com.netflix.loadbalancer.reactive.LoadBalancerCommand$1.call(LoadBalancerCommand.java:184)
+	at com.netflix.loadbalancer.reactive.LoadBalancerCommand$1.call(LoadBalancerCommand.java:180)
+	at rx.Observable.unsafeSubscribe(Observable.java:10327)
+	at rx.internal.operators.OnSubscribeConcatMap.call(OnSubscribeConcatMap.java:94)
+	at rx.internal.operators.OnSubscribeConcatMap.call(OnSubscribeConcatMap.java:42)
+	at rx.Observable.unsafeSubscribe(Observable.java:10327)
+	at rx.internal.operators.OperatorRetryWithPredicate$SourceSubscriber$1.call(OperatorRetryWithPredicate.java:127)
+	at rx.internal.schedulers.TrampolineScheduler$InnerCurrentThreadScheduler.enqueue(TrampolineScheduler.java:73)
+	at rx.internal.schedulers.TrampolineScheduler$InnerCurrentThreadScheduler.schedule(TrampolineScheduler.java:52)
+	at rx.internal.operators.OperatorRetryWithPredicate$SourceSubscriber.onNext(OperatorRetryWithPredicate.java:79)
+	at rx.internal.operators.OperatorRetryWithPredicate$SourceSubscriber.onNext(OperatorRetryWithPredicate.java:45)
+	at rx.internal.util.ScalarSynchronousObservable$WeakSingleProducer.request(ScalarSynchronousObservable.java:276)
+	at rx.Subscriber.setProducer(Subscriber.java:209)
+	at rx.internal.util.ScalarSynchronousObservable$JustOnSubscribe.call(ScalarSynchronousObservable.java:138)
+	at rx.internal.util.ScalarSynchronousObservable$JustOnSubscribe.call(ScalarSynchronousObservable.java:129)
+	at rx.internal.operators.OnSubscribeLift.call(OnSubscribeLift.java:48)
+	at rx.internal.operators.OnSubscribeLift.call(OnSubscribeLift.java:30)
+	at rx.internal.operators.OnSubscribeLift.call(OnSubscribeLift.java:48)
+	at rx.internal.operators.OnSubscribeLift.call(OnSubscribeLift.java:30)
+	at rx.internal.operators.OnSubscribeLift.call(OnSubscribeLift.java:48)
+	at rx.internal.operators.OnSubscribeLift.call(OnSubscribeLift.java:30)
+	at rx.Observable.subscribe(Observable.java:10423)
+	at rx.Observable.subscribe(Observable.java:10390)
+	at rx.observables.BlockingObservable.blockForSingle(BlockingObservable.java:443)
+	at rx.observables.BlockingObservable.single(BlockingObservable.java:340)
+	at com.netflix.client.AbstractLoadBalancerAwareClient.executeWithLoadBalancer(AbstractLoadBalancerAwareClient.java:112)
+	at org.springframework.cloud.openfeign.ribbon.LoadBalancerFeignClient.execute(LoadBalancerFeignClient.java:83)
+	... 17 common frames omitted

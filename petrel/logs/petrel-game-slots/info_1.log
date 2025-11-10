@@ -1,0 +1,91 @@
+11-09 18:41:39.824 INFO  [main] [com.petrel.slots.all.AllApplication] : The following profiles are active: prod
+11-09 18:41:43.183 WARN  [main] [o.springframework.boot.actuate.endpoint.EndpointId] : Endpoint ID 'nacos-discovery' contains invalid characters, please migrate to a valid format.
+11-09 18:41:43.925 INFO  [main] [o.s.d.r.config.RepositoryConfigurationDelegate] : Multiple Spring Data modules found, entering strict repository configuration mode!
+11-09 18:41:43.933 INFO  [main] [o.s.d.r.config.RepositoryConfigurationDelegate] : Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+11-09 18:41:44.007 INFO  [main] [o.s.d.r.config.RepositoryConfigurationDelegate] : Finished Spring Data repository scanning in 43ms. Found 0 Redis repository interfaces.
+11-09 18:41:44.072 WARN  [main] [o.springframework.boot.actuate.endpoint.EndpointId] : Endpoint ID 'service-registry' contains invalid characters, please migrate to a valid format.
+11-09 18:41:44.657 INFO  [main] [o.springframework.cloud.context.scope.GenericScope] : BeanFactory id=9c028a5f-8ef2-3fdd-b572-dc51af7e40a7
+11-09 18:41:45.345 INFO  [main] [o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker] : Bean 'com.petrel.slots.core.common.provide.GameFeignService' of type [org.springframework.cloud.openfeign.FeignClientFactoryBean] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+11-09 18:41:45.356 INFO  [main] [o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker] : Bean 'com.petrel.slots.core.common.provide.ServerRegisterFeignService' of type [org.springframework.cloud.openfeign.FeignClientFactoryBean] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+11-09 18:41:47.348 INFO  [main] [o.s.scheduling.concurrent.ThreadPoolTaskScheduler] : Initializing ExecutorService 'taskScheduler'
+11-09 18:41:47.751 WARN  [main] [com.netflix.config.sources.URLConfigurationSource] : No URLs will be polled as dynamic configuration sources.
+11-09 18:41:47.752 INFO  [main] [com.netflix.config.sources.URLConfigurationSource] : To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+11-09 18:41:47.760 WARN  [main] [com.netflix.config.sources.URLConfigurationSource] : No URLs will be polled as dynamic configuration sources.
+11-09 18:41:47.761 INFO  [main] [com.netflix.config.sources.URLConfigurationSource] : To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+11-09 18:41:49.622 INFO  [main] [com.petrel.slots.all.AllApplication] : Started AllApplication in 16.828 seconds (JVM running for 19.384)
+11-09 18:41:49.717 INFO  [main] [c.p.s.c.c.handler.InitializePlayHandlerMapping] : Initialize BetHandler success 78 
+11-09 18:41:50.118 INFO  [main] [io.lettuce.core.EpollProvider] : Starting with epoll library
+11-09 18:41:50.122 INFO  [main] [io.lettuce.core.KqueueProvider] : Starting without optional kqueue library
+11-09 18:41:54.895 INFO  [main] [com.petrel.slots.core.common.quarze.PushJackpot] : start jackpot-push future , fixed second : 0
+11-09 18:41:54.952 INFO  [main] [c.p.s.core.common.service.GameServerStartService] : start game: FKHZ,DYXM,XMZZ,WLZB,GXFC,JZSF,KBMXT,MLCS,TGG,AJYH,BQTP,MLHG,SGQQQ,JSYC,TTSGJ,SHZ,YGBH,SXLM,CSLL,XCXML,SGJ,GEF,XJPM,YNKB
+11-09 18:41:55.032 WARN  [main] [com.zebra.net.servers.ZebraRpcServer] : [server side] bolt netty low water mark is 16384 bytes, high water mark is 32768 bytes
+11-09 18:41:55.043 WARN  [main] [com.zebra.net.servers.AbstractRemotingServer] : Prepare to start server on port 9527 
+11-09 18:41:55.067 INFO  [Zebra-boss-2-thread-1] [io.netty.handler.logging.LoggingHandler] : [id: 0x8f935990] REGISTERED
+11-09 18:41:55.070 INFO  [Zebra-boss-2-thread-1] [io.netty.handler.logging.LoggingHandler] : [id: 0x8f935990] BIND: 0.0.0.0/0.0.0.0:9527
+11-09 18:41:55.073 INFO  [Zebra-boss-2-thread-1] [io.netty.handler.logging.LoggingHandler] : [id: 0x8f935990, L:/[0:0:0:0:0:0:0:0%0]:9527] ACTIVE
+11-09 18:41:55.429 INFO  [main] [com.zebra.net.servers.ZebraRpcServer] : Rpc AbstractBootstrap$PendingRegistrationPromise@77fa9381(success) 1762713715429
+11-09 18:42:14.912 INFO  [SpringContextShutdownHook] [o.s.scheduling.concurrent.ThreadPoolTaskScheduler] : Shutting down ExecutorService 'taskScheduler'
+11-09 18:42:15.267 INFO  [SpringContextShutdownHook] [o.s.scheduling.concurrent.ThreadPoolTaskScheduler] : Shutting down ExecutorService 'taskScheduler'
+11-09 18:42:16.009 INFO  [SpringContextShutdownHook] [c.a.n.s.c.a.c.NacosValueAnnotationBeanPostProcessor] : class com.alibaba.nacos.spring.context.annotation.config.NacosValueAnnotationBeanPostProcessor was destroying!
+11-09 18:42:16.009 INFO  [SpringContextShutdownHook] [c.a.n.s.b.f.a.AnnotationNacosInjectedBeanPostProcessor] : class com.alibaba.nacos.spring.beans.factory.annotation.AnnotationNacosInjectedBeanPostProcessor was destroying!
+11-09 19:14:32.719 WARN  [background-preinit] [o.s.h.converter.json.Jackson2ObjectMapperBuilder] : For Jackson Kotlin classes support please add "com.fasterxml.jackson.module:jackson-module-kotlin" to the classpath
+11-09 19:14:33.357 INFO  [main] [com.petrel.slots.all.AllApplication] : The following profiles are active: prod
+11-09 19:14:34.690 WARN  [main] [o.springframework.boot.actuate.endpoint.EndpointId] : Endpoint ID 'nacos-discovery' contains invalid characters, please migrate to a valid format.
+11-09 19:14:34.953 INFO  [main] [o.s.d.r.config.RepositoryConfigurationDelegate] : Multiple Spring Data modules found, entering strict repository configuration mode!
+11-09 19:14:34.960 INFO  [main] [o.s.d.r.config.RepositoryConfigurationDelegate] : Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+11-09 19:14:34.993 INFO  [main] [o.s.d.r.config.RepositoryConfigurationDelegate] : Finished Spring Data repository scanning in 14ms. Found 0 Redis repository interfaces.
+11-09 19:14:35.054 WARN  [main] [o.springframework.boot.actuate.endpoint.EndpointId] : Endpoint ID 'service-registry' contains invalid characters, please migrate to a valid format.
+11-09 19:14:35.315 INFO  [main] [o.springframework.cloud.context.scope.GenericScope] : BeanFactory id=9c028a5f-8ef2-3fdd-b572-dc51af7e40a7
+11-09 19:14:35.621 INFO  [main] [o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker] : Bean 'com.petrel.slots.core.common.provide.GameFeignService' of type [org.springframework.cloud.openfeign.FeignClientFactoryBean] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+11-09 19:14:35.624 INFO  [main] [o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker] : Bean 'com.petrel.slots.core.common.provide.ServerRegisterFeignService' of type [org.springframework.cloud.openfeign.FeignClientFactoryBean] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+11-09 19:14:37.515 INFO  [main] [o.s.scheduling.concurrent.ThreadPoolTaskScheduler] : Initializing ExecutorService 'taskScheduler'
+11-09 19:14:37.871 WARN  [main] [com.netflix.config.sources.URLConfigurationSource] : No URLs will be polled as dynamic configuration sources.
+11-09 19:14:37.871 INFO  [main] [com.netflix.config.sources.URLConfigurationSource] : To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+11-09 19:14:37.878 WARN  [main] [com.netflix.config.sources.URLConfigurationSource] : No URLs will be polled as dynamic configuration sources.
+11-09 19:14:37.878 INFO  [main] [com.netflix.config.sources.URLConfigurationSource] : To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+11-09 19:14:39.570 INFO  [main] [com.petrel.slots.all.AllApplication] : Started AllApplication in 8.366 seconds (JVM running for 9.347)
+11-09 19:14:39.638 INFO  [main] [c.p.s.c.c.handler.InitializePlayHandlerMapping] : Initialize BetHandler success 78 
+11-09 19:14:39.969 INFO  [main] [io.lettuce.core.EpollProvider] : Starting with epoll library
+11-09 19:14:39.977 INFO  [main] [io.lettuce.core.KqueueProvider] : Starting without optional kqueue library
+11-09 19:14:46.785 INFO  [main] [com.petrel.slots.core.common.quarze.PushJackpot] : start jackpot-push future , fixed second : 0
+11-09 19:14:46.828 INFO  [main] [c.p.s.core.common.service.GameServerStartService] : start game: FKHZ,DYXM,XMZZ,WLZB,GXFC,JZSF,KBMXT,MLCS,TGG,AJYH,BQTP,MLHG,SGQQQ,JSYC,TTSGJ,SHZ,YGBH,SXLM,CSLL,XCXML,SGJ,GEF,XJPM,YNKB
+11-09 19:14:46.990 WARN  [main] [com.zebra.net.servers.ZebraRpcServer] : [server side] bolt netty low water mark is 16384 bytes, high water mark is 32768 bytes
+11-09 19:14:47.009 WARN  [main] [com.zebra.net.servers.AbstractRemotingServer] : Prepare to start server on port 9527 
+11-09 19:14:47.040 INFO  [Zebra-boss-2-thread-1] [io.netty.handler.logging.LoggingHandler] : [id: 0x171a25f9] REGISTERED
+11-09 19:14:47.044 INFO  [Zebra-boss-2-thread-1] [io.netty.handler.logging.LoggingHandler] : [id: 0x171a25f9] BIND: 0.0.0.0/0.0.0.0:9527
+11-09 19:14:47.046 INFO  [Zebra-boss-2-thread-1] [io.netty.handler.logging.LoggingHandler] : [id: 0x171a25f9, L:/[0:0:0:0:0:0:0:0%0]:9527] ACTIVE
+11-09 19:14:47.451 INFO  [main] [com.zebra.net.servers.ZebraRpcServer] : Rpc AbstractBootstrap$PendingRegistrationPromise@668625f5(success) 1762715687451
+11-09 19:14:51.435 INFO  [SpringContextShutdownHook] [o.s.scheduling.concurrent.ThreadPoolTaskScheduler] : Shutting down ExecutorService 'taskScheduler'
+11-09 19:14:51.497 INFO  [SpringContextShutdownHook] [o.s.scheduling.concurrent.ThreadPoolTaskScheduler] : Shutting down ExecutorService 'taskScheduler'
+11-09 19:14:51.668 INFO  [SpringContextShutdownHook] [c.a.n.s.c.a.c.NacosValueAnnotationBeanPostProcessor] : class com.alibaba.nacos.spring.context.annotation.config.NacosValueAnnotationBeanPostProcessor was destroying!
+11-09 19:14:51.669 INFO  [SpringContextShutdownHook] [c.a.n.s.b.f.a.AnnotationNacosInjectedBeanPostProcessor] : class com.alibaba.nacos.spring.beans.factory.annotation.AnnotationNacosInjectedBeanPostProcessor was destroying!
+11-09 19:34:07.920 INFO  [main] [com.petrel.slots.all.AllApplication] : The following profiles are active: prod
+11-09 19:34:09.528 WARN  [main] [o.springframework.boot.actuate.endpoint.EndpointId] : Endpoint ID 'nacos-discovery' contains invalid characters, please migrate to a valid format.
+11-09 19:34:09.865 INFO  [main] [o.s.d.r.config.RepositoryConfigurationDelegate] : Multiple Spring Data modules found, entering strict repository configuration mode!
+11-09 19:34:09.872 INFO  [main] [o.s.d.r.config.RepositoryConfigurationDelegate] : Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+11-09 19:34:09.902 INFO  [main] [o.s.d.r.config.RepositoryConfigurationDelegate] : Finished Spring Data repository scanning in 11ms. Found 0 Redis repository interfaces.
+11-09 19:34:09.944 WARN  [main] [o.springframework.boot.actuate.endpoint.EndpointId] : Endpoint ID 'service-registry' contains invalid characters, please migrate to a valid format.
+11-09 19:34:10.145 INFO  [main] [o.springframework.cloud.context.scope.GenericScope] : BeanFactory id=9c028a5f-8ef2-3fdd-b572-dc51af7e40a7
+11-09 19:34:10.422 INFO  [main] [o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker] : Bean 'com.petrel.slots.core.common.provide.GameFeignService' of type [org.springframework.cloud.openfeign.FeignClientFactoryBean] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+11-09 19:34:10.428 INFO  [main] [o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker] : Bean 'com.petrel.slots.core.common.provide.ServerRegisterFeignService' of type [org.springframework.cloud.openfeign.FeignClientFactoryBean] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+11-09 19:34:12.212 INFO  [main] [o.s.scheduling.concurrent.ThreadPoolTaskScheduler] : Initializing ExecutorService 'taskScheduler'
+11-09 19:34:12.638 WARN  [main] [com.netflix.config.sources.URLConfigurationSource] : No URLs will be polled as dynamic configuration sources.
+11-09 19:34:12.638 INFO  [main] [com.netflix.config.sources.URLConfigurationSource] : To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+11-09 19:34:12.645 WARN  [main] [com.netflix.config.sources.URLConfigurationSource] : No URLs will be polled as dynamic configuration sources.
+11-09 19:34:12.645 INFO  [main] [com.netflix.config.sources.URLConfigurationSource] : To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+11-09 19:34:14.527 INFO  [main] [com.petrel.slots.all.AllApplication] : Started AllApplication in 8.638 seconds (JVM running for 9.784)
+11-09 19:34:14.608 INFO  [main] [c.p.s.c.c.handler.InitializePlayHandlerMapping] : Initialize BetHandler success 78 
+11-09 19:34:14.938 INFO  [main] [io.lettuce.core.EpollProvider] : Starting with epoll library
+11-09 19:34:14.944 INFO  [main] [io.lettuce.core.KqueueProvider] : Starting without optional kqueue library
+11-09 19:34:19.678 INFO  [main] [com.petrel.slots.core.common.quarze.PushJackpot] : start jackpot-push future , fixed second : 0
+11-09 19:34:19.698 INFO  [main] [c.p.s.core.common.service.GameServerStartService] : start game: FKHZ,DYXM,XMZZ,WLZB,GXFC,JZSF,KBMXT,MLCS,TGG,AJYH,BQTP,MLHG,SGQQQ,JSYC,TTSGJ,SHZ,YGBH,SXLM,CSLL,XCXML,SGJ,GEF,XJPM,YNKB
+11-09 19:34:19.804 WARN  [main] [com.zebra.net.servers.ZebraRpcServer] : [server side] bolt netty low water mark is 16384 bytes, high water mark is 32768 bytes
+11-09 19:34:19.816 WARN  [main] [com.zebra.net.servers.AbstractRemotingServer] : Prepare to start server on port 9527 
+11-09 19:34:19.844 INFO  [Zebra-boss-2-thread-1] [io.netty.handler.logging.LoggingHandler] : [id: 0x3eb72084] REGISTERED
+11-09 19:34:19.847 INFO  [Zebra-boss-2-thread-1] [io.netty.handler.logging.LoggingHandler] : [id: 0x3eb72084] BIND: 0.0.0.0/0.0.0.0:9527
+11-09 19:34:19.848 INFO  [Zebra-boss-2-thread-1] [io.netty.handler.logging.LoggingHandler] : [id: 0x3eb72084, L:/[0:0:0:0:0:0:0:0%0]:9527] ACTIVE
+11-09 19:34:20.182 INFO  [main] [com.zebra.net.servers.ZebraRpcServer] : Rpc AbstractBootstrap$PendingRegistrationPromise@1f1cddf3(success) 1762716860182
+11-09 19:34:25.632 INFO  [SpringContextShutdownHook] [o.s.scheduling.concurrent.ThreadPoolTaskScheduler] : Shutting down ExecutorService 'taskScheduler'
+11-09 19:34:25.689 INFO  [SpringContextShutdownHook] [o.s.scheduling.concurrent.ThreadPoolTaskScheduler] : Shutting down ExecutorService 'taskScheduler'
+11-09 19:34:25.854 INFO  [SpringContextShutdownHook] [c.a.n.s.c.a.c.NacosValueAnnotationBeanPostProcessor] : class com.alibaba.nacos.spring.context.annotation.config.NacosValueAnnotationBeanPostProcessor was destroying!
+11-09 19:34:25.854 INFO  [SpringContextShutdownHook] [c.a.n.s.b.f.a.AnnotationNacosInjectedBeanPostProcessor] : class com.alibaba.nacos.spring.beans.factory.annotation.AnnotationNacosInjectedBeanPostProcessor was destroying!

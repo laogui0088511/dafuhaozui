@@ -1,0 +1,84 @@
+server:
+  port: 8752
+
+spring:
+  profiles:
+    active: prod
+  game-slots:
+    name: petrel-kernel-game  
+  cloud:
+    nacos:
+      username: nacos
+      password: nacos
+      discovery:
+        server-addr: 202.189.7.196:6878
+
+  autoconfigure:
+    exclude: com.alibaba.druid.spring.boot.autoconfigure.DruidDataSourceAutoConfigure
+
+  datasource:
+    type: com.alibaba.druid.pool.DruidDataSource
+    dynamic:
+      primary: petrel_core
+      strict: false
+      datasource:
+        petrel_core:
+          druid:
+            initial-size: 4
+            min-idle: 4
+            maxActive: 64
+            maxWait: 60000
+            useUnfairLock: true
+            timeBetweenEvictionRunsMillis: 60000
+            minEvictableIdleTimeMillis: 300000
+            validationQuery: SELECT 1
+            testWhileIdle: true
+            testOnBorrow: false
+            testOnReturn: false
+            filters: stat
+          driver-class-name: com.mysql.cj.jdbc.Driver
+          url: jdbc:mysql://202.189.7.196:3306/petrel_core?useUnicode=true&characterEncoding=UTF-8&useSSL=false&serverTimezone=UTC&serverTimezone=Asia/Shanghai
+          username: root
+          password: Fagp@1908!
+        petrel_record:
+          druid:
+            initial-size: 4
+            min-idle: 4
+            maxActive: 64
+            maxWait: 60000
+            useUnfairLock: true
+            timeBetweenEvictionRunsMillis: 60000
+            minEvictableIdleTimeMillis: 300000
+            validationQuery: SELECT 1
+            testWhileIdle: true
+            testOnBorrow: false
+            testOnReturn: false
+            filters: stat
+          driver-class-name: com.mysql.cj.jdbc.Driver
+          url: jdbc:mysql://202.189.7.196:3306/petrel_record?useUnicode=true&characterEncoding=UTF-8&useSSL=false&serverTimezone=UTC&serverTimezone=Asia/Shanghai
+          username: root
+          password: Fagp@1908!
+
+redis:
+  database: 0
+  host: 127.0.0.1
+  port: 6379
+  password: Fagp_1908
+
+nacos:
+  username: nacos
+  password: nacos
+  server-addr: 202.189.7.196:6878
+
+logging:
+  config: classpath:logback-spring.xml
+  level:
+    com.petrel.game: INFO
+
+
+
+#mybatis:
+# configuration:
+#  aoplog-impl: org.apache.ibatis.logging.stdout.StdOutImpl
+
+

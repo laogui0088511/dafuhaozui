@@ -1,144 +1,72 @@
-2023-07-13 00:02:49,389 INFO load data success
+2025-11-09 18:22:51,323 INFO load data success
 
-2023-07-13 00:02:49,399 INFO distro notifier started
+2025-11-09 18:22:51,326 INFO distro notifier started
 
-2023-07-13 00:09:02,947 INFO load data success
-
-2023-07-13 00:09:02,947 INFO distro notifier started
-
-2023-07-13 00:46:59,230 INFO load data success
-
-2023-07-13 00:46:59,270 INFO distro notifier started
-
-2023-07-13 00:55:10,249 INFO load data success
-
-2023-07-13 00:55:10,264 INFO distro notifier started
-
-2023-07-13 01:27:47,848 INFO load data success
-
-2023-07-13 01:27:47,848 INFO distro notifier started
-
-2023-07-13 01:46:19,482 INFO load data success
-
-2023-07-13 01:46:19,516 INFO distro notifier started
-
-2023-07-13 02:07:53,217 INFO load data success
-
-2023-07-13 02:07:53,218 INFO distro notifier started
-
-2023-07-13 02:14:58,200 INFO load data success
-
-2023-07-13 02:14:58,201 INFO distro notifier started
-
-2023-07-13 02:21:35,806 INFO load data success
-
-2023-07-13 02:21:36,290 INFO distro notifier started
-
-2023-07-13 02:27:48,985 INFO load data success
-
-2023-07-13 02:27:49,125 INFO distro notifier started
-
-2023-07-13 02:45:43,169 INFO load data success
-
-2023-07-13 02:45:43,169 INFO distro notifier started
-
-2023-07-13 02:51:08,843 INFO load data success
-
-2023-07-13 02:51:08,844 INFO distro notifier started
-
-2023-07-13 03:01:54,122 INFO load data success
-
-2023-07-13 03:01:54,140 INFO distro notifier started
-
-2023-07-13 03:14:05,009 INFO load data success
-
-2023-07-13 03:14:05,033 INFO distro notifier started
-
-2023-07-13 03:25:39,640 INFO load data success
-
-2023-07-13 03:25:39,640 INFO distro notifier started
-
-2023-07-13 03:29:27,004 INFO load data success
-
-2023-07-13 03:29:27,006 INFO distro notifier started
-
-2023-07-13 03:31:50,242 INFO load data success
-
-2023-07-13 03:31:50,243 INFO distro notifier started
-
-2023-07-13 03:33:34,885 INFO load data success
-
-2023-07-13 03:33:34,922 INFO distro notifier started
-
-2023-07-13 03:48:54,186 INFO load data success
-
-2023-07-13 03:48:54,186 INFO distro notifier started
-
-2023-07-13 03:53:55,234 INFO load data success
-
-2023-07-13 03:53:55,235 INFO distro notifier started
-
-2025-10-29 03:49:42,695 INFO load data success
-
-2025-10-29 03:49:42,696 INFO distro notifier started
-
-2025-10-29 03:49:58,279 ERROR [NACOS-DISTRO] Error while handling notifying task
+2025-11-09 18:23:04,052 ERROR dispatch sync task failed.
 
 java.lang.InterruptedException: null
-	at java.base/java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.await(AbstractQueuedSynchronizer.java:1645)
+	at java.base/java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.awaitNanos(AbstractQueuedSynchronizer.java:1770)
+	at java.base/java.util.concurrent.LinkedBlockingQueue.poll(LinkedBlockingQueue.java:460)
+	at com.alibaba.nacos.naming.consistency.ephemeral.distro.TaskDispatcher$TaskScheduler.run(TaskDispatcher.java:102)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:572)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
+	at java.base/java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:304)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1583)
+2025-11-09 18:23:04,052 ERROR dispatch sync task failed.
+
+java.lang.InterruptedException: null
+	at java.base/java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.awaitNanos(AbstractQueuedSynchronizer.java:1770)
+	at java.base/java.util.concurrent.LinkedBlockingQueue.poll(LinkedBlockingQueue.java:460)
+	at com.alibaba.nacos.naming.consistency.ephemeral.distro.TaskDispatcher$TaskScheduler.run(TaskDispatcher.java:102)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:572)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
+	at java.base/java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:304)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1583)
+2025-11-09 18:23:07,056 ERROR [NACOS-DISTRO] Error while handling notifying task
+
+java.lang.InterruptedException: null
+	at java.base/java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.await(AbstractQueuedSynchronizer.java:1727)
 	at java.base/java.util.concurrent.ArrayBlockingQueue.take(ArrayBlockingQueue.java:420)
 	at com.alibaba.nacos.naming.consistency.ephemeral.distro.DistroConsistencyServiceImpl$Notifier.run(DistroConsistencyServiceImpl.java:416)
-	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:539)
-	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:572)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
 	at java.base/java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:304)
-	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
-	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
-	at java.base/java.lang.Thread.run(Thread.java:840)
-2025-10-29 03:50:01,281 ERROR dispatch sync task failed.
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1583)
+2025-11-09 18:24:08,017 INFO load data success
 
-java.lang.InterruptedException: null
-	at java.base/java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.awaitNanos(AbstractQueuedSynchronizer.java:1686)
-	at java.base/java.util.concurrent.LinkedBlockingQueue.poll(LinkedBlockingQueue.java:460)
-	at com.alibaba.nacos.naming.consistency.ephemeral.distro.TaskDispatcher$TaskScheduler.run(TaskDispatcher.java:102)
-	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:539)
-	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
-	at java.base/java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:304)
-	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
-	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
-	at java.base/java.lang.Thread.run(Thread.java:840)
-2025-10-29 03:50:01,281 ERROR dispatch sync task failed.
+2025-11-09 18:24:08,026 INFO distro notifier started
 
-java.lang.InterruptedException: null
-	at java.base/java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.awaitNanos(AbstractQueuedSynchronizer.java:1686)
-	at java.base/java.util.concurrent.LinkedBlockingQueue.poll(LinkedBlockingQueue.java:460)
-	at com.alibaba.nacos.naming.consistency.ephemeral.distro.TaskDispatcher$TaskScheduler.run(TaskDispatcher.java:102)
-	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:539)
-	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
-	at java.base/java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:304)
-	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
-	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
-	at java.base/java.lang.Thread.run(Thread.java:840)
-2025-10-29 03:50:01,281 ERROR dispatch sync task failed.
+2025-11-09 18:27:19,243 INFO load data success
 
-java.lang.InterruptedException: null
-	at java.base/java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.awaitNanos(AbstractQueuedSynchronizer.java:1686)
-	at java.base/java.util.concurrent.LinkedBlockingQueue.poll(LinkedBlockingQueue.java:460)
-	at com.alibaba.nacos.naming.consistency.ephemeral.distro.TaskDispatcher$TaskScheduler.run(TaskDispatcher.java:102)
-	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:539)
-	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
-	at java.base/java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:304)
-	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
-	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
-	at java.base/java.lang.Thread.run(Thread.java:840)
-2025-10-29 03:50:01,281 ERROR dispatch sync task failed.
+2025-11-09 18:27:19,247 INFO distro notifier started
 
-java.lang.InterruptedException: null
-	at java.base/java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.awaitNanos(AbstractQueuedSynchronizer.java:1686)
-	at java.base/java.util.concurrent.LinkedBlockingQueue.poll(LinkedBlockingQueue.java:460)
-	at com.alibaba.nacos.naming.consistency.ephemeral.distro.TaskDispatcher$TaskScheduler.run(TaskDispatcher.java:102)
-	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:539)
-	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
-	at java.base/java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:304)
-	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
-	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
-	at java.base/java.lang.Thread.run(Thread.java:840)
+2025-11-09 18:31:21,235 INFO load data success
+
+2025-11-09 18:31:21,238 INFO distro notifier started
+
+2025-11-09 18:34:45,530 INFO load data success
+
+2025-11-09 18:34:45,537 INFO distro notifier started
+
+2025-11-09 18:39:07,750 INFO distro notifier started
+
+2025-11-09 18:39:07,755 INFO load data success
+
+2025-11-09 19:12:23,683 INFO load data success
+
+2025-11-09 19:12:23,684 INFO distro notifier started
+
+2025-11-09 19:15:24,470 INFO load data success
+
+2025-11-09 19:15:24,474 INFO distro notifier started
+
+2025-11-09 19:31:56,806 INFO load data success
+
+2025-11-09 19:31:56,807 INFO distro notifier started
+

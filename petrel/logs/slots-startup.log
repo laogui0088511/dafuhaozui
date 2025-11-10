@@ -1,0 +1,32 @@
+19:34:05.749 [main] INFO org.springframework.core.KotlinDetector - Kotlin reflection implementation not found at runtime, related features won't be available.
+
+  .   ____          _            __ _ _
+ /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
+( ( )\___ | '_ | '_| | '_ \/ _` | \ \ \ \
+ \\/  ___)| |_)| | | | | || (_| |  ) ) ) )
+  '  |____| .__|_| |_|_| |_\__, | / / / /
+ =========|_|==============|___/=/_/_/_/
+ :: Spring Boot ::        (v2.2.5.RELEASE)
+
+2025-11-09 19:34:07.920  INFO 47704 --- [           main] com.petrel.slots.all.AllApplication      : The following profiles are active: prod
+2025-11-09 19:34:09.528  WARN 47704 --- [           main] o.s.boot.actuate.endpoint.EndpointId     : Endpoint ID 'nacos-discovery' contains invalid characters, please migrate to a valid format.
+2025-11-09 19:34:09.865  INFO 47704 --- [           main] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode!
+2025-11-09 19:34:09.872  INFO 47704 --- [           main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2025-11-09 19:34:09.902  INFO 47704 --- [           main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 11ms. Found 0 Redis repository interfaces.
+2025-11-09 19:34:09.944  WARN 47704 --- [           main] o.s.boot.actuate.endpoint.EndpointId     : Endpoint ID 'service-registry' contains invalid characters, please migrate to a valid format.
+2025-11-09 19:34:10.145  INFO 47704 --- [           main] o.s.cloud.context.scope.GenericScope     : BeanFactory id=9c028a5f-8ef2-3fdd-b572-dc51af7e40a7
+2025-11-09 19:34:10.422  INFO 47704 --- [           main] trationDelegate$BeanPostProcessorChecker : Bean 'com.petrel.slots.core.common.provide.GameFeignService' of type [org.springframework.cloud.openfeign.FeignClientFactoryBean] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2025-11-09 19:34:10.428  INFO 47704 --- [           main] trationDelegate$BeanPostProcessorChecker : Bean 'com.petrel.slots.core.common.provide.ServerRegisterFeignService' of type [org.springframework.cloud.openfeign.FeignClientFactoryBean] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2025-11-09 19:34:12.212  INFO 47704 --- [           main] o.s.s.c.ThreadPoolTaskScheduler          : Initializing ExecutorService 'taskScheduler'
+2025-11-09 19:34:14.527  INFO 47704 --- [           main] com.petrel.slots.all.AllApplication      : Started AllApplication in 8.638 seconds (JVM running for 9.784)
+2025-11-09 19:34:14.608  INFO 47704 --- [           main] c.p.s.c.c.h.InitializePlayHandlerMapping : Initialize BetHandler success 78 
+2025-11-09 19:34:19.678  INFO 47704 --- [           main] c.p.s.core.common.quarze.PushJackpot     : start jackpot-push future , fixed second : 0
+2025-11-09 19:34:19.698  INFO 47704 --- [           main] c.p.s.c.c.s.GameServerStartService       : start game: FKHZ,DYXM,XMZZ,WLZB,GXFC,JZSF,KBMXT,MLCS,TGG,AJYH,BQTP,MLHG,SGQQQ,JSYC,TTSGJ,SHZ,YGBH,SXLM,CSLL,XCXML,SGJ,GEF,XJPM,YNKB
+2025-11-09 19:34:19.804  WARN 47704 --- [           main] com.zebra.net.servers.ZebraRpcServer     : [server side] bolt netty low water mark is 16384 bytes, high water mark is 32768 bytes
+2025-11-09 19:34:19.816  WARN 47704 --- [           main] c.z.net.servers.AbstractRemotingServer   : Prepare to start server on port 9527 
+2025-11-09 19:34:19.844  INFO 47704 --- [boss-2-thread-1] io.netty.handler.logging.LoggingHandler  : [id: 0x3eb72084] REGISTERED
+2025-11-09 19:34:19.847  INFO 47704 --- [boss-2-thread-1] io.netty.handler.logging.LoggingHandler  : [id: 0x3eb72084] BIND: 0.0.0.0/0.0.0.0:9527
+2025-11-09 19:34:19.848  INFO 47704 --- [boss-2-thread-1] io.netty.handler.logging.LoggingHandler  : [id: 0x3eb72084, L:/[0:0:0:0:0:0:0:0%0]:9527] ACTIVE
+2025-11-09 19:34:20.182  INFO 47704 --- [           main] com.zebra.net.servers.ZebraRpcServer     : Rpc AbstractBootstrap$PendingRegistrationPromise@1f1cddf3(success) 1762716860182
+2025-11-09 19:34:25.632  INFO 47704 --- [extShutdownHook] o.s.s.c.ThreadPoolTaskScheduler          : Shutting down ExecutorService 'taskScheduler'
+2025-11-09 19:34:25.689  INFO 47704 --- [extShutdownHook] o.s.s.c.ThreadPoolTaskScheduler          : Shutting down ExecutorService 'taskScheduler'

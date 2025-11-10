@@ -13,8 +13,11 @@ BLUE='\033[0;34m'
 NC='\033[0m' # No Color
 
 # 工作目录
-PETREL_DIR="/home/runner/work/dafuhaozui/dafuhaozui/petrel"
-NACOS_DIR="/home/runner/work/dafuhaozui/dafuhaozui/nacos"
+SCRIPT_DIR=$(cd "$(dirname "$0")" && pwd)
+PETREL_DIR="$SCRIPT_DIR"
+NACOS_DIR=$(cd "$SCRIPT_DIR/../nacos" && pwd)
+# 每个服务现在将直接引用其特定的配置文件路径
+# CONFIG_FILE_PATH="${PETREL_DIR}/config/application-prod.yml"
 
 # JAR 文件
 REGISTER_JAR="petrel-kernel-register-1.0-SNAPSHOT-boot.jar"
@@ -39,6 +42,34 @@ log_error() {
 
 log_step() {
     echo -e "${BLUE}[STEP]${NC} $(date '+%Y-%m-%d %H:%M:%S') - $1"
+}
+
+# 清理旧进程函数
+cleanup_processes() {
+    log_step "[-] 清理残留的 Java 进程..."
+    
+    # 查找并终止 Nacos 进程
+    NACOS_PIDS=$(ps aux | grep 'nacos-server' | grep -v grep | awk '{print $2}')
+    if [ -n "$NACOS_PIDS" ]; then
+        log_info "发现残留的 Nacos 进程: $NACOS_PIDS. 正在终止..."
+        kill -9 $NACOS_PIDS
+        sleep 2
+        log_info "Nacos 进程已清理."
+    else
+        log_info "没有发现残留的 Nacos 进程."
+    fi
+
+    # 查找并终止 Petrel 进程
+    PETREL_PIDS=$(ps aux | grep 'petrel-' | grep -v grep | awk '{print $2}')
+    if [ -n "$PETREL_PIDS" ]; then
+        log_info "发现残留的 Petrel 游戏服务进程: $PETREL_PIDS. 正在终止..."
+        kill -9 $PETREL_PIDS
+        sleep 2
+        log_info "Petrel 进程已清理."
+    else
+        log_info "没有发现残留的 Petrel 游戏服务进程."
+    fi
+    echo ""
 }
 
 # 检查服务是否运行
@@ -89,30 +120,38 @@ echo "基于 2022-12-18 生产日志分析"
 echo "=========================================="
 echo ""
 
+# 调用清理函数
+cleanup_processes
+
 cd "$PETREL_DIR" || exit 1
 
+# 创建日志目录
+log_info "确保日志目录存在..."
+mkdir -p "${PETREL_DIR}/logs"
+echo ""
+
 # ==========================================
-# 步骤 0: 前置条件检查
+# 步骤 0: 前置条件检查 (已禁用)
 # ==========================================
-log_step "[0/7] 检查前置条件..."
+# log_step "[0/7] 检查前置条件..."
 
 # 检查 MySQL
-if check_port_listening 3306 5; then
-    log_info "✓ MySQL 服务正在运行 (端口 3306)"
-else
-    log_error "✗ MySQL 服务未运行，请先启动 MySQL"
-    exit 1
-fi
+# if check_port_listening 3306 5; then
+#     log_info "✓ MySQL 服务正在运行 (端口 3306)"
+# else
+#     log_error "✗ MySQL 服务未运行，请先启动 MySQL"
+#     exit 1
+# fi
 
 # 检查 Redis
-if check_port_listening 6379 5; then
-    log_info "✓ Redis 服务正在运行 (端口 6379)"
-else
-    log_error "✗ Redis 服务未运行，请先启动 Redis"
-    exit 1
-fi
+# if check_port_listening 6379 5; then
+#     log_info "✓ Redis 服务正在运行 (端口 6379)"
+# else
+#     log_error "✗ Redis 服务未运行，请先启动 Redis"
+#     exit 1
+# fi
 
-echo ""
+# echo ""
 
 # ==========================================
 # 步骤 1: 启动 Nacos
@@ -156,18 +195,48 @@ log_step "[2/7] 启动 Register 服务 (Zebra RPC 注册中心，端口 7180)...
 if check_service_running "$REGISTER_JAR"; then
     log_warn "Register 服务已在运行，跳过启动"
 else
-    log_info "启动 Register 服务..."
-    nohup java -jar -Xmn200m -Xms400m -Xmx400m "$REGISTER_JAR" --spring.profiles.active=prod > /dev/null 2>&1 &
-    
-    # 根据日志，Register 启动需要约 8-9 秒
-    log_info "等待 Register 服务启动 (预计 8-10 秒)..."
-    sleep 10
+    # Start Register
+    echo "Starting Register service..."
+    REGISTER_JAR=$(find "$PETREL_DIR" -name "petrel-kernel-register-*.jar" | head -n 1)
+    if [ -z "$REGISTER_JAR" ]; then
+        echo "Error: petrel-kernel-register JAR not found."
+        exit 1
+    fi
+
+    # --- BEGIN DIAGNOSTICS ---
+    echo "--- Diagnosing Register service startup ---"
+    echo "Working directory: $(pwd)"
+    echo "Petrel directory: ${PETREL_DIR}"
+    CONFIG_FILE="${PETREL_DIR}/config/kernel-register/application-prod.yml"
+    echo "Config file path variable: ${CONFIG_FILE}"
+    echo "Checking file existence and permissions:"
+    ls -l "${CONFIG_FILE}"
+    echo "Contents of the configuration file:"
+    cat "${CONFIG_FILE}"
+    echo "--- End Diagnostics ---"
+
+    nohup java -jar \
+        -Dapp.name=petrel-register \
+        -Xmn200m -Xms400m -Xmx400m \
+        "$REGISTER_JAR" \
+        --spring.config.location="file:${CONFIG_FILE}" \
+        > "${PETREL_DIR}/logs/register-startup.log" 2>&1 &
+    REGISTER_PID=$!
+    echo "Register service started with PID: $REGISTER_PID"
+
+    # Wait for Register service to be healthy
+    # (Adding a simple sleep for now, a proper health check is better)
+    echo "Waiting for Register service to start..."
+    sleep 30
     
     log_info "检查 Register 端口 7180..."
     if check_port_listening 7180 30; then
         log_info "✓ Register 端口 7180 已监听"
     else
-        log_error "✗ Register 启动失败"
+        log_error "✗ Register 启动失败. 正在显示启动日志..."
+        echo -e "${RED}==================== REGISTER STARTUP LOG ====================${NC}"
+        cat "${PETREL_DIR}/logs/register-startup.log"
+        echo -e "${RED}=============================================================="${NC}
         exit 1
     fi
     
@@ -190,15 +259,24 @@ if check_service_running "$USER_JAR"; then
     log_warn "User 服务已在运行，跳过启动"
 else
     log_info "启动 User 服务..."
-    nohup java -jar -Xmn512m -Xms1024m -Xmx1024m "$USER_JAR" --spring.profiles.active=prod > /dev/null 2>&1 &
-    
+    CONFIG_FILE="${PETREL_DIR}/config/kernel-user/application-prod.yml"
+    nohup java -jar \
+        -Dapp.name=petrel-user \
+        -Xmn512m -Xms1024m -Xmx1024m \
+        "$USER_JAR" \
+        --spring.config.location="file:${CONFIG_FILE}" \
+        > "${PETREL_DIR}/logs/user-startup.log" 2>&1 &
+
     log_info "等待 User 服务启动..."
     sleep 15
     
     if check_service_running "$USER_JAR"; then
         log_info "✓ User 服务已启动"
     else
-        log_error "✗ User 服务启动失败"
+        log_error "✗ User 服务启动失败. 正在显示启动日志..."
+        echo -e "${RED}==================== USER STARTUP LOG ====================${NC}"
+        cat "${PETREL_DIR}/logs/user-startup.log"
+        echo -e "${RED}============================================================"${NC}
         exit 1
     fi
 fi
@@ -214,7 +292,13 @@ if check_service_running "$GAME_JAR"; then
     log_warn "Game 服务已在运行，跳过启动"
 else
     log_info "启动 Game 服务..."
-    nohup java -jar -Xmn512m -Xms1024m -Xmx1024m "$GAME_JAR" --spring.profiles.active=prod > /dev/null 2>&1 &
+    CONFIG_FILE="${PETREL_DIR}/config/kernel-game/application-prod.yml"
+    nohup java -jar \
+        -Dapp.name=petrel-game \
+        -Xmn512m -Xms1024m -Xmx1024m \
+        "$GAME_JAR" \
+        --spring.config.location="file:${CONFIG_FILE}" \
+        > "${PETREL_DIR}/logs/game-startup.log" 2>&1 &
     
     log_info "等待 Game 服务启动..."
     sleep 15
@@ -222,7 +306,10 @@ else
     if check_service_running "$GAME_JAR"; then
         log_info "✓ Game 服务已启动"
     else
-        log_error "✗ Game 服务启动失败"
+        log_error "✗ Game 服务启动失败. 正在显示启动日志..."
+        echo -e "${RED}==================== GAME STARTUP LOG ====================${NC}"
+        cat "${PETREL_DIR}/logs/game-startup.log"
+        echo -e "${RED}============================================================"${NC}
         exit 1
     fi
 fi
@@ -239,49 +326,27 @@ log_step "[5/7] 启动 Lobby 服务 (端口 9879) - 优化配置防止掉线..."
 if check_service_running "$LOBBY_JAR"; then
     log_warn "Lobby 服务已在运行，跳过启动"
 else
-    # 获取外部 IP 配置
-    ZEBRA_IP_OUT=${1:-127.0.0.1}
-    
-    log_info "启动 Lobby 服务 (外部 IP: ${ZEBRA_IP_OUT})..."
-    log_info "配置: 增加内存以提高稳定性，启用 GC 日志监控"
-    
-    # 创建 GC 日志目录
-    mkdir -p "${PETREL_DIR}/logs/gc"
-    
-    # 优化启动参数：增加内存，优化 GC，启用详细日志
+    log_info "启动 Lobby 服务..."
+    CONFIG_FILE="${PETREL_DIR}/config/game-lobby/application-prod.yml"
     nohup java -jar \
-        -Xmn1024m -Xms2048m -Xmx2048m \
-        -XX:+UseG1GC \
-        -XX:MaxGCPauseMillis=200 \
-        -XX:+PrintGCDetails \
-        -XX:+PrintGCDateStamps \
-        -Xloggc:"${PETREL_DIR}/logs/gc/lobby-gc-$(date +%Y%m%d-%H%M%S).log" \
+        -Dapp.name=petrel-lobby \
+        -Xmn512m -Xms1024m -Xmx1024m \
         "$LOBBY_JAR" \
-        --spring.profiles.active=prod \
-        --zebra.ip.out=${ZEBRA_IP_OUT} \
-        > "${PETREL_DIR}/logs/lobby-stdout.log" 2>&1 &
+        --spring.config.location="file:${CONFIG_FILE}" \
+        > "${PETREL_DIR}/logs/lobby-startup.log" 2>&1 &
+
+    log_info "等待 Lobby 服务启动..."
+    sleep 15
     
-    # 根据日志，Lobby 启动需要约 5-6 秒
-    log_info "等待 Lobby 应用启动 (预计 5-6 秒)..."
-    sleep 6
-    
-    log_info "检查 Lobby 端口 9879..."
-    if check_port_listening 9879 30; then
-        log_info "✓ Lobby Zebra RPC Server 已启动 (端口 9879)"
+    if check_service_running "$LOBBY_JAR"; then
+        log_info "✓ Lobby 服务已启动"
     else
-        log_error "✗ Lobby 启动失败，端口 9879 未监听"
+        log_error "✗ Lobby 服务启动失败. 正在显示启动日志..."
+        echo -e "${RED}==================== LOBBY STARTUP LOG ====================${NC}"
+        cat "${PETREL_DIR}/logs/lobby-startup.log"
+        echo -e "${RED}============================================================"${NC}
         exit 1
     fi
-    
-    # 关键：等待 Lobby 向 Register 发送注册请求
-    # 从发送注册到 Register 接收约需要 0.8 秒
-    log_info "等待 Lobby 向 Register 注册 (预计 2-3 秒)..."
-    sleep 3
-    
-    log_info "✓ Lobby 服务已启动并完成注册"
-    log_info "  内存配置: 堆 2GB (年轻代 1GB)"
-    log_info "  GC 日志: logs/gc/lobby-gc-*.log"
-    log_info "  标准输出: logs/lobby-stdout.log"
 fi
 
 echo ""
@@ -298,12 +363,16 @@ if [ -f "$CHESS_JAR" ]; then
         ZEBRA_IP_OUT=${1:-127.0.0.1}
         
         log_info "启动 Chess 服务..."
-        nohup java -jar -Xmn512m -Xms1024m -Xmx1024m "$CHESS_JAR" \
-            --spring.profiles.active=prod \
+        CONFIG_FILE="${PETREL_DIR}/config/game-chess/application-prod.yml"
+        nohup java -jar \
+            -Xmn512m -Xms1024m -Xmx1024m \
+            "$CHESS_JAR" \
+            --spring.config.location="file:${CONFIG_FILE}" \
             --zebra.ip.out=${ZEBRA_IP_OUT} \
-            > /dev/null 2>&1 &
+            > "${PETREL_DIR}/logs/chess-startup.log" 2>&1 &
         
-        sleep 6
+        log_info "等待 Chess 服务启动..."
+        sleep 10
         
         if check_port_listening 9637 30; then
             log_info "✓ Chess 服务已启动 (端口 9637)"
@@ -330,12 +399,16 @@ if [ -f "$SLOTS_JAR" ]; then
         ZEBRA_IP_OUT=${1:-127.0.0.1}
         
         log_info "启动 Slots 服务..."
-        nohup java -jar -Xmn512m -Xms1024m -Xmx1024m "$SLOTS_JAR" \
-            --spring.profiles.active=prod \
+        CONFIG_FILE="${PETREL_DIR}/config/game-slots/application-prod.yml"
+        nohup java -jar \
+            -Xmn512m -Xms1024m -Xmx1024m \
+            "$SLOTS_JAR" \
+            --spring.config.location="file:${CONFIG_FILE}" \
             --zebra.ip.out=${ZEBRA_IP_OUT} \
-            > /dev/null 2>&1 &
+            > "${PETREL_DIR}/logs/slots-startup.log" 2>&1 &
         
-        sleep 6
+        log_info "等待 Slots 服务启动..."
+        sleep 10
         
         if check_port_listening 9527 30; then
             log_info "✓ Slots 服务已启动 (端口 9527)"
@@ -346,6 +419,34 @@ if [ -f "$SLOTS_JAR" ]; then
     fi
 else
     log_warn "Slots JAR 文件不存在，跳过"
+fi
+
+echo ""
+
+# ==========================================
+# 可选: 启动 CMS Web 后台管理系统
+# ==========================================
+CMS_WAR="petrel-cms-web-1.0-SNAPSHOT.war"
+if [ -f "$CMS_WAR" ]; then
+    if check_service_running "$CMS_WAR"; then
+        log_warn "CMS Web 已在运行，跳过启动"
+    else
+        log_step "[CMS] 启动 CMS Web 后台管理系统..."
+        nohup java -jar \
+            -Dapp.name=petrel-cms-web \
+            -Xmn256m -Xms512m -Xmx512m \
+            "$CMS_WAR" \
+            > "${PETREL_DIR}/logs/petrel-cms-web.log" 2>&1 &
+        log_info "等待 CMS Web 启动..."
+        sleep 10
+        if check_service_running "$CMS_WAR"; then
+            log_info "\u2713 CMS Web 已启动"
+        else
+            log_warn "CMS Web 启动可能失败，请查看 ${PETREL_DIR}/logs/petrel-cms-web.log"
+        fi
+    fi
+else
+    log_warn "未找到 CMS Web WAR 文件 ($CMS_WAR)，跳过启动"
 fi
 
 echo ""
@@ -367,11 +468,6 @@ echo "  Nacos:     6878 - $(netstat -tlnp 2>/dev/null | grep -q ':6878 ' && echo
 echo "  Register:  7180 - $(netstat -tlnp 2>/dev/null | grep -q ':7180 ' && echo '✓ 运行中' || echo '✗ 未运行')"
 echo "  Lobby:     9879 - $(netstat -tlnp 2>/dev/null | grep -q ':9879 ' && echo '✓ 运行中' || echo '✗ 未运行')"
 echo "  Chess:     9637 - $(netstat -tlnp 2>/dev/null | grep -q ':9637 ' && echo '✓ 运行中' || echo '✗ 未运行')"
-echo "  Slots:     9527 - $(netstat -tlnp 2>/dev/null | grep -q ':9527 ' && echo '✓ 运行中' || echo '✗ 未运行')"
-echo ""
-
-log_info "验证 Lobby 注册到 Register："
-echo "  查看 Register 日志确认注册："
 echo "  tail -20 ${PETREL_DIR}/logs/petrel-kernel-register/info_7180.log | grep 'Register receive registry msg.*lobby'"
 echo ""
 echo "  查看 Lobby 日志确认连接："
