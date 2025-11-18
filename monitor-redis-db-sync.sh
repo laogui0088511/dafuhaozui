@@ -1,18 +1,18 @@
 #!/bin/bash
 
 # ============================================
-# Redis-Database Synchronization Monitor
-# Monitors data synchronization between Redis cache and MySQL database
+# Redis-数据库同步监控脚本
+# 监控Redis缓存和MySQL数据库之间的数据同步
 # ============================================
 #
-# Usage:
-#   Basic check: ./monitor-redis-db-sync.sh
+# 使用方法:
+#   基础检查: ./monitor-redis-db-sync.sh
 #   
-#   With MySQL password:
+#   使用MySQL密码:
 #     export MYSQL_PASS='your_password'
 #     ./monitor-redis-db-sync.sh
 #
-#   Custom configuration via environment variables:
+#   通过环境变量自定义配置:
 #     export REDIS_HOST='192.168.1.100'
 #     export MYSQL_HOST='192.168.1.200'
 #     export MYSQL_USER='admin'
@@ -20,25 +20,25 @@
 #     ./monitor-redis-db-sync.sh
 # ============================================
 
-# Colors
+# 颜色定义
 RED='\033[0;31m'
 GREEN='\033[0;32m'
 YELLOW='\033[1;33m'
 BLUE='\033[0;34m'
-NC='\033[0m' # No Color
+NC='\033[0m'
 
-# Configuration
+# 配置项
 REDIS_HOST="${REDIS_HOST:-127.0.0.1}"
 REDIS_PORT="${REDIS_PORT:-6379}"
 MYSQL_HOST="${MYSQL_HOST:-202.189.7.196}"
 MYSQL_PORT="${MYSQL_PORT:-3306}"
 MYSQL_USER="${MYSQL_USER:-root}"
-MYSQL_PASS="${MYSQL_PASS:-}"  # Set via environment variable for security
+MYSQL_PASS="${MYSQL_PASS:-}"
 MYSQL_DB="${MYSQL_DB:-petrel_core}"
 
 LOG_FILE="redis-db-sync-monitor.log"
 
-# Function to log messages
+# 日志记录函数
 log_message() {
     local level=$1
     shift
@@ -59,36 +59,36 @@ log_error() {
     log_message "${RED}ERROR${NC}" "$@"
 }
 
-# Check if Redis is running
+# 检查Redis连接
 check_redis_connection() {
-    log_info "Checking Redis connection..."
+    log_info "检查Redis连接..."
     
     if command -v redis-cli &> /dev/null; then
         if redis-cli -h "$REDIS_HOST" -p "$REDIS_PORT" ping > /dev/null 2>&1; then
-            log_info "✓ Redis is running and responding"
+            log_info "✓ Redis正在运行并响应"
             return 0
         else
-            log_error "✗ Redis is not responding at ${REDIS_HOST}:${REDIS_PORT}"
+            log_error "✗ Redis未响应 ${REDIS_HOST}:${REDIS_PORT}"
             return 1
         fi
     else
-        log_warn "redis-cli not found, skipping Redis connection check"
+        log_warn "未找到redis-cli，跳过Redis连接检查"
         return 2
     fi
 }
 
-# Check MySQL connection
+# 检查MySQL连接
 check_mysql_connection() {
-    log_info "Checking MySQL connection..."
+    log_info "检查MySQL连接..."
     
     if [ -z "$MYSQL_PASS" ]; then
-        log_warn "MYSQL_PASS not set. Set environment variable to enable MySQL checks."
-        log_warn "Example: export MYSQL_PASS='your_password'"
+        log_warn "未设置MYSQL_PASS。请设置环境变量以启用MySQL检查。"
+        log_warn "示例: export MYSQL_PASS='your_password'"
         return 2
     fi
     
     if command -v mysql &> /dev/null; then
-        # Create temporary MySQL config file for secure password passing
+        # 创建临时MySQL配置文件以安全传递密码
         local mysql_config=$(mktemp)
         cat > "$mysql_config" << EOF
 [client]
@@ -97,99 +97,99 @@ EOF
         chmod 600 "$mysql_config"
         
         if mysql --defaults-file="$mysql_config" -h "$MYSQL_HOST" -P "$MYSQL_PORT" -u "$MYSQL_USER" -e "SELECT 1" > /dev/null 2>&1; then
-            log_info "✓ MySQL is running and responding"
+            log_info "✓ MySQL正在运行并响应"
             rm -f "$mysql_config"
             return 0
         else
-            log_error "✗ MySQL is not responding at ${MYSQL_HOST}:${MYSQL_PORT}"
+            log_error "✗ MySQL未响应 ${MYSQL_HOST}:${MYSQL_PORT}"
             rm -f "$mysql_config"
             return 1
         fi
     else
-        log_warn "mysql client not found, skipping MySQL connection check"
+        log_warn "未找到mysql客户端，跳过MySQL连接检查"
         return 2
     fi
 }
 
-# Check Redis memory usage
+# 检查Redis内存使用
 check_redis_memory() {
     if command -v redis-cli &> /dev/null; then
-        log_info "Checking Redis memory usage..."
+        log_info "检查Redis内存使用..."
         
         local memory_info=$(redis-cli -h "$REDIS_HOST" -p "$REDIS_PORT" info memory 2>/dev/null | grep "used_memory_human" | cut -d: -f2 | tr -d '\r\n ')
         local max_memory=$(redis-cli -h "$REDIS_HOST" -p "$REDIS_PORT" config get maxmemory 2>/dev/null | tail -1)
         
         if [ -n "$memory_info" ]; then
-            log_info "Redis memory usage: ${memory_info}"
+            log_info "Redis内存使用: ${memory_info}"
             if [ "$max_memory" != "0" ]; then
-                log_info "Redis max memory: $(numfmt --to=iec $max_memory 2>/dev/null || echo $max_memory)"
+                log_info "Redis最大内存: $(numfmt --to=iec $max_memory 2>/dev/null || echo $max_memory)"
             else
-                log_info "Redis max memory: unlimited"
+                log_info "Redis最大内存: 无限制"
             fi
         fi
     fi
 }
 
-# Check Redis key statistics
+# 检查Redis键统计
 check_redis_keys() {
     if command -v redis-cli &> /dev/null; then
-        log_info "Checking Redis key statistics..."
+        log_info "检查Redis键统计..."
         
         local db_size=$(redis-cli -h "$REDIS_HOST" -p "$REDIS_PORT" dbsize 2>/dev/null | tr -d '\r\n ')
         local expired=$(redis-cli -h "$REDIS_HOST" -p "$REDIS_PORT" info stats 2>/dev/null | grep "expired_keys" | cut -d: -f2 | tr -d '\r\n ')
         local evicted=$(redis-cli -h "$REDIS_HOST" -p "$REDIS_PORT" info stats 2>/dev/null | grep "evicted_keys" | cut -d: -f2 | tr -d '\r\n ')
         
         if [ -n "$db_size" ]; then
-            log_info "Total keys in Redis: ${db_size}"
-            log_info "Expired keys: ${expired:-0}"
-            log_info "Evicted keys: ${evicted:-0}"
+            log_info "Redis中的总键数: ${db_size}"
+            log_info "过期键数: ${expired:-0}"
+            log_info "驱逐键数: ${evicted:-0}"
             
-            # Warn if eviction is happening
+            # 如果发生驱逐则发出警告
             if [ -n "$evicted" ] && [ "$evicted" -gt 0 ]; then
-                log_warn "Keys are being evicted! Consider increasing maxmemory or enabling persistence"
+                log_warn "键正在被驱逐！考虑增加maxmemory或启用持久化"
             fi
         fi
     fi
 }
 
-# Check Redis persistence
+# 检查Redis持久化
 check_redis_persistence() {
     if command -v redis-cli &> /dev/null; then
-        log_info "Checking Redis persistence settings..."
+        log_info "检查Redis持久化设置..."
         
         local save_config=$(redis-cli -h "$REDIS_HOST" -p "$REDIS_PORT" config get save 2>/dev/null | tail -1)
         local aof_enabled=$(redis-cli -h "$REDIS_HOST" -p "$REDIS_PORT" config get appendonly 2>/dev/null | tail -1)
         local last_save=$(redis-cli -h "$REDIS_HOST" -p "$REDIS_PORT" lastsave 2>/dev/null)
         
         if [ "$aof_enabled" = "yes" ]; then
-            log_info "✓ AOF persistence is enabled"
+            log_info "✓ AOF持久化已启用"
         else
-            log_warn "AOF persistence is disabled"
+            log_warn "AOF持久化已禁用"
         fi
         
         if [ -n "$save_config" ] && [ "$save_config" != '""' ]; then
-            log_info "✓ RDB persistence is configured: $save_config"
+            log_info "✓ RDB持久化已配置: $save_config"
             if [ -n "$last_save" ]; then
                 local last_save_time=$(date -d @$last_save '+%Y-%m-%d %H:%M:%S' 2>/dev/null || date -r $last_save '+%Y-%m-%d %H:%M:%S' 2>/dev/null)
-                log_info "Last RDB save: ${last_save_time:-$last_save}"
+                log_info "上次RDB保存: ${last_save_time:-$last_save}"
             fi
         else
-            log_warn "RDB persistence is not configured"
+            log_warn "RDB持久化未配置"
         fi
     fi
 }
 
-# Check MySQL database size
+# 检查MySQL数据库大小
 check_mysql_stats() {
     if [ -z "$MYSQL_PASS" ]; then
-        log_warn "Skipping MySQL stats check (MYSQL_PASS not set)"
+        log_warn "跳过MySQL统计检查（未设置MYSQL_PASS）"
         return 2
     fi
     
     if command -v mysql &> /dev/null; then
-        log_info "Checking MySQL database statistics..."
+        log_info "检查MySQL数据库统计..."
         
-        # Create temporary MySQL config file for secure password passing
+        # 创建临时MySQL配置文件以安全传递密码
         local mysql_config=$(mktemp)
         cat > "$mysql_config" << EOF
 [client]
@@ -200,12 +200,12 @@ EOF
         local table_count=$(mysql --defaults-file="$mysql_config" -h "$MYSQL_HOST" -P "$MYSQL_PORT" -u "$MYSQL_USER" -D "$MYSQL_DB" -sN -e "SELECT COUNT(*) FROM information_schema.tables WHERE table_schema='$MYSQL_DB'" 2>/dev/null)
         
         if [ -n "$table_count" ]; then
-            log_info "Number of tables in ${MYSQL_DB}: ${table_count}"
+            log_info "${MYSQL_DB}中的表数量: ${table_count}"
             
-            # Get database size
+            # 获取数据库大小
             local db_size=$(mysql --defaults-file="$mysql_config" -h "$MYSQL_HOST" -P "$MYSQL_PORT" -u "$MYSQL_USER" -sN -e "SELECT ROUND(SUM(data_length + index_length) / 1024 / 1024, 2) FROM information_schema.tables WHERE table_schema='$MYSQL_DB'" 2>/dev/null)
             if [ -n "$db_size" ]; then
-                log_info "Database size: ${db_size} MB"
+                log_info "数据库大小: ${db_size} MB"
             fi
         fi
         
@@ -213,50 +213,50 @@ EOF
     fi
 }
 
-# Monitor for cache misses and slow queries
+# 监控缓存未命中和慢查询
 check_performance_metrics() {
-    log_info "Checking performance metrics..."
+    log_info "检查性能指标..."
     
     if command -v redis-cli &> /dev/null; then
-        # Check hit rate
+        # 检查命中率
         local keyspace_hits=$(redis-cli -h "$REDIS_HOST" -p "$REDIS_PORT" info stats 2>/dev/null | grep "keyspace_hits" | cut -d: -f2 | tr -d '\r\n ')
         local keyspace_misses=$(redis-cli -h "$REDIS_HOST" -p "$REDIS_PORT" info stats 2>/dev/null | grep "keyspace_misses" | cut -d: -f2 | tr -d '\r\n ')
         
         if [ -n "$keyspace_hits" ] && [ -n "$keyspace_misses" ]; then
             local total=$((keyspace_hits + keyspace_misses))
             if [ $total -gt 0 ]; then
-                # Use awk for portable floating point arithmetic
+                # 使用awk进行可移植的浮点运算
                 local hit_rate=$(awk "BEGIN {printf \"%.2f\", ($keyspace_hits / $total) * 100}")
-                log_info "Cache hit rate: ${hit_rate}%"
+                log_info "缓存命中率: ${hit_rate}%"
                 
-                # Use awk for comparison as well
+                # 使用awk进行比较
                 local is_low=$(awk "BEGIN {print ($hit_rate < 80) ? 1 : 0}")
                 if [ "$is_low" -eq 1 ]; then
-                    log_warn "Cache hit rate is below 80%. Consider reviewing caching strategy."
+                    log_warn "缓存命中率低于80%。考虑审查缓存策略。"
                 fi
             fi
         fi
         
-        # Check for slow commands
+        # 检查慢命令
         local slowlog_len=$(redis-cli -h "$REDIS_HOST" -p "$REDIS_PORT" slowlog len 2>/dev/null)
         if [ -n "$slowlog_len" ] && [ "$slowlog_len" -gt 0 ]; then
-            log_warn "Redis slowlog has ${slowlog_len} entries. Check with 'redis-cli slowlog get 10'"
+            log_warn "Redis慢日志有${slowlog_len}条记录。使用'redis-cli slowlog get 10'查看"
         fi
     fi
 }
 
-# Main monitoring function
+# 主监控函数
 main() {
     echo "=========================================="
-    echo "Redis-Database Synchronization Monitor"
+    echo "Redis-数据库同步监控"
     echo "$(date '+%Y-%m-%d %H:%M:%S')"
     echo "=========================================="
     echo ""
     
-    log_info "Starting synchronization check..."
+    log_info "开始同步检查..."
     echo ""
     
-    # Check connections
+    # 检查连接
     check_redis_connection
     redis_status=$?
     echo ""
@@ -284,18 +284,18 @@ main() {
         echo ""
     fi
     
-    # Final summary
+    # 最终摘要
     echo "=========================================="
     if [ $redis_status -eq 0 ] && [ $mysql_status -eq 0 ]; then
-        log_info "✓ Both Redis and MySQL are operational"
-        log_info "Synchronization monitoring completed successfully"
+        log_info "✓ Redis和MySQL都正常运行"
+        log_info "同步监控成功完成"
     else
-        log_error "✗ Some services are not available"
-        log_error "Please check the errors above"
+        log_error "✗ 某些服务不可用"
+        log_error "请检查上述错误"
     fi
     echo "=========================================="
     
-    # Return status
+    # 返回状态
     if [ $redis_status -eq 0 ] && [ $mysql_status -eq 0 ]; then
         return 0
     else
@@ -303,6 +303,6 @@ main() {
     fi
 }
 
-# Run main function
+# 运行主函数
 main
 exit $?
